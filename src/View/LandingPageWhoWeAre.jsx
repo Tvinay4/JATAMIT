@@ -19,7 +19,7 @@ const LandingPageWhoWeAre = () => {
       title: "Innovation",
       description: "We embrace cutting-edge technology to redefine digital transactions.",
       icon: <Apps sx={{ fontSize: 36, color: "#00bcd4" }} />,
-      bg: "linear-gradient(135deg, #00bcd4, #4caf50)",
+      bg: "linear-gradient(135deg, #00bcd4, #D1AA65)",
       threshold: 200,
     },
     {

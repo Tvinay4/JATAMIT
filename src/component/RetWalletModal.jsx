@@ -208,7 +208,7 @@ const RightNavbar = () => {
             <Box className="hover-zoom">
               <IconButton
                 className="hover-zoom"
-                sx={{ color: "#D53E3E" }}
+                sx={{ color: "#000000" }}
                 onClick={() => {
                   setOpen(true);
                   handleWalletTransfer();
@@ -230,7 +230,7 @@ const RightNavbar = () => {
                     <Tooltip
                       title="QR"
                       placement="left"
-                      sx={{ color: "#D53E3E" }}
+                      sx={{ color: "#000000" }}
                     >
                       <QrCode2Icon className="hover-white" />
                     </Tooltip>

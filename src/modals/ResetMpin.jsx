@@ -42,6 +42,7 @@ const ResetMpin = ({ variant, py, mt, username }) => {
   };
   const resetmpin = (event) => {
     event.preventDefault();
+    event.stopPropagation()
     postJsonData(
       ApiEndpoints.RESET_MPIN,
       {

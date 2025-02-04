@@ -794,6 +794,7 @@ const CreditRequestView = () => {
                     <CachedIcon className="refresh-purple " />
                   </IconButton>
                 </Tooltip>
+                {user.role==="Admin"&&
                 <Box sx={{ display: "flex", ml: 2 }}>
                   <div>
                     <Tooltip title="Scheduler">
@@ -826,6 +827,7 @@ const CreditRequestView = () => {
                     </Menu>
                   </div>
                 </Box>
+            }
               </>
             }
           />
