@@ -48,7 +48,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
   const navigate = useNavigate();
   const [data, setData] = useState("");
   const [imageUrl, setImageUrl] = useState(null);
-  console.log("rowin reopen",row.remark);
+  console.log("rowin reopen", row.remark);
   const authCtx = React.useContext(AuthContext);
   const token = authCtx.token;
   const [transactionid, setTransactionId] = useState("");
@@ -89,7 +89,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    setFileValue(file||row.request_image);
+    setFileValue(file || row.request_image);
   };
   const handleNavigation = () => {
     const queryString = new URLSearchParams({
@@ -99,7 +99,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
       mode,
       remark,
       dateValue,
-      transactionid
+      transactionid,
     }).toString();
     window.open(`/indemnityLetter?${queryString}`, "_blank");
   };
@@ -140,7 +140,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
   const handleOpen = () => {
     setModelOpen(false);
     getCredDataList();
-     fetchImage();
+    fetchImage();
     transactionId();
   };
   const handleCustomRemarkChange = (e) => {
@@ -152,10 +152,10 @@ const ReopenCreditRequest = ({ refresh, row }) => {
     if (refresh) refresh();
   };
 
-  const requestImage = row?.request_image || "defaultFileName";
+  const requestImage = row?.request_image;
   const getImage = async (fileName) => {
     const headers = {
-      Authorization: `Bearer ${token}`, // Typically, token is sent as a Bearer token
+      Authorization: `Bearer ${token}`,
     };
     console.log("base usrl is ", BASE_URL);
 
@@ -174,24 +174,28 @@ const ReopenCreditRequest = ({ refresh, row }) => {
     }
   };
   const fetchImage = async () => {
-    const fileName = requestImage; // Replace with your actual file name
+    const fileName = requestImage;
     const url = await getImage(fileName);
     if (url) setImageUrl(url);
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append("bank_name", bank||row.bank_name,);
-    formData.append("mode", mode||row.mode);
-    formData.append("bank_ref_id", referenceId||row.bank_ref_id);
+    formData.append("bank_name", bank || row.bank_name);
+    formData.append("mode", mode || row.mode);
+    formData.append("bank_ref_id", referenceId || row.bank_ref_id);
     formData.append("date", dateValue);
-    formData.append("amount", amount||row.amount);
-    formData.append("remark", remark||row.remark);
+    formData.append("amount", amount || row.amount);
+    formData.append("remark", remark || row.remark);
     formData.append("req_id", transactionid);
 
     // Append file if available
     if (fileValue) {
       formData.append("request_image", fileValue);
+    } else if (imageUrl) {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      formData.append("request_image", blob, "image.jpg");
     }
 
     setRequest(true);
@@ -223,7 +227,6 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           variant="outlined"
           className="refresh-icon-risk"
           onClick={handleModelOpen}
-    
         >
           Re-Open
         </Button>
@@ -332,7 +335,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                 <FormControl sx={{ width: "100%" }}>
                   <TextField
                     select
-                    value={bank ||row.bank_name}
+                    value={bank || row.bank_name}
                     onChange={(e) => setBank(e.target.value)}
                     id="bank"
                     label="Select Bank"
@@ -393,8 +396,8 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                     id="bank_ref_id"
                     size="small"
                     required
-                    value={referenceId||row.bank_ref_id} 
-                  // Add referenceId to form data
+                    value={referenceId || row.bank_ref_id}
+                    // Add referenceId to form data
                     onChange={(e) => setReferenceId(e.target.value)} // Handle referenceId change
                   />
                 </FormControl>
@@ -484,7 +487,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                     size="small"
                     type="number"
                     // defaultValue={row?.amount}
-                    value={amount||row?.amount} // Amount value for form submission
+                    value={amount || row?.amount} // Amount value for form submission
                     onChange={(e) => setAmount(e.target.value)} // Handle amount change
                     InputProps={{
                       inputProps: {
@@ -503,7 +506,36 @@ const ReopenCreditRequest = ({ refresh, row }) => {
               </Grid>
               <Grid item md={12} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField
+                  {imageUrl ? (
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        gap: 2,
+                      }}
+                    >
+                      <img
+                        src={imageUrl}
+                        alt="Uploaded"
+                        style={{
+                          width: "100px",
+                          height: "100px",
+                          objectFit: "cover",
+                          borderRadius: "8px",
+                        }}
+                      />
+                      <Button
+                        variant="contained"
+                        color="error"
+                        size="small"
+                        onClick={() => setImageUrl(null)}
+                      >
+                       Change Image
+                      </Button>
+                    </Box>
+                  ) : (
+                    <TextField
                     label=""
                     id="file_upload"
                     size="small"
@@ -518,8 +550,10 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                     }}
                     required
                   />
+                  )}
                 </FormControl>
               </Grid>
+
               <Grid
                 item
                 md={12}
@@ -535,15 +569,15 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                       checked={agreeTerms}
                       onChange={(e) => setAgreeTerms(e.target.checked)}
                       name="agree"
-                      disabled={
-                        // !bank ||
-                        // !mode ||
-                        // // !referenceId ||
-                        // // !remark ||
-                        // !dateValue ||
-                        // !amount ||
-                        !fileValue
-                      }
+                      // disabled={
+                      //   // !bank ||
+                      //   // !mode ||
+                      //   // // !referenceId ||
+                      //   // // !remark ||
+                      //   // !dateValue ||
+                      //   // !amount ||
+                      //   !fileValue
+                      // }
                     />
                   }
                   label={
