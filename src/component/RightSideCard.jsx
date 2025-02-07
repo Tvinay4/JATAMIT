@@ -200,7 +200,7 @@ const RightNavbar = () => {
               <Box className="hover-zoom">
                 <IconButton
                   className="hover-zoom"
-                  sx={{ color: "#D53E3E" }}
+                  sx={{ color: "#000000" }}
                   onClick={() => {
                     setOpen(true);
                     handleWalletTransfer();
@@ -222,7 +222,7 @@ const RightNavbar = () => {
                     <Tooltip
                       title="QR"
                       placement="left"
-                      sx={{ color: "#D53E3E" }}
+                      sx={{ color: "#000000" }}
                     >
                       <QrCode2Icon className="hover-white" />
                     </Tooltip>
@@ -235,7 +235,7 @@ const RightNavbar = () => {
           <Box className="hover-zoom">
             <IconButton
               className="hover-zoom"
-              sx={{ color: "#D53E3E" }}
+              sx={{ color: "#000000" }}
               size="1.3rem"
               onClick={() => {
                 setShowBankTransfer(!showBankTransfer);
@@ -250,7 +250,7 @@ const RightNavbar = () => {
           {user?.wallet_transfer !== 0 && (
             <Box className="hover-zoom">
               <IconButton
-                sx={{ color: "#D53E3E" }}
+                sx={{ color: "#000000" }}
                 size="1.3rem"
                 onClick={() => {
                   setShowWalletTransfer(!showWalletTransfer);

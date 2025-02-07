@@ -388,7 +388,7 @@ export default function SideNav(props, { data }) {
         sx={{
           height: { xs: "80vh", sm: "100vh" },
           overflowY: "scroll",
-          background: "#D53E3E",
+          background: "#000000",
           // background: "#DF400C",
           borderRadius: "0px 10px",
         }}

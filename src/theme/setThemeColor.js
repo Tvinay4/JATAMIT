@@ -32,7 +32,7 @@ export const getHoverInActive = () => {
 
 export const getTableHeadRowColor = () => {
   if (process.env.REACT_APP_TITLE === "DilliPay") {
-    return "#4CAF50";
+    return "#D1AA65";
   }
 };
 

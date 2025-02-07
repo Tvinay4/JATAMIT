@@ -13,7 +13,7 @@ export const Toast = Swal.mixin({
     toast.addEventListener("mouseleave", Swal.resumeTimer);
   },
   width: "max-content",
-  // background: "#4caf50",
+  // background: "#D1AA65",
   background: "#fefefe",
   color: "#169816",
   iconColor: "#2fa92f",

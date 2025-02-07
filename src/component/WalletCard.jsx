@@ -178,7 +178,7 @@ const WalletCard = () => {
                 alignItems: "center",
 
                 width: { lg: "160px", sm: "150px", xs: "150px" },
-                border: "2px solid #D71313",
+                border: "2px solid #000000",
                 overflow: "hidden",
               }}
             >
@@ -257,7 +257,7 @@ const WalletCard = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { lg: "140px", sm: "125px" },
-                  border: "2px solid #D71313",
+                  border: "2px solid #000000",
                 }}
               >
                 <Box sx={{ minWidth: "100%", textAlign: "left" }}>
@@ -299,7 +299,7 @@ const WalletCard = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { lg: "140px", sm: "130px" },
-                  border: "2px solid #D71313",
+                  border: "2px solid #000000",
                 }}
               >
                 <Box sx={{ minWidth: "100%", textAlign: "left" }}>
@@ -347,7 +347,7 @@ const WalletCard = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { lg: "140px", sm: "130px", xs: "90px" },
-                  border: "2px solid #D71313",
+                  border: "2px solid #000000",
                   overflow: "hidden",
                 }}
               >
@@ -402,7 +402,7 @@ const WalletCard = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { lg: "140px", sm: "130px", xs: "90px" },
-                  border: "2px solid #D71313",
+                  border: "2px solid #000000",
                   overflow: "hidden",
                 }}
               >
@@ -459,7 +459,7 @@ const WalletCard = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { lg: "135px", sm: "130px", xs: "100px" },
-                  border: "2px solid #D71313",
+                  border: "2px solid #000000",
                   overflow: "hidden",
                 }}
               >
@@ -498,7 +498,7 @@ const WalletCard = () => {
                 display: "flex",
                 alignItems: "center",
                 width: { lg: "140px", sm: "125px" },
-                border: "2px solid #D71313",
+                border: "2px solid #000000",
               }}
             >
               <AccountBalanceWalletIcon
@@ -536,7 +536,7 @@ const WalletCard = () => {
         display: 'flex',
         alignItems: 'center',
         width: { lg: '140px', sm: '125px' },
-        border: '2px solid #D71313',
+        border: '2px solid #000000',
       }}
     >
       <AccountBalanceWalletIcon sx={{ fontSize: 15, color: '#212b5a', mr: 1 }} />

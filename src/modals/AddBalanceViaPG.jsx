@@ -110,7 +110,7 @@ const AddBalanceViaPG = ({ refresh }) => {
         >
           <Tooltip title="Add Money" placement="left">
             <div className="d-flex">
-              <WalletIcon className="hover-white" sx={{ color: "#D53E3E" }} />
+              <WalletIcon className="hover-white" sx={{ color: "#000000" }} />
               <Typography sx={{ fontWeight: "bold" }}>+</Typography>
             </div>
           </Tooltip>

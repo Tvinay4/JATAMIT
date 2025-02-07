@@ -137,7 +137,7 @@ const AdminDeleteLimitedAccounts = ({ row, refresh }) => {
           <Button
             autoFocus
             variant="contained"
-            sx={{ backgroundColor: "#4caf50", p: 0.6, fontSize: "12px" }}
+            sx={{ backgroundColor: "#D1AA65", p: 0.6, fontSize: "12px" }}
             onClick={() => {
               deleteAccount();
             }}
