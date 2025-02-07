@@ -165,7 +165,7 @@ const RightNavbar = () => {
 
           fontSize: "19px",
           position: "relative",
-          color: "#ff4d00",
+          color: "#D1AA65",
         }}
       >
         Wallet Widgets
