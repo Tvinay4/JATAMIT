@@ -388,7 +388,7 @@ export default function SideNav(props, { data }) {
         sx={{
           height: { xs: "80vh", sm: "100vh" },
           overflowY: "scroll",
-          background: "#000000",
+          background: "#fff",
           // background: "#DF400C",
           borderRadius: "0px 10px",
         }}
@@ -444,8 +444,8 @@ export default function SideNav(props, { data }) {
                 </Button>
               ) : (
                 <Button
-                  sx={{ color: whiteColor() }}
-                  startIcon={<LogoutIcon sx={{ color: "#C1E899" }} />}
+                  sx={{ color: "#000" }}
+                  startIcon={<LogoutIcon sx={{ color: "#a1e68c" }} />}
                 >
                   Logout
                 </Button>

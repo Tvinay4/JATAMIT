@@ -157,7 +157,7 @@ const NavItemComponent = ({
             disableTypography
             sx={{
               opacity: open ? 1 : 0,
-              color: isCurrentActive ? "#fff" : "#fff",
+              color: isCurrentActive ? "#000" : "#000",
               fontSize: "16px",
               fontFamily: "Montserrat, sans-serif",
               "&:hover": {

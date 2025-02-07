@@ -124,7 +124,7 @@ const NavItemSubmenu = ({
                     sx={{
                       // pl: open ? 4 : 1.45,
                       justifyContent: open ? "initial" : "center",
-                      backgroundColor: isCurrentActive ? `#00693E` : "#fff",
+                      backgroundColor: isCurrentActive ? `#00693E` : "#000",
                       backdropFilter: isCurrentActive ? "blur(5px)" : "",
                       "&:hover": {
                         // color: whiteColor(),
