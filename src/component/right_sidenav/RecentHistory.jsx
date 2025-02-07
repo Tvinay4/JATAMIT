@@ -29,7 +29,7 @@ const RecentHistory = () => {
           fontWeight: "500",
           fontSize: "20px",
           position: "relative",
-          color: "#008ecc",
+          color: "#D1AA65",
           // ml: -1,
         }}
       >
