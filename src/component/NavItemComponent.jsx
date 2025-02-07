@@ -70,8 +70,7 @@ const NavItemComponent = ({
     ((item.title === "Fund Request" && user?.c_req !== 1) ||
       (item.title === "Transactions" && user?.transactions !== 1) ||
       //  ||
-       (item.title === "Dashboard" && user?.dashboard !== 1)
-       ||
+      (item.title === "Dashboard" && user?.dashboard !== 1) ||
       //  (item.title === "Complaint" && user?.complaints !== 1)
       (item.title === "Users" && user?.users !== 1) ||
       (item.title === "Banking" && user?.banking !== 1) ||
@@ -117,9 +116,9 @@ const NavItemComponent = ({
             backgroundColor: isCurrentActive ? "#D48628" : "",
             backdropFilter: isCurrentActive ? "blur(5px)" : "",
 
-            border: isCurrentActive ? "1px solid rgba(159, 134, 192, 0.3)" : "",
+            border: isCurrentActive ? "1px solid #000" : "",
             "&:hover": {
-              backgroundColor: isCurrentActive ? "#212b5a" : "",
+              backgroundColor: isCurrentActive ? "#FF5C1B" : "#FFA81B",
               color: "white",
             },
             "& img": {
@@ -146,7 +145,7 @@ const NavItemComponent = ({
               style={{
                 filter: isCurrentActive
                   ? "brightness(0) saturate(100%) invert(100%)"
-                  : "",
+                  : "brightness(0) saturate(100%) invert(78%) sepia(29%) saturate(500%) hue-rotate(5deg) brightness(94%) contrast(92%)",
               }}
             />
           </Box>

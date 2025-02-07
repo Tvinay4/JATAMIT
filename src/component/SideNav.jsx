@@ -379,7 +379,7 @@ export default function SideNav(props, { data }) {
               display: "block",
               margin: "0 auto",
               backgroundColor: whiteColor(),
-            }}
+          }}
           />
         )}
       </DrawerHeader>
