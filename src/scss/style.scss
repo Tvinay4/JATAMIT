@@ -1989,14 +1989,14 @@ div.second {
 
   transition: transform 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s !important;
 
-  color: #00693e !important;
+  color:  #D1AA65 !important;
   width: 32;
   height: 32;
 }
 
 .refresh-purple:hover {
   cursor: pointer;
-  background-color: #32cd32 !important;
+  // background-color: #32cd32 !important;
 
   transform: scale(1.4) rotate(25deg) !important;
   color: #ffd700 !important;

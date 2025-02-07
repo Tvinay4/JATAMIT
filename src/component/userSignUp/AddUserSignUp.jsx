@@ -91,7 +91,7 @@ const AddUserSignUp = ({ refresh }) => {
           borderRadius: "8px",
           transition: "all 0.3s ease",
           justifyContent: "center",
-          background: "#00693E",
+          background: " #D1AA65",
           "&:hover": {
             backgroundColor: "#122480",
           },
