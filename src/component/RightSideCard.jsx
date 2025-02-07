@@ -179,7 +179,7 @@ const RightNavbar = () => {
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
-          gap: 2,
+         
           marginTop: 1,
         }}
       >
@@ -189,6 +189,7 @@ const RightNavbar = () => {
             flexDirection: "row",
             alignItems: "center",
             mb: 1.5,
+            gap: 4,
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "row" }}>

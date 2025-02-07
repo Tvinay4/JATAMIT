@@ -85,7 +85,7 @@ const DmtContainer = ({
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
   const [currentType, setCurrentType] = useState("dmt1");
-  const [type, settype] = useState(user?.dmt === 1 ? "dmt1" : "dmt2");
+  const [type, settype] = useState(user?.dmt1 === 1 ? "dmt1" : "dmt2");
   const [dmr2RemRes, setDmr2RemRes] = useState();
   const [remRefKey, setRemRefKey] = useState({});
   const [openRemKyc, setOpenRemKyc] = useState(false);
@@ -1017,7 +1017,7 @@ const DmtContainer = ({
                                     <TableCell sx={{ padding: 2 }}>
                                       Verified
                                     </TableCell>
-                                    <TableCell sx={{ padding: 2, ml: 2 }}>
+                                    <TableCell sx={{ padding: 2, ml: 2,textAlign:"center" }}>
                                       Actions
                                     </TableCell>
                                     <TableCell sx={{ padding: 2 }}>
