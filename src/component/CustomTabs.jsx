@@ -22,9 +22,9 @@ function CustomTabs({ tabs, value, onChange, heading }) {
               },
             },
             "& .MuiTab-root.Mui-selected": {
-              color: "#006600",
+              color: "#dba400",
               "& .MuiSvgIcon-root": {
-                color: "#006600",
+                color: "#dba400",
               },
             },
             minHeight: "30px",
