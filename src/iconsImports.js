@@ -43,7 +43,7 @@ import not_found_404 from "./assets/404_not_found.jpg";
 import unauthorizedNew from "./assets/401_Error_Unauthorized.png";
 import no_data_gif from "./assets/no_data.gif";
 import noDataIllustrator1 from "./assets/noDataIllustrator1.jpg";
-import noDataIllustrator2 from "./assets/noDataIllustrator2.jpg";
+import noDataIllustrator2 from "./assets/noDataIllustrator2.png";
 import fetchbill from "./assets/invoice.png";
 import invoice from "./assets/sidenav/white/invoice.svg";
 import wave_bg from "./assets/wave-haikei.png";

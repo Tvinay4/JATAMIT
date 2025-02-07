@@ -15,7 +15,7 @@ const ModalHeader = ({
         width: "100%",
         padding: "16px", // Adjust the padding
         // backgroundColor: "#1a78f20a", // Light purple background similar to the image
-        backgroundColor: "#FFE6E6",
+        backgroundColor: "#fae3bb",
         borderRadius: "12px 12px 0 0", // Rounded corners at the top
         display: "flex",
         flexDirection: "column", // Stacks title and subtitle vertically
