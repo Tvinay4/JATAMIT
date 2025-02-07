@@ -118,7 +118,7 @@ const NavItemComponent = ({
 
             border: isCurrentActive ? "1px solid #000" : "",
             "&:hover": {
-              backgroundColor: isCurrentActive ? "#FF5C1B" : "#FFA81B",
+              backgroundColor: isCurrentActive ? "#FFA81B" : "#D48628",
               color: "white",
             },
             "& img": {
@@ -156,7 +156,7 @@ const NavItemComponent = ({
             disableTypography
             sx={{
               opacity: open ? 1 : 0,
-              color: isCurrentActive ? "#000" : "#000",
+              color: isCurrentActive ? "#000" : "#fff",
               fontSize: "16px",
               fontFamily: "Montserrat, sans-serif",
               "&:hover": {
