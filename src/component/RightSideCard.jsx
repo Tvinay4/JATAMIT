@@ -152,7 +152,8 @@ const RightNavbar = () => {
       className="card-css1"
       sx={{
         px: 1,
-        py: 2,
+        py: 0.7,
+        mt:0.5,
         borderRadius: "10px",
       }}
     >

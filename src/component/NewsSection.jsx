@@ -39,9 +39,9 @@ const NewsSection = () => {
       sx={{
         textAlign: "center",
         display: "flex",
-        border: "1px solid black", // Adjust thickness and color as needed
+        border: "1px solid #2c2c2a", // Adjust thickness and color as needed
         borderRadius: "8px",
-        // backgroundColor: "#fEDCDB",
+        backgroundColor: "#f8e4bf",
         color: "#004080",
         fontSize: "14px",
         alignItems: "center",
