@@ -18,16 +18,16 @@ const PrivacyPolicyView = () => {
             <div>
               <p className="landing-bg_para">
                 DIGIVOUCHERS INDIA PRIVATE LIMITED (
-                <strong>“DILLIPAY ”, “we”, “us”, “our”</strong>), respects every
-                individual’s right to privacy and it is our endeavour to protect
-                their personal and Sensitive personal data or information
-                (defined below).
+                <strong>“DIGIVOUCHERS ”, “we”, “us”, “our”</strong>), respects
+                every individual’s right to privacy and it is our endeavour to
+                protect their personal and Sensitive personal data or
+                information (defined below).
               </p>
               <p className="landing-bg_para">
                 This Privacy Policy (<strong>“Policy”</strong>) applies to all
-                visitors (i.e. those who do not have an Account with DILLIPAY )
-                and users (i.e. those who have an Account with DILLIPAY )
-                (collectively referred to as
+                visitors (i.e. those who do not have an Account with
+                DIGIVOUCHERS ) and users (i.e. those who have an Account with
+                DIGIVOUCHERS ) (collectively referred to as
                 <strong>“User”</strong>) who share their personal and Sensitive
                 personal data with us, while visiting, accessing, browsing and
                 using our website and mobile application (collectively referred
@@ -39,7 +39,8 @@ const PrivacyPolicyView = () => {
                 treat your information.
               </p>
               <p className="landing-bg_para">
-                The User acknowledges that this Policy is a part of DILLIPAY ’s
+                The User acknowledges that this Policy is a part of DIGIVOUCHERS
+                ’s
                 <strong>Terms &amp; Conditions available at</strong>
                 <a href="/terms&condition">Terms &amp; Conditions</a> and all
                 terms defined in the Terms of Use have the same meaning here in
@@ -62,7 +63,7 @@ const PrivacyPolicyView = () => {
                 modification, amendment, alteration or change of this Policy,
                 irrespective of whether notice was sent to the User or published
                 on the Website, such User is hereby deemed to provide consent to
-                this Policy and DILLIPAY ’s other Policies and practices
+                this Policy and DIGIVOUCHERS ’s other Policies and practices
                 existing at the time of visiting, accessing and/or using the
                 Website.
               </p>
@@ -400,13 +401,14 @@ const PrivacyPolicyView = () => {
                 DIGIVOUCHERS may send direct mailers to the User at the email
                 address given by the User. The User has the option to opt-out of
                 this direct mailer by way of links provided at the bottom of
-                each mailer or any other means as DILLIPAY TECHNOLOGIES deems
-                appropriate. DIGIVOUCHERS respects every User’s privacy and in
-                the event that User chooses to not receive such mailers,
+                each mailer or any other means as DIGIVOUCHERS TECHNOLOGIES
+                deems appropriate. DIGIVOUCHERS respects every User’s privacy
+                and in the event that User chooses to not receive such mailers,
                 DIGIVOUCHERS will take all steps to remove the User from the
                 list. If a User wants to remove his/her/it’s contact information
                 from all mailing lists and newsletters, the same can be done
-                through “Profile” page of his/her/it’s account with DILLIPAY .
+                through “Profile” page of his/her/it’s account with DIGIVOUCHERS
+                .
               </p>
 
               <div className="landing-bg_para">

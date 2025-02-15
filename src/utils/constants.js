@@ -491,7 +491,7 @@ export const bankData = {
     color: "#0033A0",
     backgroundImage: hdfcS,
   },
-  "DILLIPAY RBI": { color: "#4A90E2" },
+  "DIGIVOUCHERS  RBI": { color: "#4A90E2" },
   "CASH AT OFFICE": { color: "#FFD700" },
   "OTHER WALLET 1": { color: "#FF5733" },
   "UJJIVAN SMALL FINANCE BANK": {

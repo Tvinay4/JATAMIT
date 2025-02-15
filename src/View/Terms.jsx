@@ -34,8 +34,8 @@ const Terms = () => {
               </p>
 
               <p className="landing-bg_para">
-                These Terms are a binding agreement between you and DILLIPAY .
-                These Terms are in addition to and not in derogation of any
+                These Terms are a binding agreement between you and DIGIVOUCHERS
+                . These Terms are in addition to and not in derogation of any
                 other terms stipulated by DIGIVOUCHERS from time to time. In
                 case of any conflict between these Terms and such other terms,
                 these Terms will prevail. Throughout this document, we use the
@@ -82,15 +82,15 @@ const Terms = () => {
                   <abbr>ELIGIBILITY</abbr>
                 </h3>
                 <p className="landing-bg_para">
-                  DILLIPAY ’s services are available to anyone having a valid
-                  email address and an Indian mobile phone number.
+                  DIGIVOUCHERS ’s services are available to anyone having a
+                  valid email address and an Indian mobile phone number.
                   The&nbsp;Platform must be accessed/used only by the persons
                   who are eligible to enter into legally binding contracts under
                   the Indian Contract Act and are ‘competent to contract’
                   according to Section 11 of the Indian Contract Act. Users who
                   have been previously suspended or removed from availing any
                   service by DIGIVOUCHERS shall not be eligible to avail
-                  services from DILLIPAY . Users shall not impersonate any
+                  services from DIGIVOUCHERS . Users shall not impersonate any
                   person or entity, or falsely state or otherwise misrepresent
                   identity, age or affiliation with any person or entity.
                 </p>
@@ -178,11 +178,11 @@ const Terms = () => {
                   <strong>“Effective Date”</strong> or
                   <strong>“Registration Date”</strong>
                   shall mean the date of registration of account of the User on
-                  DILLIPAY ’s platform.
+                  DIGIVOUCHERS ’s platform.
                 </p>
 
                 <p className="landing-bg_para">
-                  <strong>“DILLIPAY TECHNOLOGIES LIMITED Policies”</strong>{" "}
+                  <strong>“DIGIVOUCHERS INDIA PRIVATE LIMITED Policies”</strong>{" "}
                   shall mean and include the Terms of Use, Privacy Policy,
                   Grievance Policy and any other such terms and
                   conditions/policies available and updated from time to time on
@@ -233,7 +233,7 @@ const Terms = () => {
 
                 <p className="landing-bg_para">
                   <strong>“Service Provider”</strong> shall mean any banking
-                  and/or non-banking entity with which DILLIPAY TECHNOLOGIES
+                  and/or non-banking entity with which DIGIVOUCHERS TECHNOLOGIES
                   has, directly or indirectly, executed an agreement for
                   facilitating Transactions between such entity and its
                   customers.
@@ -242,7 +242,7 @@ const Terms = () => {
                 <p className="landing-bg_para">
                   <strong>“Users”</strong> shall mean individuals&nbsp;including
                   all body&nbsp;corporates, partnerships, limited liability
-                  partnerships, etc., who are availing DILLIPAY TECHNOLOGIES
+                  partnerships, etc., who are availing DIGIVOUCHERS TECHNOLOGIES
                   services through the DIGIVOUCHERS INDIA PRIVATE LIMITED.
                 </p>
               </div>
@@ -251,16 +251,16 @@ const Terms = () => {
                 <h3 className="h5">1. GENERAL TERMS AND CONDITIONS</h3>
                 <p>
                   These General Terms and Conditions govern the User’s access to
-                  the Services provided by DILLIPAY :
+                  the Services provided by DIGIVOUCHERS :
                 </p>
               </div>
 
               <div className="landing-bg_para">
                 <div>
                   <u>INFORMATION SUPPLIED TO INSTANTPAY.</u> Users agree that
-                  the information provided by the Users to DILLIPAY TECHNOLOGIES
-                  on registration and at all other times, including payment, is
-                  true, accurate, current, and complete.
+                  the information provided by the Users to DIGIVOUCHERS
+                  TECHNOLOGIES on registration and at all other times, including
+                  payment, is true, accurate, current, and complete.
                 </div>
                 <div className="landing-bg_para">
                   <u>SECURITY OF ACCOUNT.</u> Users’ mobile number and email
@@ -270,21 +270,21 @@ const Terms = () => {
                   ”). DIGIVOUCHERS encourages Users to choose a strong password
                   to protect their Account. It is advised that Users do not
                   share their password with anyone or write it down. Neither
-                  DILLIPAY nor its Service Providers, under any circumstances,
-                  will ever ask for a User's Account password or any other
-                  confidential information. If a User has any reason to believe
-                  that his Account is no longer secure, then the User shall
-                  immediately change the Account password and indemnify DILLIPAY
-                  TECHNOLOGIES from any liabilities that may arise from the
-                  misuse of such User’s Account.
+                  DIGIVOUCHERS nor its Service Providers, under any
+                  circumstances, will ever ask for a User's Account password or
+                  any other confidential information. If a User has any reason
+                  to believe that his Account is no longer secure, then the User
+                  shall immediately change the Account password and indemnify
+                  DILLIPAY TECHNOLOGIES from any liabilities that may arise from
+                  the misuse of such User’s Account.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>PRIVACY POLICY.</u> All information collected from a User
-                  pursuant to provision of DILLIPAY ’s services, and information
-                  collected by Merchants or Digi Kendras during the performance
-                  of these Terms of Use or Applicable Agreement, is subject to
-                  DILLIPAY ’s
+                  pursuant to provision of DIGIVOUCHERS ’s services, and
+                  information collected by Merchants or Digi Kendras during the
+                  performance of these Terms of Use or Applicable Agreement, is
+                  subject to DIGIVOUCHERS ’s
                   <a href="/privacy-policy">Privacy Policy</a>.
                 </div>
 
@@ -298,18 +298,18 @@ const Terms = () => {
                 </div>
 
                 <div className="landing-bg_para">
-                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> DILLIPAY ’s
-                  services and/or the Site may include links or references to
+                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> DIGIVOUCHERS
+                  ’s services and/or the Site may include links or references to
                   other web sites or services solely for the Users’ convenience
-                  (“<strong>Reference Sites</strong>”). DILLIPAY TECHNOLOGIES
-                  does not endorse any such Reference Sites or the information,
-                  materials, products, or services contained on or accessible
-                  through Reference Sites. Correspondence or business dealings
-                  between Users and concerned Reference Sites are solely between
-                  such User and the concerned Reference Site. Access and use of
-                  Reference Sites, including the information, materials,
-                  products, and services on or available through Reference Sites
-                  is solely at the concerned User’s own risk.
+                  (“<strong>Reference Sites</strong>”). DIGIVOUCHERS
+                  TECHNOLOGIES does not endorse any such Reference Sites or the
+                  information, materials, products, or services contained on or
+                  accessible through Reference Sites. Correspondence or business
+                  dealings between Users and concerned Reference Sites are
+                  solely between such User and the concerned Reference Site.
+                  Access and use of Reference Sites, including the information,
+                  materials, products, and services on or available through
+                  Reference Sites is solely at the concerned User’s own risk.
                 </div>
 
                 <div className="landing-bg_para">
@@ -321,17 +321,17 @@ const Terms = () => {
                       notifications as part of its efforts to fulfil the User’s
                       request or service your account. A User may continue to
                       receive transactional and critical&nbsp;communication from
-                      DILLIPAY TECHNOLOGIES even after opting out of marketing
-                      communications.
+                      DIGIVOUCHERS TECHNOLOGIES even after opting out of
+                      marketing communications.
                     </div>
                     <div className="landing-bg_para">
                       DIGIVOUCHERS will make the best efforts to provide
                       notifications and it shall be deemed that the User shall
                       have received the information sent from the Company during
                       the course of, or in relation to, using the DILLIPAY
-                      Platform or availing any Services. DILLIPAY TECHNOLOGIES
-                      shall not be under any obligation to confirm the
-                      authenticity of the person(s) receiving the alert. The
+                      Platform or availing any Services. DIGIVOUCHERS
+                      TECHNOLOGIES shall not be under any obligation to confirm
+                      the authenticity of the person(s) receiving the alert. The
                       User cannot hold the Company liable for non-availability
                       of any notification service in any manner whatsoever.
                     </div>
@@ -352,16 +352,16 @@ const Terms = () => {
                       any kind arising out of or relating to.
                       <p className="mt-2">
                         a) &nbsp; this Terms of Use or any other agreement
-                        entered by a User with DILLIPAY ,
+                        entered by a User with DIGIVOUCHERS ,
                       </p>
                       <p>
-                        b) &nbsp; DILLIPAY ’s services, the Site or any
+                        b) &nbsp; DIGIVOUCHERS ’s services, the Site or any
                         Reference site, or
                       </p>
                       <p>
-                        c)&nbsp; User’s use or inability to use DILLIPAY ’s
+                        c)&nbsp; User’s use or inability to use DIGIVOUCHERS ’s
                         services, the Site or any Reference Sites, even if
-                        DIGIVOUCHERS or a DILLIPAY TECHNOLOGIES authorized
+                        DIGIVOUCHERS or a DIGIVOUCHERS TECHNOLOGIES authorized
                         representative has advised of the possibility of such
                         damages,
                       </p>
@@ -391,7 +391,7 @@ const Terms = () => {
                       liable to indemnify a concerned User despite the existence
                       of this Clause 1.7, such liability shall not exceed the
                       amount paid by the concerned User, if any, for using the
-                      portion of the DILLIPAY ’s services or the Site giving
+                      portion of the DIGIVOUCHERS ’s services or the Site giving
                       rise to the cause of action.
                     </div>
 
@@ -407,7 +407,7 @@ const Terms = () => {
                       Users acknowledge that the warranty, disclaimers, and the
                       limitations of liability set forth herein reflect a
                       reasonable and fair allocation of risk between Users and
-                      DILLIPAY , and that the warranty, disclaimers, and the
+                      DIGIVOUCHERS , and that the warranty, disclaimers, and the
                       limitations of liability set forth herein form an
                       essential basis of the bargain between Users and DILLIPAY
                       . DIGIVOUCHERS would not be able to provide the services
@@ -458,11 +458,11 @@ const Terms = () => {
                       If DIGIVOUCHERS is intimated, by the bank, that a customer
                       has reported an unauthorized debit/chargeback of the
                       customer’s Payment Instrument (“Fraudulent Transaction”),
-                      the User shall be notified by DILLIPAY . The User shall be
-                      entitled to furnish documents and information pertaining
-                      to the Transaction associated with the Chargeback within
-                      one&nbsp;(1) day&nbsp;(or such other period specified by
-                      the bank).
+                      the User shall be notified by DIGIVOUCHERS . The User
+                      shall be entitled to furnish documents and information
+                      pertaining to the Transaction associated with the
+                      Chargeback within one&nbsp;(1) day&nbsp;(or such other
+                      period specified by the bank).
                     </div>
                     <div className="landing-bg_para">
                       The User agrees and acknowledges that
@@ -528,7 +528,7 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       The User hereby acknowledges and agrees that DILLIPAY
                       SERVICES is a facilitator for payment processing services
-                      which are requested by Users and DILLIPAY TECHNOLOGIES
+                      which are requested by Users and DIGIVOUCHERS TECHNOLOGIES
                       shall not be responsible for any unauthorized transaction
                       done by any person including third party and amounting to
                       infringement of another’s rights or any chargebacks
@@ -536,9 +536,9 @@ const Terms = () => {
                       Users to ensure due protection while transacting online or
                       otherwise. DIGIVOUCHERS will assist the Users in settling
                       any queries related to the Services that arise between the
-                      Users, and its customers. However, DILLIPAY SERVICES shall
-                      bear no responsibility with respect to the dispute or
-                      query related to payment made by the customers to the
+                      Users, and its customers. However, DIGIVOUCHERS SERVICES
+                      shall bear no responsibility with respect to the dispute
+                      or query related to payment made by the customers to the
                       Users.
                     </div>
                   </div>
@@ -593,7 +593,7 @@ const Terms = () => {
                       it shall immediately intimate DIGIVOUCHERS of any
                       violation or potential violation of these Terms of Use or
                       of other circumstances that may cause damage to the
-                      goodwill and reputation of DILLIPAY ,
+                      goodwill and reputation of DIGIVOUCHERS ,
                     </div>
                     <div className="landing-bg_para">
                       it shall be responsible to obtain any and all consents and
@@ -619,14 +619,14 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       it shall not access (or attempt to access) the website and
                       the Products by any means other than through the interface
-                      that is provided by DILLIPAY . It shall not use any
+                      that is provided by DIGIVOUCHERS . It shall not use any
                       deep-link, page scrape, robot, spider or other automatic
                       device, program, algorithm or methodology, or any similar
                       or equivalent manual process, to access, acquire, copy or
                       monitor any portion of the DIGIVOUCHERS PRIVATE LIMITED,
                       or in any way reproduce or circumvent the navigational
                       structure or presentation of the platform, without
-                      DILLIPAY ’s express prior written consent.
+                      DIGIVOUCHERS ’s express prior written consent.
                     </div>
                     <div className="landing-bg_para">
                       it shall not attempt to gain unauthorized access to any
@@ -655,17 +655,17 @@ const Terms = () => {
 
                 <div className="landing-bg_para">
                   <u>INDEMNIFICATION.</u>
-                  User agrees to indemnify, save, and hold DILLIPAY , its
+                  User agrees to indemnify, save, and hold DIGIVOUCHERS , its
                   affiliates, contractors, employees, officers, directors,
                   agents and its third-party suppliers, licensors, and partners
                   harmless from any and all claims, demands, actions, suits
-                  which may be threatened or brought against DILLIPAY , and also
-                  against all losses, damages, liabilities, costs, charges and
-                  expenses, including without limitation, legal fees and
+                  which may be threatened or brought against DIGIVOUCHERS , and
+                  also against all losses, damages, liabilities, costs, charges
+                  and expenses, including without limitation, legal fees and
                   expenses arising out of or related to:
                   <div className="landing-bg_para">
                     <div className="landing-bg_para">
-                      Users’ use or misuse of DILLIPAY ’s services or of the
+                      Users’ use or misuse of DIGIVOUCHERS ’s services or of the
                       Site/application
                     </div>
                     <div className="landing-bg_para">
@@ -700,11 +700,11 @@ const Terms = () => {
                       DIGIVOUCHERS reserves the right, at User’s expense, to
                       assume the exclusive defense and control of any matter,
                       including rights to settle, for which concerned User is
-                      required to indemnify DILLIPAY . The User agrees to
-                      cooperate with DILLIPAY ’s defense and settlement of these
-                      claims. DIGIVOUCHERS will use reasonable efforts to notify
-                      the User of any claim, action, or proceeding brought by a
-                      third party that is subject to the foregoing
+                      required to indemnify DIGIVOUCHERS . The User agrees to
+                      cooperate with DIGIVOUCHERS ’s defense and settlement of
+                      these claims. DIGIVOUCHERS will use reasonable efforts to
+                      notify the User of any claim, action, or proceeding
+                      brought by a third party that is subject to the foregoing
                       indemnification upon becoming aware of it.
                     </div>
                   </div>
@@ -719,8 +719,8 @@ const Terms = () => {
                   fitness for a particular purpose, and non-infringement of
                   proprietary rights. No advice or information, whether oral or
                   written, obtained by a User from DIGIVOUCHERS or through
-                  DILLIPAY ’s services or the Site will create any warranty not
-                  expressly stated herein. DIGIVOUCHERS does not authorize
+                  DIGIVOUCHERS ’s services or the Site will create any warranty
+                  not expressly stated herein. DIGIVOUCHERS does not authorize
                   anyone to make any warranty on its behalf and Users should not
                   rely on any such statement. Users acknowledge that DILLIPAY
                   SERVICES is a reseller and is not liable for any third-party
@@ -730,43 +730,44 @@ const Terms = () => {
                   Site or on the internet generally. DIGIVOUCHERS does not
                   warrant that its services will be uninterrupted, or free of
                   errors, viruses or other harmful components, and that any of
-                  the foregoing defects will be corrected. DILLIPAY ’s services
-                  and the Site and any data, information, third party software,
-                  Reference Sites, or Software made available in conjunction
-                  with or through its services and the Site are provided on an
-                  “as is” and “as available”, “with all faults” basis and
-                  without warranties or representations of any kind either
-                  express or implied. DIGIVOUCHERS and its third-party
+                  the foregoing defects will be corrected. DIGIVOUCHERS ’s
+                  services and the Site and any data, information, third party
+                  software, Reference Sites, or Software made available in
+                  conjunction with or through its services and the Site are
+                  provided on an “as is” and “as available”, “with all faults”
+                  basis and without warranties or representations of any kind
+                  either express or implied. DIGIVOUCHERS and its third-party
                   suppliers, licensors, and partners do not warrant or make any
                   representations regarding the use or the results of the use of
-                  DILLIPAY ’s services, the Site or any Reference Sites in terms
-                  of correctness, accuracy, reliability, or otherwise.
+                  DIGIVOUCHERS ’s services, the Site or any Reference Sites in
+                  terms of correctness, accuracy, reliability, or otherwise.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>INTELLECTUAL PROPERTY.</u>
                   <div className="custom-list points-alpha mt-3">
                     <div className="landing-bg_para">
-                      DILLIPAY ’s services and the Site are owned and operated
-                      by DIGIVOUCHERS and/or third-party licensors. The visual
-                      interfaces, graphics, design, compilation, information,
-                      computer code (including source code and object code),
-                      products, software, services, and all other elements of
-                      DILLIPAY ’s services and the Site provided by DIGIVOUCHERS
-                      (the <strong> “Materials”</strong>) are protected by
-                      Applicable Law. As between User and DILLIPAY , all
-                      Materials and DILLIPAY ’s Intellectual Property are the
-                      property of DIGIVOUCHERS and/or third-party licensors or
-                      suppliers. User agrees not to remove, obscure, or alter
-                      DIGIVOUCHERS or any third party's copyright, patent,
-                      trademark, or other proprietary rights notices affixed to
-                      or contained within or accessed in conjunction with or
-                      through DILLIPAY ’s services. Except as expressly
-                      authorized by DILLIPAY , the User agrees not to sell,
-                      license, distribute, copy, modify, publicly perform or
-                      display, transmit, publish, edit, adapt, create derivative
-                      works from, or otherwise make unauthorized use of the
-                      Materials or DILLIPAY ’s Intellectual Property.
+                      DIGIVOUCHERS ’s services and the Site are owned and
+                      operated by DIGIVOUCHERS and/or third-party licensors. The
+                      visual interfaces, graphics, design, compilation,
+                      information, computer code (including source code and
+                      object code), products, software, services, and all other
+                      elements of DIGIVOUCHERS ’s services and the Site provided
+                      by DIGIVOUCHERS (the <strong> “Materials”</strong>) are
+                      protected by Applicable Law. As between User and
+                      DIGIVOUCHERS , all Materials and DIGIVOUCHERS ’s
+                      Intellectual Property are the property of DIGIVOUCHERS
+                      and/or third-party licensors or suppliers. User agrees not
+                      to remove, obscure, or alter DIGIVOUCHERS or any third
+                      party's copyright, patent, trademark, or other proprietary
+                      rights notices affixed to or contained within or accessed
+                      in conjunction with or through DIGIVOUCHERS ’s services.
+                      Except as expressly authorized by DIGIVOUCHERS , the User
+                      agrees not to sell, license, distribute, copy, modify,
+                      publicly perform or display, transmit, publish, edit,
+                      adapt, create derivative works from, or otherwise make
+                      unauthorized use of the Materials or DIGIVOUCHERS ’s
+                      Intellectual Property.
                     </div>
                     <div className="landing-bg_para">
                       Parties do not accrue any rights or interest in the other
@@ -781,16 +782,17 @@ const Terms = () => {
                       of the other’s Intellectual Property.
                     </div>
                     <div className="landing-bg_para">
-                      If Users’ have comments regarding DILLIPAY 's services and
-                      the Site or ideas on how to improve it, please write to
-                      our 24x7 Helpdesk at help@instantpay.in. Please note that
-                      by doing so, concerned User hereby irrevocably assign to
-                      DILLIPAY , and shall assign to DILLIPAY , all right, title
-                      and interest in and to all ideas and suggestions and any
-                      and all worldwide intellectual property rights associated
-                      therewith. The concerned User agrees to perform such acts
-                      and execute such documents as may be reasonably necessary
-                      to perfect the foregoing rights.
+                      If Users’ have comments regarding DIGIVOUCHERS 's services
+                      and the Site or ideas on how to improve it, please write
+                      to our 24x7 Helpdesk at help@instantpay.in. Please note
+                      that by doing so, concerned User hereby irrevocably assign
+                      to DIGIVOUCHERS , and shall assign to DIGIVOUCHERS , all
+                      right, title and interest in and to all ideas and
+                      suggestions and any and all worldwide intellectual
+                      property rights associated therewith. The concerned User
+                      agrees to perform such acts and execute such documents as
+                      may be reasonably necessary to perfect the foregoing
+                      rights.
                     </div>
                     <div className="landing-bg_para">
                       The User undertakes that:
@@ -946,15 +948,15 @@ const Terms = () => {
                       </p>
                       <p>
                         (b) the User provides any information which is
-                        incomplete, inaccurate or false or DILLIPAY TECHNOLOGIES
-                        has reason to believe that such information is
-                        incomplete, inaccurate or false.
+                        incomplete, inaccurate or false or DIGIVOUCHERS
+                        TECHNOLOGIES has reason to believe that such information
+                        is incomplete, inaccurate or false.
                       </p>
                     </div>
                     <div className="landing-bg_para">
                       Any suspension/termination of the User’s access to
                       DIGIVOUCHERS INDIA PRIVATE LIMITED and Services shall be
-                      without prejudice to DILLIPAY ’s right to exercise any
+                      without prejudice to DIGIVOUCHERS ’s right to exercise any
                       other remedy available to it under the applicable law.
                     </div>
                   </div>
@@ -1024,8 +1026,8 @@ const Terms = () => {
                       DIGIVOUCHERS website(s) or by any other reasonable means.
                       Except as otherwise set forth herein, notice to DILLIPAY
                       must be sent by courier or registered post to the Legal
-                      Department, DILLIPAY TECHNOLOGIES PRIVATE LIMITED s Pvt.
-                      Ltd., 1st Floor, B1/A5, Mohan Cooperative Industrial
+                      Department, DIGIVOUCHERS TECHNOLOGIES PRIVATE LIMITED s
+                      Pvt. Ltd., 1st Floor, B1/A5, Mohan Cooperative Industrial
                       Estate, New Delhi - 110044, India.
                     </div>
 
@@ -1034,7 +1036,7 @@ const Terms = () => {
                       enforce any right or provision of these Terms of Use will
                       not constitute a waiver of such right or provision. Any
                       waiver of any provision of these Terms of Use will be
-                      effective only if in writing and signed by DILLIPAY .
+                      effective only if in writing and signed by DIGIVOUCHERS .
                     </div>
 
                     <div className="landing-bg_para">
