@@ -63,16 +63,16 @@ const LandingPage = () => {
         className="app-content
       "
       >
-        <ServiceCrausal />
-        {/* <LandingPageIntro /> */}
-        <LandingPageDigiPay />
-        <LandingPageLoans />
-        <LandingPageInvestments />
-        <LandingPageInsurance />
+        {/* <ServiceCrausal /> */}
+        <LandingPageIntro />
+        {/* <LandingPageDigiPay /> */}
+        {/* <LandingPageLoans /> */}
+        {/* <LandingPageInvestments /> */}
+        {/* <LandingPageInsurance /> */}
 
-        <LandingPageAeps />
+        {/* <LandingPageAeps /> */}
         <LandingPageWhoWeAre />
-        {/* <LandingPageWeOffer /> */}
+        <LandingPageWeOffer />
         {/* <ServiceCrausal /> */}
         {/* 
         <LandingPageBuildSecurity /> */}

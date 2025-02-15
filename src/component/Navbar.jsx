@@ -109,6 +109,7 @@ export default function Navbar(props) {
             sx={{
               justifyContent: "space-between", // Adjusted to space-between for logo and button positioning
               // background: "linear-gradient(to right, #7fb4f9, #ee5f5f)",
+              background:"#fff",
             }}
           >
             {/* Logo on the left */}

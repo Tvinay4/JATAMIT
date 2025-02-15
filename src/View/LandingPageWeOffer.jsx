@@ -9,174 +9,144 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
-import ReceiptIcon from "@mui/icons-material/Receipt";
 import { useNavigate } from "react-router-dom";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import FingerprintIcon from "@mui/icons-material/Fingerprint";
+import LocalAtmIcon from "@mui/icons-material/LocalAtm";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import SecurityIcon from "@mui/icons-material/Security";
+import StoreIcon from "@mui/icons-material/Store";
+import PaymentIcon from "@mui/icons-material/Payment";
 
 const LandingPageWeOffer = () => {
   const navigate = useNavigate();
   const weOffer = [
     {
-      icon: <MobileFriendlyIcon />,
-      head: "BILL PAYMENT ",
-      para: "Pay your bills through various methods,including credit/debit cards,bank transfers,and digital wallets.Choose the option that works best for you.",
+      icon: <MonetizationOnIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "MONEY TRANSFER",
+      para: "Quick & secure domestic and international money transfers.",
+      gradient: "linear-gradient(135deg, #FAD7A0, #F5CBA7)",
     },
     {
-      icon: <MobileFriendlyIcon />,
-      head: "RECHARGES ",
-      para: " Instantly recharge your prepaid mobile plans across all major carriers. Choose the amount and pay securely, ensuring you're always connected.",
-    },
-    // {
-    //   icon: <AccountBalanceIcon />,
-    //   head: "BANKING",
-    //   para: "We offer new account opening (axis bank),Indo-Nepal remittances, account deposit, withdrawal, balance enquiry, bulk transfer, payout solution. ",
-    // },
-    {
-      icon: <VolunteerActivismIcon />,
-      head: "INSURANCE",
-      para: "Get the best quote for your insurance requirements for life, health & vehicle insurance. Merchants can earn competitive commission on each policy booking.",
+      icon: <FingerprintIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "AADHAAR BANKING",
+      para: "Withdraw cash & check balance via Aadhaar-linked accounts.",
+      gradient: "linear-gradient(135deg, #AED6F1, #85C1E9)",
     },
     {
-      icon: <ReceiptIcon />,
-      head: "UTILITY",
-      para: "Instant update all your utility bill payments including electricity, water & gas bills, credit card bills, EMI installments, wallet top-ups.",
+      icon: <LocalAtmIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "LOAN SERVICES",
+      para: "Apply for personal & business loans with easy approvals.",
+      gradient: "linear-gradient(135deg, #A3E4D7, #76D7C4)",
     },
-    // {
-    //   icon: <MonetizationOnIcon />,
-    //   head: "MONEY TRANSFER",
-    //   para: "Send money instantly to friends, family, or businesses locally or internationally. Enjoy real-time processing that ensures your funds reach their destination quickly.",
-    // },
+    {
+      icon: <DirectionsCarIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "FASTAG RECHARGE",
+      para: "Recharge your FASTag instantly for toll payments.",
+      gradient: "linear-gradient(135deg, #D7BDE2, #C39BD3)",
+    },
+    {
+      icon: <CreditCardIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "CREDIT CARD PAYMENTS",
+      para: "Easily pay and manage your credit card bills.",
+      gradient: "linear-gradient(135deg, #F9E79F, #F7DC6F)",
+    },
+    {
+      icon: <SecurityIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "INSURANCE SERVICES",
+      para: "Get the best deals on life, health, and vehicle insurance.",
+      gradient: "linear-gradient(135deg, #F5B7B1, #EC7063)",
+    },
+    {
+      icon: <StoreIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "MERCHANT SERVICES",
+      para: "Accept digital payments securely for your business.",
+      gradient: "linear-gradient(135deg, #82E0AA, #58D68D)",
+    },
+    {
+      icon: <PaymentIcon sx={{ fontSize: 35, color: "#1C2833" }} />, // Dark color
+      head: "UTILITY BILL PAYMENTS",
+      para: "Pay electricity, water, and other utility bills effortlessly.",
+      gradient: "linear-gradient(135deg, #85C1E9, #5DADE2)",
+    },
   ];
 
   return (
-    <Box sx={{ py: 5 }}>
+    <Box sx={{ py: 6, backgroundColor: "rgb(121, 179, 199)", minHeight: "100vh" }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sx={{ textAlign: "center" }}>
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{
                 fontWeight: "bold",
-                mb: 2,
-                color: "#319b88", // Teal
+                color: "#2C3E50",
                 textTransform: "uppercase",
-                transition: "transform 0.3s",
-                "&:hover": {
-                  transform: "scale(1.05)",
-                },
+                letterSpacing: 1.2,
+                transition: "0.3s",
+                "&:hover": { transform: "scale(1.03)" },
               }}
             >
               What We Offer
             </Typography>
-            {/* <Typography
-              variant="h5"
-              sx={{
-                mt: 1,
-                color: "#333",
-                fontStyle: "italic",
-                fontWeight: "400",
-              }}
-            >
-              A consumer-friendly solution for mobile recharge, money transfer,
-              and bill paying
-            </Typography> */}
             <Typography
               variant="body1"
               sx={{
                 mt: 2,
-                color: "#555",
-                textAlign: "justify",
+                color: "#566573",
+                fontSize: "1rem",
+                textAlign: "center",
                 lineHeight: 1.6,
-                maxWidth: "600px",
+                maxWidth: "700px",
                 mx: "auto",
               }}
             >
-              Open a savings account, buy stocks and mutual funds, pay your
-              bills, recharge, reserve flights and movie tickets, and much more.
-              With us anyone can be paid anywhere. Pay securely and without a
-              card in person or online with the Paytm Wallet or directly from
-              your bank account.
-               {/* You can also send and receive money from
-              anyone. */}
+              Explore our fast, secure, and reliable financial solutions.
             </Typography>
           </Grid>
+
           <Grid item xs={12}>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
               {weOffer.map((item, index) => (
-                <Grid item xs={12} sm={6} md={6} key={index}>
+                <Grid item xs={12} sm={6} md={3} key={index}>
                   <Card
                     sx={{
-                      height: "100%",
+                      height: "220px",
                       borderRadius: "16px",
-                      boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+                      backgroundColor: "#FFFFFF",
+                      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.1)",
                       transition: "0.3s",
+                      overflow: "hidden",
                       "&:hover": {
-                        boxShadow: "0 8px 30px rgba(0, 0, 0, 0.2)",
-                        transform: "translateY(-10px)",
+                        boxShadow: "0 8px 25px rgba(0, 0, 0, 0.2)",
+                        transform: "translateY(-6px)",
                       },
                     }}
                   >
-                    <CardContent sx={{ textAlign: "center" }}>
+                    <CardContent sx={{ textAlign: "center", p: 3 }}>
                       <Box
                         sx={{
-                          backgroundColor: "#319b88", // Teal
-                          width: "70px",
-                          height: "70px",
+                          background: item.gradient,
+                          width: "80px",
+                          height: "80px",
                           borderRadius: "50%",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          margin: "0 auto 16px",
-                          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+                          margin: "0 auto 10px",
+                          boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)",
                         }}
                       >
-                        <span style={{ color: "white", fontSize: "2rem" }}>
-                          {item.icon}
-                        </span>
+                        {item.icon}
                       </Box>
-                      <Typography
-                        sx={{
-                          mb: 1.5,
-                          fontWeight: "bold",
-                          fontSize: "1.2rem",
-                          color: "#fc4a1a", // Orange
-                        }}
-                      >
+                      <Typography sx={{ mb: 1, fontWeight: "bold", fontSize: "1rem", color: "#2C3E50" }}>
                         {item.head}
                       </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "#555", textAlign: "center" }}
-                      >
+                      <Typography variant="body2" sx={{ color: "#566573", fontSize: "0.9rem", textAlign: "center" }}>
                         {item.para}
                       </Typography>
                     </CardContent>
-                    <CardActions sx={{ justifyContent: "center", mb: 2 }}>
-                      <Button
-                        onClick={() => {
-                          navigate("/our-services");
-                        }}
-                        size="small"
-                        sx={{
-                          fontWeight: "bold",
-                          color: "#319b88", // Teal
-                          backgroundColor: "white",
-                          borderRadius: "8px",
-                          padding: "8px 16px",
-                          border: `2px solid #319b88`, // Teal border
-                          transition: "background-color 0.3s, color 0.3s",
-                          "&:hover": {
-                            backgroundColor: "#fc4a1a", // Orange on hover
-                            color: "white", // White text on hover
-                          },
-                        }}
-                      >
-                        Learn More
-                      </Button>
-                    </CardActions>
                   </Card>
                 </Grid>
               ))}
