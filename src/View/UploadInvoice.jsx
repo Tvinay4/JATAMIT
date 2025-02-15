@@ -8,9 +8,9 @@ import {
   IconButton,
   Tooltip,
 } from "@mui/material";
-import UploadIcon from '@mui/icons-material/Upload';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-import CloseIcon from '@mui/icons-material/Close';
+import UploadIcon from "@mui/icons-material/Upload";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import CloseIcon from "@mui/icons-material/Close";
 const style = {
   position: "absolute",
   top: "50%",
@@ -88,14 +88,15 @@ const UploadInvoice = () => {
             }}
           >
             I confirm that the invoice being uploaded is based upon the
-            commission summary provided by DilliPay. Upon verification of the
-            invoice by DilliPay, GST credit of{" "}
+            commission summary provided by DIGIVOUCHERS. Upon verification of
+            the invoice by DIGIVOUCHERS, GST credit of{" "}
             <span style={{ color: "red" }}>₹000000</span> will be credited to
-            your DilliPay account.
+            your DIGIVOUCHERS account.
           </Typography>
 
           {/* Native DatePicker */}
-          <TextField autoComplete="off"
+          <TextField
+            autoComplete="off"
             label="GST Invoice Date"
             type="date"
             fullWidth
@@ -108,7 +109,8 @@ const UploadInvoice = () => {
           />
 
           {/* GST Invoice Number */}
-          <TextField autoComplete="off"
+          <TextField
+            autoComplete="off"
             label="GST Invoice Number"
             fullWidth
             value={invoiceNumber}

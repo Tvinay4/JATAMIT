@@ -56,23 +56,25 @@ const LandingPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>{process.env.REACT_APP_TITLE}</title>
-        <meta name="description" content="DilliPay" />
-        <meta name="keywords" content="DilliPay" />
+        <meta name="description" content="DIGIVOUCHERS" />
+        <meta name="keywords" content="DIGIVOUCHERS" />
       </Helmet>
-      <div className="app-content
-      ">
-        <ServiceCrausal/>
+      <div
+        className="app-content
+      "
+      >
+        <ServiceCrausal />
         {/* <LandingPageIntro /> */}
         <LandingPageDigiPay />
         <LandingPageLoans />
         <LandingPageInvestments />
         <LandingPageInsurance />
-       
-        <LandingPageAeps/>
+
+        <LandingPageAeps />
         <LandingPageWhoWeAre />
         {/* <LandingPageWeOffer /> */}
         {/* <ServiceCrausal /> */}
-{/* 
+        {/* 
         <LandingPageBuildSecurity /> */}
         {/* <LandingPageAppDnld /> */}
         <LandingPageTestimonials />

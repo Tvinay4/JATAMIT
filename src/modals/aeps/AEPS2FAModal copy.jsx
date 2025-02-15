@@ -385,7 +385,7 @@ const AEPS2FAModal = ({
                 ? "Select AePS Type"
                 : "2 Factor Authentication"
             }
-            subtitle="Enjoy seamless aadhaar services with DilliPay"
+            subtitle="Enjoy seamless aadhaar services with DIGIVOUCHERS"
             handleClose={handleClose}
           />
           <Box
@@ -478,7 +478,8 @@ const AEPS2FAModal = ({
                 <Grid container className="position-relative">
                   <Grid item md={12} xs={12}>
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Aadhaar Number"
                         id="aadhaarNo"
                         size="small"
@@ -590,7 +591,8 @@ const AEPS2FAModal = ({
                         </Grid>
                         <Grid item md={12} xs={12}>
                           <FormControl sx={{ width: "100%" }}>
-                            <TextField autoComplete="off"
+                            <TextField
+                              autoComplete="off"
                               label=""
                               id="d_status"
                               size="small"
@@ -606,7 +608,8 @@ const AEPS2FAModal = ({
                         </Grid>
                         <Grid item md={12} xs={12}>
                           <FormControl sx={{ width: "100%" }}>
-                            <TextField autoComplete="off"
+                            <TextField
+                              autoComplete="off"
                               label=""
                               id="scan_quality"
                               size="small"

@@ -142,7 +142,7 @@ export const genders = [
 ];
 
 export const PROJECTS = {
-  imps: "DilliPay",
+  imps: "DIGIVOUCHERS",
   paisakart: "PaisaKart",
   moneyoddr: "MoneyOddr",
 };
@@ -451,16 +451,52 @@ export const my_profile = {
   6: "service",
 };
 export const bankData = {
-  "PNB (ONLY CASH DEPOSIT)": { image: pnbB, color: "#fd5c6e",backgroundImage:pnbS },
-  "SBI (ONLY CASH DEPOSIT)": { image: sbiB, color: "#89CFF0",backgroundImage:sbiS},
-  "AXIS-3969 (ONLY CASH DEPOSIT)": { image: axisB, color: "#D81B60",backgroundImage:axisS },
-  "AXIS-1894 (ONLY CASH DEPOSIT)": { image: axisB, color: "#D81B60" ,backgroundImage:axisS},
-  "IDFC FIRST BANK (ONLY CASH DEPOSIT)": { image: idfcB, color: "#FF2400",backgroundImage:idfcS},
-  "RBL BANK (ONLY CASH DEPOSIT)": { image: rblB, color: "#F51C34" ,backgroundImage:rblS},
-  "YES BANK (ONLY CASH DEPOSIT)": { image: yesbankB, color: "#4682B4",backgroundImage:yesbankS },
-  "HDFC (ONLY CASH DEPOSIT)": { image: hdfcB, color: "#0033A0",backgroundImage:hdfcS },
+  "PNB (ONLY CASH DEPOSIT)": {
+    image: pnbB,
+    color: "#fd5c6e",
+    backgroundImage: pnbS,
+  },
+  "SBI (ONLY CASH DEPOSIT)": {
+    image: sbiB,
+    color: "#89CFF0",
+    backgroundImage: sbiS,
+  },
+  "AXIS-3969 (ONLY CASH DEPOSIT)": {
+    image: axisB,
+    color: "#D81B60",
+    backgroundImage: axisS,
+  },
+  "AXIS-1894 (ONLY CASH DEPOSIT)": {
+    image: axisB,
+    color: "#D81B60",
+    backgroundImage: axisS,
+  },
+  "IDFC FIRST BANK (ONLY CASH DEPOSIT)": {
+    image: idfcB,
+    color: "#FF2400",
+    backgroundImage: idfcS,
+  },
+  "RBL BANK (ONLY CASH DEPOSIT)": {
+    image: rblB,
+    color: "#F51C34",
+    backgroundImage: rblS,
+  },
+  "YES BANK (ONLY CASH DEPOSIT)": {
+    image: yesbankB,
+    color: "#4682B4",
+    backgroundImage: yesbankS,
+  },
+  "HDFC (ONLY CASH DEPOSIT)": {
+    image: hdfcB,
+    color: "#0033A0",
+    backgroundImage: hdfcS,
+  },
   "DILLIPAY RBI": { color: "#4A90E2" },
   "CASH AT OFFICE": { color: "#FFD700" },
   "OTHER WALLET 1": { color: "#FF5733" },
-  "UJJIVAN SMALL FINANCE BANK": { image: ujjivanb, color: "#00843D",backgroundImage:ujjivanb },
+  "UJJIVAN SMALL FINANCE BANK": {
+    image: ujjivanb,
+    color: "#00843D",
+    backgroundImage: ujjivanb,
+  },
 };

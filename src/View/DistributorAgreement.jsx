@@ -419,7 +419,7 @@ const DistributorAgreement = () => {
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            <strong>DILLIPAY TECHNOLOGIES LIMITED</strong>, a company
+            <strong>DIGIVOUCHERS INDIA PRIVATE LIMITED</strong>, a company
             incorporated under The Companies Act, 2013, having its registered
             office at Plot No 5, Second Floor, Pocket 5, Sector 24, Rohini,
             Delhi-110085.
@@ -435,8 +435,8 @@ const DistributorAgreement = () => {
           </p>
 
           <p>
-            The DilliPay and the Distributor are herein collectively referred to
-            as the “Parties” and individually as a “Party.”
+            The DIGIVOUCHERS and the Distributor are herein collectively
+            referred to as the “Parties” and individually as a “Party.”
           </p>
 
           <h2
@@ -452,23 +452,23 @@ const DistributorAgreement = () => {
 
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
-              <strong>A.</strong> DilliPay is a technology-based company
+              <strong>A.</strong> DIGIVOUCHERS is a technology-based company
               engaged, inter alia, provides the software/platform services in
               the business of the Fintech industry and caters to a number of
               services like Domestic Money Transfer, Aadhaar Enabled Payment
               System, Utility Bill payments, Recharge, Travel, and many more.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              <strong>B.</strong> DilliPay proposes to appoint Distributor(s) in
-              various cities and regions of India for the purpose of managing
-              retailers to be appointed by DilliPay in such cities and regions
-              and to perform various services offered by DilliPay. Such
-              Distributor may be referred to as Master Distributor (MD) or
-              Distributor (DI).
+              <strong>B.</strong> DIGIVOUCHERS proposes to appoint
+              Distributor(s) in various cities and regions of India for the
+              purpose of managing retailers to be appointed by DIGIVOUCHERS in
+              such cities and regions and to perform various services offered by
+              DIGIVOUCHERS. Such Distributor may be referred to as Master
+              Distributor (MD) or Distributor (DI).
             </li>
             <li style={{ marginBottom: "15px" }}>
               <strong>C.</strong> The Distributor wishes to be appointed as the
-              Distributor in the DilliPay-designated regional territory
+              Distributor in the DIGIVOUCHERS-designated regional territory
               (hereinafter referred to as "Territory") on the terms & conditions
               contained in this Distributor Agreement. The Parties agree and
               undertake to abide by the terms and conditions of this Agreement.
@@ -487,17 +487,17 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Subject to the terms and conditions contained in this Distributor
-            Agreement, DilliPay hereby appoints the Distributor as the
-            Distributor of DilliPay on a non-exclusive basis for the Territory
-            to provide the services mentioned in Annexure-I (hereinafter
-            referred to as "Services"), and the Distributor hereby agrees to
-            provide the Services.
+            Agreement, DIGIVOUCHERS hereby appoints the Distributor as the
+            Distributor of DIGIVOUCHERS on a non-exclusive basis for the
+            Territory to provide the services mentioned in Annexure-I
+            (hereinafter referred to as "Services"), and the Distributor hereby
+            agrees to provide the Services.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor may describe themselves as DilliPay’s authorized
+            The Distributor may describe themselves as DIGIVOUCHERS’s authorized
             distributor, but must not hold themselves out as being entitled to
-            bind DilliPay in any way.
+            bind DIGIVOUCHERS in any way.
           </p>
 
           <h2
@@ -515,7 +515,7 @@ const DistributorAgreement = () => {
             Agreement within 15 days from the signing date. The Agreement is
             valid for 9 years unless terminated in accordance with clause 13.
             Upon expiry and subject to satisfactory performance, the Agreement
-            may be renewed at DilliPay’s discretion.
+            may be renewed at DIGIVOUCHERS’s discretion.
           </p>
 
           <h2
@@ -529,10 +529,11 @@ const DistributorAgreement = () => {
             3. PROVISION OF SERVICES
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            During the Term, the Distributor shall render to DilliPay services
-            as defined in Annexure-I. DilliPay reserves the right to modify,
-            alter, and amend the list of Services at any time, and the
-            Distributor shall be bound by all such modifications and amendments.
+            During the Term, the Distributor shall render to DIGIVOUCHERS
+            services as defined in Annexure-I. DIGIVOUCHERS reserves the right
+            to modify, alter, and amend the list of Services at any time, and
+            the Distributor shall be bound by all such modifications and
+            amendments.
           </p>
 
           <h2
@@ -549,13 +550,13 @@ const DistributorAgreement = () => {
             The Parties shall mutually agree upon a Business Plan in relation to
             sourcing retailers. The Distributor agrees to introduce retailers
             per the agreed Business Plan. If unable to meet these numbers,
-            DilliPay may appoint additional Distributors or terminate this
+            DIGIVOUCHERS may appoint additional Distributors or terminate this
             Agreement.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor acknowledges responsibility for credit transactions
-            with retailers within the Territory, and DilliPay shall not be
+            with retailers within the Territory, and DIGIVOUCHERS shall not be
             liable for any disputes arising from these transactions.
           </p>
 
@@ -571,64 +572,64 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall deposit a sum of INR [……….../=] [……..in
-            words……...] with the DilliPay on or before the effective date. The
-            deposit shall be non-interest bearing and shall be refunded at the
-            time of termination of the Distributor Agreement in accordance with
-            the provision defined in clause 14 (Consequences of Termination) of
-            this Distributor Agreement.
+            words……...] with the DIGIVOUCHERS on or before the effective date.
+            The deposit shall be non-interest bearing and shall be refunded at
+            the time of termination of the Distributor Agreement in accordance
+            with the provision defined in clause 14 (Consequences of
+            Termination) of this Distributor Agreement.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor acknowledges that the DilliPay may reject the
+            The Distributor acknowledges that the DIGIVOUCHERS may reject the
             deposit at its sole discretion on or before the effective date.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             In addition to the deposit, the Distributor shall maintain and
-            deposit with the DilliPay, working capital to the extent of INR
+            deposit with the DIGIVOUCHERS, working capital to the extent of INR
             [……….../=] [……..in words……...], which shall also be
             non-interest-bearing. The working capital shall be utilized to
-            provide credit to the retailers appointed by the DilliPay in the
+            provide credit to the retailers appointed by the DIGIVOUCHERS in the
             Territory, and who (retailers) are managed by the Distributor.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor agrees and acknowledges that the DilliPay shall not be
-            responsible or liable in any manner whatsoever for the sources of
+            Distributor agrees and acknowledges that the DIGIVOUCHERS shall not
+            be responsible or liable in any manner whatsoever for the sources of
             such deposits and/or working capital, and it is the sole
             responsibility of the Distributor to ensure that the sources of such
             deposits and/or working capital are legitimate and are in accordance
             with the law of India.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            All the amount due to DilliPay under this Distributor Agreement,
+            All the amount due to DIGIVOUCHERS under this Distributor Agreement,
             including the deposit and working capital and/or platform fee, shall
             be deposited in accordance with the instructions provided in
-            Annexure-II. Distributor agrees and acknowledges that the DilliPay
-            may, by prior written notice of two business days, modify any of the
-            details mentioned in Annexure-II and the Distributor shall be bound
-            by all such modifications.
+            Annexure-II. Distributor agrees and acknowledges that the
+            DIGIVOUCHERS may, by prior written notice of two business days,
+            modify any of the details mentioned in Annexure-II and the
+            Distributor shall be bound by all such modifications.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor acknowledges and agrees that DilliPay strictly prohibits
-            any third-party deposits in any bank accounts via any mode
+            Distributor acknowledges and agrees that DIGIVOUCHERS strictly
+            prohibits any third-party deposits in any bank accounts via any mode
             whatsoever. In the event that Distributor or its Retailer indulges
             in any such transaction(s) knowingly or unknowingly, the Distributor
-            authorizes DilliPay to freeze its account immediately.
+            authorizes DIGIVOUCHERS to freeze its account immediately.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor shall be entitled to the commission, discount or service
             fee, or such other remuneration referred in the Services, as may be
-            specified by the DilliPay, from time to time and published on
-            DilliPay’s portal. All the amounts paid by way of the commission
+            specified by the DIGIVOUCHERS, from time to time and published on
+            DIGIVOUCHERS’s portal. All the amounts paid by way of the commission
             shall be exclusive to all applicable taxes, including goods and
             service tax, surcharge, cess etc., by whatsoever name called, and
             such taxes will be subject to the deduction of tax at source, if
-            applicable; DilliPay shall debit the account of the Distributor to
-            the extent of such taxes.
+            applicable; DIGIVOUCHERS shall debit the account of the Distributor
+            to the extent of such taxes.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The commission shall accrue to the Distributor only on receipt and
-            realization of full payment by the DilliPay of all dues from the
+            realization of full payment by the DIGIVOUCHERS of all dues from the
             retailers who are managed by the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -639,8 +640,8 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Payments made to the Distributor shall be subject to such
             withholding as prescribed under the applicable law, subject to the
-            aforesaid, DilliPay assumes no responsibility for the tax compliance
-            of the Distributor.
+            aforesaid, DIGIVOUCHERS assumes no responsibility for the tax
+            compliance of the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor agrees that payments made to the Distributor shall
@@ -650,7 +651,7 @@ const DistributorAgreement = () => {
             transactions whatsoever.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and authorizes DilliPay to impose cash
+            The Distributor agrees and authorizes DIGIVOUCHERS to impose cash
             deposit bank charges which shall be subject to deduction from the
             payments made to the Distributor.
           </p>
@@ -662,33 +663,35 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor agrees and acknowledges that in case of any deviation
             with respect to the use of key salt, it shall be solely liable and
-            responsible; and in such event, DilliPay is authorized to
+            responsible; and in such event, DIGIVOUCHERS is authorized to
             immediately deactivate the account of Distributor without any prior
-            notice. DilliPay shall not be held responsible for any consequences
-            that arise out of any unauthorized use of its platform in any
-            manner.
+            notice. DIGIVOUCHERS shall not be held responsible for any
+            consequences that arise out of any unauthorized use of its platform
+            in any manner.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and authorizes DilliPay to freeze its account
-            or account of its Retailer in the event DilliPay receives any
-            complaint from any relevant statutory or non-statutory authority or
-            any government department or agency. The Distributor further agrees
-            and authorizes DilliPay to withdraw the disputed amount along with
-            the anticipated penalty from the such frozen account.
+            The Distributor agrees and authorizes DIGIVOUCHERS to freeze its
+            account or account of its Retailer in the event DIGIVOUCHERS
+            receives any complaint from any relevant statutory or non-statutory
+            authority or any government department or agency. The Distributor
+            further agrees and authorizes DIGIVOUCHERS to withdraw the disputed
+            amount along with the anticipated penalty from the such frozen
+            account.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor agrees and acknowledges that all the sales/ receipts of
-            the distributor regarding the DilliPay shall be immediately Deposit
-            or transfer of the funds into the designated Bank Accounts of the
-            DilliPay and shall get limit from the Company/ DilliPay thereafter.
-            The Distributor shall ensure that the working limit in the portal by
-            DilliPay against the cash deposit or funds transfer is made
-            available to the distributor immediately. The Distributor shall
-            inform to the Company/ DilliPay in predefined format, if the
-            distributor fails to inform the same within seven calendar days the
-            amount will be forfeit by the Company/ DilliPay. Distributor may
-            deposit such cash self or via its employee or agent or any
-            authorized person into the designated Bank Accounts of the DilliPay.
+            the distributor regarding the DIGIVOUCHERS shall be immediately
+            Deposit or transfer of the funds into the designated Bank Accounts
+            of the DIGIVOUCHERS and shall get limit from the Company/
+            DIGIVOUCHERS thereafter. The Distributor shall ensure that the
+            working limit in the portal by DIGIVOUCHERS against the cash deposit
+            or funds transfer is made available to the distributor immediately.
+            The Distributor shall inform to the Company/ DIGIVOUCHERS in
+            predefined format, if the distributor fails to inform the same
+            within seven calendar days the amount will be forfeit by the
+            Company/ DIGIVOUCHERS. Distributor may deposit such cash self or via
+            its employee or agent or any authorized person into the designated
+            Bank Accounts of the DIGIVOUCHERS.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -707,14 +710,14 @@ const DistributorAgreement = () => {
             independent offices equipped with the necessary infrastructure and
             workforce required to provide the Services. The Distributor shall
             provide a prior written intimation of any changes in the location of
-            such office to DilliPay.
+            such office to DIGIVOUCHERS.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            DilliPay may, at its discretion, provide advice to the Distributor
-            in relation to exteriors and interiors of the Distributor’s office,
-            investment information technology systems, basic accounting and
-            business procedure etc. The Distributor shall be bound by such
-            advice of DilliPay.
+            DIGIVOUCHERS may, at its discretion, provide advice to the
+            Distributor in relation to exteriors and interiors of the
+            Distributor’s office, investment information technology systems,
+            basic accounting and business procedure etc. The Distributor shall
+            be bound by such advice of DIGIVOUCHERS.
           </p>
 
           <h2
@@ -729,9 +732,9 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall develop adequate and relevant market
-            intelligence in relation to the Territory and shall inform DilliPay
-            from time to time about the activities of other persons/companies
-            engaged in a similar business.
+            intelligence in relation to the Territory and shall inform
+            DIGIVOUCHERS from time to time about the activities of other
+            persons/companies engaged in a similar business.
           </p>
 
           <h2
@@ -746,8 +749,8 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall engage the minimum number of personnel as
-            specified by the DilliPay and such other additional personnel as may
-            be required to effectively provide the Services. The Distributor
+            specified by the DIGIVOUCHERS and such other additional personnel as
+            may be required to effectively provide the Services. The Distributor
             shall ensure that all personnel employed in the provision of the
             Services shall be adequately trained and shall comply with the Term
             of this Distributor Agreement. The Distributor agrees and
@@ -756,14 +759,14 @@ const DistributorAgreement = () => {
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall be liable and responsible for any data theft
-            or misuse of any data related to clients of DilliPay from its
+            or misuse of any data related to clients of DIGIVOUCHERS from its
             office.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and acknowledges that DilliPay will not have
-            any obligations, liability or responsibility whatsoever to supervise
-            or manage the Distributor's employees, agents or independent
-            contractors.
+            The Distributor agrees and acknowledges that DIGIVOUCHERS will not
+            have any obligations, liability or responsibility whatsoever to
+            supervise or manage the Distributor's employees, agents or
+            independent contractors.
           </p>
 
           <h2
@@ -777,11 +780,11 @@ const DistributorAgreement = () => {
             9. INTELLECTUAL PROPERTY
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            DilliPay hereby grants the Distributor a limited, non-exclusive,
+            DIGIVOUCHERS hereby grants the Distributor a limited, non-exclusive,
             non-transferable, non-assignable and royalty- free license to use
             the Software for the purpose of providing the Services as
             contemplated under this Distributor Agreement, which may be revoked
-            by DilliPay at its sole discretion.
+            by DIGIVOUCHERS at its sole discretion.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor is expressly prohibited from distributing,
@@ -791,28 +794,29 @@ const DistributorAgreement = () => {
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor may utilize any third-party software other than the
-            Software provided by DilliPay,only with prior permission from
-            DilliPay.Further,the Distributor shall ensure that the third-party
-            software is validly licenced and installed.
+            Software provided by DIGIVOUCHERS,only with prior permission from
+            DIGIVOUCHERS.Further,the Distributor shall ensure that the
+            third-party software is validly licenced and installed.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The DilliPay shall retain all the rights over all the intellectual
-            property, including the Software, its name and logo and all the
-            rights in relation to the promotion and marketing materials. The
-            Distributor hereby acknowledges that (a) the execution of this
+            The DIGIVOUCHERS shall retain all the rights over all the
+            intellectual property, including the Software, its name and logo and
+            all the rights in relation to the promotion and marketing materials.
+            The Distributor hereby acknowledges that (a) the execution of this
             Distributor Agreement does not amount to any transfer to it of any
-            intellectual property rights held by the DilliPay prior to the
+            intellectual property rights held by the DIGIVOUCHERS prior to the
             execution of this Distributor Agreement, nor does this Distributor
-            Agreement in any way limit the DilliPay’s rights over its
+            Agreement in any way limit the DIGIVOUCHERS’s rights over its
             intellectual property, including the right to licence to others and,
             (b) any and all goodwill arising from the Distributor’s use of the
             intellectual property shall be exclusive ofDilliPay without any
             compensation to anyone.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall not use the Software of the DilliPay in any
-            manner whatsoever without the written permission of the DilliPay.
+            The Distributor shall not use the Software of the DIGIVOUCHERS in
+            any manner whatsoever without the written permission of the
+            DIGIVOUCHERS.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -840,7 +844,7 @@ const DistributorAgreement = () => {
             business.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            That Distributor agrees and acknowledges that the DilliPay has a
+            That Distributor agrees and acknowledges that the DIGIVOUCHERS has a
             responsibility to its customers to keep customer information
             strictly confidential. The Distributor agrees and acknowledges to
             keep all information related to customers strictly confidential that
@@ -872,10 +876,10 @@ const DistributorAgreement = () => {
             any relative or nominee of the Distributor is a director or
             shareholder, 1.) be appointed as a Distributor for any other person
             or legal entity which is carrying on a business similar or in
-            competition with any business carried by DilliPay at the relevant
-            time, whether in India or abroad, or 2.) engage in any business that
-            is similar to or in competition with any business carried on by the
-            DilliPay at the relevant time.
+            competition with any business carried by DIGIVOUCHERS at the
+            relevant time, whether in India or abroad, or 2.) engage in any
+            business that is similar to or in competition with any business
+            carried on by the DIGIVOUCHERS at the relevant time.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -887,21 +891,21 @@ const DistributorAgreement = () => {
             any relative or nominee of the Distributor is a director or
             shareholder, 1.) be appointed as a Distributor for any other person
             or legal entity which is carrying on a business similar or in
-            competition with any business carried by DilliPay at the relevant
-            time, whether in India or abroad, or 2.) engage in any business that
-            is similar to or in competition with any business carried on by the
-            DilliPay at the relevant time.
+            competition with any business carried by DIGIVOUCHERS at the
+            relevant time, whether in India or abroad, or 2.) engage in any
+            business that is similar to or in competition with any business
+            carried on by the DIGIVOUCHERS at the relevant time.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             During the Term of this Distributor Agreement, the Distributor shall
             not either directly or indirectly, solicit, cause in any part or
             knowingly encourage any existing or potential clients or customers
-            of DilliPay to cease doing business or not to do business, in whole
-            or in part of with DilliPay, or solicit, cause in any part or
-            knowingly encourage any existing or potential clients or customers
-            of DilliPay to do business with any person other then DilliPay, or
-            associate with any prospective clients or customers while they
-            continue to be clients or customers of DilliPay.
+            of DIGIVOUCHERS to cease doing business or not to do business, in
+            whole or in part of with DIGIVOUCHERS, or solicit, cause in any part
+            or knowingly encourage any existing or potential clients or
+            customers of DIGIVOUCHERS to do business with any person other then
+            DIGIVOUCHERS, or associate with any prospective clients or customers
+            while they continue to be clients or customers of DIGIVOUCHERS.
           </p>
 
           <h2
@@ -915,8 +919,8 @@ const DistributorAgreement = () => {
             12. EXCLUSIVITY
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall only market and promote Services of DilliPay,
-            as authorized by the DilliPay.
+            The Distributor shall only market and promote Services of
+            DIGIVOUCHERS, as authorized by the DIGIVOUCHERS.
           </p>
 
           <h2
@@ -931,19 +935,19 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            DilliPay may terminate this Distributor Agreement of the Distributor
-            with immediate effect, if
+            DIGIVOUCHERS may terminate this Distributor Agreement of the
+            Distributor with immediate effect, if
           </p>
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
-              a. In the opinion of DilliPay, the Distributor is not a fit person
-              to perform Services under the provision of this Distributor
+              a. In the opinion of DIGIVOUCHERS, the Distributor is not a fit
+              person to perform Services under the provision of this Distributor
               Agreement.
             </li>
             <li style={{ marginBottom: "15px" }}>
               b. The Distributor fails to deposit the proceeds of sales/receipts
-              made by the Distributor or its retailers to DilliPay on a daily
-              and perpetual basis.
+              made by the Distributor or its retailers to DIGIVOUCHERS on a
+              daily and perpetual basis.
             </li>
             <li style={{ marginBottom: "15px" }}>
               c. The Distributor becomes the subject of a voluntary petition in
@@ -952,17 +956,17 @@ const DistributorAgreement = () => {
             </li>
             <li style={{ marginBottom: "15px" }}>
               d. The Distributor fails to comply with directions issued by
-              DilliPay under the provision of this Distributor Agreement.
+              DIGIVOUCHERS under the provision of this Distributor Agreement.
             </li>
           </ul>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Notwithstanding anything to the contrary herein, DilliPay may
+            Notwithstanding anything to the contrary herein, DIGIVOUCHERS may
             terminate this Distributor Agreement without notice.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor may terminate this Distributor Agreement with written
-            notice of 60 (sixty) days to DilliPay.
+            notice of 60 (sixty) days to DIGIVOUCHERS.
           </p>
 
           <h2
@@ -983,28 +987,28 @@ const DistributorAgreement = () => {
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
               a. Immediately discontinue and cease to use the trademark, logo,
-              other intellectual property, and Software provided by DilliPay,
-              and shall immediately hand over all copies or documents of such
-              intellectual property to DilliPay.
+              other intellectual property, and Software provided by
+              DIGIVOUCHERS, and shall immediately hand over all copies or
+              documents of such intellectual property to DIGIVOUCHERS.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              b. Immediately return to DilliPay all confidential information,
-              originals, and copies of any and all materials provided to the
-              Distributor under this Distributor Agreement or in the course of
-              provision of the services.
+              b. Immediately return to DIGIVOUCHERS all confidential
+              information, originals, and copies of any and all materials
+              provided to the Distributor under this Distributor Agreement or in
+              the course of provision of the services.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              c. Immediately provide remote access to DilliPay to disable any
-              Software that DilliPay has installed with the Distributor.
+              c. Immediately provide remote access to DIGIVOUCHERS to disable
+              any Software that DIGIVOUCHERS has installed with the Distributor.
             </li>
             <li style={{ marginBottom: "15px" }}>
               d. Immediately remove all signboards, banners, and glowboards of
-              DilliPay from its offices, along with any materials indicating an
-              association with DilliPay.
+              DIGIVOUCHERS from its offices, along with any materials indicating
+              an association with DIGIVOUCHERS.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              e. Immediately cease to promote, market, or advertise DilliPay or
-              its products/services.
+              e. Immediately cease to promote, market, or advertise DIGIVOUCHERS
+              or its products/services.
             </li>
             <li style={{ marginBottom: "15px" }}>
               f. Immediately clear all dues within a period of 7 days from the
@@ -1024,24 +1028,24 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall indemnify itself and hold the DilliPay and all
-            its financial partner, affiliates, officers, directors, employees,
-            successors and assignees harmless against all customer claims,
-            actions, demands, litigations, suits, proceedings and against all
-            losses,expenses, costs, damages,charges, penalties etc., due to any
-            wilful negligence, fraud, breach of applicable laws or breach of any
-            terms of this Distributor Agreement directly, attributable to the
-            Distributor.
+            The Distributor shall indemnify itself and hold the DIGIVOUCHERS and
+            all its financial partner, affiliates, officers, directors,
+            employees, successors and assignees harmless against all customer
+            claims, actions, demands, litigations, suits, proceedings and
+            against all losses,expenses, costs, damages,charges, penalties etc.,
+            due to any wilful negligence, fraud, breach of applicable laws or
+            breach of any terms of this Distributor Agreement directly,
+            attributable to the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Notwithstanding anything contained in this Distributor Agreement,
-            DilliPay shall not be liable to the Distributor for any incidental,
-            indirect, consequential or damages of any kind or of loss of revenue
-            or business opportunities.
+            DIGIVOUCHERS shall not be liable to the Distributor for any
+            incidental, indirect, consequential or damages of any kind or of
+            loss of revenue or business opportunities.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor shall ensure that the DilliPay platform or services are
-            not used for money laun-dering and it is in compliance with
+            Distributor shall ensure that the DIGIVOUCHERS platform or services
+            are not used for money laun-dering and it is in compliance with
             Anti-Money Laundering laws, including but not to Prevention of Money
             Laundering Act, 2002 and the rules and regulations made under it.{" "}
           </p>
@@ -1049,8 +1053,8 @@ const DistributorAgreement = () => {
             <li style={{ marginBottom: "15px" }}>
               Distributor undertakes that the Distributor will neither allow nor
               entertain requests for the transfer of money and/or any
-              transaction through the use of the DilliPay Platform or services
-              for the following:
+              transaction through the use of the DIGIVOUCHERS Platform or
+              services for the following:
             </li>
             <li style={{ marginBottom: "15px" }}>
               (a) Any form of drugs; and/or
@@ -1125,9 +1129,9 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Services rendered by the Distributor under this Distributor
             Agreement shall be provided as an independent contractor to
-            DilliPay, and nothing in this Distributor Agreement creates or shall
-            be deemed to create the relationship of partners, joint venture,
-            employees or principle-agent between the Parties.
+            DIGIVOUCHERS, and nothing in this Distributor Agreement creates or
+            shall be deemed to create the relationship of partners, joint
+            venture, employees or principle-agent between the Parties.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -1148,9 +1152,9 @@ const DistributorAgreement = () => {
             laws.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall permit the DilliPay, to enter into and inspect
-            all books of accounts, record and materials in relation to the
-            business operations related to this Distributor Agreement during
+            The Distributor shall permit the DIGIVOUCHERS, to enter into and
+            inspect all books of accounts, record and materials in relation to
+            the business operations related to this Distributor Agreement during
             normal business hours.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -1163,11 +1167,11 @@ const DistributorAgreement = () => {
             to indemnify the company in case of any losses or claims or
             penalties arising out of defective KYC verification process of the
             Customers for any transaction or any process regarding the platform
-            or services of the company/ DilliPay.{" "}
+            or services of the company/ DIGIVOUCHERS.{" "}
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             During the Term and at any time within sixty days after the
-            termination of this Distributor Agreement, DilliPay, through its
+            termination of this Distributor Agreement, DIGIVOUCHERS, through its
             employees, representatives or agents, may, at its expense, carry out
             an audit to determine whether the audit has properly completed its
             obligations under this Distributor Agreement.
@@ -1189,7 +1193,7 @@ const DistributorAgreement = () => {
             properly executed by Parties hereto, however the changes,
             alterations, modifications or additions in agreement is binding to
             both parties if such changes etc shall be available on the platform
-            of the company/ DilliPay.
+            of the company/ DIGIVOUCHERS.
           </p>
 
           <h2
@@ -1206,10 +1210,11 @@ const DistributorAgreement = () => {
             The Distributor shall not assign, sub-let, or subcontract any of its
             obligations under this Distributor Agreement to any third party
             unless it obtains prior written permission/consent from the
-            DilliPay. In any event, any assignment or transfer shall not operate
-            to relieve the assigning party of any of its obligations hereunder,
-            nor will any such assignment impose any obligation on the assignee
-            except in the case of express written assumption by the assignee.
+            DIGIVOUCHERS. In any event, any assignment or transfer shall not
+            operate to relieve the assigning party of any of its obligations
+            hereunder, nor will any such assignment impose any obligation on the
+            assignee except in the case of express written assumption by the
+            assignee.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             No such assignment under this clause shall relieve the Distributor
@@ -1232,10 +1237,10 @@ const DistributorAgreement = () => {
             20. COMMUNICATION
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor hereby agrees that being a DilliPay Distributor,
-            DilliPay may communicate include communications including but not
-            limited to voice, email, SMS, digital video, and / or any mode of
-            innovative communication method, as deemed fit and proper by the
+            The Distributor hereby agrees that being a DIGIVOUCHERS Distributor,
+            DIGIVOUCHERS may communicate include communications including but
+            not limited to voice, email, SMS, digital video, and / or any mode
+            of innovative communication method, as deemed fit and proper by the
             company/ Dillipay.
           </p>
 
@@ -1251,10 +1256,10 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor hereby agrees that being a DilliPay Distributor,
-            DilliPay may communicate include communications including but not
-            limited to voice, email, SMS, digital video, and / or any mode of
-            innovative communication method, as deemed fit and proper by the
+            The Distributor hereby agrees that being a DIGIVOUCHERS Distributor,
+            DIGIVOUCHERS may communicate include communications including but
+            not limited to voice, email, SMS, digital video, and / or any mode
+            of innovative communication method, as deemed fit and proper by the
             company/ Dillipay.{" "}
           </p>
 
@@ -1300,7 +1305,7 @@ const DistributorAgreement = () => {
                     verticalAlign: "top",
                   }}
                 >
-                  DILLIPAY TECHNOLOGIES LIMITED
+                  DIGIVOUCHERS INDIA PRIVATE LIMITED
                 </td>
 
                 <td

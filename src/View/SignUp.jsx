@@ -218,46 +218,32 @@ const SignUp = () => {
       )}
       {/* Left Column - Hidden on medium and smaller screens */}
       <Hidden mdDown>
-      <Grid
-        item
-        xs={12}
-        md={7}
-        lg={7}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: 9,
-          backgroundImage: `url(${LoginPageIllustratorImg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center', 
-          backgroundRepeat: 'no-repeat',
-          height: "100vh", 
-          width: "100%",
-        }}
-      >
-                    <Typography
-              variant="h1"
-              sx={{
-                color: "#fff",
-                // mb: { xs: 10, sm: 15, md: 12 },
-                // mt:{lg:0},
-                // textAlign: {xs:"center",md:"left"},
-                // marginLeft:{xs:0,sm:-10,md:-6,lg:16},
-                fontSize: { xs: "18px", sm: "20px", md: "32px", lg: "44px" },
-                fontFamily: "Manrope",
-                justifyContent: "top",
-                alignItems: "center",
-                lineHeight: "1.3",
-                letterSpacing: "0.08em",
-
-                mb: { lg: "250px" },
-                // marginLeft: { xs: 0, sm: -10, md: -6, lg: 0 },
-              }}
-            >
-              Dillipay <br /> Simplifying Payments <br /> Amplifying Growth
-            </Typography>
-      </Grid>
+       <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    minHeight: "100vh",
+                    width:"100%",
+                    margin:"0"
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      backgroundImage: `url(${LoginPageIllustratorImg})`,
+      
+                      backgroundSize: "cover",
+      
+                      height: "100vh",
+                      width: "100%",
+                    }}
+                  />
+                </Grid>
       
         {/* <Grid
           item
@@ -358,8 +344,8 @@ const SignUp = () => {
     <Grid
     item
     xs={12}
-    md={5}
-    lg={5}
+    md={6}
+    lg={6}
     sx={{
       display: "flex",
       alignItems: "center",

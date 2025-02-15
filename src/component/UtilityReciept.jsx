@@ -341,7 +341,7 @@ export const UtilityReceipt = () => {
                 color: "#327B2E",
               }}
             >
-              DilliPay: Your Trusted Bill Payment Partner
+              DIGIVOUCHERS: Your Trusted Bill Payment Partner
             </Typography>
           </Box>
         </Box>
@@ -675,7 +675,7 @@ export const UtilityReceipt = () => {
                   fontSize: "12px",
                 }}
               >
-                DilliPay: Your Trusted Bill Payment Partner
+                DIGIVOUCHERS: Your Trusted Bill Payment Partner
               </Typography>
             </Box>
           </Box>

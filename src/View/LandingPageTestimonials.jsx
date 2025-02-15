@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.min.css";
 
 const testimonials = [
   {
-    text: "DilliPay made payments easy! The experience has been smooth and efficient.",
+    text: "DIGIVOUCHERS made payments easy! The experience has been smooth and efficient.",
     name: "Arpita",
     location: "Delhi, India",
     image: "/images/arpita.jpg",
@@ -20,7 +20,7 @@ const testimonials = [
     rating: 4,
   },
   {
-    text: "DilliPay transformed how we handle transactions. Highly recommend it!",
+    text: "DIGIVOUCHERS transformed how we handle transactions. Highly recommend it!",
     name: "Neha",
     location: "Bangalore, India",
     image: "/images/neha.jpg",
@@ -58,19 +58,25 @@ const LandingPageTestimonials = () => {
         <Typography
           variant="body1"
           align="center"
-          sx={{ mb: 4, color: "#666", maxWidth: "600px", margin: "auto", fontFamily: "'Poppins', sans-serif" }}
+          sx={{
+            mb: 4,
+            color: "#666",
+            maxWidth: "600px",
+            margin: "auto",
+            fontFamily: "'Poppins', sans-serif",
+          }}
         >
-          Hear from our satisfied users about how DilliPay has simplified their transactions.
+          Hear from our satisfied users about how DIGIVOUCHERS has simplified
+          their transactions.
         </Typography>
 
         {/* Testimonial Slider */}
-        <Box sx={{ mt: 3,}}>
+        <Box sx={{ mt: 3 }}>
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
             infinite={true}
-            autoplay= {true}
-           
+            autoplay={true}
             speed={300}
             breakpoints={{
               600: { slidesPerView: 2 },
@@ -131,7 +137,12 @@ const LandingPageTestimonials = () => {
                   >
                     {testimonial.location}
                   </Typography>
-                  <Rating name="testimonial-rating" value={testimonial.rating} readOnly sx={{ mt: 1 }} />
+                  <Rating
+                    name="testimonial-rating"
+                    value={testimonial.rating}
+                    readOnly
+                    sx={{ mt: 1 }}
+                  />
                 </Card>
               </SwiperSlide>
             ))}

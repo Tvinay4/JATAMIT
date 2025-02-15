@@ -32,7 +32,7 @@ const LandingPageIntro = () => {
         >
           <Grid
             item
-            md={env === "DilliPay" || env === "PaisaKart" ? 6 : 12}
+            md={env === "DIGIVOUCHERS" || env === "PaisaKart" ? 6 : 12}
             sm={12}
           >
             <Box
@@ -45,7 +45,7 @@ const LandingPageIntro = () => {
                 style={{
                   fontSize: "3rem",
                   fontWeight: 700,
-                  color:"#000"
+                  color: "#000",
                 }}
               >
                 Fast , Secure , and
@@ -80,11 +80,13 @@ const LandingPageIntro = () => {
                       fontSize: "1.3rem",
                       marginTop: "2rem",
                       textAlign: "justify",
-                      color:"#000"
+                      color: "#000",
                     }}
                   >
-                    <b>{env === "DilliPay" ? "DilliPay" : "PaisaKart"}</b> is
-                    designed to simplify and secure online transactions for
+                    <b>
+                      {env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}
+                    </b>{" "}
+                    is designed to simplify and secure online transactions for
                     businesses and individuals.
                   </p>
                   <p
@@ -92,7 +94,7 @@ const LandingPageIntro = () => {
                       fontSize: "1.3rem",
                       marginTop: "1.1rem",
                       textAlign: "justify",
-                      color:"#000"
+                      color: "#000",
                     }}
                   >
                     One of the fastest growing names in Indian Recharge industry
@@ -126,7 +128,7 @@ const LandingPageIntro = () => {
                     borderRadius: "8px",
                     fontWeight: "bold",
                     fontSize: "13px",
-                    color:"#000"
+                    color: "#000",
                   }}
                   onClick={() => {
                     navigate("/login");

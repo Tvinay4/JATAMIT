@@ -294,7 +294,7 @@ const NepalMtModal = ({ receiver, nepalAllRes, customerMobile }) => {
           <ModalHeader
             title={`Send Money (${capitalize1(receiver?.Name)})`}
             handleClose={handleClose}
-            subtitle="Seamless Indo-Nepal Transfers: Send Cash Across Borders with DilliPay!"
+            subtitle="Seamless Indo-Nepal Transfers: Send Cash Across Borders with DIGIVOUCHERS!"
           />
           <Box
             component="form"
@@ -322,7 +322,8 @@ const NepalMtModal = ({ receiver, nepalAllRes, customerMobile }) => {
             <Grid container>
               <Grid item md={6} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField autoComplete="off"
+                  <TextField
+                    autoComplete="off"
                     label="Amount"
                     id="amt"
                     size="small"
@@ -335,7 +336,8 @@ const NepalMtModal = ({ receiver, nepalAllRes, customerMobile }) => {
               </Grid>
               <Grid item md={6} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField autoComplete="off"
+                  <TextField
+                    autoComplete="off"
                     label="Payout Amount"
                     id="collection_amt"
                     size="small"
@@ -346,7 +348,8 @@ const NepalMtModal = ({ receiver, nepalAllRes, customerMobile }) => {
               </Grid>
               <Grid item md={6} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField autoComplete="off"
+                  <TextField
+                    autoComplete="off"
                     label="Receiver's City"
                     id="receiver_city"
                     size="small"
@@ -357,7 +360,8 @@ const NepalMtModal = ({ receiver, nepalAllRes, customerMobile }) => {
               <Grid item md={6} xs={12} className="position-relative">
                 <Loader loading={remittanceReq} size="small" />
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField autoComplete="off"
+                  <TextField
+                    autoComplete="off"
                     label="Remittance Reason"
                     id="rem_reason"
                     size="small"

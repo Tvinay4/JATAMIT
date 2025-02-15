@@ -32,7 +32,7 @@ const LandingPageIntro3 = () => {
         >
           <Grid
             item
-            md={env === "DilliPay" || env === "PaisaKart" ? 6 : 12}
+            md={env === "DIGIVOUCHERS" || env === "PaisaKart" ? 6 : 12}
             sm={12}
           >
             <Box
@@ -45,14 +45,14 @@ const LandingPageIntro3 = () => {
                 style={{
                   fontSize: "3rem",
                   fontWeight: 700,
-                  color:"#000"
+                  color: "#000",
                 }}
               >
-  Travel Made Easy with 
-  <br />
+                Travel Made Easy with
+                <br />
                 <span style={{ color: "#FFD700", fontSize: "3.2" }}>
-                IRCTC Booking!
-                                </span>{" "}
+                  IRCTC Booking!
+                </span>{" "}
                 {/* Payment. */}
               </h1>
 
@@ -80,12 +80,12 @@ const LandingPageIntro3 = () => {
                       fontSize: "1.3rem",
                       marginTop: "2rem",
                       textAlign: "justify",
-                      color:"#000"
+                      color: "#000",
                     }}
                   >
-                    {/* <b>{env === "DilliPay" ? "DilliPay" : "PaisaKart"}</b> */}
-                    IRCTC – Simplifying your travel experience, one click at a time.
-
+                    {/* <b>{env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}</b> */}
+                    IRCTC – Simplifying your travel experience, one click at a
+                    time.
                   </p>
                   {/* <p
                     style={{
@@ -126,7 +126,7 @@ const LandingPageIntro3 = () => {
                     borderRadius: "8px",
                     fontWeight: "bold",
                     fontSize: "13px",
-                    color:"#000"
+                    color: "#000",
                   }}
                   onClick={() => {
                     navigate("/login");

@@ -309,7 +309,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           <ModalHeader
             title="Reopen Credit Request"
             handleClose={handleClose}
-            subtitle="Quickly Request Credit with DilliPay Now!"
+            subtitle="Quickly Request Credit with DIGIVOUCHERS Now!"
           />
           <Box
             component="form"
@@ -531,25 +531,25 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                         size="small"
                         onClick={() => setImageUrl(null)}
                       >
-                       Change Image
+                        Change Image
                       </Button>
                     </Box>
                   ) : (
                     <TextField
-                    label=""
-                    id="file_upload"
-                    size="small"
-                    type="file"
-                    variant="standard"
-                    onChange={handleFileChange} // File upload handler
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                    sx={{
-                      border: "none",
-                    }}
-                    required
-                  />
+                      label=""
+                      id="file_upload"
+                      size="small"
+                      type="file"
+                      variant="standard"
+                      onChange={handleFileChange} // File upload handler
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                      sx={{
+                        border: "none",
+                      }}
+                      required
+                    />
                   )}
                 </FormControl>
               </Grid>

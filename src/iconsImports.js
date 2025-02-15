@@ -49,12 +49,14 @@ import invoice from "./assets/sidenav/white/invoice.svg";
 import wave_bg from "./assets/wave-haikei.png";
 import team from "./assets/teamwork.jpg";
 import redback from "./assets/redimage.jpg";
+import BottomEnd from "./assets/BottomEndLogin.png";
 
 //bbps icons import
 import broadband_svg from "./assets/svg/broadband.svg";
 import broadband_invert_svg from "./assets/svg-invert/broadband.svg";
 import card from "./assets/svg/credit_card.svg";
 import card_invert from "./assets/svg-invert/credit_card.svg";
+
 import car_svg from "./assets/svg/car.svg";
 import car_invert_svg from "./assets/svg-invert/car_white.svg";
 import clubs_svg from "./assets/svg/clubs.svg";
@@ -319,6 +321,7 @@ export const water_drop = water_drop_svg;
 export const water_drop_invert = water_drop_invert_svg;
 export const credit_card = card;
 export const credit_card_invert = card_invert;
+export const BottomEndLogin = BottomEnd;
 //my imports
 export const irctcAuthImg = irctcAuth;
 export const paytm_img = paytm;

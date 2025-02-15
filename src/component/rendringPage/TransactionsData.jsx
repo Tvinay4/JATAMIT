@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Box, Grid } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import BarChartIcon from "@mui/icons-material/BarChart";
@@ -6,19 +6,16 @@ import PriorityHighOutlinedIcon from "@mui/icons-material/PriorityHighOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 
 // import RetTxnCardComponent from "./RetTxnCardComponent"
-import RetTxnCardComponent from '../RetTxnCardComponent';
+import RetTxnCardComponent from "../RetTxnCardComponent";
 
-import { postJsonData } from '../../network/ApiController';
-import ApiEndpoints from '../../network/ApiEndPoints';
-import { apiErrorToast } from '../../utils/ToastUtil';
-import Loader from "../loading-screen/Loader"; 
+import { postJsonData } from "../../network/ApiController";
+import ApiEndpoints from "../../network/ApiEndPoints";
+import { apiErrorToast } from "../../utils/ToastUtil";
+import Loader from "../loading-screen/Loader";
 import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { StyledTab } from '../TodayThisLastComponent';
-
-
-
+import { StyledTab } from "../TodayThisLastComponent";
 
 const TransactionsData = () => {
   const [txnDataReq, setTxnDataReq] = useState(false);
@@ -58,7 +55,7 @@ const TransactionsData = () => {
     },
   ]);
   const handleChange = (event, newValue) => {
-    if (process.env.REACT_APP_TITLE === "DilliPay")
+    if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS")
       setTxnDataDuration(newValue);
     else setTxnDataDuration(event);
   };
@@ -74,15 +71,21 @@ const TransactionsData = () => {
           const updatedData = { ...oldData };
           if (updatedData.name === "SUCCESS") {
             updatedData.balance = data.SUCCESS;
-            updatedData.percent = data.SUCCESS ? (data.SUCCESS * 100) / data.TOTAL : 0;
+            updatedData.percent = data.SUCCESS
+              ? (data.SUCCESS * 100) / data.TOTAL
+              : 0;
           }
           if (updatedData.name === "PENDING") {
             updatedData.balance = data.PENDING;
-            updatedData.percent = data.PENDING ? (data.PENDING * 100) / data.TOTAL : 0;
+            updatedData.percent = data.PENDING
+              ? (data.PENDING * 100) / data.TOTAL
+              : 0;
           }
           if (updatedData.name === "FAILED") {
             updatedData.balance = data.FAILED;
-            updatedData.percent = data.FAILED ? (data.FAILED * 100) / data.TOTAL : 0;
+            updatedData.percent = data.FAILED
+              ? (data.FAILED * 100) / data.TOTAL
+              : 0;
           }
           if (updatedData.name === "TOTAL") {
             updatedData.balance = data.TOTAL;
@@ -103,11 +106,9 @@ const TransactionsData = () => {
   useEffect(() => {
     getTxnData();
   }, [txnDataDuration]);
- 
 
   return (
     <>
-    
       {txnDataReq && <Loader loading={txnDataReq} circleBlue />}
       <Grid
         container
@@ -149,11 +150,10 @@ const TransactionsData = () => {
           borderTopLeftRadius: "4px",
         }}
       >
-         <StyledTabs
+        <StyledTabs
           value={txnDataDuration}
           onChange={handleChange}
           indicatorColor="secondary"
-         
           scrollButtons="auto"
           aria-label="full width tabs example"
         >
@@ -161,7 +161,7 @@ const TransactionsData = () => {
           <StyledTab label="THIS" value="THIS" />
           <StyledTab label="LAST" value="LAST" />
         </StyledTabs>
-       </Grid> 
+      </Grid>
     </>
   );
 };

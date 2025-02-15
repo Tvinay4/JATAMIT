@@ -150,7 +150,7 @@ const RetailerPdf = ({ user }) => {
               opacity: "0.7",
             }}
           >
-            DILLIPAY TECHNOLOGIES LIMITED 
+            DIGIVOUCHERS INDIA PRIVATE LIMITED
           </Text>
           <Text
             style={{
@@ -168,9 +168,8 @@ const RetailerPdf = ({ user }) => {
                 letterSpacing: "0.4px",
               }}
             >
-           Business Correspondent services
-       </Text>{" "}
-           
+              Business Correspondent services
+            </Text>{" "}
           </Text>
         </View>
         <View style={{ postion: "relative" }}>

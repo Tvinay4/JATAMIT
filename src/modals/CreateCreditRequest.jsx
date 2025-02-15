@@ -93,7 +93,7 @@ const CreateCreditRequest = ({ refresh, row }) => {
       mode,
       remark,
       dateValue,
-      transactionid
+      transactionid,
     }).toString();
     window.open(`/indemnityLetter?${queryString}`, "_blank");
   };
@@ -282,7 +282,7 @@ const CreateCreditRequest = ({ refresh, row }) => {
           <ModalHeader
             title="Add Credit Request"
             handleClose={handleClose}
-            subtitle="Quickly Request Credit with DilliPay Now!"
+            subtitle="Quickly Request Credit with DIGIVOUCHERS Now!"
           />
           <Box
             component="form"

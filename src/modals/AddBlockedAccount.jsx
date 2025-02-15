@@ -18,8 +18,8 @@ import { apiErrorToast, okSuccessToast } from "../utils/ToastUtil";
 import { get, postJsonData } from "../network/ApiController";
 import { whiteColor } from "../theme/setThemeColor";
 import { useForm, Controller } from "react-hook-form";
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as Yup from 'yup';
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as Yup from "yup";
 
 const AddBlockedAccount = ({ refresh }) => {
   const [open, setOpen] = useState(false);
@@ -30,10 +30,14 @@ const AddBlockedAccount = ({ refresh }) => {
   const schema = Yup.object().shape({
     acc_no: Yup.string()
       .required("Account number is required")
-      .matches(/^\d{5,16}$/, "Account number must be between 5 and 16 digits")
+      .matches(/^\d{5,16}$/, "Account number must be between 5 and 16 digits"),
   });
 
-  const { control, handleSubmit, formState: { errors } } = useForm({
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: yupResolver(schema),
   });
 
@@ -108,7 +112,7 @@ const AddBlockedAccount = ({ refresh }) => {
             <ModalHeader
               title="Add Account"
               handleClose={handleClose}
-              subtitle="Easily Add New Accounts with DilliPay"
+              subtitle="Easily Add New Accounts with DIGIVOUCHERS"
             />
             <Box
               component="form"
@@ -134,16 +138,21 @@ const AddBlockedAccount = ({ refresh }) => {
                           size="small"
                           required
                           error={!!errors.acc_no}
-                          helperText={errors.acc_no ? errors.acc_no.message : ""}
+                          helperText={
+                            errors.acc_no ? errors.acc_no.message : ""
+                          }
                           inputProps={{
                             maxLength: 16, // Limit to 16 digits
                             pattern: "[0-9]*", // Ensure only numbers can be input
                           }}
                           onInput={(e) => {
                             // Allow only digits
-                            e.target.value = e.target.value.replace(/[^0-9]/g, "");
-                          }}                    
-                              />
+                            e.target.value = e.target.value.replace(
+                              /[^0-9]/g,
+                              ""
+                            );
+                          }}
+                        />
                       )}
                     />
                   </FormControl>

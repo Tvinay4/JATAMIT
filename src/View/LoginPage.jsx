@@ -13,6 +13,7 @@ import {
   Modal,
 } from "@mui/material";
 import * as Yup from "yup";
+import { Icon } from "@iconify/react";
 import Divider from "@mui/material/Divider";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -29,6 +30,7 @@ import { Box } from "@mui/system";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import {
+  BottomEndLogin,
   lockicon,
   loginPage1,
   LoginPageIllustratorImg,
@@ -72,34 +74,30 @@ const LoginPage = () => {
   //  const handleModelClose = () => {
   //     setIsServiceDown(false);
   //   };
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   useEffect(() => {
-    const fetchTime =  () => {
+    const fetchTime = () => {
       get(
         ApiEndpoints.GET_TIME,
         "",
-      
-      setRequest,
-      (res)=>{
-       
-        const currentHour = new Date(res.data.dateTime).getHours();
-        if (currentHour >= 0 && currentHour < 6) {
-              setIsServiceDown(true);
-            } else {
-              setIsServiceDown(false);
-            }
-          
-      } ,(err) => {
-              apiErrorToast(err);
-            
-            }
-          )
-    }
-     
-    
-  
+
+        setRequest,
+        (res) => {
+          const currentHour = new Date(res.data.dateTime).getHours();
+          if (currentHour >= 0 && currentHour < 6) {
+            setIsServiceDown(true);
+          } else {
+            setIsServiceDown(false);
+          }
+        },
+        (err) => {
+          apiErrorToast(err);
+        }
+      );
+    };
+
     fetchTime();
-  
+
     const interval = setInterval(fetchTime, 60000);
     return () => clearInterval(interval);
   }, []);
@@ -181,6 +179,7 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
@@ -350,67 +349,33 @@ const LoginPage = () => {
           </Box>
         </Modal>
       )}
-      <Grid container spacing={0} sx={{ height: "100vh", overflow: "hidden" }}>
-        {loading && (
-          <Box
-            sx={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100vh",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              backdropFilter: "blur(5px)",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              zIndex: 1200,
-            }}
-          >
-            {/* <Loader loading={loading} /> */}
-          </Box>
-        )}
+      <Grid container spacing={0} sx={{ overflow: "hidden" ,m:0}}>
         {/* Left Column - Hidden on medium and smaller screens */}
         <Hidden mdDown>
           <Grid
             item
             xs={12}
-            md={7}
-            lg={7}
+            md={6}
+            lg={6}
             sx={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
-              padding: 9,
-              backgroundImage: `url(${LoginPageIllustratorImg})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              height: "100vh",
-              width: "100%",
+          
+              
             }}
           >
-            <Typography
-              variant="h1"
+            <Box
               sx={{
-                color: "#fff",
-                // mb: { xs: 10, sm: 15, md: 12 },
-                // mt:{lg:0},
-                // textAlign: {xs:"center",md:"left"},
-                // marginLeft:{xs:0,sm:-10,md:-6,lg:16},
-                fontSize: { xs: "18px", sm: "20px", md: "32px", lg: "44px" },
-                fontFamily: "Manrope",
-                justifyContent: "top",
-                alignItems: "center",
-                lineHeight: "1.3",
-                letterSpacing: "0.08em",
-
-                mb: { lg: "250px" },
-                // marginLeft: { xs: 0, sm: -10, md: -6, lg: 0 },
+                backgroundImage: `url(${LoginPageIllustratorImg})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+               
+                height: "100vh",
+                width: "100%",
               }}
             >
-              Dillipay <br /> Simplifying Payments <br /> Amplifying Growth
-            </Typography>
+             
+            </Box>
           </Grid>
         </Hidden>
 
@@ -418,38 +383,53 @@ const LoginPage = () => {
         <Grid
           item
           xs={12}
-          md={5}
-          lg={5}
+          md={6}
+          lg={6}
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            padding: 6,
-            my: "auto",
-            maxHeight: "80vh",
+
+            padding: 11,
+            overflowY: "scroll",
+            maxHeight: "100vh",
+            width: "100%",
           }}
         >
-          <Box sx={{}}>
-            <Button>
-              <Box
-                component="img"
-                src={loginPage1}
-                alt="admin dash"
-                sx={{
-                  maxWidth: "50%",
-                  // maxHeight: "46%",
-                  maxHeight: "80vh",
-                  objectFit: "cover",
-                  mb: 4,
-                }}
-                onClick={() => navigate("/")}
-              />
-            </Button>
+          <img
+            src={BottomEndLogin}
+            alt="Bottom End"
+            style={{
+              position: "absolute",
+              bottom: "-140px",
+              right: "-130px",
+              width: "350px",
+              height: "350px",
+              objectFit: "contain",
+              transformOrigin: "bottom right",
+              transform: "rotate(0deg)",
+            }}
+          />
+          <Box sx={{ p: 1, m: 3 }}>
+            <Box
+              component="img"
+              src={loginPage1}
+              alt="admin dash"
+              sx={{
+                maxWidth: "50%",
+                // maxHeight: "46%",
+                maxHeight: "80vh",
+                objectFit: "cover",
+                mb: 3.3,
+              }}
+              onClick={() => navigate("/")}
+            />
+
             <Loader loading={loading} />
             <Box component="form" id="contact" onSubmit={handleClick}>
               {!isOtpField && !isOtpField ? (
-                <Grid container spacing={0.5} sx={{ mb: 6 }}>
-                  <Grid item xs={12} sx={{ mb: 2 }}>
+                <Grid spacing={0} sx={{ mb: 6 }}>
+                  <Grid item xs={12} sx={{ mb: 1 }}>
                     <FormControl
                       sx={{
                         width: "100%",
@@ -516,19 +496,19 @@ const LoginPage = () => {
                           style: { padding: 0, borderRadius: "10px" }, // Adjust padding as needed
 
                           endAdornment: (
-                            // <InputAdornment sx={{justifyContent:"end"}}>
-                            //   <IconButton>
-                            //     <Icon
-                            //       icon="mi:call"
-                            //       style={{ color: "#fff",backgroundColor:"#0F7709",width:"100%" }}
-                            //     />
-                            //   </IconButton>
-                            // </InputAdornment>
-                            <img
-                              src={mobilelogin}
-                              alt=""
-                              style={{ width: "57px" }}
-                            />
+                            <InputAdornment position="end">
+                              <IconButton>
+                                <Icon
+                                  icon="solar:phone-outline"
+                                  style={{ color: "#292D32" }}
+                                />
+                              </IconButton>
+                            </InputAdornment>
+                            // <img
+                            //   src={mobilelogin}
+                            //   alt=""
+                            //   style={{ width: "57px" }}
+                            // />
                           ),
                         }}
                         onKeyDown={(e) => {
@@ -591,7 +571,10 @@ const LoginPage = () => {
                               if (setPassword) setPassword(e.target.value);
                             }}
                             InputProps={{
-                              style: { padding: 0, borderRadius: "10px" }, // Adjust padding as needed
+                              style: {
+                                padding: 0,
+                                borderRadius: "10px",
+                              }, // Adjust padding as needed
                               endAdornment: (
                                 <InputAdornment position="end">
                                   <IconButton
@@ -605,14 +588,14 @@ const LoginPage = () => {
                                       <VisibilityOff />
                                     )}
                                   </IconButton>
-                                  <img
-                                    src={lockicon}
-                                    alt="lock"
+                                  {/* <Icon
+                                    icon="ic:outline-lock"
                                     style={{
-                                      width: "57px",
-                                      alignItems: "flex-end",
+                                      color: "#292D32",
+                                      width: "22px",
+                                      height: "22px",
                                     }}
-                                  />
+                                  /> */}
                                 </InputAdornment>
                               ),
                             }}
@@ -706,12 +689,13 @@ const LoginPage = () => {
                         // mt: 2,
                         // marginLeft:3,
                         // borderRadius: 6,
-                        color: "#fff",
-                        backgroundColor: "#0F7709",
+                        color: "#000",
+                        backgroundColor: " #D8BA87",
                         fontWeight: "bold",
                         "&:hover": {
-                          backgroundColor: "#0F7709",
+                          backgroundColor: "rgb(190, 170, 135)",
                           fontWeight: "bold",
+                          color: "#FFF",
                         },
                       }}
                       // disabled={!(captchaChecked && agreedToTerms) && (isMobv && username !== "")}
@@ -773,13 +757,13 @@ const LoginPage = () => {
                         // mt: 2,
                         // marginLeft:3,
                         // borderRadius: 6,
-                        color: "#0F7709",
-                        border: "1px solid #0F7709",
+                        color: " #D8BA87",
+
                         fontWeight: "bold",
-                        backgroundColor: "#fff", //"#4253F0", "#D48628"
+                        backgroundColor: "#000",
                         "&:hover": {
-                          backgroundColor: "#0F7709",
-                          color: "#fff",
+                          backgroundColor: "000",
+                          color: "#D8BA87",
                         },
                       }}
                       // disabled={!(captchaChecked && agreedToTerms) && (isMobv && username !== "")}

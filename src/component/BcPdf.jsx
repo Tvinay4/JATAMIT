@@ -96,7 +96,7 @@
 //         </Text>
 
 //         <Text style={styles.text}>
-//           DILLIPAY TECHNOLOGIES LIMITED s Private Limited (“{envName}”) a
+//           DIGIVOUCHERS INDIA PRIVATE LIMITED s Private Limited (“{envName}”) a
 //           company incorporated under The Companies Act, 1956 and having its
 //           registered office at {getFirmAddress()} is a Business Correspondent
 //           with BCs.
@@ -149,7 +149,7 @@
 //           <Text
 //             style={{ fontSize: "8px", color: "#00693E", marginBottom: "0px" }}
 //           >
-//             DILLIPAY TECHNOLOGIES LIMITED s Private Limited |{" "}
+//             DIGIVOUCHERS INDIA PRIVATE LIMITED s Private Limited |{" "}
 //             <Text style={{ marginBottom: "0px" }}>
 //               CIN: U74999DL2017PTC316608
 //             </Text>
@@ -249,16 +249,16 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-// app.dillpay.com          
+// app.dillpay.com
 //         </Text>
 //             </View>
 //           </View>
 //         </View>
 //       </Page>
 //       {/* page 2 */}
-    
+
 //       {/* page 3 */}
-     
+
 //     </Document>
 //   );
 // };
