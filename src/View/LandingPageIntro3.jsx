@@ -155,8 +155,8 @@ const LandingPageIntro3 = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 style={{
-                  backgroundColor: getEnv() === "Dillipay" ? "#fff" : "",
-                  borderRadius: getEnv() === "Dillipay" ? "50%" : "",
+                  backgroundColor: getEnv() === "DigiVouchers" ? "#fff" : "",
+                  borderRadius: getEnv() === "DigiVouchers" ? "50%" : "",
                 }}
               />
             </Grid>

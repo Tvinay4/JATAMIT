@@ -436,8 +436,7 @@ const RetailerAgreement = () => {
           </Typography>
           <Typography variant="body1" paragraph>
             A company incorporated under The Companies Act, 2013, having its
-            registered office at Plot No 5, Second Floor, Pocket 5, Sector 24,
-            Rohini, Delhi-110085.
+            registered office at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old Town,Ambala,Haryana,134003.
           </Typography>
           <Typography variant="body1" paragraph>
             (Hereinafter referred to as “DIGIVOUCHERS” which expression shall,

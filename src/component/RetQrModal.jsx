@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
-import { Box, Grid, Typography, IconButton ,Tooltip} from "@mui/material";
+import { Box, Grid, Typography, IconButton, Tooltip } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download"; // MUI download icon
 import QRCode from "react-qr-code";
 import AuthContext from "../store/AuthContext";
 import { upiWeb } from "../iconsImports";
 import html2pdf from "html2pdf.js"; //
-
 
 const RetQrModal = () => {
   const authCtx = useContext(AuthContext);
@@ -14,7 +13,7 @@ const RetQrModal = () => {
 
   const selfqrValue =
     vqr && vqr
-      ? `VPA=` + vqr + `&pn=Dillipay Technologies Limited`
+      ? `VPA=` + vqr + `&pn=DigiVouchers Technologies Limited`
       : "if you want to use our qr ";
 
   const downloadAsPDF = () => {

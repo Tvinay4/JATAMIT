@@ -28,8 +28,8 @@ const Terms = () => {
                 <strong> “Platform”</strong>
                 created by DIGIVOUCHERS INDIA PRIVATE LIMITED, a company
                 incorporated under the laws of India, with its registered office
-                at Plot No.5 , Second Floor ,Pocket-5, Rohini Sector 24, New
-                Delhi 110085
+                at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
+                Town,Ambala,Haryana,134003.
                 <strong>(“DILLIPAY ” or “Company”)</strong>.
               </p>
 
@@ -275,8 +275,8 @@ const Terms = () => {
                   any other confidential information. If a User has any reason
                   to believe that his Account is no longer secure, then the User
                   shall immediately change the Account password and indemnify
-                  DILLIPAY TECHNOLOGIES from any liabilities that may arise from
-                  the misuse of such User’s Account.
+                  DigiVouchers TECHNOLOGIES from any liabilities that may arise
+                  from the misuse of such User’s Account.
                 </div>
 
                 <div className="landing-bg_para">
@@ -328,7 +328,7 @@ const Terms = () => {
                       DIGIVOUCHERS will make the best efforts to provide
                       notifications and it shall be deemed that the User shall
                       have received the information sent from the Company during
-                      the course of, or in relation to, using the DILLIPAY
+                      the course of, or in relation to, using the DigiVouchers
                       Platform or availing any Services. DIGIVOUCHERS
                       TECHNOLOGIES shall not be under any obligation to confirm
                       the authenticity of the person(s) receiving the alert. The
@@ -383,7 +383,7 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      It shall be at the sole discretion of DILLIPAY
+                      It shall be at the sole discretion of DigiVouchers
                       TECHNOLOGIES to reverse any transaction subject to
                       approval of the concerned Service Provider.
                       Notwithstanding the above, if any court of law finds that
@@ -409,10 +409,10 @@ const Terms = () => {
                       reasonable and fair allocation of risk between Users and
                       DIGIVOUCHERS , and that the warranty, disclaimers, and the
                       limitations of liability set forth herein form an
-                      essential basis of the bargain between Users and DILLIPAY
-                      . DIGIVOUCHERS would not be able to provide the services
-                      to Users on an economically reasonable basis without these
-                      limitations.
+                      essential basis of the bargain between Users and
+                      DigiVouchers . DIGIVOUCHERS would not be able to provide
+                      the services to Users on an economically reasonable basis
+                      without these limitations.
                     </div>
                     <div className="landing-bg_para">
                       Users understand that DIGIVOUCHERS or the Service
@@ -526,7 +526,7 @@ const Terms = () => {
                       responsibility of User.
                     </div>
                     <div className="landing-bg_para">
-                      The User hereby acknowledges and agrees that DILLIPAY
+                      The User hereby acknowledges and agrees that DigiVouchers
                       SERVICES is a facilitator for payment processing services
                       which are requested by Users and DIGIVOUCHERS TECHNOLOGIES
                       shall not be responsible for any unauthorized transaction
@@ -570,10 +570,10 @@ const Terms = () => {
                       full end to end transaction details/information
                       collected/carried/processed as part of the message/payment
                       instructions. The User also acknowledges and agrees that
-                      the account balance maintained by the Users on DILLIPAY
-                      Platform shall be non-interest bearing and shall be
-                      forfeited by DIGIVOUCHERS if found lying unused for more
-                      than 365 days.
+                      the account balance maintained by the Users on
+                      DigiVouchers Platform shall be non-interest bearing and
+                      shall be forfeited by DIGIVOUCHERS if found lying unused
+                      for more than 365 days.
                     </div>
                   </div>
                 </div>
@@ -687,8 +687,8 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       due to failure of a User to obtain any required statutory
                       or regulatory approval necessary for the performance of
-                      its obligations in the Applicable Agreement with DILLIPAY
-                      ,
+                      its obligations in the Applicable Agreement with
+                      DigiVouchers ,
                     </div>
                     <div className="landing-bg_para">
                       all liability, claims, damages, costs, expenses suffered
@@ -722,17 +722,17 @@ const Terms = () => {
                   DIGIVOUCHERS ’s services or the Site will create any warranty
                   not expressly stated herein. DIGIVOUCHERS does not authorize
                   anyone to make any warranty on its behalf and Users should not
-                  rely on any such statement. Users acknowledge that DILLIPAY
-                  SERVICES is a reseller and is not liable for any third-party
-                  seller’s obligations. It is User’s responsibility to evaluate
-                  the accuracy, completeness and usefulness of all opinions,
-                  advice, merchandise and other information provided through the
-                  Site or on the internet generally. DIGIVOUCHERS does not
-                  warrant that its services will be uninterrupted, or free of
-                  errors, viruses or other harmful components, and that any of
-                  the foregoing defects will be corrected. DIGIVOUCHERS ’s
-                  services and the Site and any data, information, third party
-                  software, Reference Sites, or Software made available in
+                  rely on any such statement. Users acknowledge that
+                  DigiVouchers SERVICES is a reseller and is not liable for any
+                  third-party seller’s obligations. It is User’s responsibility
+                  to evaluate the accuracy, completeness and usefulness of all
+                  opinions, advice, merchandise and other information provided
+                  through the Site or on the internet generally. DIGIVOUCHERS
+                  does not warrant that its services will be uninterrupted, or
+                  free of errors, viruses or other harmful components, and that
+                  any of the foregoing defects will be corrected. DIGIVOUCHERS
+                  ’s services and the Site and any data, information, third
+                  party software, Reference Sites, or Software made available in
                   conjunction with or through its services and the Site are
                   provided on an “as is” and “as available”, “with all faults”
                   basis and without warranties or representations of any kind
@@ -1024,11 +1024,11 @@ const Terms = () => {
                       <u>NOTICE</u>. DIGIVOUCHERS may provide Users with notices
                       and communications by email, regular mail, or posts on the
                       DIGIVOUCHERS website(s) or by any other reasonable means.
-                      Except as otherwise set forth herein, notice to DILLIPAY
-                      must be sent by courier or registered post to the Legal
-                      Department, DIGIVOUCHERS TECHNOLOGIES PRIVATE LIMITED s
-                      Pvt. Ltd., 1st Floor, B1/A5, Mohan Cooperative Industrial
-                      Estate, New Delhi - 110044, India.
+                      Except as otherwise set forth herein, notice to
+                      DigiVouchers must be sent by courier or registered post to
+                      the Legal Department, DIGIVOUCHERS TECHNOLOGIES PRIVATE
+                      LIMITED s Pvt. Ltd., 1st Floor, B1/A5, Mohan Cooperative
+                      Industrial Estate, New Delhi - 110044, India.
                     </div>
 
                     <div className="landing-bg_para">
@@ -1043,7 +1043,7 @@ const Terms = () => {
                       <u>RELATIONSHIP BETWEEN THE PARTIES</u>. The Terms of Use
                       are not intended by the Parties to constitute or create a
                       joint venture, pooling arrangement, partnership, agency or
-                      formal business organization of any kind. DILLIPAY
+                      formal business organization of any kind. DigiVouchers
                       SERVICES and the User shall be independent contractors
                       with each other for all purposes at all times and neither
                       Party shall act as or hold itself out as an agent or

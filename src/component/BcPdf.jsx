@@ -185,8 +185,7 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-//                 {`Plot No.5 , Second Floor ,Pocket-5, Rohini Sector 24,
-//                  New Delhi 110085`}
+//                 {`907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old Town,Ambala,Haryana,134003`}
 //               </Text>
 //             </View>
 //             <View
@@ -228,7 +227,7 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-// support@dillipay.com
+// support@DigiVouchers.com
 //               </Text>
 //             </View>
 //             <View

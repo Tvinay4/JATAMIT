@@ -421,8 +421,8 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             <strong>DIGIVOUCHERS INDIA PRIVATE LIMITED</strong>, a company
             incorporated under The Companies Act, 2013, having its registered
-            office at Plot No 5, Second Floor, Pocket 5, Sector 24, Rohini,
-            Delhi-110085.
+            office at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
+            Town,Ambala,Haryana,134003 .
           </p>
 
           <p style={{ marginBottom: "30px", marginLeft: "20px" }}>
@@ -1081,7 +1081,7 @@ const DistributorAgreement = () => {
           </ul>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor undertakes that Distributor shall not indulge /use the
-            technology platform of Dillipay for the following:{" "}
+            technology platform of DigiVouchers for the following:{" "}
           </p>
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
@@ -1241,7 +1241,7 @@ const DistributorAgreement = () => {
             DIGIVOUCHERS may communicate include communications including but
             not limited to voice, email, SMS, digital video, and / or any mode
             of innovative communication method, as deemed fit and proper by the
-            company/ Dillipay.
+            company/ DigiVouchers.
           </p>
 
           <h2
@@ -1260,7 +1260,7 @@ const DistributorAgreement = () => {
             DIGIVOUCHERS may communicate include communications including but
             not limited to voice, email, SMS, digital video, and / or any mode
             of innovative communication method, as deemed fit and proper by the
-            company/ Dillipay.{" "}
+            company/ DigiVouchers.{" "}
           </p>
 
           <table
