@@ -415,7 +415,7 @@ const DistributorAgreement = () => {
               marginBottom: "20px",
             }}
           >
-            THIS Agreement is made as of this Between:
+            This Agreement is made as of this Between:
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>

@@ -457,7 +457,7 @@ const AdminDistributorAgreement = () => {
               marginBottom: "20px",
             }}
           >
-            THIS Agreement is made as of this Between:
+            This Agreement is made as of this Between:
           </p>
           {/* <Button onClick={()=>fetchImage("signature")}>fetch</Button> */}
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>

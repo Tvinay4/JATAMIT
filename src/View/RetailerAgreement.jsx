@@ -428,7 +428,7 @@ const RetailerAgreement = () => {
             }}
             paragraph
           >
-            THIS Agreement is made as of this date between:
+            This Agreement is made as of this date between:
           </Typography>
 
           <Typography variant="h5" fontWeight="bold" gutterBottom>
