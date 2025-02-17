@@ -99,20 +99,19 @@ const LandingAboutUsPage = () => {
               sx={{ textAlign: "left", mr: { md: 1.5, sm: 0, xs: 0 } }}
             >
               <div className="justify-content">
-                India's current mottos are "financial inclusion" and
-                "AatmaNirbharta".
+                India’s vision is shaped by the guiding principles of "financial
+                inclusion" and "AatmaNirbharta."
               </div>
               <div className="mt-2 justify-content">
-                Our story starts at the cusp of these two ideologies. Lakhs of
-                hard-working people in the unorganized retail sector form the
-                backbone of India's economy.
+                Our journey began at the intersection of these powerful
+                ideologies. Across India, millions of dedicated individuals in
+                the unorganized retail sector are the backbone of our economy.
               </div>
-
               <div className="mt-2 justify-content">
-                Whether in a village, town or a large city, shopkeepers and
-                kirana store owners have been unable to join the digital
-                revolution because of factors like lack of awareness, knowledge
-                and proper fintech support.
+                Whether in a village, town, or bustling city, shopkeepers and
+                kirana store owners face significant challenges in joining the
+                digital revolution—primarily due to factors like lack of
+                awareness, knowledge, and the right fintech support.
               </div>
             </Grid>
             <Grid
@@ -121,192 +120,191 @@ const LandingAboutUsPage = () => {
               sx={{ textAlign: "left", ml: { md: 1.5, sm: 0, xs: 0 } }}
               className="justify-content"
             >
-              This is the problem {getEnv()} was built to address. Established
-              by a team of professionals with decades of experience in the BFSI
-              industry, {getEnv()} focuses on developing insights into the deep
-              market potential of the financial transaction and financial
-              technology space in India. We aim to lead this pool of persevering
-              small-scale entrepreneurs into a financially inclusive,
-              financially stronger future.
+              This is the problem {getEnv()} aims to solve. Founded by a team of
+              industry veterans with decades of experience in the BFSI sector,{" "}
+              {getEnv()} is focused on unlocking the vast market potential
+              within India’s financial transaction and fintech landscape. We are
+              committed to guiding small-scale entrepreneurs towards a
+              financially inclusive and empowered future.
             </Grid>
           </Grid>
         </Container>
         {/* the about us image */}
         {envName !== "MoneyOddr" && (
-          <Grid md={12} container>
-            <Grid md={5.5} sx={{ mb: { md: 0, xs: 5 } }}>
-              <img src={aboutUs} width="90%" alt="About us img" />
-            </Grid>
-            <Grid
-              md={6.5}
-              container
-              sx={{
-                mt: { md: 15, xs: 0 },
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Grid
-                md={5}
-                className="bottom2top"
-                sx={{
-                  my: { md: 0, xs: 5 },
-                  minWidth: { md: "0", xs: "350px" },
-                }}
-              >
-                <div className="flex-hs-vs">
-                  <StorefrontIcon
-                    sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
-                    }}
-                  />
-                  <div className="flex-hc-vs flex-d-col">
-                    <span
-                      className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      5000+
-                    </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
-                        Merchants
-                      </span>
-                      <span> More than 5000 merchants</span>
-                      <br />
-                      onboarded
-                    </div>
-                  </div>
-                </div>
-              </Grid>
-              <Grid
-                md={5}
-                className="bottom2top"
-                sx={{
-                  my: { md: 0, xs: 5 },
-                  minWidth: { md: "0", xs: "350px" },
-                }}
-              >
-                <div className="flex-hs-vs">
-                  <GroupAddIcon
-                    sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
-                    }}
-                  />
-                  <div className="flex-hc-vs flex-d-col">
-                    <span
-                      className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      11 Lakh+
-                    </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
-                        Customers
-                      </span>
-                      <span> More than 11 Lakh happy customers </span>
-                    </div>
-                  </div>
-                </div>
-              </Grid>
-              <Grid
-                md={5}
-                className="bottom2top"
-                sx={{
-                  my: { md: 0, xs: 5 },
-                  minWidth: { md: "0", xs: "350px" },
-                }}
-              >
-                <div className="flex-hs-vs">
-                  <ApartmentIcon
-                    sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
-                    }}
-                  />
-                  <div className="flex-hc-vs flex-d-col">
-                    <span
-                      className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      5000+
-                    </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
-                        City
-                      </span>
-                      <span>Spread across 5000 plus cities</span>
-                    </div>
-                  </div>
-                </div>
-              </Grid>
-              <Grid
-                md={5}
-                className="bottom2top"
-                sx={{
-                  my: { md: 0, xs: 5 },
-                  minWidth: { md: "0", xs: "350px" },
-                }}
-              >
-                <div className="flex-hs-vs">
-                  <StorefrontIcon
-                    sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
-                    }}
-                  />
-                  <div className="flex-hc-vs flex-d-col">
-                    <span
-                      className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      5,00,000+
-                    </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                        className="mr-2"
-                      >
-                        Transactions
-                      </span>
-                      <span>More than 5,00,000 Transactions Monthly</span>
-                    </div>
-                  </div>
-                </div>
-              </Grid>
-            </Grid>
-          </Grid>
+ <Grid container className="d-flex justify-content-center" sx={{ pt: 5, background: "rgb(231, 196, 120)", borderRadius: "15px" }}>
+ <Grid md={5.5} sx={{ mb: { md: 0, xs: 5 } }}>
+   <img src={aboutUs} width="90%" alt="About us img" style={{ borderRadius: "15px" }} />
+ </Grid>
+ <Grid md={6.5} container sx={{ mt: { md: 15, xs: 0 }, display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 4 }}>
+
+   {/* Merchant Section */}
+   <Grid
+     md={5}
+     className="bottom2top"
+     sx={{
+       my: { md: 0, xs: 5 },
+       minWidth: { md: "0", xs: "350px" },
+       display: "flex",
+       justifyContent: "center",
+       alignItems: "center",
+       textAlign: "center",
+       background: "none", // Removed background color
+       borderRadius: "12px",
+       padding: "20px",
+       boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
+     }}
+   >
+     <div>
+       <StorefrontIcon
+         sx={{
+           color: "#ff5722", // New vibrant red-orange icon
+           fontSize: "3.5rem",
+           mb: 2,
+         }}
+       />
+       <div>
+         <span
+           className="landing-small-font less-thick-font"
+           style={{ fontSize: "1.7rem", fontWeight: "800", color: "#d32f2f" }} // Bold and strong red
+         >
+           5000+
+         </span>
+         <div style={{ fontSize: "16px", marginTop: "8px", color: "#ff5722" }}>
+           <span style={{ fontWeight: "800", fontSize: "18px" }}>Merchants</span>
+           <div>Onboarded across the country</div>
+         </div>
+       </div>
+     </div>
+   </Grid>
+
+   {/* Customers Section */}
+   <Grid
+     md={5}
+     className="bottom2top"
+     sx={{
+       my: { md: 0, xs: 5 },
+       minWidth: { md: "0", xs: "350px" },
+       display: "flex",
+       justifyContent: "center",
+       alignItems: "center",
+       textAlign: "center",
+       background: "none", // Removed background color
+       borderRadius: "12px",
+       padding: "20px",
+       boxShadow: "0 4px 15px rgba(103, 158, 86, 0.5)", // Light shadow for pop
+     }}
+   >
+     <div>
+       <GroupAddIcon
+         sx={{
+           color: "#388e3c", // Keeping the vibrant green but changing icon style
+           fontSize: "3.5rem",
+           mb: 2,
+         }}
+       />
+       <div>
+         <span
+           className="landing-small-font less-thick-font"
+           style={{ fontSize: "1.7rem", fontWeight: "800", color: "#388e3c" }} // Bold green text
+         >
+           11 Lakh+
+         </span>
+         <div style={{ fontSize: "16px", marginTop: "8px", color: "#388e3c" }}>
+           <span style={{ fontWeight: "800", fontSize: "18px" }}>Customers</span>
+           <div>Happy customers across India</div>
+         </div>
+       </div>
+     </div>
+   </Grid>
+
+   {/* Cities Section */}
+   <Grid
+     md={5}
+     className="bottom2top"
+     sx={{
+       my: { md: 0, xs: 5 },
+       minWidth: { md: "0", xs: "350px" },
+       display: "flex",
+       justifyContent: "center",
+       alignItems: "center",
+       textAlign: "center",
+       background: "none", // Removed background color
+       borderRadius: "12px",
+       padding: "20px",
+       boxShadow: "0 4px 15px rgba(0, 188, 212, 0.5)", // Light shadow for pop
+     }}
+   >
+     <div>
+       <ApartmentIcon
+         sx={{
+           color: "#0097a7", // Vibrant blue icon to complement the background
+           fontSize: "3.5rem",
+           mb: 2,
+         }}
+       />
+       <div>
+         <span
+           className="landing-small-font less-thick-font"
+           style={{ fontSize: "1.7rem", fontWeight: "800", color: "#0097a7" }} // Bold blue
+         >
+           5000+
+         </span>
+         <div style={{ fontSize: "16px", marginTop: "8px", color: "#0097a7" }}>
+           <span style={{ fontWeight: "800", fontSize: "18px" }}>Cities</span>
+           <div>Spread across 5000+ cities</div>
+         </div>
+       </div>
+     </div>
+   </Grid>
+
+   {/* Transactions Section */}
+   <Grid
+     md={5}
+     className="bottom2top"
+     sx={{
+       my: { md: 0, xs: 5 },
+       minWidth: { md: "0", xs: "350px" },
+       display: "flex",
+       justifyContent: "center",
+       alignItems: "center",
+       textAlign: "center",
+       background: "none", // Removed background color
+       borderRadius: "12px",
+       padding: "20px",
+       boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
+     }}
+   >
+     <div>
+       <StorefrontIcon
+         sx={{
+           color: "#ff6f00", // Icon color adjusted
+           fontSize: "3.5rem",
+           mb: 2,
+         }}
+       />
+       <div>
+         <span
+           className="landing-small-font less-thick-font"
+           style={{ fontSize: "1.7rem", fontWeight: "800", color: "#d32f2f" }} // Bold red emphasis
+         >
+           5,00,000+
+         </span>
+         <div style={{ fontSize: "16px", marginTop: "8px", color: "#ff5722" }}>
+           <span style={{ fontWeight: "800", fontSize: "18px" }}>Transactions</span>
+           <div>Processed Monthly</div>
+         </div>
+       </div>
+     </div>
+   </Grid>
+ </Grid>
+</Grid>
+
+ 
+
+
+
+    
+       
         )}
       </Grid>
       <>

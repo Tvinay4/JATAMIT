@@ -49,12 +49,17 @@ import invoice from "./assets/sidenav/white/invoice.svg";
 import wave_bg from "./assets/wave-haikei.png";
 import team from "./assets/teamwork.jpg";
 import redback from "./assets/redimage.jpg";
-
+import BottomEnd from "./assets/BottomEndLogin.png";
+import avatar01 from "./assets/avatar01.jpg";
+import avatar02 from "./assets/avatar02.jpg";
+import avatar03 from "./assets/avatar03.jpg";
+import avatar04 from "./assets/avatar04.jpg";
 //bbps icons import
 import broadband_svg from "./assets/svg/broadband.svg";
 import broadband_invert_svg from "./assets/svg-invert/broadband.svg";
 import card from "./assets/svg/credit_card.svg";
 import card_invert from "./assets/svg-invert/credit_card.svg";
+
 import car_svg from "./assets/svg/car.svg";
 import car_invert_svg from "./assets/svg-invert/car_white.svg";
 import clubs_svg from "./assets/svg/clubs.svg";
@@ -129,11 +134,11 @@ import complaintsImg from "./assets/just_icons/complaints.svg";
 import BusImage from "./assets/busimage.jpg";
 import TrainImage from "./assets/irctcimage.png";
 import HotelImage from "./assets/hotelimage.jpg";
-import credit_1 from  "./assets/dashboard_icons/credit-card.png"
-import mutual from  "./assets/dashboard_icons/profits.png"
-import loan_1 from  "./assets/dashboard_icons/contract.png"
-import account_1 from "./assets/dashboard_icons/user.png"
-import demand_1 from "./assets/dashboard_icons/sticky-notes.png"
+import credit_1 from "./assets/dashboard_icons/credit-card.png";
+import mutual from "./assets/dashboard_icons/profits.png";
+import loan_1 from "./assets/dashboard_icons/contract.png";
+import account_1 from "./assets/dashboard_icons/user.png";
+import demand_1 from "./assets/dashboard_icons/sticky-notes.png";
 // side nav images
 
 import linkdinIcon from "../src/assets/linkdin.png";
@@ -212,7 +217,7 @@ import nepal_1 from "./assets/dashboard_icons/nepal.png";
 import vpay_1 from "./assets/dashboard_icons/vpay.png";
 import upi_1 from "./assets/dashboard_icons/upi.png";
 import aeps_1 from "./assets/dashboard_icons/aeps.png";
-import cylinder_1 from "./assets/dashboard_icons/gas-cylinder.png"
+import cylinder_1 from "./assets/dashboard_icons/gas-cylinder.png";
 import bus_1 from "./assets/dashboard_icons/bus.png";
 import train_1 from "./assets/dashboard_icons/train.png";
 import hotel_1 from "./assets/dashboard_icons/hotel.png";
@@ -236,43 +241,42 @@ import macintosh_1 from "./assets/macintosh.png";
 import windows_1 from "./assets/windows1.png";
 import linux_1 from "./assets/linux.png";
 import signAvatar from "./assets/signAvatar.png";
-import pnb from "./assets/bankicons/pnb.png"
-import sbib from "./assets/bankicons/sbi.png"
-import axis from "./assets/bankicons/Axis.jpg"
+import pnb from "./assets/bankicons/pnb.png";
+import sbib from "./assets/bankicons/sbi.png";
+import axis from "./assets/bankicons/Axis.jpg";
 // import idfc from "./assets/bankicons/idfc.jpg"
-import yesbank from "./assets/bankicons/yes.png"
-import hdfc from "./assets/bankicons/hdfc.png"
-import rbl from "./assets/bankicons/rbl.png"
-import idfc from "./assets/bankicons/IDFC.png"
-import defaultbank from "./assets/bankicons/defaultBank.svg"
-import ujjivanB from "./assets/bankicons/ujjivan.jpeg"
+import yesbank from "./assets/bankicons/yes.png";
+import hdfc from "./assets/bankicons/hdfc.png";
+import rbl from "./assets/bankicons/rbl.png";
+import idfc from "./assets/bankicons/IDFC.png";
+import defaultbank from "./assets/bankicons/defaultBank.svg";
+import ujjivanB from "./assets/bankicons/ujjivan.jpeg";
 
-import pnbs from "./assets/bankicons/pnb.svg"
-import sbibs from "./assets/bankicons/sbi.svg"
-import axiss from "./assets/bankicons/Axis.jpg"
+import pnbs from "./assets/bankicons/pnb.svg";
+import sbibs from "./assets/bankicons/sbi.svg";
+import axiss from "./assets/bankicons/Axis.jpg";
 // import idfc from "./assets/bankicons/idfc.jpg"
-import yesbanks from "./assets/bankicons/yes.svg"
-import hdfcs from "./assets/bankicons/hdfc.svg"
-import rbls from "./assets/bankicons/rbl.svg"
-import idfcs from "./assets/bankicons/IDFC.svg"
-export const sbiB=sbib
-export const pnbB=pnb
-export const axisB= axis
-export const rblB= rbl
-export const yesbankB= yesbank
-export const hdfcB= hdfc
-export const idfcB= idfc
-export const defaultBIcon= defaultbank
-export const ujjivanb= ujjivanB
+import yesbanks from "./assets/bankicons/yes.svg";
+import hdfcs from "./assets/bankicons/hdfc.svg";
+import rbls from "./assets/bankicons/rbl.svg";
+import idfcs from "./assets/bankicons/IDFC.svg";
+export const sbiB = sbib;
+export const pnbB = pnb;
+export const axisB = axis;
+export const rblB = rbl;
+export const yesbankB = yesbank;
+export const hdfcB = hdfc;
+export const idfcB = idfc;
+export const defaultBIcon = defaultbank;
+export const ujjivanb = ujjivanB;
 
-export const sbiS=sbibs
-export const pnbS=pnbs
-export const axisS= axiss
-export const rblS= rbls
-export const yesbankS= yesbanks
-export const hdfcS= hdfcs
-export const idfcS= idfcs
-
+export const sbiS = sbibs;
+export const pnbS = pnbs;
+export const axisS = axiss;
+export const rblS = rbls;
+export const yesbankS = yesbanks;
+export const hdfcS = hdfcs;
+export const idfcS = idfcs;
 
 export const Logo = biggpayLogo;
 export const smLogo = biggpayLogo_sm;
@@ -319,6 +323,12 @@ export const water_drop = water_drop_svg;
 export const water_drop_invert = water_drop_invert_svg;
 export const credit_card = card;
 export const credit_card_invert = card_invert;
+export const BottomEndLogin = BottomEnd;
+export const avatar1 = avatar01;
+export const avatar2 = avatar02;
+export const avatar3 = avatar03;
+export const avatar4 = avatar04;
+
 //my imports
 export const irctcAuthImg = irctcAuth;
 export const paytm_img = paytm;
@@ -370,7 +380,7 @@ export const contact_us = contact_img;
 export const contact_Us = contactimg;
 export const who_we_are = we_are;
 export const teamWork = team;
-export const Redback =redback
+export const Redback = redback;
 
 export const yellowNoti = yellowinfo;
 export const redNoti = redinfo;

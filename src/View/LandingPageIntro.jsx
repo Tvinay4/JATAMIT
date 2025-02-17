@@ -1,162 +1,123 @@
-import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
-import React from "react";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import React, { useState } from "react";
 import { PrimaryButton } from "../theme/Theme";
 import { lp_illustration } from "../iconsImports";
 import { useNavigate } from "react-router-dom";
 import { getEnv } from "../theme/setThemeColor";
-import { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
 const LandingPageIntro = () => {
   const navigate = useNavigate();
-  const [env, setEnv] = useState(getEnv());
+  const [env] = useState(getEnv());
 
   return (
     <Box
       className="landing-bg"
       id="landing-intro"
       sx={{
-        // backgroundColor: "#84b067",
-        backgroundSize: { md: "cover", xs: "contain" },
+        background:
+          "linear-gradient(135deg,rgb(199, 161, 90) 40%,rgba(179, 173, 139, 0.41) 100%)",
         color: "#fff",
-        height: "100%",
+        minHeight: "100vh",
         width: "100%",
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        padding: { xs: "3rem 1.5rem", md: "2rem 2rem" },
       }}
     >
-      <Container maxWidth="xl">
-        <Grid
-          container
-          xs={12}
-          sx={{ px: { md: 8, sm: 2, xs: 1 }, alignItems: "center" }}
-        >
-          <Grid
-            item
-            md={env === "DilliPay" || env === "PaisaKart" ? 6 : 12}
-            sm={12}
-          >
-            <Box
-              sx={{
-                mt: { xs: 10, md: 10 },
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              <h1
-                style={{
-                  fontSize: "3rem",
+      <Container maxWidth="lg">
+        <Grid container spacing={3} sx={{ alignItems: "center" ,mt:3}}>
+          {/* Text Section */}
+          <Grid item md={6} xs={12}>
+            <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
+              <Typography
+                variant="h3"
+                sx={{
                   fontWeight: 700,
-                  color:"#000"
+                  fontFamily: "Poppins, sans-serif",
+                  color: "#fff",
+                  lineHeight: 1.3,
+                  fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // Adjusting font size for responsiveness
+                  marginBottom: 2, // Adds spacing below
+                  paddingX: { xs: 2, sm: 0 }, // Adds padding for smaller screens
                 }}
               >
-                Fast , Secure , and
-                <br />
-                <span style={{ color: "#FFD700", fontSize: "3.2" }}>
+                Seamless, Reliable, and <br />
+                <span style={{ color: "#8B4513", fontSize: "2.8rem" }}>
                   Effortless
                 </span>{" "}
-                Payment.
-              </h1>
+                Transactions.
+              </Typography>
 
-              {process.env.REACT_APP_TITLE === "MoneyOddr" ? (
-                <div className="mt-4">
-                  <p style={{ fontSize: "23px" }}>
-                    An Emerging Digital Payment Platform For
-                  </p>
-                  <section className="animation mt-3">
-                    <div className="animText">
-                      <div>INDIVIDUALS</div>
-                    </div>
-                    <div className="animText">
-                      <div>BUSINESSMEN</div>
-                    </div>
-                    <div className="animText">
-                      <div>CORPORATIONS</div>
-                    </div>
-                  </section>
-                </div>
-              ) : (
-                <div>
-                  <p
-                    style={{
-                      fontSize: "1.3rem",
-                      marginTop: "2rem",
-                      textAlign: "justify",
-                      color:"#000"
-                    }}
-                  >
-                    <b>{env === "DilliPay" ? "DilliPay" : "PaisaKart"}</b> is
-                    designed to simplify and secure online transactions for
-                    businesses and individuals.
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "1.3rem",
-                      marginTop: "1.1rem",
-                      textAlign: "justify",
-                      color:"#000"
-                    }}
-                  >
-                    One of the fastest growing names in Indian Recharge industry
-                    that is recognized for providing the best Recharge services
-                    at High success Ratio.
-                  </p>
-                </div>
-              )}
+              <Typography
+                variant="h6"
+                sx={{
+                  mt: 3,
+                  textAlign: "justify",
+                  color: "#f8f8f8",
+                  fontWeight: 500,
+                  fontFamily: "Roboto, sans-serif",
+                  lineHeight: 1.8,
+                }}
+              >
+                <b>{env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}</b>{" "}
+                redefines online transactions with security and ease. A trusted
+                name in the Indian recharge industry, ensuring a seamless
+                experience with high success rates.
+              </Typography>
 
+              {/* Button */}
               <Box
-                component="div"
                 sx={{
                   display: "flex",
-                  flexDirection: {
-                    lg: "row",
-                    md: "row",
-                    sm: "row",
-                    xs: "column",
-                  },
+                  justifyContent: { xs: "center", md: "left" },
                   mt: 4,
-                  alignItems: env === "MoneyOddr" ? "center" : "left",
-                  justifyContent: env === "MoneyOddr" ? "center" : "left",
                 }}
               >
                 <PrimaryButton
                   variant="contained"
-                  size="small"
+                  size="large"
                   sx={{
-                    mr: { xs: 0, md: 2 },
-                    mb: { md: 0, xs: 2 },
-                    borderRadius: "8px",
+                    borderRadius: "12px",
                     fontWeight: "bold",
-                    fontSize: "13px",
-                    color:"#000"
+                    color: "#fff",
+                    backgroundColor: " #8B4513",
+                    padding: "12px 24px",
+                    transition: "all 0.3s ease-in-out",
+                    "&:hover": { backgroundColor: "#5a2e0d" },
                   }}
-                  onClick={() => {
-                    navigate("/login");
-                  }}
+                  onClick={() => navigate("/login")}
                 >
-                  Get Started{" "}
-                  <ArrowForwardIcon sx={{ ml: 1, fontWeight: "bold" }} />
+                  Get Started <ArrowForwardIcon sx={{ ml: 1 }} />
                 </PrimaryButton>
               </Box>
             </Box>
           </Grid>
 
+          {/* Illustration Section */}
           {env !== "MoneyOddr" && (
             <Grid
               item
               md={6}
-              sm={12}
-              sx={{ display: { xs: "none", sm: "none", md: "block" }, mt: 10 }}
+              xs={12}
+              sx={{ display: "flex", justifyContent: "center",}}
             >
-              <img
+              <Box
+                component="img"
                 src={lp_illustration}
                 alt="illustration"
-                width="100%"
-                height="auto"
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                style={{
-                  backgroundColor: getEnv() === "PaisaKart" ? "#fff" : "",
-                  borderRadius: getEnv() === "PaisaKart" ? "50%" : "",
+                sx={{
+                  width: { md: "100%", xs: "80%" },
+                  maxWidth: "620px",
+                  
+                  height: "420px",
+                  
+                  backgroundColor: env === "PaisaKart" ? "#fff" : "transparent",
+                  borderRadius: env === "PaisaKart" ? "50%" : "12px",
+                  padding: env === "PaisaKart" ? "1rem" : "0",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.25)",
                 }}
               />
             </Grid>

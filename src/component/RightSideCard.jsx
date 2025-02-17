@@ -63,7 +63,10 @@ const RightNavbar = () => {
   const location = useLocation();
   const selfqrValue =
     vqr && vqr
-      ? `upi://pay?pa=` + vqr + `&pn=Dillipay Technologies Limited` + "&cu=INR"
+      ? `upi://pay?pa=` +
+        vqr +
+        `&pn=DigiVouchers Technologies Limited` +
+        "&cu=INR"
       : "if you want to use our qr ";
 
   // ######################################
@@ -77,7 +80,7 @@ const RightNavbar = () => {
       pf: "WEB",
       latitude: userLat,
       longitude: userLong,
-       type:"CREDIT"
+      type: "CREDIT",
     };
 
     if (validateApiCall()) {
@@ -152,7 +155,8 @@ const RightNavbar = () => {
       className="card-css1"
       sx={{
         px: 1,
-        py: 2,
+        py: 0.7,
+        mt: 0.5,
         borderRadius: "10px",
       }}
     >
@@ -179,7 +183,7 @@ const RightNavbar = () => {
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
-         
+
           marginTop: 1,
         }}
       >

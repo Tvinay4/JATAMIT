@@ -90,8 +90,8 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Plot No.5 , Second Floor ,Pocket-5, Rohini Sector 24, New
-                      Delhi 110085
+                      907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
+                      Town,Ambala,Haryana,134003
                     </p>
                   </Typography>
 
@@ -128,7 +128,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Email: support@dillipay.com
+                      Email: support@DigiVouchers.com
                     </p>
                   </Typography>
 
@@ -341,7 +341,7 @@ export const UtilityReceipt = () => {
                 color: "#327B2E",
               }}
             >
-              DilliPay: Your Trusted Bill Payment Partner
+              DIGIVOUCHERS: Your Trusted Bill Payment Partner
             </Typography>
           </Box>
         </Box>
@@ -412,9 +412,8 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Flat No. 8, Pocket 6, Sector 22, Rohini, Delhi, 110086,
-                        Plot No.5, Second Floor, Pocket-5, Rohini Sector 24, New
-                        Delhi 110085
+                        907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE
+                        ROAD,Old Town,Ambala,Haryana,134003
                       </p>
                     </Typography>
 
@@ -453,7 +452,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Email: support@dillipay.com
+                        Email: support@DigiVouchers.com
                       </p>
                     </Typography>
 
@@ -675,7 +674,7 @@ export const UtilityReceipt = () => {
                   fontSize: "12px",
                 }}
               >
-                DilliPay: Your Trusted Bill Payment Partner
+                DIGIVOUCHERS: Your Trusted Bill Payment Partner
               </Typography>
             </Box>
           </Box>

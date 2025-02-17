@@ -75,7 +75,7 @@ const Footer = () => {
                     borderRadius: "4px",
                     padding: "2px",
                     background:
-                      process.env.REACT_APP_TITLE === "DilliPay"
+                      process.env.REACT_APP_TITLE === "DIGIVOUCHERS"
                         ? ""
                         : "#ffffff",
                   }}
@@ -87,7 +87,7 @@ const Footer = () => {
               <div className="address-style" style={{ marginTop: "15px" }}>
                 {getFirmAddress()}
               </div>
-              {process.env.REACT_APP_TITLE !== "DilliPay" && (
+              {process.env.REACT_APP_TITLE !== "DIGIVOUCHERS" && (
                 <div
                   style={{
                     display: "flex",
@@ -233,14 +233,14 @@ const Footer = () => {
             </Grid>
             <Grid md={12} sx={{ textAlign: "center", px: 4, mt: 1 }}>
               <Typography sx={{ color: "#000", fontSize: "14px", mt: 1 }}>
-                <span className="mx-1">© Copyright 2023</span>
-                {process.env.REACT_APP_TITLE === "DilliPay"
-                  ? "DILLIPAY"
+                <span className="mx-1">© Copyright 2025</span>
+                {process.env.REACT_APP_TITLE === "DIGIVOUCHERS"
+                  ? "DIGIVOUCHERS"
                   : process.env.REACT_APP_TITLE === "PaisaKart"
                   ? "PEHEKART WALLET (OPC)"
                   : process.env.REACT_APP_TITLE}
                 <span className="mx-1">
-                TECHNOLOGIES LIMITED. All Rights Reserve
+                  INDIA PRIVATE LIMITED. All Rights Reserve
                 </span>
               </Typography>
               <Typography sx={{ color: "#000", fontSize: "14px", mt: 0.5 }}>

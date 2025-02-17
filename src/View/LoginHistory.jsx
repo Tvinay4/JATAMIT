@@ -35,6 +35,7 @@ const LoginHistory = () => {
       selector: (row) => <div>{row.user_id}</div>,
 
       omit: user && user.role === "Admin" ? false : true,
+      width:"120px"
     },
 
     {

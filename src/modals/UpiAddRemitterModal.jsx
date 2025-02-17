@@ -142,7 +142,7 @@ const UpiAddRemitterModal = ({
       <Loader loading={request} />
       <ModalHeader
         title="Register Sender"
-        subtitle="Get started with DilliPay – your gateway to effortless transfers."
+        subtitle="Get started with DIGIVOUCHERS – your gateway to effortless transfers."
         handleClose={handleClose}
       />
       <Box
@@ -185,7 +185,7 @@ const UpiAddRemitterModal = ({
                 />
               </FormControl>
             </Grid>
-          ) : dmtValue === "dmt1"||dmtValue==="express" ? (
+          ) : dmtValue === "dmt1" || dmtValue === "express" ? (
             <Grid item md={12} xs={12}>
               <FormControl sx={{ width: "100%" }}>
                 <TextField

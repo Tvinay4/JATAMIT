@@ -31,7 +31,7 @@ const LandingPageIntro2 = () => {
         >
           <Grid
             item
-            md={env === "DilliPay" || env === "PaisaKart" ? 6 : 12}
+            md={env === "DIGIVOUCHERS" || env === "PaisaKart" ? 6 : 12}
             sm={12}
           >
             <Box
@@ -40,23 +40,28 @@ const LandingPageIntro2 = () => {
                 textAlign: { xs: "center", md: "left" },
               }}
             >
-             <h1
-  style={{
-    fontSize: "3rem",
-    fontWeight: 700,
-    color: "#000",
-    lineHeight: "1.4", // Adjust this value for line spacing
-    marginBottom: "35px", // Optional: adds space below the heading
-  }}
->
-  Payments made easy using 
-  <br />
-  <span style={{ color: "#FFD700", fontSize: "3.2rem", marginTop: "10px" }}>
-    MY QR/UPI
-  </span> 
-  {/* Payment. */}
-</h1>
-
+              <h1
+                style={{
+                  fontSize: "3rem",
+                  fontWeight: 700,
+                  color: "#000",
+                  lineHeight: "1.4", // Adjust this value for line spacing
+                  marginBottom: "35px", // Optional: adds space below the heading
+                }}
+              >
+                Payments made easy using
+                <br />
+                <span
+                  style={{
+                    color: "#FFD700",
+                    fontSize: "3.2rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  MY QR/UPI
+                </span>
+                {/* Payment. */}
+              </h1>
 
               {process.env.REACT_APP_TITLE === "MoneyOddr" ? (
                 <div className="mt-4">
@@ -82,12 +87,12 @@ const LandingPageIntro2 = () => {
                       fontSize: "1.3rem",
                       marginTop: "2rem",
                       textAlign: "justify",
-                      color:"#000"
+                      color: "#000",
                     }}
                   >
-                    {/* <b>{env === "DilliPay" ? "DilliPay" : "PaisaKart"}</b>  */}
-                      With UPI and QR Code payments, sending and receiving money is just a scan away — fast, secure, and hassle-free!
-
+                    {/* <b>{env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}</b>  */}
+                    With UPI and QR Code payments, sending and receiving money
+                    is just a scan away — fast, secure, and hassle-free!
                   </p>
                   {/* <p
                     style={{
@@ -128,7 +133,7 @@ const LandingPageIntro2 = () => {
                     borderRadius: "8px",
                     fontWeight: "bold",
                     fontSize: "13px",
-                    color:"#000"
+                    color: "#000",
                   }}
                   onClick={() => {
                     navigate("/login");
@@ -159,7 +164,6 @@ const LandingPageIntro2 = () => {
                 style={{
                   backgroundColor: getEnv() === "PaisaKart" ? "#fff" : "",
                   borderRadius: getEnv() === "PaisaKart" ? "50%" : "",
-                  
                 }}
               />
             </Grid>

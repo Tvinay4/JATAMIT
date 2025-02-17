@@ -21,7 +21,7 @@ import { apiErrorToast, okSuccessToast } from "../utils/ToastUtil";
 import { useContext } from "react";
 import AuthContext from "../store/AuthContext";
 import ModalFooter from "./ModalFooter";
-import money from "../assets/money.png"
+import money from "../assets/money.png";
 const style = {
   position: "absolute",
   top: "50%",
@@ -90,24 +90,28 @@ const WalletDebitModal = ({ row }) => {
       }}
     >
       <Tooltip title="Wallet Debit">
-
         {/* <IconButton variant="contained" onClick={handleOpen}>
           <CurrencyRupeeIcon
             size="small"
             sx={{ color: "#1976D2", fontSize: "22px" }}
           />
         </IconButton> */}
-          <img src={money} alt="PerformanceReport" style={{ width: "24px", height: "24px" }} onClick={handleOpen}/>
+        <img
+          src={money}
+          alt="PerformanceReport"
+          style={{ width: "24px", height: "24px" }}
+          onClick={handleOpen}
+        />
       </Tooltip>
 
-      <Drawer
-        open={open}
-        onClose={handleClose}
-    anchor="right"
-      >
-        <Box sx={{width:400}} className="sm_modal">
+      <Drawer open={open} onClose={handleClose} anchor="right">
+        <Box sx={{ width: 400 }} className="sm_modal">
           <Loader loading={request} />
-          <ModalHeader title="Wallet Debit"subtitle="Spend Smart: Effortless Wallet Debit with DilliPay!" handleClose={handleClose} />
+          <ModalHeader
+            title="Wallet Debit"
+            subtitle="Spend Smart: Effortless Wallet Debit with DIGIVOUCHERS!"
+            handleClose={handleClose}
+          />
 
           <Box
             component="form"
@@ -131,7 +135,8 @@ const WalletDebitModal = ({ row }) => {
                     fieldState: { error },
                   }) => (
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Amount"
                         name="amount"
                         type="number"
@@ -156,7 +161,8 @@ const WalletDebitModal = ({ row }) => {
                     fieldState: { error },
                   }) => (
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Wallet"
                         id="wallet"
                         name="wallet"
@@ -181,7 +187,8 @@ const WalletDebitModal = ({ row }) => {
                     fieldState: { error },
                   }) => (
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Type"
                         name="type"
                         id="type"
@@ -206,7 +213,8 @@ const WalletDebitModal = ({ row }) => {
                     fieldState: { error },
                   }) => (
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Remark"
                         name="remark"
                         id="remark"
@@ -222,9 +230,9 @@ const WalletDebitModal = ({ row }) => {
                 ></Controller>
               </Grid>
             </Grid>
-            <Box sx={{mr:"10px"}}>
-            <ModalFooter form="edit-user" request={request} btn="Submit"  />
-          </Box>
+            <Box sx={{ mr: "10px" }}>
+              <ModalFooter form="edit-user" request={request} btn="Submit" />
+            </Box>
           </Box>
         </Box>
       </Drawer>
