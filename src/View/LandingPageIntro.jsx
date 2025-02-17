@@ -28,7 +28,7 @@ const LandingPageIntro = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={3} sx={{ alignItems: "center" }}>
+        <Grid container spacing={3} sx={{ alignItems: "center" ,mt:3}}>
           {/* Text Section */}
           <Grid item md={6} xs={12}>
             <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
@@ -102,7 +102,7 @@ const LandingPageIntro = () => {
               item
               md={6}
               xs={12}
-              sx={{ display: "flex", justifyContent: "center", }}
+              sx={{ display: "flex", justifyContent: "center",}}
             >
               <Box
                 component="img"
@@ -110,8 +110,9 @@ const LandingPageIntro = () => {
                 alt="illustration"
                 sx={{
                   width: { md: "100%", xs: "80%" },
-                  maxWidth: "500px",
-                  height: "auto",
+                  maxWidth: "620px",
+                  
+                  height: "420px",
                   
                   backgroundColor: env === "PaisaKart" ? "#fff" : "transparent",
                   borderRadius: env === "PaisaKart" ? "50%" : "12px",

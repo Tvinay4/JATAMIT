@@ -349,7 +349,7 @@ const LoginPage = () => {
           </Box>
         </Modal>
       )}
-      <Grid container spacing={0} sx={{ overflow: "hidden" ,m:0}}>
+      <Grid container spacing={0} sx={{ overflow: "hidden", m: 0 }}>
         {/* Left Column - Hidden on medium and smaller screens */}
         <Hidden mdDown>
           <Grid
@@ -360,22 +360,18 @@ const LoginPage = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
-          
-              
             }}
           >
-            <Box
+            <Typography
               sx={{
                 backgroundImage: `url(${LoginPageIllustratorImg})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-               
+
                 height: "100vh",
                 width: "100%",
               }}
-            >
-             
-            </Box>
+            />
           </Grid>
         </Hidden>
 
@@ -647,7 +643,7 @@ const LoginPage = () => {
                       display: "flex",
                     }}
                   /> */}
-                  <Grid item xs={12} sx={{ mb: 1 }}>
+                  <Grid item xs={12} sx={{ mb: 2 }}>
                     <FormControlLabel
                       control={
                         <Checkbox
