@@ -107,7 +107,7 @@ import we_are from "./assets/whowe.jpg";
 import yellowinfo from "./assets/exclamation.png";
 import redinfo from "./assets/siren.png";
 import blueinfo from "./assets/info.svg";
-import api_img from "./assets/api.webp";
+import api_img from "./assets/api1.png";
 import excelImage from "./assets/excel.png";
 import cable from "./assets/svg/Cabletv-svg-trans.svg";
 import cableInverted from "./assets/svg-invert/Cabletv_white-svg-trans.svg";

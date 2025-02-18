@@ -36,7 +36,7 @@ const LandingServicesPage = () => {
             marginTop: "-3px",
           }}
         >
-          Our Services
+          {/* Our Services */}
         </Box>
         {envName === "MoneyOddr" ? (
           <>
@@ -52,7 +52,7 @@ const LandingServicesPage = () => {
         ) : (
           <>
             <div className="landingPageSubHeading">
-              We have exciting services for you on our application
+              {/* We have exciting services for you on our application */}
             </div>
           </>
         )}
@@ -201,7 +201,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -213,6 +213,7 @@ const LandingServicesPage = () => {
               </Box>
             </Grid>
           ) : (
+            
             <Grid md={6} lg={6} sm={12} xs={12} sx={{ mt: { md: 5, xs: 0 } }}>
               <span
                 className="landingPageHeadings"
@@ -232,7 +233,7 @@ const LandingServicesPage = () => {
                     envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
                 }}
               ></Box>
-              <div className="s" style={{ textAlign: "justify" }}>
+              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
                 {getEnv()} proud to say that we are one of the few vendors who
                 are authorized from IRCTC to book train tickets. Now you can
                 easily book tickets online for any train, class, or destination.
@@ -247,7 +248,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -296,7 +297,7 @@ const LandingServicesPage = () => {
               <Button
                 // className="button-red"
                 sx={{
-                  backgroundColor: "#FF7F50",
+                  backgroundColor: "rgb(151, 86, 40)",
                   color: "#fff",
                 }}
                 onClick={() => {
@@ -312,7 +313,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={qrCode_img} alt="qrCode img " width="80%"></img>
+            <img src={qrCode_img} alt="qrCode img " width="85%"></img>
           </Grid>
         </Grid>
         {/* <Grid container maxWidth="lg" className="bottom2top">
@@ -535,7 +536,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={mobileR_img} alt="Mobile recharge" width="80%"></img>
+            <img src={mobileR_img} alt="Mobile recharge" width="85%"></img>
           </Grid>
           {envName === "MoneyOddr" ? (
             <Grid md={6} lg={6} sm={12} xs={12}>
@@ -569,7 +570,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -617,7 +618,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -662,7 +663,7 @@ const LandingServicesPage = () => {
               <Button
                 // className="button-red"
                 sx={{
-                  backgroundColor: "#FF7F50",
+                  backgroundColor: "rgb(151, 86, 40)",
                   color: "#fff",
                 }}
                 onClick={() => {
@@ -678,7 +679,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={api} alt="Mobile recharge" width="80%"></img>
+            <img src={api} alt="Mobile recharge" width="85%"></img>
           </Grid>
         </Grid>
       </Container>
