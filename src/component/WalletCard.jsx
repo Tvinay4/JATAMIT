@@ -201,7 +201,7 @@ const WalletCard = () => {
                     alignItems: "center",
                   }}
                 >
-                  <Phone sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} />
+                  {/* <Phone sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} /> */}
 
                   <span
                     style={{
@@ -225,7 +225,7 @@ const WalletCard = () => {
                     mt: "0.5",
                   }}
                 >
-                  <Email sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} />
+                  {/* <Email sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} /> */}
 
                   <span
                     style={{
