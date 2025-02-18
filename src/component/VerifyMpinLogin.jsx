@@ -572,8 +572,8 @@ const VerifyMpinLogin = ({
                   maxWidth: { xs: "250px", md: "300px" },
                   mt: 2,
                   borderRadius: 6,
-                  color: "#fff",
-                  backgroundColor: "#4253F0",
+                  color: "#000",
+                  backgroundColor: " #D8BA87",
                 }}
               >
                 Login
