@@ -544,13 +544,29 @@ body {
   transition: 1s all ease;
 }
 .bottom2top.active {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
   opacity: 2;
 }
 
 //about us page-landing page
 .aboutusHeaderBg {
-  background-image: url(../assets/svg/wave3.svg);
+ .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   width: 100%;
   background-position: left;
   background-repeat: no-repeat;

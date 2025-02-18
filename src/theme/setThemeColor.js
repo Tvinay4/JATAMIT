@@ -141,7 +141,7 @@ export const getFirmAddress = () => {
 };
 export const getFirmContact = () => {
   if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
-    return `+91 9355128199`;
+    return `+91 0000000000`;
   }
 };
 export const getFirmEmail = () => {
