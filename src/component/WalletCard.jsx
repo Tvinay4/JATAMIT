@@ -177,7 +177,7 @@ const WalletCard = () => {
                 display: "flex",
                 alignItems: "center",
 
-                width: { lg: "160px", sm: "150px", xs: "150px" },
+                width: { lg: "170px", sm: "160px", xs: "160px" },
                 border: "2px solid #000000",
                 overflow: "hidden",
               }}
