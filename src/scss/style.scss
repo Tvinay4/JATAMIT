@@ -544,13 +544,29 @@ body {
   transition: 1s all ease;
 }
 .bottom2top.active {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
   opacity: 2;
 }
 
 //about us page-landing page
 .aboutusHeaderBg {
-  background-image: url(../assets/svg/wave3.svg);
+ .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   width: 100%;
   background-position: left;
   background-repeat: no-repeat;
@@ -655,14 +671,16 @@ body {
   // background: #0D6E05;
 }
 .servicePageBg1 {
-  padding: 30px;
-  // background-image: url(../assets/svg/ourservice.jpg);
+  padding: 40px;
+  background-image: url(../assets/svg/ourservice1.png);
   width: 100%;
-  height: 300px;
-  background-position: left;
+  height: 400px;
+  background-position: center;
+  background-color: #faf3e0;
   // background: #d1edd4;
   background-repeat: no-repeat;
-  background-size: 100%;
+
+  background-size: 70%;
 }
 .servicePageBg2 {
   background-image: url(../assets/svg/wave.svg);
@@ -2434,7 +2452,7 @@ div.second {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #fc8474;
+  background: #f1843f;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2454,21 +2472,21 @@ div.second {
 .actual-icon {
   font-size: 36px;
   line-height: 1;
-  color: #fff;
+  color: #ffffff;
 }
 
 .icon-box:hover .icon {
-  background: #fff;
+  background: #d3b42d;
 }
 .icon-box:hover .actual-icon {
   // background: #fff;
-  color: #fc7474;
+  color: #ec2869;
 }
 
 .icon-box::before {
   content: "";
   position: absolute;
-  background: #ffc8c3;
+  background: #d3b14a;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -2478,7 +2496,7 @@ div.second {
   z-index: -1;
 }
 .icon-box:hover::before {
-  background: #fc7474;
+  background: #f2c780;
   right: 0;
   top: 0;
   width: 100%;

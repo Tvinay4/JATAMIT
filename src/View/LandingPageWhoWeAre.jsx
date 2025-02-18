@@ -90,43 +90,45 @@ const LandingPageWhoWeAre = () => {
       </Grid>
 
       {/* Impact Section */}
-      <Box sx={{ py: 6, textAlign: "center" }}>
-        <Typography variant="h4" fontWeight={700} color="#333" gutterBottom>
-          Our Impact in Numbers
-        </Typography>
-        <Grid container spacing={4} justifyContent="center">
-          {[
-            { value: "50K+", label: "Active Users" },
-            { value: "₹50M+", label: "Transactions Processed" },
-            { value: "1,000+", label: "Business Partners" },
-            { value: "99.99%", label: "System Uptime" },
-          ].map((stat, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
-              <Box
-                sx={{
-                  background: "#fff",
-                  p: 4,
-                  borderRadius: 3,
-                  textAlign: "center",
-                  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  "&:hover": {
-                    transform: "translateY(-5px) scale(1.03)",
-                    boxShadow: "0 6px 15px rgba(0, 0, 0, 0.2)",
-                  },
-                }}
-              >
-                <Typography variant="h3" fontWeight="bold" color="#333">
-                  {stat.value}
-                </Typography>
-                <Typography variant="body1" color="#444" mt={1}>
-                  {stat.label}
-                </Typography>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
+     {/* Impact Section */}
+<Box sx={{ py: 6, textAlign: "center" }}>
+  <Typography variant="h4" fontWeight={700} color="#333" gutterBottom>
+    Our Impact in Numbers
+  </Typography>
+  <Grid container spacing={4} justifyContent="center">
+    {[
+      { value: "50K+", label: "Active Users", color: "rgb(227, 146, 85)" },
+      { value: "₹50M+", label: "Transactions Processed", color: "rgb(139, 117, 19)" },
+      { value: "1,000+", label: "Business Partners", color: "rgb(229, 97, 163)" },
+      { value: "99.99%", label: "System Uptime", color: "rgb(94, 209, 142)" },
+    ].map((stat, index) => (
+      <Grid item xs={12} sm={6} md={3} key={index}>
+        <Box
+          sx={{
+            background: "#fff",
+            p: 4,
+            borderRadius: 3,
+            textAlign: "center",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
+            "&:hover": {
+              transform: "translateY(-5px) scale(1.03)",
+              boxShadow: "0 6px 15px rgba(0, 0, 0, 0.2)",
+            },
+          }}
+        >
+          <Typography variant="h3" fontWeight="bold" color={stat.color}>
+            {stat.value}
+          </Typography>
+          <Typography variant="body1" color={stat.color} mt={1}>
+            {stat.label}
+          </Typography>
+        </Box>
+      </Grid>
+    ))}
+  </Grid>
+</Box>
+
     </Box>
   );
 };
