@@ -179,7 +179,6 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
