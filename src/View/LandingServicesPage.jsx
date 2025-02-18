@@ -58,8 +58,8 @@ const LandingServicesPage = () => {
         )}
       </Grid>
       {/* <Container maxWidth="lg" className="sectionBreake" sx={{ pb: 10 }}> */}
-      <Container maxWidth="lg" sx={{ pb: 10, mt: 10 }}>
-        <Grid container className="flex-hc-vc mb-5">
+      <Container maxWidth="lg" sx={{ pb: 7, mt: 7 }}>
+        <Grid container className="flex-hc-vc mb-5 " >
           <Grid
             md={2.7}
             className="icon-box"
