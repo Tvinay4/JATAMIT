@@ -813,7 +813,7 @@ const RetailerAgreement = () => {
               Retailer Agreement in any way limit the DIGIVOUCHERS’s rights over
               its intellectual property, including the right to licence to
               others and, (b) any and all goodwill arising from the Retailer’s
-              use of the intellectual property shall be exclusive ofDilliPay
+              use of the intellectual property shall be exclusive of DIGIVOUCHER
               without any compensation to anyone.
             </Typography>
             <Typography variant="body1" paragraph>

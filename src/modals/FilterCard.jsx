@@ -1420,6 +1420,7 @@ const FilterCard = ({
                 editable
                 ranges={predefinedRanges}
                 cleanable
+                appearance="subtle"
                 showOneCalendar
                 placeholder="Date"
                   placement="bottomEnd"
@@ -1444,6 +1445,9 @@ const FilterCard = ({
                   }
                 }}
                 disabledDate={afterToday()}
+                style={{
+                  borderBottom: "1px solid #ccc",
+                }}
               />
             </FormControl>
           </div>

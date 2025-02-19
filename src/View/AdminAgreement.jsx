@@ -835,7 +835,7 @@ const AdminAgreement = () => {
               Retailer Agreement in any way limit the DIGIVOUCHERS’s rights over
               its intellectual property, including the right to licence to
               others and, (b) any and all goodwill arising from the Retailer’s
-              use of the intellectual property shall be exclusive ofDilliPay
+              use of the intellectual property shall be exclusive of DIGIVOUCHER
               without any compensation to anyone.
             </Typography>
             <Typography variant="body1" paragraph>
@@ -1057,7 +1057,7 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               Retailer undertakes that Retailer will neither allow nor entertain
               requests for transfer of money and/or any transaction through the
-              use of DilliPayPlatform or services for the following:
+              use of DIGIVOUCHER Platform or services for the following:
               <ul>
                 <li>Any form of drugs;</li>
                 <li>Arms;</li>
