@@ -810,7 +810,7 @@ const DistributorAgreement = () => {
             Agreement in any way limit the DIGIVOUCHERS’s rights over its
             intellectual property, including the right to licence to others and,
             (b) any and all goodwill arising from the Distributor’s use of the
-            intellectual property shall be exclusive ofDilliPay without any
+            intellectual property shall be exclusive of DIGIVOUCHER without any
             compensation to anyone.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>

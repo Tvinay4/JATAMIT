@@ -39,8 +39,7 @@ import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import QRWarningModal from "../modals/QRWarningModal";
 import { validateApiCall } from "../utils/LastApiCallChecker";
 import Mount from "./Mount";
-import RefreshComponent from "./RefreshComponent";
-import RecentHistory from "./right_sidenav/RecentHistory";
+
 import BankTransfer from "./right_sidenav/BankTransfer";
 import AddBalanceViaPG from "../modals/AddBalanceViaPG";
 import { useLocation } from "react-router-dom";

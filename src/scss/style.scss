@@ -1375,21 +1375,23 @@ input[type="number"] {
 
 .button-green {
   cursor: pointer;
-  background-color: $theme-green !important;
+  background-color:#D1AA65 !important;
   color: $white-color !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 4px;
 }
 .button-Red {
-  background-color: rgba(198, 41, 41, 0.895) !important;
+  // background-color: rgba(198, 41, 41, 0.895) !important;
+  background-color: #D1AA65 !important;
   color: white;
   font-size: 10px;
   margin-left: 5px;
 }
 
 .button-Red:hover {
-  background-color: rgb(226, 88, 88) !important;
+  // background-color: rgb(226, 88, 88) !important;
+  background-color: #A7834F !important;
 }
 
 .button-red {

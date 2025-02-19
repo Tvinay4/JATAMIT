@@ -196,7 +196,7 @@ import mpost from "../src/assets/sidebar_icons/mobile postpaid.svg";
 import mpre from "../src/assets/sidebar_icons/mobile prepaid.svg";
 import gpipe from "../src/assets/sidebar_icons/piped gas.svg";
 // import allbbps from "../src/assets/sidebar_icons/allbbps.svg"; ///
-import allbbps from "./assets/dashboard_icons/bbps.png";
+import allbbps from "./assets/dashboard_icons/BBPS1.png";
 
 import lic from "../src/assets/sidebar_icons/LIC.svg"; ///
 import land from "../src/assets/sidebar_icons/landline.svg"; ///
