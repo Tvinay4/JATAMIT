@@ -1053,7 +1053,7 @@ const AdimUserView = () => {
                       : ""
                     // <AddRetailerinAdUser refresh={refresh} />
                   }
-                  <AddUserSignUp refresh={refresh} />
+                  {/* <AddUserSignUp refresh={refresh} /> */}
                 </Box>
               </>
             }
