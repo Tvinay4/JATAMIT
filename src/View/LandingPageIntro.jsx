@@ -1,10 +1,11 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { PrimaryButton } from "../theme/Theme";
+import { PrimaryButton, SecondaryButton } from "../theme/Theme";
 import { lp_illustration } from "../iconsImports";
 import { useNavigate } from "react-router-dom";
 import { getEnv } from "../theme/setThemeColor";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import AndroidIcon from '@mui/icons-material/Android';
 
 const LandingPageIntro = () => {
   const navigate = useNavigate();
@@ -74,6 +75,7 @@ const LandingPageIntro = () => {
                   display: "flex",
                   justifyContent: { xs: "center", md: "left" },
                   mt: 4,
+                  gap:2,
                 }}
               >
                 <PrimaryButton
@@ -84,7 +86,7 @@ const LandingPageIntro = () => {
                     fontWeight: "bold",
                     color: "#fff",
                     backgroundColor: " #8B4513",
-                    padding: "12px 24px",
+                    padding: " 24px",
                     transition: "all 0.3s ease-in-out",
                     "&:hover": { backgroundColor: "#5a2e0d" },
                   }}
@@ -92,6 +94,30 @@ const LandingPageIntro = () => {
                 >
                   Get Started <ArrowForwardIcon sx={{ ml: 1 }} />
                 </PrimaryButton>
+                <SecondaryButton
+                    variant="contained"
+                    size="large"
+                 
+                    sx={{ borderRadius: "12px",
+                      fontWeight: "bold",
+                      
+                      color: "#fff",
+                      backgroundColor: " #8B4513",
+                      padding: "14px 24px",
+                      transition: "all 0.3s ease-in-out",
+                      "&:hover": { backgroundColor: "#5a2e0d" },}}
+                    href={
+                      env === "MoneyOddr"
+                        ? "https://drive.google.com/drive/folders/1d_c8RT9UXCqqOmQqpTEd71PAHGX1rEW-?usp=drive_link"
+                        : "https://drive.google.com/drive/folders/1d_c8RT9UXCqqOmQqpTEd71PAHGX1rEW-?usp=drive_link"
+                      
+                    }
+                    target="_blank"
+                    startIcon={ <AndroidIcon />}
+                  >
+                   
+                    Download App
+                  </SecondaryButton>
               </Box>
             </Box>
           </Grid>
