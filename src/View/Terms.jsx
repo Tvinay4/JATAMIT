@@ -30,7 +30,7 @@ const Terms = () => {
                 incorporated under the laws of India, with its registered office
                 at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
                 Town,Ambala,Haryana,134003.
-                <strong>(“DILLIPAY ” or “Company”)</strong>.
+                <strong>(“DIGIVOUCHERS ” or “Company”)</strong>.
               </p>
 
               <p className="landing-bg_para">
