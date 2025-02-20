@@ -33,7 +33,7 @@ import {
   BottomEndLogin,
   lockicon,
   loginPage1,
-  LoginPageIllustratorImg,
+  LoginPageIllustratorImg1,
   mobilelogin,
 } from "../iconsImports";
 import ForgotPass from "../modals/ForgotPass";
@@ -179,7 +179,7 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-    
+    document.body.style.overflow = "hidden";
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
@@ -354,24 +354,21 @@ const LoginPage = () => {
         <Hidden mdDown>
           <Grid
             item
-            xs={12}
             md={6}
             lg={6}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems:"center",
-              justifyContent:"center",
-            }}
+            sx={{ position: "relative", height: "100vh" }}
           >
-            <Typography
+            <Box
               sx={{
-                backgroundImage: `url(${LoginPageIllustratorImg})`,
-                backgroundSize: "cover",
+                backgroundImage: `url(${LoginPageIllustratorImg1})`,
+                backgroundSize: "cover", // Ensures the full SVG is visible
                 backgroundRepeat: "no-repeat",
-
-                height: "100vh",
-                width: "100%",
+                backgroundPosition: "center",
+                height: "100%", // Ensures full height
+                width: "100%", // Ensures full width
+                position: "absolute", // Ensures no gaps
+                top: 0,
+                left: 0,
               }}
             />
           </Grid>

@@ -7,6 +7,7 @@ import failedVdo from "./assets/video/exclaimation.mp4";
 import smallLogo from "./assets/small_logo.jpeg";
 import outlet_reg_img from "./assets/outletreg.png";
 import LoginPageIllustrator from "./assets/LoginPageSideIllustration.svg";
+import LoginPageIllustrator1 from "./assets/LoginPageIllustrator1.svg";
 
 //
 import bbps from "./assets/bbps.png";
@@ -285,6 +286,7 @@ export const TrainsImage = TrainImage;
 export const HotelsImage = HotelImage;
 export const BusesImage = BusImage;
 export const LoginPageIllustratorImg = LoginPageIllustrator;
+export const LoginPageIllustratorImg1 = LoginPageIllustrator1;
 
 export const imps_l = impsLogo;
 export const neft_l = neftLogo;
