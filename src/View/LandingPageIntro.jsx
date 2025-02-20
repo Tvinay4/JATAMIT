@@ -100,10 +100,11 @@ const LandingPageIntro = () => {
                  
                     sx={{ borderRadius: "12px",
                       fontWeight: "bold",
-                      
+                      display:"flex",
                       color: "#fff",
                       backgroundColor: " #8B4513",
-                      padding: "14px 24px",
+                      padding: "24px",
+                      p:1,
                       transition: "all 0.3s ease-in-out",
                       "&:hover": { backgroundColor: "#5a2e0d" },}}
                     href={
