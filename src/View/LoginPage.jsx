@@ -360,6 +360,8 @@ const LoginPage = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
+              alignItems:"center",
+              justifyContent:"center",
             }}
           >
             <Typography
