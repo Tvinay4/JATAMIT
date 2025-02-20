@@ -317,7 +317,7 @@ const Loader = ({ loading, children, changeloder }) => {
             alignItems: "center",
             justifyContent: "center",
             backdropFilter: "blur(10px)",
-            background: "rgba(30, 30, 30, 0.85)", // Semi-transparent dark background
+            background: "rgba(0, 0, 0, 0.5)", // Darker background with a hint of transparency
             zIndex: 9998,
             flexDirection: "column",
             color: "#fff",
@@ -325,18 +325,28 @@ const Loader = ({ loading, children, changeloder }) => {
           }}
         >
           <div className="loader-container">
-            {/* Conditionally render the image based on the changeloder prop */}
-            {!changeloder && (
-              <img
-                src={smLogo}
-                style={{
-                  cursor: "pointer",
-                  width: 200, // Larger logo
-                }}
-                alt="Loading..."
-              />
-            )}
-            <div className="loader-bar" />
+            {/* Loader Ring */}
+            <div className="loader-ring">
+              <div className="inner-ring"></div>
+              {/* Insert the logo inside the circle */}
+              {!changeloder && (
+                <img
+                  src={smLogo}
+                  style={{
+                    position: "absolute",
+                    width: 120, // Increase the size of the logo to fit the larger circle
+                    height: 120, // Make logo square and proportionate
+                    borderRadius: "50%", // Round the logo to fit neatly
+                    objectFit: "contain", // Ensure logo fits within the circle without distortion
+                    top: "50%", // Center vertically
+                    left: "50%", // Center horizontally
+                    transform: "translate(-50%, -50%)", // Offset to perfectly center the logo
+                    boxShadow: "0 0 15px rgba(255, 255, 255, 0.3)", // Soft glowing shadow for effect
+                  }}
+                  alt="Loading..."
+                />
+              )}
+            </div>
           </div>
           <p className="loading-text">
             Just a moment! We're preparing your request...
@@ -353,32 +363,29 @@ const Loader = ({ loading, children, changeloder }) => {
           flex-direction: column;
         }
 
-        .loader-bar {
-          width: 180px;
-          height: 6px;
-          background: linear-gradient(
-            90deg,
-            #ff4081,
-            #ffeb3b
-          ); // Gradient loading bar
-          border-radius: 3px; /* Rounded edges */
-          margin-top: 20px; /* Space between logo and bar */
-          animation: loading 1.5s ease-in-out infinite; /* Loading animation */
+        .loader-ring {
+          position: relative;
+          width: 150px; /* Increased circle size */
+          height: 150px; /* Increased circle size */
+          border-radius: 50%;
+          border: 6px solid transparent;
+          border-top: 6px solid #D1AA65;
+          border-bottom: 6px solid #000;
+          animation: rotateRing 1.5s linear infinite; /* Smooth ring rotation */
         }
 
-        @keyframes loading {
-          0% {
-            transform: scaleX(0);
-          }
-          50% {
-            transform: scaleX(1);
-          }
-          100% {
-            transform: scaleX(0);
-          }
+        .inner-ring {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 130px; /* Adjusted to fit the larger circle */
+          height: 130px; /* Adjusted to fit the larger circle */
+          border-radius: 50%;
+          border: 4px solid #ffffff;
+          animation: pulseRing 2s ease-out infinite; /* Inner ring pulse effect */
         }
 
-        @keyframes spin {
+        @keyframes rotateRing {
           0% {
             transform: rotate(0deg);
           }
@@ -387,17 +394,34 @@ const Loader = ({ loading, children, changeloder }) => {
           }
         }
 
+        @keyframes pulseRing {
+          0% {
+            transform: scale(0.8);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.2);
+            opacity: 0.5;
+          }
+          100% {
+            transform: scale(0.8);
+            opacity: 1;
+          }
+        }
+
         .loading-text {
           margin-top: 18px;
           font-size: 18px;
-          font-weight: bold;
+          font-weight: 600; /* Bold font for emphasis */
           color: #ffffff; /* White text */
-          animation: fadeIn 1.5s ease-in-out infinite alternate; /* Text fade animation */
+          font-family: 'Poppins', sans-serif; /* Modern, trendy font */
+          text-transform: uppercase; /* Text in uppercase for a clean and bold appearance */
+          animation: fadeIn 2s ease-in-out infinite alternate;
         }
 
         @keyframes fadeIn {
           0% {
-            opacity: 0.7;
+            opacity: 0.5;
           }
           100% {
             opacity: 1;
@@ -409,6 +433,10 @@ const Loader = ({ loading, children, changeloder }) => {
 };
 
 export default Loader;
+
+
+
+
 
 
 

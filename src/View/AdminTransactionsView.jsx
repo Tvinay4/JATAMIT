@@ -976,7 +976,7 @@ const AdminTransactionsView = () => {
             returnRefetch={(ref) => {
               refresh = ref;
             }}
-            conditionalRowStyles={conditionalRowStyles}
+            // conditionalRowStyles={conditionalRowStyles}
             selectableRows={
               user &&
               user.role !== "Admin" &&

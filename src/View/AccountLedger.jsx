@@ -233,6 +233,7 @@ const AccountLedger = () => {
               <Grid
                 sx={{
                   mb: 1,
+                  ml:10
                 }}
               >
                 <FilterCard

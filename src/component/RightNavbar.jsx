@@ -311,8 +311,8 @@ const RightNavbar = () => {
         {/* {location.pathname !== '/customer/dashboard' && <RecentHistory />} */}
         {user.aggreement === 1 && (
           <>
+          <RightSideCard sx={{ mt: 2 }} />
             <RecentHistory />
-            <RightSideCard sx={{ mt: 2 }} />
           </>
         )}
         {/* ######################################## */}

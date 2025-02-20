@@ -202,7 +202,7 @@ export const UtilityReceipt = () => {
             </Typography>
           </Box>
 
-          <Box className="reciept_watermark" sx={{ mt: 2 }}>
+          <Box className="" sx={{ mt: 2 }}>
             <Grid container spacing={2} sx={{ py: 6.5 }}>
               <Grid container item xs={12}>
                 {["Operator", "Bill Number", "Mobile No:", "Date & Time:"].map(
@@ -524,7 +524,7 @@ export const UtilityReceipt = () => {
               </Typography>
             </Box>
 
-            <Box className="reciept_watermark1" sx={{ mt: 1.5 }}>
+            <Box className="" sx={{ mt: 1.5 }}>
               <Grid container spacing={1} sx={{ py: 4 }}>
                 <Grid container item xs={12}>
                   {[
