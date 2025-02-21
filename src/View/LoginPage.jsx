@@ -349,7 +349,7 @@ const LoginPage = () => {
           </Box>
         </Modal>
       )}
-      <Grid container spacing={0} sx={{ overflow: "hidden", m: 0 }}>
+      <Grid container spacing={0} sx={{ overflow: "hidden", m: 0,position:"fixed" }}>
         {/* Left Column - Hidden on medium and smaller screens */}
         <Hidden mdDown>
           <Grid
