@@ -358,8 +358,8 @@ const Loader = ({ loading, children, changeloder }) => {
           height: 6px;
           background: linear-gradient(
             90deg,
-            #ff4081,
-            #ffeb3b
+rgb(84, 73, 77),
+rgb(255, 163, 59)
           ); // Gradient loading bar
           border-radius: 3px; /* Rounded edges */
           margin-top: 20px; /* Space between logo and bar */
