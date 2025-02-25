@@ -109,6 +109,7 @@ export default function Navbar(props) {
             sx={{
               justifyContent: "space-between", // Adjusted to space-between for logo and button positioning
               // background: "linear-gradient(to right, #7fb4f9, #ee5f5f)",
+              background:"#fff",
             }}
           >
             {/* Logo on the left */}
@@ -253,10 +254,10 @@ export default function Navbar(props) {
                     key={item.to}
                     onClick={handleCloseNavMenu}
                     sx={{
-                      background: "#319B88",
+                      background: "rgb(155, 106, 49)",
                       color: "#fff",
                       "&:hover": {
-                        background: "#319B88",
+                        background: "rgb(231, 162, 102)",
                       },
                     }}
                   >

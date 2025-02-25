@@ -25,8 +25,16 @@ const NewsSection = () => {
   useEffect(() => {
     handleSubmit();
   }, []);
+  const colors = [
+    "#5A0000",
+    "#004D00",
+    "#00005A",
+    "#5A005A",
+    "#5A2E00",
+    "#003366",
+    "#660033",
+  ];
 
-  const colors = ["#8B0000", "#006400", "#00008B", "#8B008B", "#8B4513"];
   // Array of colors
 
   return (
@@ -39,9 +47,9 @@ const NewsSection = () => {
       sx={{
         textAlign: "center",
         display: "flex",
-        border: "1px solid black", // Adjust thickness and color as needed
+        border: "1px solid #2c2c2a", // Adjust thickness and color as needed
         borderRadius: "8px",
-        // backgroundColor: "#fEDCDB",
+        backgroundColor: "#f8e4bf",
         color: "#004080",
         fontSize: "14px",
         alignItems: "center",

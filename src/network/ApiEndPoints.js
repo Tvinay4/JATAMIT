@@ -1,8 +1,8 @@
 // export const BASE_URL = "https://api.impsguru.com/";
 // export const BASE_URL = "https://uat.impsguru.com/";
 // export const BASE_URL = "https://api.vdeepay.com";
-export const BASE_URL = "https://api.dillipay.com";
-// export const BASE_URL = "https://api.dillipay.com";
+export const BASE_URL = "https://api.digivouchers.in";
+// export const BASE_URL = "https://api.DigiVouchers.com";
 // export const BASE_URL = "http://192.168.1.14/impsguru-php/";
 
 const ApiEndpoints = {
@@ -308,6 +308,6 @@ const ApiEndpoints = {
   GET_REMMITTER_STATUS_DMT3: "dmr/getRemitterStatusDmt3",
   VALIDATE_SUP_OTP: "dmr/verifySupRemitter",
   OTP_dmt1: "dmr/transactionOtpDmt1",
-   GET_TIME:"https://timeapi.io/api/time/current/zone?timeZone=Asia%2FKolkata"
+  GET_TIME: "https://timeapi.io/api/time/current/zone?timeZone=Asia%2FKolkata",
 };
 export default ApiEndpoints;

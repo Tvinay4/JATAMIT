@@ -1,5 +1,11 @@
 import React from "react";
-import { FormControlLabel, Grid, LinearProgress, Switch, Typography } from "@mui/material";
+import {
+  FormControlLabel,
+  Grid,
+  LinearProgress,
+  Switch,
+  Typography,
+} from "@mui/material";
 import { useState } from "react";
 import CachedOutlinedIcon from "@mui/icons-material/CachedOutlined";
 import ApiPaginate from "./ApiPaginate";
@@ -22,15 +28,15 @@ function refreshFunc(setQueryParams) {
   setQueryParams("");
   if (refresh) refresh();
 }
-const RetProductionSaleComponent = ({role,USER_ROLES}) => {
+const RetProductionSaleComponent = ({ role, USER_ROLES }) => {
   const [txnDataReq, setTxnDataReq] = useState(false);
   const [txnDataDuration, setTxnDataDuration] = useState("TODAY");
   const [apiData, setApiData] = useState([]);
   const [showProductTable, setShowProductTable] = useState(true);
   const [query, setQuery] = useState();
-  const [commonSearchTime, setCommonSearchTime] = useState('today');
+  const [commonSearchTime, setCommonSearchTime] = useState("today");
   const handleChange = (event, newValue) => {
-    if (process.env.REACT_APP_TITLE === "DilliPay")
+    if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS")
       setTxnDataDuration(newValue);
     else setTxnDataDuration(event);
   };
@@ -132,26 +138,42 @@ const RetProductionSaleComponent = ({role,USER_ROLES}) => {
   const columns = [
     {
       name: "Services",
-      selector: (row) => <Typography  sx={{fontSize:"12px"}}>{row.service}</Typography>,
+      selector: (row) => (
+        <Typography sx={{ fontSize: "12px" }}>{row.service}</Typography>
+      ),
     },
     {
       name: "Last Month",
-      selector: (row) =>  <Typography  sx={{fontSize:"12px"}}>{currencySetter(row.Last)}</Typography>
+      selector: (row) => (
+        <Typography sx={{ fontSize: "12px" }}>
+          {currencySetter(row.Last)}
+        </Typography>
+      ),
     },
 
     {
       name: "This Month",
-      selector: (row) =><Typography  sx={{fontSize:"12px"}}> {currencySetter(row.This)}</Typography>,
+      selector: (row) => (
+        <Typography sx={{ fontSize: "12px" }}>
+          {" "}
+          {currencySetter(row.This)}
+        </Typography>
+      ),
     },
     {
       name: "Today",
-      selector: (row) =><Typography  sx={{fontSize:"12px"}}> {currencySetter(row.Today)}</Typography>,
+      selector: (row) => (
+        <Typography sx={{ fontSize: "12px" }}>
+          {" "}
+          {currencySetter(row.Today)}
+        </Typography>
+      ),
     },
 
     {
       name: "Achieved",
       selector: (row) => (
-        <div style={{ width: "100px",fontSize:"12px" }}>
+        <div style={{ width: "100px", fontSize: "12px" }}>
           <div>
             {Number(row.Last) === 0
               ? "0.00%"
@@ -178,123 +200,130 @@ const RetProductionSaleComponent = ({role,USER_ROLES}) => {
 
   return (
     <>
-    {/* <HtmlRenderer data={"jhdhcv"}/> */}
-     
-        <TodayThisLastComponent
-         item
-          txnDataDuration={txnDataDuration}
-          txnDataReq={txnDataReq}
-          txnData={txnData}
-          getTxnData={getTxnData}
-          handleChange={handleChange}
-        />
-        
-     
-    <Grid
-  container
-  sx={{
-    
-   
-    ml:.5,
-    pr: { xs: 1.3, lg: 0 },
-    mb: { xs: 8, lg: 0 },
-  }}
-  spacing={2}
-    >
-     
+      {/* <HtmlRenderer data={"jhdhcv"}/> */}
 
-      {/* product sale card component */}
+      <TodayThisLastComponent
+        item
+        txnDataDuration={txnDataDuration}
+        txnDataReq={txnDataReq}
+        txnData={txnData}
+        getTxnData={getTxnData}
+        handleChange={handleChange}
+      />
+
       <Grid
-         item
-        //  lg={role === 'Api' ? 12 : 7}
-        lg={12}
-         md={12}
-         sm={12}
-         xs={12}
-         sx={{
-           background: "#fff",
-           height: "auto",
-           minHeight: { lg:"100px",xs: "160px", md: "180px" },
-           borderRadius: "8px",
-           boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
-          //  mr: { lg: role === "Api" ? 1 : 0 },
-          mr: 2
-            
-            
-         }}
+        container
+        sx={{
+          ml: 0.5,
+          pr: { xs: 1.3, lg: 0 },
+          mb: { xs: 8, lg: 0 },
+        }}
+        spacing={2}
       >
+        {/* product sale card component */}
         <Grid
-           item
-           sx={{
-             display: "flex",
-             justifyContent: "space-between",
-             alignItems: "center",
-             marginBottom: "1rem",
-             
-             flexDirection: { xs: "column", md: "row" },
-           }}
+          item
+          //  lg={role === 'Api' ? 12 : 7}
+          lg={12}
+          md={12}
+          sm={12}
+          xs={12}
+          sx={{
+            background: "#fff",
+            height: "auto",
+            minHeight: { lg: "100px", xs: "160px", md: "180px" },
+            borderRadius: "8px",
+            boxShadow:
+              "rgba(0, 0, 0, 0.05) 0px 6px 24px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+            //  mr: { lg: role === "Api" ? 1 : 0 },
+            mr: 2,
+          }}
         >
-          <Typography
-            style={{
-              fontWeight: "500",
-              fontSize: "16px",
+          <Grid
+            item
+            sx={{
               display: "flex",
-              alignContent: "center",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: "1rem",
+
+              flexDirection: { xs: "column", md: "row" },
             }}
           >
-            {showProductTable ? "Product Sale" : "My Earnings"}
-            <CachedOutlinedIcon
-              className="ms-2 refresh-purple"
-              sx={{
-                ml: 1,
+            <Typography
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                display: "flex",
+                alignContent: "center",
               }}
-              onClick={() => {
-                refreshFunc(setQuery);
-              }}
+            >
+              {showProductTable ? "Product Sale" : "My Earnings"}
+              <CachedOutlinedIcon
+                className="ms-2 refresh-purple"
+                sx={{
+                  ml: 1,
+                }}
+                onClick={() => {
+                  refreshFunc(setQuery);
+                }}
+              />
+            </Typography>
+            {/* Integrate your toggle button here */}
+            <FormControlLabel
+              control={<Switch />}
+              label={showProductTable ? "My Earning" : "Product Table"}
+              onChange={() => setShowProductTable(!showProductTable)}
             />
-          </Typography>
-          {/* Integrate your toggle button here */}
-          <FormControlLabel control={<Switch />} label={showProductTable ? "My Earning" : "Product Table"} onChange={() => setShowProductTable(!showProductTable)} />
-        </Grid>
-        {/* product sale table */}
-        
-       
-        <Grid
-  item
-  sx={{ minHeight: { md: "330px", sm: "170px", xs: "170px" },p:1,ml:-2 ,mb:2,mt:1 }} // Set p to a smaller value
->
-  {showProductTable ?
-  (<ApiPaginate
-    apiEnd={ApiEndpoints.GET_RET_PROD_SALE}
-    columns={columns}
-    apiData={apiData}
-    tableStyle={CustomStyles}
-    setApiData={setApiData}
-    ExpandedComponent=""
-    queryParam={query ? query : ""}
-    returnRefetch={(ref) => {
-      refresh = ref;
-    }}
-    paginate={false}
-  />)
-  :
-  <Mount
-      visible={
-        role !== USER_ROLES.ASM &&
-        role !== USER_ROLES.ACC &&
-        role !== USER_ROLES.API
-      }
-      sx={{
-        // pt: 2
-      }}
-    >
-      <MyEarnings txnDataDuration={txnDataDuration} handleChange={handleChange}/>
-    </Mount>}
-</Grid>
+          </Grid>
+          {/* product sale table */}
 
-       
-      </Grid>
-      {/* <Grid
+          <Grid
+            item
+            sx={{
+              minHeight: { md: "330px", sm: "170px", xs: "170px" },
+              p: 1,
+              ml: -2,
+              mb: 2,
+              mt: 1,
+            }} // Set p to a smaller value
+          >
+            {showProductTable ? (
+              <ApiPaginate
+                apiEnd={ApiEndpoints.GET_RET_PROD_SALE}
+                columns={columns}
+                apiData={apiData}
+                tableStyle={CustomStyles}
+                setApiData={setApiData}
+                ExpandedComponent=""
+                queryParam={query ? query : ""}
+                returnRefetch={(ref) => {
+                  refresh = ref;
+                }}
+                paginate={false}
+              />
+            ) : (
+              <Mount
+                visible={
+                  role !== USER_ROLES.ASM &&
+                  role !== USER_ROLES.ACC &&
+                  role !== USER_ROLES.API
+                }
+                sx={
+                  {
+                    // pt: 2
+                  }
+                }
+              >
+                <MyEarnings
+                  txnDataDuration={txnDataDuration}
+                  handleChange={handleChange}
+                />
+              </Mount>
+            )}
+          </Grid>
+        </Grid>
+        {/* <Grid
     item
     lg={5}
     md={7}
@@ -312,11 +341,10 @@ const RetProductionSaleComponent = ({role,USER_ROLES}) => {
       <MyEarnings txnDataDuration={txnDataDuration} handleChange={handleChange}/>
     </Mount>
   </Grid> */}
-      {/* <RightNavbar/> */}
-      {/* transactions card component */}
-      
-    </Grid>
-  </>
+        {/* <RightNavbar/> */}
+        {/* transactions card component */}
+      </Grid>
+    </>
   );
 };
 

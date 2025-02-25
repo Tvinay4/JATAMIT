@@ -381,11 +381,9 @@ const AEPS2FAModal = ({
         <Box sx={style} className="sm_modal">
           <ModalHeader
             title={
-              isAepsOne && isAepsTwo
-                ? "AePS 1"
-                : "2 Factor Authentication"
+              isAepsOne && isAepsTwo ? "AePS 1" : "2 Factor Authentication"
             }
-            subtitle="Enjoy seamless aadhaar services with DilliPay"
+            subtitle="Enjoy seamless aadhaar services with DIGIVOUCHERS"
             handleClose={handleClose}
           />
           <Box
@@ -396,8 +394,8 @@ const AEPS2FAModal = ({
             }}
           >
             <Mount visible={true}>
-  {setAepsTypeInLocalAndHook(AEPS_TYPE.AEPS1)}
-                {/* <RadioGroup
+              {setAepsTypeInLocalAndHook(AEPS_TYPE.AEPS1)}
+              {/* <RadioGroup
                   className="my-radio_flex"
                   name="row-radio-buttons-group"
                   aria-labelledby="aepstype-row-radio-buttons-group-label"
@@ -454,7 +452,8 @@ const AEPS2FAModal = ({
                 <Grid container className="position-relative">
                   <Grid item md={12} xs={12}>
                     <FormControl sx={{ width: "100%" }}>
-                      <TextField autoComplete="off"
+                      <TextField
+                        autoComplete="off"
                         label="Aadhaar Number"
                         id="aadhaarNo"
                         size="small"
@@ -566,7 +565,8 @@ const AEPS2FAModal = ({
                         </Grid>
                         <Grid item md={12} xs={12}>
                           <FormControl sx={{ width: "100%" }}>
-                            <TextField autoComplete="off"
+                            <TextField
+                              autoComplete="off"
                               label=""
                               id="d_status"
                               size="small"
@@ -582,7 +582,8 @@ const AEPS2FAModal = ({
                         </Grid>
                         <Grid item md={12} xs={12}>
                           <FormControl sx={{ width: "100%" }}>
-                            <TextField autoComplete="off"
+                            <TextField
+                              autoComplete="off"
                               label=""
                               id="scan_quality"
                               size="small"

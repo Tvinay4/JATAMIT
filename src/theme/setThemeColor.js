@@ -1,44 +1,44 @@
 export const primaryColor = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
-    return "#D1AA65 ";
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
+    return "#FC4A1A ";
   }
 };
 export const primaryLight = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#00693E";
   }
 };
 export const primaryLightest = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#baa7d1";
   }
 };
 export const secondaryColor = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#004792";
   }
 };
 
 export const getHoverActive = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#231942";
   }
 };
 export const getHoverInActive = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#4045A1";
   }
 };
 
 export const getTableHeadRowColor = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return "#D1AA65";
   }
 };
 
 export const getEnv = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
-    return "DilliPay";
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
+    return "DIGIVOUCHERS";
   }
 };
 export const blackColor = () => {
@@ -50,7 +50,7 @@ export const whiteColor = () => {
 
 // user icon bg color change functions . . . .
 export const getUserColor = (role) => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     if (role === "Asm") {
       return "#1C2E46";
     } else if (role === "ZSM") {
@@ -135,17 +135,17 @@ export const getStatusColor = (status) => {
 };
 
 export const getFirmAddress = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
-    return `Plot No.5 , Second Floor ,Pocket-5, Rohini Sector 24, New Delhi 110085`;
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
+    return `907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old Town,Ambala,Haryana,134003`;
   }
 };
 export const getFirmContact = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return `+91 9355128199`;
   }
 };
 export const getFirmEmail = () => {
-  if (process.env.REACT_APP_TITLE === "DilliPay") {
+  if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
     return `support@dillipay.com`;
   }
 };

@@ -14,7 +14,6 @@
 // import VerifiedIcon from "@mui/icons-material/Verified";
 // import UploadIcon from '@mui/icons-material/Upload';
 
-
 // const style = {
 //   position: 'absolute',
 //   top: '50%',
@@ -99,11 +98,11 @@
 //         }
 //     );
 // };
-  
+
 //   console.log("Fetched Image",imageSrc);
 
 //   // console.log("imageSrc",imageSrc);
-  
+
 //   const onSelectFile = (e, type) => {
 //     if (!e.target.files) {
 //       if (type === "aadhaar") {
@@ -227,16 +226,15 @@
 //     <Modal open={open} onClose={handleClose}>
 //       <Box sx={style} className="sm_modal">
 //         <ModalHeader
-//         subtitle="Secure Your Trust: Easily Verify Your Documents with DilliPay!"
+//         subtitle="Secure Your Trust: Easily Verify Your Documents with DIGIVOUCHERS!"
 //           title="Verify Documents"
 //           handleClose={handleClose}
-//           icon={<UploadIcon />} 
+//           icon={<UploadIcon />}
 //         />
 //         <Grid container spacing={2}  sx>
 //           <Grid item xs={12} sx={{ p: 2 }}>
 //             <LabelComponent label="User Name" />
 //             <DetailsComponent detail={row.name ? row.name : row.establishment} />
-
 
 //             {imageSrc && <img src={imageSrc} alt="Fetched Image" />}
 //           </Grid>
@@ -264,8 +262,7 @@
 //               bgcolor: '#f5f5f5',
 //               mb: 2,
 //               gap: 2,
-             
-              
+
 //             }}
 //           >
 //             {aadhaar_image ? (
@@ -373,7 +370,7 @@
 //         />
 //       </IconButton>
 //       </Tooltip>
-     
+
 //           </Grid>
 
 //           {/* PAN Image */}

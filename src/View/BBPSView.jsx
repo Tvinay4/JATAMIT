@@ -230,7 +230,7 @@ const BBPSView = ({ resetView }) => {
     params.map((item) => {
       let propertyName = item.name;
       data[propertyName] =
-        item.inputType === "NUMERIC"
+        item.inputType === "TEXT"
           ? Number(document.getElementById(propertyName).value)
           : document.getElementById(propertyName).value;
       return data;

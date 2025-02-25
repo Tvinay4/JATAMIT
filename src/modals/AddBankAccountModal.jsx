@@ -104,27 +104,27 @@ const AddBankAccountModal = ({ refresh }) => {
       }}
     >
       <Tooltip title="Add Account">
-          <Button
-            variant="outlined"
-            // className="button-transparent"
-            className="refresh-icon-risk"
-            onClick={handleOpen}
-            startIcon={
-              <IconButton
-                sx={{
-                  p: 0,
+        <Button
+          variant="outlined"
+          // className="button-transparent"
+          className="refresh-icon-risk"
+          onClick={handleOpen}
+          startIcon={
+            <IconButton
+              sx={{
+                p: 0,
 
-                  color: whiteColor(),
-                }}
-              >
-                <AddCircleOutlineIcon />
-              </IconButton>
-            }
-            sx={{ py: 0.3 }}
-          >
-            Account
-          </Button>
-        </Tooltip>
+                color: whiteColor(),
+              }}
+            >
+              <AddCircleOutlineIcon />
+            </IconButton>
+          }
+          sx={{ py: 0.3 }}
+        >
+          Account
+        </Button>
+      </Tooltip>
       {/* <Tooltip title="Add Account">
         <IconButton
           aria-label="addAccount"
@@ -138,14 +138,13 @@ const AddBankAccountModal = ({ refresh }) => {
       </Tooltip> */}
 
       <Box>
-        <Drawer
-          open={open}
-          anchor="right"
-          onClose={handleClose}
-         
-        >
-          <Box sx={{width:400}} >
-            <ModalHeader title="Add Account" handleClose={handleClose} subtitle="Easily Add New Accounts with DilliPay" />
+        <Drawer open={open} anchor="right" onClose={handleClose}>
+          <Box sx={{ width: 400 }}>
+            <ModalHeader
+              title="Add Account"
+              handleClose={handleClose}
+              subtitle="Easily Add New Accounts with DIGIVOUCHERS"
+            />
             <Box
               component="form"
               id="addAcc"
@@ -159,7 +158,8 @@ const AddBankAccountModal = ({ refresh }) => {
               <Grid container sx={{ pt: 1 }}>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off"
+                    <TextField
+                      autoComplete="off"
                       label="Owner Name"
                       id="owner_name"
                       size="small"
@@ -169,7 +169,8 @@ const AddBankAccountModal = ({ refresh }) => {
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off"
+                    <TextField
+                      autoComplete="off"
                       label="Shop Name"
                       id="shop_name"
                       size="small"
@@ -179,7 +180,8 @@ const AddBankAccountModal = ({ refresh }) => {
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off"
+                    <TextField
+                      autoComplete="off"
                       label="Registerd Mobile"
                       id="mobile"
                       size="small"
@@ -189,7 +191,8 @@ const AddBankAccountModal = ({ refresh }) => {
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off"
+                    <TextField
+                      autoComplete="off"
                       label="Credit Limit"
                       id="credit_limit"
                       size="small"
@@ -200,7 +203,8 @@ const AddBankAccountModal = ({ refresh }) => {
               </Grid>
               <Grid item md={12} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
-                  <TextField autoComplete="off"
+                  <TextField
+                    autoComplete="off"
                     select
                     label="ASM"
                     id="asm"
@@ -224,8 +228,8 @@ const AddBankAccountModal = ({ refresh }) => {
                   </TextField>
                 </FormControl>
               </Grid>
-              <Box sx={{mr:"5px"}}>
-              <ModalFooter form="addAcc" request={request} />
+              <Box sx={{ mr: "5px" }}>
+                <ModalFooter form="addAcc" request={request} />
               </Box>
             </Box>
           </Box>

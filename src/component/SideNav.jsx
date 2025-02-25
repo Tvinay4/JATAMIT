@@ -308,7 +308,7 @@ export default function SideNav(props, { data }) {
           : user?.role === "Zsm"
           ? "13rem"
           : user.role === "Admin" && location.pathname === "/admin/transactions"
-          ? "18rem"
+          ? "12rem"
           : "12.5rem",
       md:
         user?.role === "Admin"
@@ -365,7 +365,6 @@ export default function SideNav(props, { data }) {
               padding: "4px",
               display: "block",
               margin: "0 auto",
-              backgroundColor: whiteColor(),
             }}
           />
         )}
@@ -378,7 +377,6 @@ export default function SideNav(props, { data }) {
               padding: "4px",
               display: "block",
               margin: "0 auto",
-              backgroundColor: whiteColor(),
           }}
           />
         )}
@@ -445,7 +443,7 @@ export default function SideNav(props, { data }) {
               ) : (
                 <Button
                   sx={{ color: "#fff" }}
-                  startIcon={<LogoutIcon sx={{ color: "#a1e68c" }} />}
+                  startIcon={<LogoutIcon sx={{ color: "#DDC079" }} />}
                 >
                   Logout
                 </Button>

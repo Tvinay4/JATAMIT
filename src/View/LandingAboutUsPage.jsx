@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React, { useEffect, useState } from "react";
-import { aboutUs } from "../iconsImports";
+import { aboutUs, aboutusstore } from "../iconsImports";
 import { getEnv, primaryColor } from "../theme/setThemeColor";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
@@ -99,20 +99,19 @@ const LandingAboutUsPage = () => {
               sx={{ textAlign: "left", mr: { md: 1.5, sm: 0, xs: 0 } }}
             >
               <div className="justify-content">
-                India's current mottos are "financial inclusion" and
-                "AatmaNirbharta".
+                India’s vision is shaped by the guiding principles of "financial
+                inclusion" and "AatmaNirbharta."
               </div>
               <div className="mt-2 justify-content">
-                Our story starts at the cusp of these two ideologies. Lakhs of
-                hard-working people in the unorganized retail sector form the
-                backbone of India's economy.
+                Our journey began at the intersection of these powerful
+                ideologies. Across India, millions of dedicated individuals in
+                the unorganized retail sector are the backbone of our economy.
               </div>
-
               <div className="mt-2 justify-content">
-                Whether in a village, town or a large city, shopkeepers and
-                kirana store owners have been unable to join the digital
-                revolution because of factors like lack of awareness, knowledge
-                and proper fintech support.
+                Whether in a village, town, or bustling city, shopkeepers and
+                kirana store owners face significant challenges in joining the
+                digital revolution—primarily due to factors like lack of
+                awareness, knowledge, and the right fintech support.
               </div>
             </Grid>
             <Grid
@@ -121,186 +120,249 @@ const LandingAboutUsPage = () => {
               sx={{ textAlign: "left", ml: { md: 1.5, sm: 0, xs: 0 } }}
               className="justify-content"
             >
-              This is the problem {getEnv()} was built to address. Established
-              by a team of professionals with decades of experience in the BFSI
-              industry, {getEnv()} focuses on developing insights into the deep
-              market potential of the financial transaction and financial
-              technology space in India. We aim to lead this pool of persevering
-              small-scale entrepreneurs into a financially inclusive,
-              financially stronger future.
+              This is the problem {getEnv()} aims to solve. Founded by a team of
+              industry veterans with decades of experience in the BFSI sector,{" "}
+              {getEnv()} is focused on unlocking the vast market potential
+              within India’s financial transaction and fintech landscape. We are
+              committed to guiding small-scale entrepreneurs towards a
+              financially inclusive and empowered future.
             </Grid>
           </Grid>
         </Container>
         {/* the about us image */}
         {envName !== "MoneyOddr" && (
-          <Grid md={12} container>
+          <Grid
+            container
+            className="d-flex justify-content-center"
+            sx={{
+              pt: 3.5,
+              background: " #fff8e1",
+              borderRadius: "15px",
+            }}
+          >
             <Grid md={5.5} sx={{ mb: { md: 0, xs: 5 } }}>
-              <img src={aboutUs} width="90%" alt="About us img" />
+              <img
+                src={aboutUs}
+                width="80%"
+                alt="About us img"
+                style={{ borderRadius: "15px" }}
+              />
             </Grid>
             <Grid
               md={6.5}
               container
               sx={{
-                mt: { md: 15, xs: 0 },
+                mt: { md: 10, xs: 0 },
                 display: "flex",
                 justifyContent: "center",
+
+                flexWrap: "wrap",
+                gap: 3,
               }}
             >
+              {/* Merchant Section */}
               <Grid
                 md={5}
                 className="bottom2top"
                 sx={{
                   my: { md: 0, xs: 5 },
                   minWidth: { md: "0", xs: "350px" },
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  background: "rgba(255, 255, 255, 0.67)",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
                 }}
               >
-                <div className="flex-hs-vs">
+                <div>
                   <StorefrontIcon
                     sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
+                      color: "#ff5722", // New vibrant red-orange icon
+                      fontSize: "3.5rem",
+                      mb: 2,
                     }}
                   />
-                  <div className="flex-hc-vs flex-d-col">
+                  <div>
                     <span
                       className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
+                      style={{
+                        fontSize: "1.7rem",
+                        fontWeight: "800",
+                        color: "#d32f2f",
+                      }} // Bold and strong red
                     >
                       5000+
                     </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
+                    <div
+                      style={{
+                        fontSize: "16px",
+                        marginTop: "8px",
+                        color: "#ff5722",
+                      }}
+                    >
+                      <span style={{ fontWeight: "800", fontSize: "18px" }}>
                         Merchants
                       </span>
-                      <span> More than 5000 merchants</span>
-                      <br />
-                      onboarded
+                      <div>Onboarded across the country</div>
                     </div>
                   </div>
                 </div>
               </Grid>
+
+              {/* Customers Section */}
               <Grid
                 md={5}
                 className="bottom2top"
                 sx={{
                   my: { md: 0, xs: 5 },
                   minWidth: { md: "0", xs: "350px" },
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  background: "rgba(255, 255, 255, 0.67)",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  boxShadow: "0 4px 15px rgba(103, 158, 86, 0.5)", // Light shadow for pop
                 }}
               >
-                <div className="flex-hs-vs">
+                <div>
                   <GroupAddIcon
                     sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
+                      color: "#388e3c", // Keeping the vibrant green but changing icon style
+                      fontSize: "3.5rem",
+                      mb: 2,
                     }}
                   />
-                  <div className="flex-hc-vs flex-d-col">
+                  <div>
                     <span
                       className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
+                      style={{
+                        fontSize: "1.7rem",
+                        fontWeight: "800",
+                        color: "#388e3c",
+                      }} // Bold green text
                     >
                       11 Lakh+
                     </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
+                    <div
+                      style={{
+                        fontSize: "16px",
+                        marginTop: "8px",
+                        color: "#388e3c",
+                      }}
+                    >
+                      <span style={{ fontWeight: "800", fontSize: "18px" }}>
                         Customers
                       </span>
-                      <span> More than 11 Lakh happy customers </span>
+                      <div>Happy customers across India</div>
                     </div>
                   </div>
                 </div>
               </Grid>
+
+              {/* Cities Section */}
               <Grid
                 md={5}
                 className="bottom2top"
                 sx={{
                   my: { md: 0, xs: 5 },
                   minWidth: { md: "0", xs: "350px" },
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  background: "rgba(255, 255, 255, 0.67)",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  boxShadow: "0 4px 15px rgba(0, 188, 212, 0.5)", // Light shadow for pop
                 }}
               >
-                <div className="flex-hs-vs">
+                <div>
                   <ApartmentIcon
                     sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
+                      color: "#0097a7", // Vibrant blue icon to complement the background
+                      fontSize: "3.5rem",
+                      mb: 2,
                     }}
                   />
-                  <div className="flex-hc-vs flex-d-col">
+                  <div>
                     <span
                       className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
+                      style={{
+                        fontSize: "1.7rem",
+                        fontWeight: "800",
+                        color: "#0097a7",
+                      }} // Bold blue
                     >
                       5000+
                     </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                      >
-                        City
+                    <div
+                      style={{
+                        fontSize: "16px",
+                        marginTop: "8px",
+                        color: "#0097a7",
+                      }}
+                    >
+                      <span style={{ fontWeight: "800", fontSize: "18px" }}>
+                        Cities
                       </span>
-                      <span>Spread across 5000 plus cities</span>
+                      <div>Spread across 5000+ cities</div>
                     </div>
                   </div>
                 </div>
               </Grid>
+
+              {/* Transactions Section */}
               <Grid
                 md={5}
                 className="bottom2top"
                 sx={{
                   my: { md: 0, xs: 5 },
                   minWidth: { md: "0", xs: "350px" },
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  background: "rgba(255, 255, 255, 0.67)",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
                 }}
               >
-                <div className="flex-hs-vs">
+                <div>
                   <StorefrontIcon
                     sx={{
-                      color: primaryColor(),
-                      fontSize: "2.2rem",
-                      mr: { md: 1.2, xs: 0 },
-                      mt: 1.1,
+                      color: "#ff6f00", // Icon color adjusted
+                      fontSize: "3.5rem",
+                      mb: 2,
                     }}
                   />
-                  <div className="flex-hc-vs flex-d-col">
+                  <div>
                     <span
                       className="landing-small-font less-thick-font"
-                      style={{ paddingLeft: "0px" }}
+                      style={{
+                        fontSize: "1.7rem",
+                        fontWeight: "800",
+                        color: "#d32f2f",
+                      }} // Bold red emphasis
                     >
                       5,00,000+
                     </span>
-                    <div style={{ fontSize: "12px", textAlign: "left" }}>
-                      <span
-                        style={{
-                          fontWeight: "800",
-                          fontSize: "15px",
-                          gap: 3,
-                        }}
-                        className="mr-2"
-                      >
+                    <div
+                      style={{
+                        fontSize: "16px",
+                        marginTop: "8px",
+                        color: "#ff5722",
+                      }}
+                    >
+                      <span style={{ fontWeight: "800", fontSize: "18px" }}>
                         Transactions
                       </span>
-                      <span>More than 5,00,000 Transactions Monthly</span>
+                      <div>Processed Monthly</div>
                     </div>
                   </div>
                 </div>
@@ -311,52 +373,91 @@ const LandingAboutUsPage = () => {
       </Grid>
       <>
         {envName !== "MoneyOddr" && (
-          <div className="builSecurity_bg">
-            <Container maxWidth="lg" sx={{ my: 15 }}>
-              <Grid container xs={12} className="top2Bottom ">
-                <Box
-                  sx={{
-                    width: { lg: "50%", md: "50%", sm: "100%", xs: "100%" },
-                  }}
-                  className="landingPageHeadings"
+          <div
+            className="builSecurity_bg"
+            style={{ background: "#FAE5D3", padding: "60px 0" }}
+          >
+            <Container maxWidth="lg">
+              <Grid container spacing={3} alignItems="center">
+                {/* Left Side - Text Content */}
+                <Grid item xs={12} md={6}>
+                  <Box
+                    className="landingPageHeadings"
+                    sx={{
+                      mb: 4,
+                      fontSize: "28px",
+                      fontWeight: "bold",
+                      color: "#8B4513",
+                    }}
+                  >
+                    Transforming India’s Retail Landscape
+                  </Box>
+
+                  <Card
+                    sx={{
+                      boxShadow: "rgba(0, 0, 0, 0.2) 0px 4px 12px",
+                      background: "rgb(240, 188, 148)",
+                      width: { lg: "95%", md: "70%", sm: "85%", xs: "95%" },
+                      p: { lg: 4, md: 4, sm: 3, xs: 3 },
+                      borderRadius: "12px",
+                      textAlign: "justify",
+                    }}
+                  >
+                    <div
+                      className="landing-bg_para"
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: "1.6",
+                        color: "#4A2E18",
+                      }}
+                    >
+                      India's retail ecosystem is largely dominated by kirana
+                      stores, mom-and-pop shops, and local brick-and-mortar
+                      businesses, making up nearly
+                      <strong> 95% of the market</strong>. These businesses face
+                      challenges in accessing modern financial and digital
+                      solutions.
+                      <br />
+                      <br />
+                      Our mission is to <strong>
+                        empower local retailers
+                      </strong>{" "}
+                      with seamless fintech support, enabling them to compete in
+                      the digital economy. By bridging the gap between{" "}
+                      <strong>traditional retail</strong> and{" "}
+                      <strong>modern trade</strong>, we create opportunities for
+                      small businesses to{" "}
+                      <strong>scale, grow, and thrive</strong>.
+                      <br />
+                      <br />
+                      <strong>{getEnv()}</strong> is building a robust digital
+                      ecosystem for India's unorganized retail sector, offering
+                      financial tools and tech-driven solutions that foster
+                      long-term sustainability.
+                    </div>
+                  </Card>
+                </Grid>
+
+                {/* Right Side - Image */}
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  display="flex"
+                  justifyContent="center"
                 >
-                  Why the focus on the Indian unorganized retail sector ?
-                </Box>
+                  <img
+                    src={aboutusstore}
+                    alt="Retail Sector"
+                    style={{
+                      maxWidth: "100%",
+                      height: "90%",
+                      borderRadius: "12px",
+                    }}
+                  />
+                </Grid>
               </Grid>
             </Container>
-
-            <Grid className="beforeBgColor" sx={{ marginTop: "-60px" }}>
-              <Container maxWidth="lg">
-                <Card
-                  sx={{
-                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                    background: "#FD908E",
-                    width: { lg: "60%", md: "70%", sm: "80%", xs: "90%" },
-                    p: 4,
-                    mx: 3,
-                    marginLeft: { lg: "40%", md: "30%", sm: "0", xs: "0" },
-                    textAlign: "justify",
-                  }}
-                >
-                  <div className="landing-bg_para justify-content">
-                    Almost 95% of India's retail market consists of kirana
-                    stores, brick-and-mortar establishments and mom-and-pop
-                    stores. Isn't that massive potential? We want to focus on
-                    organizing this enormous unorganized sector by giving it
-                    access to modern fintech support. We believe this will help
-                    nurture smaller businesses and enable them to jump onto the
-                    modern trade bandwagon. We understand the challenges in this
-                    sector and the potential to convert them into opportunities.
-                    We want to create the "AatmaNirbhar Dukandar" and help him
-                    achieve true financial empowerment. {getEnv()} aims to
-                    create an organized digital network of India's unorganized
-                    retail sector through a retail tech platform that provides
-                    retailers with digital financial and business solutions to
-                    enable business expansion and scaling.
-                  </div>
-                </Card>
-              </Container>
-            </Grid>
           </div>
         )}
 
@@ -481,7 +582,7 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: "#e0f2f1",
+                            backgroundColor: " #FEDBBD",
                             borderRadius: "16px",
                             boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
                             transition:
@@ -505,14 +606,14 @@ const LandingAboutUsPage = () => {
                               <EmojiObjectsIcon
                                 sx={{
                                   fontSize: "45px",
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   marginBottom: "10px",
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   fontWeight: "bold",
                                   textAlign: "right",
                                 }}
@@ -540,7 +641,7 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: "#e0f2f1",
+                            backgroundColor: " #FEDBBD",
                             borderRadius: "16px",
                             boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
                             transition:
@@ -563,14 +664,14 @@ const LandingAboutUsPage = () => {
                               <SecurityIcon
                                 sx={{
                                   fontSize: "45px",
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   marginBottom: "10px",
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   fontWeight: "bold",
                                   textAlign: { lg: "right", sm: "center" },
                                 }}
@@ -602,7 +703,7 @@ const LandingAboutUsPage = () => {
                           margin: "10px",
                           textAlign: "center",
                           alignItems: "center",
-                          backgroundColor: "#71C1DC",
+                          backgroundColor: " #FEDBBD",
                           borderRadius: "16px",
                           // background: "#71C1DC",
                           boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
@@ -647,7 +748,7 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: "#e8f5e9",
+                            backgroundColor: " #FEDBBD",
                             borderRadius: "16px",
                             boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
                             transition:
@@ -670,14 +771,14 @@ const LandingAboutUsPage = () => {
                               <IntegrationInstructionsIcon
                                 sx={{
                                   fontSize: "45px",
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   marginBottom: "10px",
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   fontWeight: "bold",
                                   textAlign: { lg: "left", sm: "center" },
                                 }}
@@ -705,7 +806,7 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: "#e8f5e9",
+                            backgroundColor: " #FEDBBD",
                             borderRadius: "16px",
                             boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
                             transition:
@@ -728,14 +829,14 @@ const LandingAboutUsPage = () => {
                               <ShutterSpeedIcon
                                 sx={{
                                   fontSize: "45px",
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   marginBottom: "10px",
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#1b5e20",
+                                  color: "#8B4513",
                                   fontWeight: "bold",
                                   textAlign: { lg: "left", sm: "center" },
                                 }}
@@ -765,260 +866,227 @@ const LandingAboutUsPage = () => {
             {/* mission vission and values section */}
 
             <Grid container md={12} xs={12}>
-              {/* 01 */}
-              <Grid
-                sx={{
-                  mt: 15,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-                md={12}
-                className="bottom2top"
-              >
-                <Box
-                  component="div"
-                  sx={{
-                    display: "flex",
-                    flexDirection: {
-                      lg: "row",
-                      md: "row",
-                      sm: "column",
-                      xs: "column",
-                    },
-                    width: "80%",
-                  }}
-                >
-                  <Box
-                    component="span"
-                    sx={{
-                      backgroundColor:
-                        envName === "MoneyOddr" ? "#EC9706" : "#FD908E",
-                      color: "#fff",
-                      width: "70px",
-                      height: "70px",
-                      fontSize: "2.2rem",
-                      pt: 1,
-                      fontWeight: "bold",
-                      mr: 2,
-                    }}
-                  >
-                    01
-                  </Box>
-                  <span
-                    className="landingPageHeadings"
-                    style={{ letterSpacing: "0.2rem", color: "#000" }}
-                  >
-                    Our Vission
-                  </span>
-                </Box>
+  {/* 01 */}
+  <Grid
+    sx={{
+      mt: 12,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+    }}
+    md={12}
+    className="bottom2top"
+  >
+    <Box
+      component="div"
+      sx={{
+        display: "flex",
+        flexDirection: {
+          lg: "row",
+          md: "row",
+          sm: "column",
+          xs: "column",
+        },
+        width: "80%",
+      }}
+    >
+      <Box
+        component="span"
+        sx={{
+          background: "linear-gradient(135deg, #FFBC87, #8B4513)", // Updated gradient colors
+          color: "#fff",
+          width: "70px",
+          height: "70px",
+          fontSize: "2.5rem",
+          borderRadius: "25%",
+          pt: 1,
+          fontWeight: "bold",
+          mr: 2,
+          transition: "transform 0.3s",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        01
+      </Box>
+      <span
+        className="landingPageHeadings"
+        style={{
+          letterSpacing: "0.1rem",
+          color: "#333",
+          fontSize: "1.8rem", // Smaller, concise header
+        }}
+      >
+        Financial Accessibility
+      </span>
+    </Box>
 
-                {envName === "MoneyOddr" ? (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "80%", xs: "100%" },
-                    }}
-                  >
-                    <span style={{ fontWeight: "900" }}>MoneyOddR</span> is
-                    founded with a mission to engage every Indian in mainstream
-                    banking by providing last mile services.
-                    <span style={{ fontWeight: "900", color: "#00BF78" }}>
-                      “Har Ghar – Har Nagar”
-                    </span>
-                  </Box>
-                ) : (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "80%", xs: "100%" },
-                    }}
-                  >
-                    To become India's best digital financial solutions provider
-                    in the unorganized sector. To enable the adoption of fintech
-                    in every small business and retail store in India in a quest
-                    to grow their business and help expand their offerings. To
-                    spur job creation by aiding micro-entrepreneurship,
-                    specifically in the rural and semi-urban sectors.
-                  </Box>
-                )}
-              </Grid>
+    <Box
+      className="landing-bg_para"
+      component="div"
+      sx={{
+        textAlign: "justify",
+        width: "80%",
+        color: "#555",
+        fontSize: "1.3rem", // Larger content font size
+        lineHeight: "1.8",
+        mt: 2,
+      }}
+    >
+      We aim to make banking services accessible and bring them closer to communities, simplifying financial inclusion.
+    </Box>
+  </Grid>
 
-              {/* 02 */}
-              <Grid
-                md={12}
-                className="bottom2top"
-                sx={{
-                  mt: 6,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  component="div"
-                  sx={{
-                    display: "flex",
-                    flexDirection: {
-                      lg: "row",
-                      md: "row",
-                      sm: "column",
-                      xs: "column",
-                    },
-                    width: "80%",
-                  }}
-                >
-                  <Box
-                    component="span"
-                    sx={{
-                      backgroundColor:
-                        envName === "MoneyOddr" ? "#2C3D69" : "#FD908E",
-                      color: "#fff",
-                      width: {
-                        lg: "70px",
-                        md: "70px",
-                        sm: "100px",
-                        xs: "100px",
-                      },
-                      height: "70px",
-                      fontSize: "2.2rem",
-                      pt: 1,
-                      fontWeight: "bold",
-                      mr: 2,
-                    }}
-                  >
-                    02
-                  </Box>
-                  <span
-                    className="landingPageHeadings"
-                    style={{ letterSpacing: "0.2rem", color: "#000" }}
-                  >
-                    Our Mission
-                  </span>
-                </Box>
+  {/* 02 */}
+  <Grid
+    md={12}
+    className="bottom2top"
+    sx={{
+      mt: 6,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+    }}
+  >
+    <Box
+      component="div"
+      sx={{
+        display: "flex",
+        flexDirection: {
+          lg: "row",
+          md: "row",
+          sm: "column",
+          xs: "column",
+        },
+        width: "80%",
+      }}
+    >
+      <Box
+        component="span"
+        sx={{
+          background: "linear-gradient(135deg,rgb(183, 207, 99),rgb(129, 156, 67))", // Orange gradient for energy
+          color: "#fff",
+          width: "70px",
+          height: "70px",
+          fontSize: "2.5rem",
+          borderRadius: "25%",
+          pt: 1,
+          fontWeight: "bold",
+          mr: 2,
+          transition: "transform 0.3s",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        02
+      </Box>
+      <span
+        className="landingPageHeadings"
+        style={{
+          letterSpacing: "0.1rem",
+          color: "#333",
+          fontSize: "1.8rem", // Smaller header for consistency
+        }}
+      >
+        Empowering Progress
+      </span>
+    </Box>
 
-                {envName === "MoneyOddr" ? (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "100%", xs: "100%" },
-                    }}
-                  >
-                    <span style={{ fontWeight: "900" }}>MoneyOddR</span> is
-                    created to become the best and user-friendly banking
-                    platform to serve India's unorganized sectors & rural india.
-                  </Box>
-                ) : (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "100%", xs: "100%" },
-                    }}
-                  >
-                    To become a one-stop digital payment and banking point and
-                    superior distribution channel to improve India's
-                    monetization infrastructure, specifically in the unorganized
-                    retail sector.
-                  </Box>
-                )}
-              </Grid>
-              {/* 03 */}
-              <Grid
-                sx={{
-                  mt: 6,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-                md={12}
-                className="bottom2top"
-              >
-                <Box
-                  component="div"
-                  sx={{
-                    display: "flex",
-                    flexDirection: {
-                      lg: "row",
-                      md: "row",
-                      sm: "column",
-                      xs: "column",
-                    },
-                    width: "80%",
-                  }}
-                >
-                  <Box
-                    component="span"
-                    sx={{
-                      backgroundColor:
-                        envName === "MoneyOddr" ? "#2C3D69" : "#FD908E",
-                      color: "#fff",
-                      width: "70px",
-                      height: "70px",
-                      fontSize: "2.2rem",
-                      pt: 1,
-                      fontWeight: "bold",
-                      mr: 2,
-                    }}
-                  >
-                    03
-                  </Box>
-                  <span
-                    className="landingPageHeadings"
-                    style={{ letterSpacing: "0.2rem", color: "#000" }}
-                  >
-                    Our Values
-                  </span>
-                </Box>
+    <Box
+      className="landing-bg_para"
+      component="div"
+      sx={{
+        textAlign: "justify",
+        width: "80%",
+        color: "#555",
+        fontSize: "1.3rem", // Larger content font size
+        lineHeight: "1.8",
+        mt: 2,
+      }}
+    >
+      Our mission is to enable businesses by providing seamless access to digital financial tools, fostering growth.
+    </Box>
+  </Grid>
 
-                {envName === "MoneyOddr" ? (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "80%", xs: "100%" },
-                    }}
-                  >
-                    <span style={{ fontWeight: "900" }}>
-                      Availability, Reliability, Transparency & Trust
-                    </span>
-                    are the key values of
-                    <span style={{ fontWeight: "900" }}>MoneyOddR</span> and we
-                    are committed to serve each of our Retailer, Distributors
-                    and other associated partners as per our Values.
-                  </Box>
-                ) : (
-                  <Box
-                    className="landing-bg_para"
-                    component="div"
-                    sx={{
-                      textAlign: "justify",
-                      width: { lg: "80%", md: "80%", sm: "80%", xs: "100%" },
-                    }}
-                  >
-                    Insight-led - We make decisions based on cutting-edge,
-                    technologically-driven research and data. Innovation - We
-                    continually evolve to create technology-enabled solutions
-                    and campaigns for our users. Integrity - We encourage
-                    conducting business by adhering to the highest standards of
-                    trust and ethics. Collaboration - We endeavour to strengthen
-                    and develop mutually beneficial relations with our customers
-                    and partners.
-                  </Box>
-                )}
-              </Grid>
-            </Grid>
+  {/* 03 */}
+  <Grid
+    sx={{
+      mt: 6,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+    }}
+    md={12}
+    className="bottom2top"
+  >
+    <Box
+      component="div"
+      sx={{
+        display: "flex",
+        flexDirection: {
+          lg: "row",
+          md: "row",
+          sm: "column",
+          xs: "column",
+        },
+        width: "80%",
+      }}
+    >
+      <Box
+        component="span"
+        sx={{
+          background: "linear-gradient(135deg,rgb(86, 161, 130),rgb(110, 188, 155))", // Blue gradient for professionalism
+          color: "#fff",
+          width: "70px",
+          height: "70px",
+          fontSize: "2.5rem",
+          borderRadius: "25%",
+          pt: 1,
+          fontWeight: "bold",
+          mr: 2,
+          transition: "transform 0.3s",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        03
+      </Box>
+      <span
+        className="landingPageHeadings"
+        style={{
+          letterSpacing: "0.1rem",
+          color: "#333",
+          fontSize: "1.8rem", // Smaller header for consistency
+        }}
+      >
+        Building Trust
+      </span>
+    </Box>
+
+    <Box
+      className="landing-bg_para"
+      component="div"
+      sx={{
+        textAlign: "justify",
+        width: "80%",
+        color: "#555",
+        fontSize: "1.3rem", // Larger content font size
+        lineHeight: "1.8",
+        mt: 2,
+      }}
+    >
+      We focus on providing transparent and reliable financial solutions that ensure quality and consistency at every touchpoint.
+    </Box>
+  </Grid>
+</Grid>
+
+
           </Container>
         </div>
       </>

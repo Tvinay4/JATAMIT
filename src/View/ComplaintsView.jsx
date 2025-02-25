@@ -246,7 +246,7 @@ const ComplaintsView = () => {
                   display: "flex",
                   justifyContent: { md: "end", xs: "start" },
                   alignItems: "center",
-                  pr: 2,
+                  
                   mt: { md: 0, xs: 2, sm: 2 },
                 }}
               >

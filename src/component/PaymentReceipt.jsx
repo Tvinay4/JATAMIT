@@ -57,9 +57,9 @@ const PaymentReceipt = () => {
   const [payment, setPayment] = useState();
   const location = useLocation();
   let queryParams = new URLSearchParams(location.search);
-  const hideHeader=payment?.operator
-  console.log("operator",payment?.operator);
-  
+  const hideHeader = payment?.operator;
+  console.log("operator", payment?.operator);
+
   const handleChange = (event) => {
     setValue(event.target.value * 1);
   };
@@ -506,12 +506,12 @@ const PaymentReceipt = () => {
               justifyContent: "space-between",
               padding: "10px",
             }}
-          >{hideHeader!=="Vendor Payments"&&
-            <Grid>
-              
-              <LogoComponent width="40%" />
-            </Grid>
-  }
+          >
+            {hideHeader !== "Vendor Payments" && (
+              <Grid>
+                <LogoComponent width="40%" />
+              </Grid>
+            )}
             {/* <Grid className="just-text-right">
               {user ? user.establishment : "Null"}
 
@@ -604,7 +604,9 @@ const PaymentReceipt = () => {
             <Grid container justifyContent="space-between" lg={12}>
               {/* Left Side - Logo */}
               <Grid item xs={12} lg={6} sm={6} sx={{ textAlign: "left" }}>
-              {hideHeader!=="Vendor Payments"&& <LogoComponent width="40%" />}
+                {hideHeader !== "Vendor Payments" && (
+                  <LogoComponent width="40%" />
+                )}
 
                 <Typography
                   variant="body2"
@@ -634,75 +636,76 @@ const PaymentReceipt = () => {
                   {/* Align to the right */}
 
                   {/* Location Icon with Dummy Address */}
-                  {hideHeader!=="Vendor Payments"&&
-                  <>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      mt: 1,
-                      gap: 1.2,
+                  {hideHeader !== "Vendor Payments" && (
+                    <>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          mt: 1,
+                          gap: 1.2,
 
-                      color: "#FF5722",
-                    }}
-                  >
-                    <LocationOn color="#256BC5" fontSize="small" />
-                    <Typography
-                      variant="body1"
-                      sx={{
-                        color: "#256BC5",
-                        fontFamily: "'Roboto', sans-serif",
-                        fontSize: "14px",
-                      }}
-                    >
-                      Plot No.5 2nd floor Pocket-5, Rohini Sec 24, Delhi 110085
-                    </Typography>
-                  </Box>
-                
-                  {/* Email Icon with Dummy Email */}
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      mt: 1,
-                      gap: 1.2,
-                      color: "#FF5722",
-                    }}
-                  >
-                    <Email color="#FF5722" fontSize="small" />
-                    <Typography
-                      variant="body1"
-                      sx={{
-                        color: "#256BC5",
-                        fontFamily: "'Roboto', sans-serif",
-                      }}
-                    >
-                      Email: support@dillipay.com
-                    </Typography>
-                  </Box>
+                          color: "#FF5722",
+                        }}
+                      >
+                        <LocationOn color="#256BC5" fontSize="small" />
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: "#256BC5",
+                            fontFamily: "'Roboto', sans-serif",
+                            fontSize: "14px",
+                          }}
+                        >
+                          907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE
+                          ROAD,Old Town,Ambala,Haryana,134003
+                        </Typography>
+                      </Box>
 
-                  {/* Phone Icon with Dummy Mobile Number */}
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      mt: 1,
-                      gap: 1.2,
-                      color: "#FF5722",
-                    }}
-                  >
-                    <Phone color="#FF5722" fontSize="small" />
-                    <Typography
-                      variant="body1"
-                      sx={{
-                        color: "#256BC5",
-                        fontFamily: "'Roboto', sans-serif",
-                      }}
-                    >
-                      Phone: 9355128199
-                    </Typography>
-                  </Box>
-                  </>
-  }
+                      {/* Email Icon with Dummy Email */}
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          mt: 1,
+                          gap: 1.2,
+                          color: "#FF5722",
+                        }}
+                      >
+                        <Email color="#FF5722" fontSize="small" />
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: "#256BC5",
+                            fontFamily: "'Roboto', sans-serif",
+                          }}
+                        >
+                          Email: support@DigiVouchers.com
+                        </Typography>
+                      </Box>
+
+                      {/* Phone Icon with Dummy Mobile Number */}
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          mt: 1,
+                          gap: 1.2,
+                          color: "#FF5722",
+                        }}
+                      >
+                        <Phone color="#FF5722" fontSize="small" />
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: "#256BC5",
+                            fontFamily: "'Roboto', sans-serif",
+                          }}
+                        >
+                          Phone: 9355128199
+                        </Typography>
+                      </Box>
+                    </>
+                  )}
                 </Box>
               </Grid>
             </Grid>

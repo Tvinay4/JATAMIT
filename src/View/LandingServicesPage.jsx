@@ -36,7 +36,7 @@ const LandingServicesPage = () => {
             marginTop: "-3px",
           }}
         >
-          Our Services
+          {/* Our Services */}
         </Box>
         {envName === "MoneyOddr" ? (
           <>
@@ -52,14 +52,14 @@ const LandingServicesPage = () => {
         ) : (
           <>
             <div className="landingPageSubHeading">
-              We have exciting services for you on our application
+              {/* We have exciting services for you on our application */}
             </div>
           </>
         )}
       </Grid>
       {/* <Container maxWidth="lg" className="sectionBreake" sx={{ pb: 10 }}> */}
-      <Container maxWidth="lg" sx={{ pb: 10, mt: 10 }}>
-        <Grid container className="flex-hc-vc mb-5">
+      <Container maxWidth="lg" sx={{ pb: 7, mt: 7 }}>
+        <Grid container className="flex-hc-vc mb-5 " >
           <Grid
             md={2.7}
             className="icon-box"
@@ -71,13 +71,10 @@ const LandingServicesPage = () => {
           >
             <span className="icon">
               <StayCurrentPortraitIcon
-                sx={
-                  {
-
-                    // color: secondaryColor(),
-                    fontSize: "2.2rem",
-                  }
-                }
+                sx={{
+                  // color: secondaryColor(),
+                  fontSize: "2.2rem",
+                }}
                 className="actual-icon"
               />
             </span>
@@ -107,7 +104,7 @@ const LandingServicesPage = () => {
             <Typography className="box-para justify-content">
               With
               <span style={{ marginRight: "3px", marginLeft: "3px" }}>
-                {envName === "MoneyOddr" ? "MoneyOddR" : "DilliPay"}
+                {envName === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
               </span>
               merchant app, choose from a variety of operators like Airtel DTH,
               Dish TV, Videocon D2h.
@@ -204,7 +201,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -216,6 +213,7 @@ const LandingServicesPage = () => {
               </Box>
             </Grid>
           ) : (
+            
             <Grid md={6} lg={6} sm={12} xs={12} sx={{ mt: { md: 5, xs: 0 } }}>
               <span
                 className="landingPageHeadings"
@@ -235,7 +233,7 @@ const LandingServicesPage = () => {
                     envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
                 }}
               ></Box>
-              <div className="s" style={{ textAlign: "justify" }}>
+              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
                 {getEnv()} proud to say that we are one of the few vendors who
                 are authorized from IRCTC to book train tickets. Now you can
                 easily book tickets online for any train, class, or destination.
@@ -250,7 +248,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -286,7 +284,7 @@ const LandingServicesPage = () => {
             ></Box>
             <div className="landing-bg_para" style={{ textAlign: "justify" }}>
               <span style={{ marginRight: "10px" }}>
-                {getEnv() === "MoneyOddr" ? "MoneyOddR" : "DilliPay"}
+                {getEnv() === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
               </span>
               brings you one more attractive option of increasing your options
               of accepting payments in the form of QR codes or UPI. Basically QR
@@ -299,7 +297,7 @@ const LandingServicesPage = () => {
               <Button
                 // className="button-red"
                 sx={{
-                  backgroundColor: "#FF7F50",
+                  backgroundColor: "rgb(151, 86, 40)",
                   color: "#fff",
                 }}
                 onClick={() => {
@@ -315,7 +313,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={qrCode_img} alt="qrCode img " width="80%"></img>
+            <img src={qrCode_img} alt="qrCode img " width="85%"></img>
           </Grid>
         </Grid>
         {/* <Grid container maxWidth="lg" className="bottom2top">
@@ -425,106 +423,105 @@ const LandingServicesPage = () => {
           )}
         </Grid> */}
         <Grid container maxWidth="lg" className="bottom2top">
-          {envName === "MoneyOddr" && (
-
-            ""
-            // <Grid md={6} lg={6} sm={12} xs={12}>
-            //   <span
-            //     className="landingPageHeadings"
-            //     style={{
-            //       textAlign: "left",
-            //       display: "flex",
-            //       justifyContent: "start",
-            //     }}
-            //   >
-            //     AEPS
-            //   </span>
-            //   <Box
-            //     style={{
-            //       width: "60px",
-            //       height: "10px",
-            //       backgroundColor:
-            //         envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-            //     }}
-            //   ></Box>
-            //   <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-            //     <span style={{ fontWeight: "900" }}>
-            //       Aadhaar Enabled Payment System
-            //     </span>
-            //     is one of the major initiatives of Indian banking system by
-            //     which a customer can use the banking services like Cash Deposit
-            //     & Withdrawal, Balance Enquiry and Mini Statement etc. from their
-            //     aadhaar linked bank account by using the biometric
-            //     authentication. This service is majorly used in the area where
-            //     either ATM(s) are Not available/Non Operative or by the people
-            //     who are non active banking user(s). Join MoneyOddR today and
-            //     make a difference in people's lives while growing your business.
-            //   </div>
-            //   <Box
-            //     sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-            //   >
-            //     <Button
-            //       // className="button-red"
-            //       sx={{
-            //         backgroundColor: "#FF7F50",
-            //         color: "#fff",
-            //       }}
-            //       onClick={() => {
-            //         navigate("/sign-up");
+          {
+            envName === "MoneyOddr" &&
+              ""
+              // <Grid md={6} lg={6} sm={12} xs={12}>
+              //   <span
+              //     className="landingPageHeadings"
+              //     style={{
+              //       textAlign: "left",
+              //       display: "flex",
+              //       justifyContent: "start",
+              //     }}
+              //   >
+              //     AEPS
+              //   </span>
+              //   <Box
+              //     style={{
+              //       width: "60px",
+              //       height: "10px",
+              //       backgroundColor:
+              //         envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
+              //     }}
+              //   ></Box>
+              //   <div className="landing-bg_para" style={{ textAlign: "justify" }}>
+              //     <span style={{ fontWeight: "900" }}>
+              //       Aadhaar Enabled Payment System
+              //     </span>
+              //     is one of the major initiatives of Indian banking system by
+              //     which a customer can use the banking services like Cash Deposit
+              //     & Withdrawal, Balance Enquiry and Mini Statement etc. from their
+              //     aadhaar linked bank account by using the biometric
+              //     authentication. This service is majorly used in the area where
+              //     either ATM(s) are Not available/Non Operative or by the people
+              //     who are non active banking user(s). Join MoneyOddR today and
+              //     make a difference in people's lives while growing your business.
+              //   </div>
+              //   <Box
+              //     sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
+              //   >
+              //     <Button
+              //       // className="button-red"
+              //       sx={{
+              //         backgroundColor: "#FF7F50",
+              //         color: "#fff",
+              //       }}
+              //       onClick={() => {
+              //         navigate("/sign-up");
+              //       }}
+              //     >
+              //       Signup now
+              //     </Button>
+              //   </Box>
+              // </Grid>
+            // : (
+            //   <Grid md={6} lg={6} sm={12} xs={12}>
+            //     <span
+            //       className="landingPageHeadings"
+            //       style={{
+            //         textAlign: "left",
+            //         display: "flex",
+            //         justifyContent: "start",
             //       }}
             //     >
-            //       Signup now
-            //     </Button>
-            //   </Box>
-            // </Grid>
-          ) 
-          // : (
-          //   <Grid md={6} lg={6} sm={12} xs={12}>
-          //     <span
-          //       className="landingPageHeadings"
-          //       style={{
-          //         textAlign: "left",
-          //         display: "flex",
-          //         justifyContent: "start",
-          //       }}
-          //     >
-          //       Aadhar ATM
-          //     </span>
-          //     <Box
-          //       style={{
-          //         width: "60px",
-          //         height: "10px",
-          //         backgroundColor:
-          //           envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-          //       }}
-          //     ></Box>
-          //     <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-          //       Are you fed up with the lengthy lines, computer issues, and lack
-          //       of cash at your local bank branch. But stop worrying since
-          //       {getEnv()} has a feature called Aadhar ATM that will instantly
-          //       transform your everyday store into an ATM outlet. With us, you
-          //       might offer your customers fundamental ATM services like cash
-          //       withdrawal and balance inquiries.
-          //     </div>
-          //     <Box
-          //       sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-          //     >
-          //       <Button
-          //         // className="button-red"
-          //         sx={{
-          //           backgroundColor: "#FF7F50",
-          //           color: "#fff",
-          //         }}
-          //         onClick={() => {
-          //           navigate("/sign-up");
-          //         }}
-          //       >
-          //         Signup now
-          //       </Button>
-          //     </Box>
-          //   </Grid>
-          // )}
-}
+            //       Aadhar ATM
+            //     </span>
+            //     <Box
+            //       style={{
+            //         width: "60px",
+            //         height: "10px",
+            //         backgroundColor:
+            //           envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
+            //       }}
+            //     ></Box>
+            //     <div className="landing-bg_para" style={{ textAlign: "justify" }}>
+            //       Are you fed up with the lengthy lines, computer issues, and lack
+            //       of cash at your local bank branch. But stop worrying since
+            //       {getEnv()} has a feature called Aadhar ATM that will instantly
+            //       transform your everyday store into an ATM outlet. With us, you
+            //       might offer your customers fundamental ATM services like cash
+            //       withdrawal and balance inquiries.
+            //     </div>
+            //     <Box
+            //       sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
+            //     >
+            //       <Button
+            //         // className="button-red"
+            //         sx={{
+            //           backgroundColor: "#FF7F50",
+            //           color: "#fff",
+            //         }}
+            //         onClick={() => {
+            //           navigate("/sign-up");
+            //         }}
+            //       >
+            //         Signup now
+            //       </Button>
+            //     </Box>
+            //   </Grid>
+            // )}
+          }
           {/* <Grid
             lg={6}
             md={6}
@@ -539,7 +536,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={mobileR_img} alt="Mobile recharge" width="80%"></img>
+            <img src={mobileR_img} alt="Mobile recharge" width="85%"></img>
           </Grid>
           {envName === "MoneyOddr" ? (
             <Grid md={6} lg={6} sm={12} xs={12}>
@@ -573,7 +570,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -621,7 +618,7 @@ const LandingServicesPage = () => {
                 <Button
                   // className="button-red"
                   sx={{
-                    backgroundColor: "#FF7F50",
+                    backgroundColor: "rgb(151, 86, 40)",
                     color: "#fff",
                   }}
                   onClick={() => {
@@ -660,13 +657,13 @@ const LandingServicesPage = () => {
               of doing online banking through your website. Simply integrate the
               system into your backend ERP to begin doing balance inquiries,
               {/* money transfers, */}
-               and other financial operations on our platform!
+              and other financial operations on our platform!
             </div>
             <Box sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}>
               <Button
                 // className="button-red"
                 sx={{
-                  backgroundColor: "#FF7F50",
+                  backgroundColor: "rgb(151, 86, 40)",
                   color: "#fff",
                 }}
                 onClick={() => {
@@ -682,7 +679,7 @@ const LandingServicesPage = () => {
             md={6}
             sx={{ display: { md: "block", sm: "none", xs: "none" } }}
           >
-            <img src={api} alt="Mobile recharge" width="80%"></img>
+            <img src={api} alt="Mobile recharge" width="85%"></img>
           </Grid>
         </Grid>
       </Container>

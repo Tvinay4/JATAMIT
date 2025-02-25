@@ -17,7 +17,7 @@ import ModalFooter from "./ModalFooter";
 import { postJsonData } from "../network/ApiController";
 import { apiErrorToast, okSuccessToast } from "../utils/ToastUtil";
 import ApiEndpoints from "../network/ApiEndPoints";
-import CancelIcon from '@mui/icons-material/Cancel';
+import CancelIcon from "@mui/icons-material/Cancel";
 import Loader from "../component/loading-screen/Loader";
 import { Info } from "@mui/icons-material";
 import { secondaryColor } from "../theme/setThemeColor";
@@ -144,7 +144,7 @@ const DeleteBeneficiaryModal = ({
         <Box sx={style} className="sm_modal">
           <Loader loading={request} />
           <ModalHeader
-          subtitle="Simplify Your List: Easily Remove Beneficiaries with DilliPay!"
+            subtitle="Simplify Your List: Easily Remove Beneficiaries with DIGIVOUCHERS!"
             title={
               view === "expressTransfer"
                 ? "Delete Vendor"
@@ -233,7 +233,8 @@ const DeleteBeneficiaryModal = ({
                   sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <FormControl sx={{ width: "76%" }}>
-                    <TextField autoComplete="off"
+                    <TextField
+                      autoComplete="off"
                       label="Enter OTP"
                       id="otp"
                       size="small"

@@ -254,8 +254,8 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           <Typography variant="body2" sx={{ mb: 4 }}>
             2. The proper records of Fund Request(s), slips, Ref no etc shall
             keep handy by the user of portal/ platform for the purpose of
-            Reconciliation purpose of the company (Dillipay Technologies Ltd)
-            for 12 months from the date of Deposit.
+            Reconciliation purpose of the company (DigiVouchers Technologies
+            Ltd) for 12 months from the date of Deposit.
           </Typography>
           <Typography variant="body2" sx={{ mb: 4 }}>
             3. The user of portal/ platform shall agree all the terms,
@@ -309,7 +309,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           <ModalHeader
             title="Reopen Credit Request"
             handleClose={handleClose}
-            subtitle="Quickly Request Credit with DilliPay Now!"
+            subtitle="Quickly Request Credit with DIGIVOUCHERS Now!"
           />
           <Box
             component="form"
@@ -531,25 +531,25 @@ const ReopenCreditRequest = ({ refresh, row }) => {
                         size="small"
                         onClick={() => setImageUrl(null)}
                       >
-                       Change Image
+                        Change Image
                       </Button>
                     </Box>
                   ) : (
                     <TextField
-                    label=""
-                    id="file_upload"
-                    size="small"
-                    type="file"
-                    variant="standard"
-                    onChange={handleFileChange} // File upload handler
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                    sx={{
-                      border: "none",
-                    }}
-                    required
-                  />
+                      label=""
+                      id="file_upload"
+                      size="small"
+                      type="file"
+                      variant="standard"
+                      onChange={handleFileChange} // File upload handler
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                      sx={{
+                        border: "none",
+                      }}
+                      required
+                    />
                   )}
                 </FormControl>
               </Grid>
