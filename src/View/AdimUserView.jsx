@@ -155,7 +155,6 @@ const AdimUserView = () => {
   const [ip, setIp] = useState("");
   const [isPhone, setIsPhone] = useState(false);
   useEffect(() => {
-   
     const fetchIp = async () => {
       try {
         const response = await axios.get("https://api.ipify.org?format=json");
@@ -183,7 +182,7 @@ const AdimUserView = () => {
       role: row?.role,
       state: row?.state,
       establishment: row?.establishment,
-      kyc_images:row?.kyc_images,
+      kyc_images: row?.kyc_images,
       username: row?.username, // Directly use row.id here
     }).toString();
 
@@ -200,8 +199,8 @@ const AdimUserView = () => {
       role: row?.role,
       establishment: row?.establishment,
       username: row?.username,
-      kyc_images:row?.kyc_images,
-       // Directly use row.id here
+      kyc_images: row?.kyc_images,
+      // Directly use row.id here
     }).toString();
 
     console.log("Query String:", queryString);
@@ -357,7 +356,7 @@ const AdimUserView = () => {
   useEffect(() => {
     if (asmList.length < 1) {
       getAsmValue();
-    } 
+    }
     if (adMdVal.length < 1) {
       getAdMdValue();
     }
@@ -365,10 +364,13 @@ const AdimUserView = () => {
 
   useEffect(() => {
     if (location.state) {
-      setQuery((prevQuery) => prevQuery !== `username=${location.state.username}` ? `username=${location.state.username}` : prevQuery);
+      setQuery((prevQuery) =>
+        prevQuery !== `username=${location.state.username}`
+          ? `username=${location.state.username}`
+          : prevQuery
+      );
     }
   }, [location.state?.username]);
-  
 
   //
 
@@ -834,12 +836,10 @@ const AdimUserView = () => {
               adArray={adMdVal}
             />
           )}
-{user.role=="Admin"&&
-          <UserServiceSetting row={row} />
-}
-          {user.role=="Admin"&&
-          <UserUpdateScheme row={row} refresh={refresh} />
-    }
+          {user.role == "Admin" && <UserServiceSetting row={row} />}
+          {user.role == "Admin" && (
+            <UserUpdateScheme row={row} refresh={refresh} />
+          )}
           {/* <a href="/admin_service" target="_blank" rel="noopener noreferrer">
                     Click here
                   </a> */}
@@ -871,10 +871,10 @@ const AdimUserView = () => {
         </Box>
       ),
       omit:
-      user?.role === "Admin" && user && user?.users_actions === 1
-        ? false
-        : true,
-    center: true,
+        user?.role === "Admin" && user && user?.users_actions === 1
+          ? false
+          : true,
+      center: true,
       width: "350px",
       center: false,
     },
@@ -896,7 +896,6 @@ const AdimUserView = () => {
       }}
     >
       {/* tab pannels here */}
-    
 
       <Grid container>
         <Grid
@@ -913,24 +912,23 @@ const AdimUserView = () => {
           }}
         >
           {/* excel */}
-          {(user.id === 1 &&user.role==="Admin") && (
-  <div>
-    <ExcelUploadModal
-              twobuttons="Download Csv"
-              btn
-              request={request}
-              getExcel={getExcel}
-              getCsv={getCsv}
-              noOfResponses={noOfResponses}
-              setQuery={setQuery}
-              handleCloseCB={(closeModal) => {
-                handleCloseModal = closeModal;
-              }}
-            />
-  </div>
-)}
+          {user.id === 1 && user.role === "Admin" && (
+            <div>
+              <ExcelUploadModal
+                twobuttons="Download Csv"
+                btn
+                request={request}
+                getExcel={getExcel}
+                getCsv={getCsv}
+                noOfResponses={noOfResponses}
+                setQuery={setQuery}
+                handleCloseCB={(closeModal) => {
+                  handleCloseModal = closeModal;
+                }}
+              />
+            </div>
+          )}
 
-        
           {/* refresh */}
           <div className="">
             <RefreshComponent
@@ -1018,20 +1016,23 @@ const AdimUserView = () => {
             actionButtons={
               <>
                 <Box sx={{ display: "flex", ml: -2 }}>
-                {(user && (user.id == 1 || user.role === "Asm" || user.role === "Zsm" || user.role === "Md")) && (
-  <ExcelUploadModal
-    twobuttons="Download Csv"
-    btn
-    request={request}
-    getExcel={getExcel}
-    getCsv={getCsv}
-    noOfResponses={noOfResponses}
-    handleCloseCB={(closeModal) => {
-      handleCloseModal = closeModal;
-    }}
-  />
-)}
-
+                  {user &&
+                    (user.id == 1 ||
+                      user.role === "Asm" ||
+                      user.role === "Zsm" ||
+                      user.role === "Md") && (
+                      <ExcelUploadModal
+                        twobuttons="Download Csv"
+                        btn
+                        request={request}
+                        getExcel={getExcel}
+                        getCsv={getCsv}
+                        noOfResponses={noOfResponses}
+                        handleCloseCB={(closeModal) => {
+                          handleCloseModal = closeModal;
+                        }}
+                      />
+                    )}
 
                   <Tooltip title="refresh">
                     <IconButton

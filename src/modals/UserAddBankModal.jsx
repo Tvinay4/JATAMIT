@@ -105,7 +105,7 @@ const UserAddBankModal = ({refresh}) => {
           borderRadius: "8px",
           transition: "all 0.3s ease",
           justifyContent: "center",
-          background: "#00693E",
+          background: "rgba(206, 95, 15, 0.78)",
           "&:hover": {
             backgroundColor: "#122480",
           },
