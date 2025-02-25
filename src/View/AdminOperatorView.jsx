@@ -342,7 +342,7 @@ const AdminOperatorView = () => {
           justifyContent: "end",
           alignItems: "center",
           flexDirection: { md: "row" },
-          pr: 1,
+        
 
           position: "relative",
         }}

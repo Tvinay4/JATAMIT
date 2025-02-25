@@ -866,7 +866,7 @@ const AdminTransactionsView = () => {
   } else {
     return (
       <>
-        <Grid xs={12} sx={{ pl: { xs: 0, md: 2 } }}>
+        <Grid xs={12} sx={{ pl: { xs: 0, md: 0 } }}>
           <RetDbTransactionTab
             setQuery={setQuery}
             setCurrentTab={setCurrentTab}
