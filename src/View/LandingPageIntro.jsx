@@ -25,21 +25,21 @@ const LandingPageIntro = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: { xs: "3rem 1.5rem", md: "2rem 2rem" },
+        padding: { xs: "3rem 1.5rem", md: "3rem 1.5rem" },
       }}
     >
-      <Container maxWidth="lg">
-        <Grid container spacing={3} sx={{ alignItems: "center" ,mt:3}}>
+      <Container maxWidth="xl">
+        <Grid container spacing={2} sx={{ alignItems: "center" ,mt:3,}}>
           {/* Text Section */}
-          <Grid item md={6} xs={12}>
-            <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
+          <Grid item md={6} xs={12} sx>
+            <Box sx={{ textAlign: { xs: "center", md: "left" },p:5 }}>
               <Typography
                 variant="h3"
                 sx={{
                   fontWeight: 700,
                   fontFamily: "Poppins, sans-serif",
                   color: "#fff",
-                  lineHeight: 1.3,
+                  lineHeight: 1.4,
                   fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // Adjusting font size for responsiveness
                   marginBottom: 2, // Adds spacing below
                   paddingX: { xs: 2, sm: 0 }, // Adds padding for smaller screens
