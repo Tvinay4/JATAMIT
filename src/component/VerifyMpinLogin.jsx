@@ -478,7 +478,9 @@ const VerifyMpinLogin = ({
                 />
 
                 <Box sx={{ mt: 2, marginLeft: 25 }}>
-                  <ResetMpin variant="text" username={username} />
+                {secureValidate !== "OTP" &&(
+                  <ResetMpin variant="text" username={username} />)
+                }
                 </Box>
               </FormControl>
             </Grid>
