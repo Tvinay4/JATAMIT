@@ -79,7 +79,7 @@ const LandingContactUsPage = () => {
               <Grid
                 container
                 spacing={3}
-                sx={{ mt: { lg: 5, md: 18, sm: 0, xs: 0 } }}
+                sx={{ mt: { lg: 5, md: 5, sm: 0, xs: 0 } }}
               >
                 <Grid item lg={7} md={7} sm={12} xs={12}>
                   <Box className="landingPageHeadings">Connect with us!</Box>
