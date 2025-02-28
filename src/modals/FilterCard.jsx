@@ -1406,8 +1406,8 @@ const FilterCard = ({
             style={{
               width: isMobile ? "100%" : "16.5%",
               overflow: "hidden",
-              marginBottom: "0.4%",
-              // marginTop: "0.4%",
+              // marginBottom: "0.4%",
+              marginTop: "0.7%",
             }}
             className="mx-2 "
           >

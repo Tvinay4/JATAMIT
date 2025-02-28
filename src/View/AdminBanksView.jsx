@@ -284,7 +284,7 @@ const AdminBanksView = () => {
           display: "flex",
           justifyContent: "end",
           alignItems: "center",
-          mb: 1,
+          mb: 0.8,
         }}
       >
         {/* <AddOperatorModal /> */}

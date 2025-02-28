@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import { 
+  // noDataFoundGif,
   noDataIllustrator
  } from "../iconsImports";
 
@@ -17,7 +18,7 @@ const NoDataView = ({ msg }) => {
           <img
             src={noDataIllustrator}
             alt="no_data"
-            width="40%"
+            width="36%"
             // style={{ marginTop: "24px" }}
           />
         </Grid>

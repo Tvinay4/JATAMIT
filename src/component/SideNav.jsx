@@ -308,21 +308,21 @@ export default function SideNav(props, { data }) {
           : user?.role === "Zsm"
           ? "13rem"
           : user.role === "Admin" && location.pathname === "/admin/transactions"
-          ? "18rem"
+          ? "12rem"
           : "12.5rem",
       md:
         user?.role === "Admin"
-          ? "13rem"
+          ? "12rem"
           : user?.role === "Asm"
           ? "14rem"
           : user?.role === "Zsm"
           ? "13rem"
           : user.role === "Admin" && location.pathname === "/admin/transactions"
-          ? "19rem"
+          ? "12rem"
           : "13rem", // Default case
       sm:
         user?.role === "Admin"
-          ? "15rem"
+          ? "12rem"
           : user?.role === "Asm"
           ? "14rem"
           : user?.role === "Zsm"
