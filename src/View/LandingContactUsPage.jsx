@@ -302,7 +302,7 @@ const LandingContactUsPage = () => {
                   sm={6}
                   xs={12}
                   sx={{
-                    display: { md: "block", xs: "none" },
+                    display: { md: "block", xs: "block" },
                     mt: 4,
                     
                     animation: "slideInFromRight 1.5s ease-in-out",

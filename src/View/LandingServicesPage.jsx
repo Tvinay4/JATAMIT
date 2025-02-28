@@ -164,7 +164,8 @@ const LandingServicesPage = () => {
           <Grid
             lg={6}
             md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
+            sm={12}
+            sx={{ display: { md: "block", sm: "block", xs: "block" } }}
           >
             <img src={irctc_img} alt="irctc img " width="80%"></img>
           </Grid>
