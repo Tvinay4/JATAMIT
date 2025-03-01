@@ -119,7 +119,7 @@ const AdminOperatorView = () => {
         />
       ),
       width: "50px",
-      center: true,
+      left: true,
     },
     {
       name: "ID",
