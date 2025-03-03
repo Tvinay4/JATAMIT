@@ -70,8 +70,9 @@ const AdminInMassegeView = () => {
           <FilterCard
             topMargin={-1}
             bottomMargin={-1}
-            ifdateFilter
+           
             ifFromBankFilter
+            ifdateFilter
             ifMessageFilter
             setQuery={setQuery}
             query={query}
