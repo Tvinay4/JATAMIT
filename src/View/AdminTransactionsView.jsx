@@ -511,7 +511,7 @@ const AdminTransactionsView = () => {
               row.operator === "Vendor Payments" ? "settlements" : row.operator
             }
           >
-            <div className="break-words mr-2 " style={{ fontSize: "12px" }}>
+            <div className="break-words mr-2 " style={{ fontSize: "12px", }}>
               {row.operator === "Vendor Payments"
                 ? "settlements"
                 : row.operator}
