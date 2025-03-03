@@ -543,8 +543,8 @@ const MoneyTransferReceipt = () => {
               >
                 <h6>Remitter Details</h6>
                 <div>{payment_data?.remName}</div>
-                <div>{payment_data?.remNumb}</div>
-              </div>
+                <div>{payment_data?.remNumb || payment_data?.remitter}</div>
+                </div>
               <div
                 className="d-flex justify-content-center"
                 style={{
