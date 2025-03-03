@@ -423,13 +423,13 @@ export const Zsm_nav = [
     title: "Bank List",
     icon: creditrq1,
     icon2: CreditRequestIcon,
-    to: "/asm/bank-list",
+    to: "/zsm/bank-list",
   },
   {
     title: "Login History",
     icon: loginHistory,
     icon2: TransactionIconWhite,
-    to: "/asm/loginHistory",
+    to: "/zsm/loginHistory",
   },
   {
     title: "My-profile",
