@@ -19,7 +19,10 @@ const RecentHistory = () => {
   return (
     <Box
       className="card-css"
-      sx={{ mt: 2, px: 1, py: 1.5, borderRadius: "10px" }}
+      sx={{ mt: 1.5, px: 1, py: 1.5, borderRadius: "10px" , border: "1px solid rgba(166, 126, 66, 0.85)",
+        boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)"
+        
+        ,}}
     >
       <Box
         sx={{

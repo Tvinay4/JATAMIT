@@ -155,8 +155,11 @@ const RightNavbar = () => {
       sx={{
         px: 1,
         py: 0.7,
-        mt: 0.5,
+        mt: 1.5,
         borderRadius: "10px",
+        border: "1px solid rgba(166, 126, 66, 0.85)",
+boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
+
       }}
     >
       <Box
