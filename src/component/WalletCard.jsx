@@ -458,7 +458,7 @@ const WalletCard = () => {
                   borderRadius: "8px",
                   display: "flex",
                   alignItems: "center",
-                  width: { lg: "135px", sm: "130px", xs: "100px" },
+                  width: { lg: "135px", sm: "135px", xs: "135px" },
                   border: "2px solid #000000",
                   overflow: "hidden",
                 }}
