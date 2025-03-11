@@ -47,7 +47,7 @@ const NewsSection = () => {
       sx={{
         textAlign: "center",
         display: "flex",
-        border: "1px solid #2c2c2a", // Adjust thickness and color as needed
+     
         borderRadius: "8px",
         backgroundColor: "#f8e4bf",
         color: "#004080",
@@ -56,6 +56,8 @@ const NewsSection = () => {
         justifyContent: "right",
         marginBottom: "0.6rem",
         padding: "8px 6px",
+        border: "1px solid rgba(166, 126, 66, 0.85)",
+        boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
       }}
     >
       {data.length > 0 ? (

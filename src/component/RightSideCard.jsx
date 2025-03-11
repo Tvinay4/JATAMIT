@@ -155,8 +155,11 @@ const RightNavbar = () => {
       sx={{
         px: 1,
         py: 0.7,
-        mt: 0.5,
+        mt: 1.5,
         borderRadius: "10px",
+        border: "1px solid rgba(166, 126, 66, 0.85)",
+boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
+
       }}
     >
       <Box
@@ -199,7 +202,7 @@ const RightNavbar = () => {
             <SendMoneyModal />
             {/* <AddBalanceViaPG /> */}
           </Box>
-          {user?.upi_qr !== 0 && (
+          {/* {user?.upi_qr !== 0 && (
             <Mount visible={user}>
               <Box className="hover-zoom">
                 <IconButton
@@ -217,7 +220,7 @@ const RightNavbar = () => {
                 </IconButton>
               </Box>
             </Mount>
-          )}
+          )} */}
           {/* <Mount visible={user.instId}>
             <OutletRegistration
               btn={
@@ -271,9 +274,9 @@ const RightNavbar = () => {
       </Grid>
 
       {/* QR Modal Section */}
-      {user?.upi_qr !== 0 && (
-        <Mount visible={showQr}>
-          <Card
+      {/* {user?.upi_qr !== 0 && ( */}
+       {/* <Mount visible={showQr}> */}
+          {/* <Card
             id="qrDrop"
             sx={{
               mt: 2,
@@ -326,9 +329,9 @@ const RightNavbar = () => {
           >
             *Note: This Payment will be added to W2
           </Typography> */}
-          </Card>
-        </Mount>
-      )}
+          {/* </Card>  */}
+        {/* </Mount> */}
+      {/* )} */}
       {/* Wallet Transfer Modal Section */}
       <Mount visible={showWalletTransfer}>
         <Grid
