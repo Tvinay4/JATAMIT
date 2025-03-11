@@ -47,6 +47,11 @@ const BillDetailsModal = ({
   pan,
   setPan,
   err,
+  showSuccess,
+  setShowSuccess,
+  billvaluePan=false,
+  directPay=false,
+  amountValue
 }) => {
   // console.log("billValue", billValue, typeof billValue);
   // const handleClickShowPassword = () => {
@@ -79,7 +84,7 @@ const BillDetailsModal = ({
         display: "flex",
         justifyContent: "center",
       }}
-    >
+    >{!directPay&&
       <Button
   className="button-purple"
   size="small"
@@ -98,7 +103,39 @@ const BillDetailsModal = ({
   onClick={handleOpen}
 >
   Fetch Details
-</Button>
+</Button>}
+{directPay && (
+  <Button
+    className="button-purple"
+    size="small"
+    disabled={!amountValue}
+    startIcon={<DownloadIcon />}
+    sx={{
+      fontSize: "12px",
+      width: {
+        lg: '87%', // Large screens: 87% width
+        md: '100%', // Medium and smaller screens: Full width
+        sm: '100%',
+        xs: '100%',
+      },
+    }}
+  
+    onClick={(e) => {
+      if (billValue > 50000 && (!billvaluePan || !pan)) {
+        apiErrorToast("Enter pan details");
+      } else {
+        if (!mpinVal) {
+          setOpenMpin(true);
+        } else {
+          payBill(e);
+        }
+      }
+    }}
+  >
+    Pay Bill
+  </Button>
+)}
+
 
 
       <Modal
@@ -142,7 +179,7 @@ const BillDetailsModal = ({
                         </td>
                       </tr>
                     )}
-                    {billValue * 1 > 50000 && (
+                    {billValue * 1 > 50000 &&billvaluePan!==true&& (
                       <tr>
                         <td>Pan</td>
                         <td>:</td>
@@ -300,7 +337,7 @@ const BillDetailsModal = ({
             request={request}
             btn={mpinVal ? "Pay Now" : "Continue"}
             onClick={(e) => {
-              if (billValue * 1 > 50000 && pan === "") {
+              if (billValue * 1 > 50000 && !billvaluePan&& pan === "") {
                 apiErrorToast("Enter pan details");
               } else {
                 if (!mpinVal) setOpenMpin(true);

@@ -50,6 +50,7 @@ import MutualFunds from "../component/MutualFunds";
 import NewLoan from "../component/Loan";
 import SuperTransferModel from "../modals/SuperTransferModel";
 import { UtilityReceipt, UtilityReciept } from "../component/UtilityReciept";
+import CommenBBPSView from "./CommenBBPSView";
 
 const RetDdDashboard = () => {
   // const [currentView, setCurrentView] = useState(null);
@@ -170,33 +171,33 @@ const RetDdDashboard = () => {
           id: 10,
           name: "Electricity Bill",
           img: electricity1,
-          component: ElectricityForm,
+          component: CommenBBPSView,
         },
         {
           id: 11,
           name: "Credit Card Bill",
           img: creditcard1,
-          component: CreditcardForm,
+          component: CommenBBPSView,
         },
         {
           id: 12,
           name: "BroadBand Bill",
           img: broadband1,
-          component: ElectricityForm,
+          component: CommenBBPSView,
         },
-        { id: 13, name: "Piped Gas", img: gas1, component: ElectricityForm },
-        { id: 14, name: "Water Bill", img: water1, component: ElectricityForm },
+        { id: 13, name: "Piped Gas", img: gas1, component: CommenBBPSView },
+        { id: 14, name: "Water Bill", img: water1, component: CommenBBPSView },
         {
           id: 15,
           name: "Insurance",
           img: insurance1,
-          component: ElectricityForm,
+          component: CommenBBPSView,
         },
         {
           id: 16,
           name: "Landline Bill",
           img: landline1,
-          component: ElectricityForm,
+          component: CommenBBPSView,
         },
         user.bbps !== 0 && {
           id: 17,
@@ -289,23 +290,25 @@ const RetDdDashboard = () => {
             : item.name === "Nepal Transfer"
             ? "nepal"
             : item.name === "Water Bill"
-            ? "Water"
+            ? "C08"
             : item.name === "UPI"
             ? "upi"
             : item.name === "Credit Card Bill"
-            ? ""
+            ? "credit"
             : item.name === "Landline Bill"
-            ? "Landline"
+            ? "C02"
             : item.name === "Electricity Bill"
-            ? "Electricity"
+            ? "C04"
             : item.name === "BroadBand Bill"
-            ? "Broadband"
+            ? "C05"
             : item.name === "Prepaid" || item.name === "Postpaid"
             ? "mobile"
             : item.name === "DTH"
             ? "dth"
+             : item.name === "Insurance"
+            ? "C11"
             : item.name === "Piped Gas"
-            ? "Gas"
+            ? "C07"
             : item.name,
         title, // Add title prop
       });
