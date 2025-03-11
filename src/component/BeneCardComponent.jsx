@@ -179,13 +179,13 @@ const BeneTableComponent = ({
                 : 5000
             }
           />
-          <PortBeneficiaries
+          {/* <PortBeneficiaries
             ben={ben}
             dmtValue={type}
             remitterStatus={remitterStatus}
             getRemitterStatus={getRemitterStatus}
             view={view}
-          />
+          /> */}
         </Box>
       </TableCell>
 

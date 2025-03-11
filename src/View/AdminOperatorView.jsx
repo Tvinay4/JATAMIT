@@ -119,7 +119,7 @@ const AdminOperatorView = () => {
         />
       ),
       width: "50px",
-      center: true,
+      left: true,
     },
     {
       name: "ID",
@@ -342,7 +342,7 @@ const AdminOperatorView = () => {
           justifyContent: "end",
           alignItems: "center",
           flexDirection: { md: "row" },
-          pr: 1,
+        
 
           position: "relative",
         }}

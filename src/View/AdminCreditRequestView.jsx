@@ -94,16 +94,14 @@ const CreditRequestView = () => {
   const [elapsedTime, setElapsedTime] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
   const [isActive, setIsActive] = useState(false);
-   const [userRequest, setUserRequest] = useState(false);
-   const [value, setValue] = useState(0);
-    const [currentType, setCurrentType] = useState("dmt1");
-       const [userDetails, setUserDetails] = useState([]);
-    const [type, settype] = useState("dmt1");
-    const tabs = [
-      { label: "Normal" },
- { label: "Miscellaneous" },
- 
-    ].filter(Boolean);
+  const [userRequest, setUserRequest] = useState(false);
+  const [value, setValue] = useState(0);
+  const [currentType, setCurrentType] = useState("dmt1");
+  const [userDetails, setUserDetails] = useState([]);
+  const [type, settype] = useState("dmt1");
+  const tabs = [{ label: "Normal" }, { label: "Miscellaneous" }].filter(
+    Boolean
+  );
   const {
     setChooseInitialCategoryFilter,
     chooseInitialCategoryFilter,
@@ -213,7 +211,7 @@ const CreditRequestView = () => {
       dateValue: row?.date,
       txn_id: row?.txn_id,
       date: row?.created_at,
-      kyc_images:userDetails.kyc_images
+      kyc_images: userDetails.kyc_images,
     }).toString();
 
     // Open the new URL with the query string
@@ -278,17 +276,16 @@ const CreditRequestView = () => {
   };
   const handleChange = (event, newValue) => {
     console.log("newval", newValue);
-  
-    const selectedType = req_tab_value[newValue]; 
+
+    const selectedType = req_tab_value[newValue];
     setValue(newValue);
-    settype(selectedType); 
-    setCurrentType(selectedType); 
-    console.log("cms value is", selectedType); 
-    const updated= `misc=${selectedType}`;
+    settype(selectedType);
+    setCurrentType(selectedType);
+    console.log("cms value is", selectedType);
+    const updated = `misc=${selectedType}`;
     setQuery(`${query}&${updated}`);
   };
-  
-  
+
   useEffect(() => {
     return () => {
       if (intervalId) {
@@ -367,15 +364,18 @@ const CreditRequestView = () => {
           <div style={{ textAlign: "left", fontSize: "13px" }}>
             <div>{capitalize1(row.name)}</div>
           </div>
-          <div
-            
-          >
-         <span style={{ fontSize: "13px" }}
-            onClick={() => {
-              copyToClipBoard(row.username);
-              handleClickSnack();
-            }}>  {row.username}</span> 
-         <Tooltip title="Go To Account">
+          <div>
+            <span
+              style={{ fontSize: "13px" }}
+              onClick={() => {
+                copyToClipBoard(row.username);
+                handleClickSnack();
+              }}
+            >
+              {" "}
+              {row.username}
+            </span>
+            <Tooltip title="Go To Account">
               <IconButton
                 sx={{ color: "#00693E", mx: 0.3 }}
                 onClick={() => {
@@ -582,9 +582,12 @@ const CreditRequestView = () => {
         >
           {row?.status === "REJECTED" && (
             <>
-           {(user?.role === "Dd" || user?.role === "Ret" || user?.role === "AD" || user?.role === "Md") && (
-          <ReopenCreditRequest row={row}  refresh={refresh} />
-  )}
+              {(user?.role === "Dd" ||
+                user?.role === "Ret" ||
+                user?.role === "AD" ||
+                user?.role === "Md") && (
+                <ReopenCreditRequest row={row} refresh={refresh} />
+              )}
               {/* <ViewModal row={row} refresh={refresh} />
               <Tooltip title="Indemnity Bond">
                 <IconButton
@@ -603,15 +606,14 @@ const CreditRequestView = () => {
         </Box>
       ),
       wrap: true,
-      width:"150px",
+      width: "150px",
       omit:
-      user && user.role === "Ret"||user.role === "Dd"
-        ? defaultStatus && defaultStatus === "APPROVED"
-          ? true
-          : false
-        : true,
+        (user && user.role === "Ret") || user.role === "Dd"
+          ? defaultStatus && defaultStatus === "APPROVED"
+            ? true
+            : false
+          : true,
     },
-    
 
     {
       name: <span className="mx-3">Action</span>,
@@ -729,8 +731,7 @@ const CreditRequestView = () => {
   };
 
   return (
-    
-    <Grid >
+    <Grid>
       {/* <Grid>
         {user.role==="Admin"&&
             <CustomTabs
@@ -748,8 +749,6 @@ const CreditRequestView = () => {
           width: "100%",
         }}
       >
-        
-                        
         <Box>
           <FilterCard
             ifStatusFilter
@@ -794,40 +793,46 @@ const CreditRequestView = () => {
                     <CachedIcon className="refresh-purple " />
                   </IconButton>
                 </Tooltip>
-                {user.role==="Admin"&&
-                <Box sx={{ display: "flex", ml: 2 }}>
-                  <div>
-                    <Tooltip title="Scheduler">
-                      <BlinkingIcon active={isActive} onClick={handleClick} />
-                    </Tooltip>
-                    {isActive && <span>{elapsedTime}</span>}
-                    <Menu
-                      anchorEl={anchorEl}
-                      open={Boolean(anchorEl)}
-                      onClose={handleClose}
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        ml: user.role==="Admin"?{ lg: 130, sm: 50, xs: 2 }:{ lg: 110, sm: 50, xs: 2 },
-                        top: user.role==="Admin"?{ sm: "25%", lg: "20%" }:{ sm: "20%", lg: "15%" },
-                        right: { xs: 0, sm: 50 },
-                        width: { xs: "auto", sm: "200px" },
-                      }}
-                    >
-                      <MenuItem onClick={() => handleMenuItemClick(5)}>
-                        5 sec
-                      </MenuItem>
-                      <MenuItem onClick={() => handleMenuItemClick(10)}>
-                        10 sec
-                      </MenuItem>
-                      <MenuItem onClick={() => handleMenuItemClick(15)}>
-                        15 sec
-                      </MenuItem>
-                      <MenuItem onClick={handleStop}>Stop</MenuItem>
-                    </Menu>
-                  </div>
-                </Box>
-            }
+                {user.role === "Admin" && (
+                  <Box sx={{ display: "flex", ml: 2 }}>
+                    <div>
+                      <Tooltip title="Scheduler">
+                        <BlinkingIcon active={isActive} onClick={handleClick} />
+                      </Tooltip>
+                      {isActive && <span>{elapsedTime}</span>}
+                      <Menu
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}
+                        onClose={handleClose}
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          ml:
+                            user.role === "Admin"
+                              ? { lg: 130, sm: 50, xs: 2 }
+                              : { lg: 110, sm: 50, xs: 2 },
+                          top:
+                            user.role === "Admin"
+                              ? { sm: "25%", lg: "20%" }
+                              : { sm: "20%", lg: "15%" },
+                          right: { xs: 0, sm: 50 },
+                          width: { xs: "auto", sm: "200px" },
+                        }}
+                      >
+                        <MenuItem onClick={() => handleMenuItemClick(5)}>
+                          5 sec
+                        </MenuItem>
+                        <MenuItem onClick={() => handleMenuItemClick(10)}>
+                          10 sec
+                        </MenuItem>
+                        <MenuItem onClick={() => handleMenuItemClick(15)}>
+                          15 sec
+                        </MenuItem>
+                        <MenuItem onClick={handleStop}>Stop</MenuItem>
+                      </Menu>
+                    </div>
+                  </Box>
+                )}
               </>
             }
           />

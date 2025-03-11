@@ -260,7 +260,7 @@ const RetDdDashboard = () => {
         { id: 19, name: "BUS", img: bus1, component: BusTab },
         { id: 20, name: "HOTELS", img: hotel1, component: HotelsTab },
         { id: 21, name: "IRCTC", img: train1, component: TrainTab },
-        { id: 21, name: "Recipt", img: train1, component: UtilityReceipt },
+        // { id: 21, name: "Recipt", img: train1, component: UtilityReceipt },
       ].filter(Boolean),
     },
   ];

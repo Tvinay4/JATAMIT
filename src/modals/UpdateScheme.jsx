@@ -100,7 +100,7 @@ const UpdateScheme = ({ row, refresh }) => {
             borderRadius: "8px",
             transition: "all 0.3s ease",
             justifyContent: "center",
-            background: "#00693E",
+            background: "rgb(185, 135, 9)",
             "&:hover": {
               backgroundColor: "#122480",
             },
