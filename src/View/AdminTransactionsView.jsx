@@ -481,7 +481,7 @@ const AdminTransactionsView = () => {
               <div
                 className="break-words"
                 style={{
-                  fontSize: "12px",
+                  fontSize: "13px",
                 }}
               >
                 {capitalize1(row.establishment)}
@@ -506,12 +506,12 @@ const AdminTransactionsView = () => {
       selector: (row) => (
         <div>
           <Tooltip
-            placement="right"
+            placement="top"
             title={
               row.operator === "Vendor Payments" ? "settlements" : row.operator
             }
           >
-            <div className="break-words mr-2 " style={{ fontSize: "12px", }}>
+            <div className="break-words  " style={{ fontSize: "13px",textAlign:"left",mr:0.6 }}>
               {row.operator === "Vendor Payments"
                 ? "settlements"
                 : row.operator}
@@ -520,7 +520,7 @@ const AdminTransactionsView = () => {
 
           <Typography
             sx={{
-              fontSize: "10px",
+              fontSize: "12px",
               color: "#535353",
               fontWeight: "500",
               textAlign: "left",
@@ -545,6 +545,7 @@ const AdminTransactionsView = () => {
         </div>
       ),
       wrap: true,
+      
     },
     {
       name: <span className="">Order ID</span>,
@@ -552,7 +553,7 @@ const AdminTransactionsView = () => {
         <div className="d-flex flex-column align-items-start">
           <Typography
             sx={{
-              fontSize: "12px",
+              fontSize: "13px",
               // color: "#566573",
               "&:hover": {
                 cursor: "pointer",
@@ -616,7 +617,7 @@ const AdminTransactionsView = () => {
         <Typography
           className="d-flex flex-column align-items-start "
           sx={{
-            fontSize: "9px",
+            fontSize: "11px",
             textAlign: "left",
             "&:hover": {
               cursor: "pointer",
@@ -685,7 +686,7 @@ const AdminTransactionsView = () => {
       selector: (row) => (
         <div
           className="d-flex align-items-start flex-column"
-          style={{ fontSize: "12px" }}
+          style={{ fontSize: "14px" }}
         >
           {currencySetter(row.a_comm)}
         </div>

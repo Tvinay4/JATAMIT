@@ -66,7 +66,7 @@ const AdminInMassegeView = () => {
   return (
     <Box sx={{ position: "relative" }}>
       <Grid container alignItems="center" justifyContent="space-between">
-        <Grid item sx={{ width: "150%" }}>
+        <Grid item sx={{ width: "100%",ml:1.5,mb:0.9 }}>
           <FilterCard
             topMargin={-1}
             bottomMargin={-1}
