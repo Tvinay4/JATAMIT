@@ -317,7 +317,10 @@ const VerifyOtpLogin = ({
                     navigate("/account/dashboard");
                   } else if (user && user.role === "Api") {
                     navigate("/api-user/dashboard");
-                  } else {
+                  }  else if (user && user.role === "User") {
+                    navigate("/user/BBPSView");
+                  }
+                   else {
                     navigate("/other/dashboard");
                   }
                 } else {
@@ -337,6 +340,9 @@ const VerifyOtpLogin = ({
             if (error.response.data.message === "Invalid M Pin") {
               setErr(error.response.data);
             }
+          }else{
+            setErr(error.response.message);
+            apiErrorToast(error);
           }
         }
       );
