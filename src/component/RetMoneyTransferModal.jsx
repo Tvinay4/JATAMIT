@@ -59,7 +59,7 @@ const RetMoneyTransferModal = ({
   const [onComplete, setOnComplete] = useState(false);
   // const [expressComplete]
   const [amount, setAmount] = useState("");
-  const { getRecentData } = useCommonContext();
+  const { getRecentData,refreshUser } = useCommonContext();
   const authCtx = useContext(AuthContext);
   const user = authCtx.user;
   const loc = authCtx.location && authCtx.location;
@@ -103,6 +103,7 @@ const RetMoneyTransferModal = ({
     setStateresp("");
     setRemOtp("");
     setValidity("");
+    refreshUser()
   };
   // express tranfer super transfer function
   const handleSubmit = (event) => {
@@ -184,8 +185,10 @@ const RetMoneyTransferModal = ({
               // console.log("receiptData", receiptData);
             }
             // handleClose();
+            refreshUser()
           },
           (error) => {
+            refreshUser()
             if (error && error) {
               if (error.response.data.message === "Invalid M Pin") {
                 setErr(error.response.data);
@@ -323,6 +326,7 @@ const RetMoneyTransferModal = ({
                 // );
                 getRecentData();
                 setOnComplete(true);
+                refreshUser()
               },
               (index, error) => {
                 // onFailed
@@ -343,6 +347,7 @@ const RetMoneyTransferModal = ({
                   arrData[index].meta.data = error.response.data.data;
                 }
                 getRecentData();
+                refreshUser()
                 setMtRequest(false);
                 setArrAmtRes([...arrData]);
               },
