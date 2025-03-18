@@ -777,6 +777,7 @@ const LoginPage = () => {
                 <VerifyMpinLogin
                   username={username}
                   showLaoder={false}
+                  password={password}
                   secureValidate={secureValidate}
                   setSecureValidate={setSecureValidate}
                   setUserRequest={setUserRequest}

@@ -38,6 +38,7 @@ const style = {
 const VerifyMpinLogin = ({
   username,
   setSecureValidate,
+  password,
   secureValidate,
   setUserRequest,
   setIsOtpField,
@@ -247,12 +248,14 @@ const VerifyMpinLogin = ({
         data = {
           username: username,
           otp: otp,
+          password:password
         };
       }
       if (secureValidate === "MPIN") {
         data = {
           username: username,
           mpin: otp,
+          password:password
         };
       }
       postJsonData(
