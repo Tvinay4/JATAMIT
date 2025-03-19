@@ -675,7 +675,7 @@ const AdminTransactionsView = () => {
 
     {
       name: <span className="pe-2">Amount</span>,
-      cell: (row) => (
+      cell: (row) => ( 
         <div className="d-flex flex-column align-items-end pe-3">
           <div>{currencySetter(row.amount)}</div>
           <div
