@@ -627,7 +627,7 @@ const AdminTransactionsView = () => {
         <Typography
           className="d-flex flex-column align-items-start "
           sx={{
-            fontSize: "12px",
+            fontSize: "10px",
             textAlign: "left",
             "&:hover": {
               cursor: "pointer",
@@ -640,7 +640,7 @@ const AdminTransactionsView = () => {
         >
           <div
             style={{
-              fontSize: "12px",
+              fontSize: "11px",
               fontWeight: 500,
               
             }}
@@ -651,7 +651,7 @@ const AdminTransactionsView = () => {
             style={{
              
               fontWeight: 600,
-              fontSize:"14px",
+              fontSize:"12px",
               letterSpacing:"0.6px"
             }}
           >
@@ -661,7 +661,7 @@ const AdminTransactionsView = () => {
             style={{
              
               fontWeight: 500,
-              fontSize:"12px",
+              fontSize:"11px",
               color:"#555555",
               letterSpacing:"0.4px"
             }}
