@@ -227,7 +227,7 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-// support@DigiVouchers.com
+// abc@digivouchers.in
 //               </Text>
 //             </View>
 //             <View

@@ -128,7 +128,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Email: support@DigiVouchers.com
+                      Email: abc@digivouchers.in
                     </p>
                   </Typography>
 
@@ -452,7 +452,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Email: support@DigiVouchers.com
+                        Email: abc@digivouchers.in
                       </p>
                     </Typography>
 
