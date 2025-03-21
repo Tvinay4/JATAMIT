@@ -128,7 +128,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Email: abc@digivouchers.in
+                      Email: support@digivouchers.com
                     </p>
                   </Typography>
 
@@ -165,7 +165,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Phone: 9355128199
+                      Phone: ""
                     </p>
                   </Typography>
                 </Box>
@@ -452,7 +452,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Email: abc@digivouchers.in
+                        Email: support@digivouchers.com
                       </p>
                     </Typography>
 
@@ -491,7 +491,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Phone: 9355128199
+                        Phone:""
                       </p>
                     </Typography>
                   </Box>

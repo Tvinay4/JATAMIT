@@ -206,7 +206,7 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-//                 9355128199
+//                ""
 //               </Text>
 //             </View>
 //             <View
@@ -227,7 +227,7 @@
 //                   marginBottom: "0px",
 //                 }}
 //               >
-// abc@digivouchers.in
+// support@digivouchers.com
 //               </Text>
 //             </View>
 //             <View

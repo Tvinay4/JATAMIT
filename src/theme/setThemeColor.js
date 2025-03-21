@@ -146,7 +146,7 @@ export const getFirmContact = () => {
 };
 export const getFirmEmail = () => {
   if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
-    return `abc@digivouchers.in`;
+    return `support@digivouchers.com`;
   }
 };
 
