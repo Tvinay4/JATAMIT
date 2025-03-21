@@ -141,12 +141,12 @@ export const getFirmAddress = () => {
 };
 export const getFirmContact = () => {
   if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
-    return `+91 9355128199`;
+    return ``;
   }
 };
 export const getFirmEmail = () => {
   if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS") {
-    return `support@dillipay.com`;
+    return `abc@digivouchers.in`;
   }
 };
 
