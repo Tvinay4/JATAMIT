@@ -177,7 +177,7 @@ const WalletCard = () => {
                 display: "flex",
                 alignItems: "center",
 
-                width: { lg: "170px", sm: "160px", xs: "160px" },
+                width: { lg: "180px", sm: "180px", xs: "170px" },
                 border: "2px solid #000000",
                 overflow: "hidden",
               }}
@@ -201,7 +201,7 @@ const WalletCard = () => {
                     alignItems: "center",
                   }}
                 >
-                  {/* <Phone sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} /> */}
+                  <Phone sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} />
 
                   <span
                     style={{
@@ -210,7 +210,7 @@ const WalletCard = () => {
                       marginLeft: "4px",
                     }}
                   >
-                    {getFirmContact()}
+                    {/* {getFirmContact()} */}
                   </span>
                 </Typography>
 
@@ -225,7 +225,7 @@ const WalletCard = () => {
                     mt: "0.5",
                   }}
                 >
-                  {/* <Email sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} /> */}
+                  <Email sx={{ color: "#FF5722", fontSize: "14px", mr: 0.5 }} />
 
                   <span
                     style={{

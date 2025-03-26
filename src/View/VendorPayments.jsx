@@ -221,6 +221,11 @@ const VendorPayments = ({ resetView }) => {
 
     console.log("vendor type", type);
   };
+  const goBack = () => {
+    setInfoFetchedMob(false);
+    setRemitterStatus();
+    setMobile("");
+  };
 
   return (
     <>
@@ -936,6 +941,7 @@ const VendorPayments = ({ resetView }) => {
                 otpRefId={otpRefId && otpRefId}
                 setOtpRefId={setOtpRefId}
                 setVerifyotp={setVerifyotp}
+                goBack={goBack}
               />
             )}
           </div>
