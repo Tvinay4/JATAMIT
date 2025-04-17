@@ -51,7 +51,7 @@ const NewsSection = () => {
         borderRadius: "8px",
         backgroundColor: "#f8e4bf",
         color: "#004080",
-        fontSize: "14px",
+        fontSize: "16px",
         alignItems: "center",
         justifyContent: "right",
         marginBottom: "0.6rem",

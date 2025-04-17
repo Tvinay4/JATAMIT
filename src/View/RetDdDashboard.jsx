@@ -88,6 +88,12 @@ const RetDdDashboard = () => {
                 img: vpay1,
                 component: SuperTransferModel,
               },
+              user?.st == !0 && {
+                id: 4,
+                name: "Payments",
+                img: vpay1,
+                component: SuperTransferModel,
+              },
               user.upi_transfer !== 0 && {
                 id: 5,
                 name: "UPI",

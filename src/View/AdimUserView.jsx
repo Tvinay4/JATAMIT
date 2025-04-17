@@ -731,6 +731,7 @@ const AdimUserView = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            gap:0.7,
           }}
         >
           {user && user.role === "Admin" ? (
@@ -875,7 +876,7 @@ const AdimUserView = () => {
           ? false
           : true,
       center: true,
-      width: "350px",
+      width: "370px",
       center: false,
     },
   ];

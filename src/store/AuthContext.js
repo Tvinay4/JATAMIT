@@ -3,6 +3,8 @@ import React, { useState, createContext } from "react";
 import { postJsonData } from "../network/ApiController";
 import ApiEndpoints from "../network/ApiEndPoints";
 import { apiErrorToast } from "../utils/ToastUtil";
+import useSessionTimeout from "../hooks/useSessionTimeout";
+// import useLogoutOnClose from "../hooks/useLogoutOnClose";
 
 const AuthContext = createContext({
   token: "",
@@ -93,6 +95,8 @@ export const AuthContextProvider = (props) => {
     localStorage.setItem("docs", JSON.stringify(options));
     setIfDocsUploaded(options);
   };
+  useSessionTimeout(logOutHandler, 1800000);
+  // useLogoutOnClose(logOutHandler);
 
   const contextValue = {
     token: token,

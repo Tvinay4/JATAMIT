@@ -679,7 +679,7 @@ const PaymentReceipt = () => {
                             fontFamily: "'Roboto', sans-serif",
                           }}
                         >
-                          Email: support@DigiVouchers.com
+                          Email: support@digivouchers.com
                         </Typography>
                       </Box>
 
@@ -701,7 +701,7 @@ const PaymentReceipt = () => {
                             fontFamily: "'Roboto', sans-serif",
                           }}
                         >
-                          Phone: 9355128199
+                          Phone:
                         </Typography>
                       </Box>
                     </>

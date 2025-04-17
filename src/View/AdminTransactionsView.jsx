@@ -377,7 +377,7 @@ const AdminTransactionsView = () => {
           </div>
         </>
       ),
-      width: "60px",
+      width: "50px",
     },
 
     {
@@ -392,7 +392,7 @@ const AdminTransactionsView = () => {
               textOverflow: "ellipsis",
             }}
           >
-            Created at/Updated at
+            Created / Updated 
           </Typography>
         </Tooltip>
       ),
@@ -481,7 +481,8 @@ const AdminTransactionsView = () => {
               <div
                 className="break-words"
                 style={{
-                  fontSize: "12px",
+                  fontSize: "13px",
+                  mb:0.5,
                 }}
               >
                 {capitalize1(row.establishment)}
@@ -490,6 +491,7 @@ const AdminTransactionsView = () => {
                 style={{
                   display: "flex",
                   justifyContent: "flex-start",
+                 
                 }}
               >
                 <GetAdModalTxn sx={{ display: "block" }} row={row} />
@@ -499,19 +501,23 @@ const AdminTransactionsView = () => {
         </div>
       ),
       wrap: true,
-      width: "135px",
+      width: "130px",
     },
     {
       name: <span className="">Operator</span>,
       selector: (row) => (
         <div>
           <Tooltip
-            placement="right"
+            placement="top"
             title={
               row.operator === "Vendor Payments" ? "settlements" : row.operator
             }
           >
-            <div className="break-words mr-2 " style={{ fontSize: "12px", }}>
+            <div
+              className="break-words  "
+              style={{ fontSize: "14px", fontWeight: "500",
+                textAlign: "left", }}
+            >
               {row.operator === "Vendor Payments"
                 ? "settlements"
                 : row.operator}
@@ -520,7 +526,7 @@ const AdminTransactionsView = () => {
 
           <Typography
             sx={{
-              fontSize: "10px",
+              fontSize: "12px",
               color: "#535353",
               fontWeight: "500",
               textAlign: "left",
@@ -545,6 +551,7 @@ const AdminTransactionsView = () => {
         </div>
       ),
       wrap: true,
+      gap:1,
     },
     {
       name: <span className="">Order ID</span>,
@@ -552,8 +559,11 @@ const AdminTransactionsView = () => {
         <div className="d-flex flex-column align-items-start">
           <Typography
             sx={{
-              fontSize: "12px",
+              fontSize: "14px",
               // color: "#566573",
+              fontWeight:600,
+              mb:0.5,
+              letterSpacing:"0.3px",
               "&:hover": {
                 cursor: "pointer",
               },
@@ -577,6 +587,7 @@ const AdminTransactionsView = () => {
             style={{
               display: "flex",
               justifyContent: "flex-start",
+              
             }}
           >
             <CheckStatusModal row={row} />
@@ -589,11 +600,11 @@ const AdminTransactionsView = () => {
     {
       name: " Number",
       selector: (row) => (
-        <div className="d-flex flex-column align-items-start">
+        <div className="">
           <Typography
             sx={{
               fontSize: "inherit",
-
+              fontWeight: "600",
               "&:hover": {
                 cursor: "pointer",
               },
@@ -616,7 +627,7 @@ const AdminTransactionsView = () => {
         <Typography
           className="d-flex flex-column align-items-start "
           sx={{
-            fontSize: "9px",
+            fontSize: "10px",
             textAlign: "left",
             "&:hover": {
               cursor: "pointer",
@@ -627,9 +638,36 @@ const AdminTransactionsView = () => {
             handleClickSnack();
           }}
         >
-          <div>{row.ben_name}</div>
-          <div>{row.ben_acc}</div>
-          <div>{row.ifsc}</div>
+          <div
+            style={{
+              fontSize: "11px",
+              fontWeight: 500,
+              
+            }}
+          >
+            {row.ben_name}
+          </div>
+          <div
+            style={{
+             
+              fontWeight: 600,
+              fontSize:"12px",
+              letterSpacing:"0.6px"
+            }}
+          >
+            {row.ben_acc}
+          </div>
+          <div
+            style={{
+             
+              fontWeight: 500,
+              fontSize:"11px",
+              color:"#555555",
+              letterSpacing:"0.4px"
+            }}
+          >
+            {row.ifsc}
+          </div>
         </Typography>
       ),
       wrap: true,
@@ -637,7 +675,7 @@ const AdminTransactionsView = () => {
 
     {
       name: <span className="pe-2">Amount</span>,
-      cell: (row) => (
+      cell: (row) => ( 
         <div className="d-flex flex-column align-items-end pe-3">
           <div>{currencySetter(row.amount)}</div>
           <div
@@ -685,7 +723,7 @@ const AdminTransactionsView = () => {
       selector: (row) => (
         <div
           className="d-flex align-items-start flex-column"
-          style={{ fontSize: "12px" }}
+          style={{ fontSize: "14px" }}
         >
           {currencySetter(row.a_comm)}
         </div>
@@ -871,7 +909,6 @@ const AdminTransactionsView = () => {
             setQuery={setQuery}
             setCurrentTab={setCurrentTab}
             setRefreshTab={setRefreshTab}
-            
             refreshTab={refreshTab}
           />
 
@@ -938,8 +975,7 @@ const AdminTransactionsView = () => {
             }
             totalCard={
               <>
-              
-              <StatusDisplay sumData={sumData} setSumData={setSumData} />
+                <StatusDisplay sumData={sumData} setSumData={setSumData} />
               </>
             }
             backButton={
@@ -1038,22 +1074,22 @@ const AdminTransactionsView = () => {
                 actionButtons={
                   <>
                     {/* Excel Upload Button */}
-                    {(user.id === 1 &&user.role==="Admin") && (
-  <div>
-    <ExcelUploadModal
-      twobuttons="Download Csv"
-      btn
-      request={request}
-      getExcel={getExcel}
-      getCsv={getCsv}
-      noOfResponses={noOfResponses}
-      setQuery={setQuery}
-      handleCloseCB={(closeModal) => {
-        handleCloseModal = closeModal;
-      }}
-    />
-  </div>
-)}
+                    {user.id === 1 && user.role === "Admin" && (
+                      <div>
+                        <ExcelUploadModal
+                          twobuttons="Download Csv"
+                          btn
+                          request={request}
+                          getExcel={getExcel}
+                          getCsv={getCsv}
+                          noOfResponses={noOfResponses}
+                          setQuery={setQuery}
+                          handleCloseCB={(closeModal) => {
+                            handleCloseModal = closeModal;
+                          }}
+                        />
+                      </div>
+                    )}
 
                     {/* Refresh Button */}
                     <Tooltip title="refresh">

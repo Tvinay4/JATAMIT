@@ -46,13 +46,17 @@ const DmrVrifyNewUser = ({
   setOtpRefId,
   setVerifyotp,
   dmtValue,
-  dmr2RemRes
+  dmr2RemRes,goBack
   
 }) => {
   const [open, setOpen] = useState(true);
   const [request, setRequest] = useState(false);
 
   const [mobile, setMobile] = useState(rem_mobile);
+  const authCtx = React.useContext(AuthContext);
+  const user = authCtx.user;
+  const userLat = authCtx.location.lat;
+  const userLong = authCtx.location.long;
 useEffect(() => {
 setOpen(true)
   return () => {
@@ -77,6 +81,7 @@ console.log("dmr2RemRes----dmr2RemRes",dmr2RemRes);
     setOtpRefId("");
     setMobile(null)
     setVerifyotp(false);
+    goBack()
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -92,6 +97,9 @@ console.log("dmr2RemRes----dmr2RemRes",dmr2RemRes);
     const dmt2Data={
       ...dmr2RemRes,
       otp: form.otp.value,
+      latitude: userLat,
+      mobile:mobile,
+      longitude: userLong,
 
     }
     console.log("he;llo",dmt2Data);

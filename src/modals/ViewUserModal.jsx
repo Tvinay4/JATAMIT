@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   FormControl,
   Grid,
@@ -27,6 +27,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Mount from "../component/Mount";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
+import AuthContext from "../store/AuthContext";
 
 const style = {
   position: "absolute",
@@ -59,6 +60,8 @@ const ViewUserModal = ({ row, refresh, asmArray, adArray }) => {
   const [adSearchVal, setAdSearchVal] = useState({});
   const [bcDropdown, setBcDropDown] = useState("");
   const [userRequest, setUserRequest] = useState(false);
+  const authCtx = useContext(AuthContext);
+  const user = authCtx.user;
 console.log("asmArray",asmArray);
 
   const handleBankInfo = () => {
@@ -1319,6 +1322,66 @@ console.log("asmArray",asmArray);
                       )}
                     ></Controller>
                   </Grid>
+                  {
+                    <Grid item md={3} xs={6}>
+                      <Controller
+                        name="instId"
+                        control={control}
+                        defaultValue={userDetails.instId || null}
+                        render={({
+                          field: { onChange, value },
+                          fieldState: { error },
+                        }) => (
+                          <FormControl sx={{ width: "100%" }}>
+                            <TextField
+                              autoComplete="off"
+                              label="instId"
+                              id="instId"
+                              size="small"
+                              defaultValue={userDetails?.instId || null}
+                              value={value || null}
+                              onChange={onChange}
+                              error={!!error}
+                              sx={{ m: 2 }}
+                              helperText={error ? error.message : null}
+                              disabled={user.id !== 1}
+                            />
+                          </FormControl>
+                        )}
+                      ></Controller>
+                    </Grid>
+                  }
+                  {
+                  <Grid item md={3} xs={6}>
+                  <Controller
+                    name="agreement"
+                    control={control}
+                    defaultValue={userDetails.aggreement || null}
+                    render={({
+                      field: { onChange, value },
+                      fieldState: { error },
+                    }) => (
+                      <FormControl sx={{ width: "100%" }}>
+                        <TextField
+                          autoComplete="off"
+                          label="aggreement"
+                          id="aggreement"
+                          size="small"
+                          defaultValue={userDetails?.aggreement }
+                          value={value}
+                          onChange={ onChange }
+                          error={!!error}
+                          sx={{ m: 2 }}
+                          helperText={error ? error.message : null}
+                          disabled={user.id !== 1}
+                         InputLabelProps={{ shrink: true }}
+                        />
+                      </FormControl>
+                    )}
+                  ></Controller>
+                </Grid>
+                 
+                  }
                 </Grid>
               </TabPanel>
               <TabPanel value="5">
