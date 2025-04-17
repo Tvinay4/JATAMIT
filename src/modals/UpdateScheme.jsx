@@ -60,8 +60,13 @@ const UpdateScheme = ({ row, refresh }) => {
       name: form.elements["name"]?.value || "",
       ad: form.elements["ad"]?.value || "",
       md: form.elements["md"]?.value || "",
-      ret: form.elements["ret"]?.value || "",
-      dd: form.elements["dd"]?.value || "",
+      slab1: form.elements["slab1"]?.value || "",
+      slab2: form.elements["slab2"]?.value || "",
+      slab3: form.elements["slab3"]?.value || "",
+      slab4: form.elements["slab4"]?.value || "",
+      slab5: form.elements["slab5"]?.value || "",
+      slab6: form.elements["slab6"]?.value || "",
+      slab7: form.elements["slab7"]?.value || "",
       status: status === "Active" ? 1 : 0, // Convert status to 1 for Active and 0 for Inactive
     };
 
@@ -100,7 +105,7 @@ const UpdateScheme = ({ row, refresh }) => {
             borderRadius: "8px",
             transition: "all 0.3s ease",
             justifyContent: "center",
-            background: "rgb(185, 135, 9)",
+            background: "#00693E",
             "&:hover": {
               backgroundColor: "#122480",
             },
@@ -141,15 +146,17 @@ const UpdateScheme = ({ row, refresh }) => {
                   />
                 </FormControl>
               </Grid>
+          
+        
               <Grid item md={12} xs={12}>
                 <FormControl sx={{ width: "100%" }}>
                   <TextField
                     autoComplete="off"
-                    label="Dd"
-                    id="dd"
+                    label="slab1"
+                    id="slab1"
                     size="small"
                     required
-                    defaultValue={row.dd}
+                    defaultValue={row.slab1}
                   />
                 </FormControl>
               </Grid>
@@ -157,11 +164,71 @@ const UpdateScheme = ({ row, refresh }) => {
                 <FormControl sx={{ width: "100%" }}>
                   <TextField
                     autoComplete="off"
-                    label="Ret"
-                    id="ret"
+                    label="slab2"
+                    id="slab2"
                     size="small"
                     required
-                    defaultValue={row.ret}
+                    defaultValue={row.slab2}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <FormControl sx={{ width: "100%" }}>
+                  <TextField
+                    autoComplete="off"
+                    label="slab3"
+                    id="slab3"
+                    size="small"
+                    required
+                    defaultValue={row.slab3}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <FormControl sx={{ width: "100%" }}>
+                  <TextField
+                    autoComplete="off"
+                    label="slab4"
+                    id="slab4"
+                    size="small"
+                    required
+                    defaultValue={row.slab4}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <FormControl sx={{ width: "100%" }}>
+                  <TextField
+                    autoComplete="off"
+                    label="slab5"
+                    id="slab5"
+                    size="small"
+                    required
+                    defaultValue={row.slab5}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <FormControl sx={{ width: "100%" }}>
+                  <TextField
+                    autoComplete="off"
+                    label="slab6"
+                    id="slab6"
+                    size="small"
+                    required
+                    defaultValue={row.slab6}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <FormControl sx={{ width: "100%" }}>
+                  <TextField
+                    autoComplete="off"
+                    label="slab7"
+                    id="slab7"
+                    size="small"
+                    required
+                    defaultValue={row.slab7}
                   />
                 </FormControl>
               </Grid>

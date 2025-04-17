@@ -39,14 +39,35 @@ const AdminUtility = () => {
       name: "Name",
       selector: (row) => row.name,
     },
+
     {
-      name: "Ret",
-      selector: (row) => row.ret,
+      name: "Slab1",
+      selector: (row) => row.slab1,
     },
 
     {
-      name: "Dd",
-      selector: (row) => row.dd || "NA",
+      name: "Slab2",
+      selector: (row) => row.slab2 || "NA",
+    },
+    {
+      name: "Slab3",
+      selector: (row) => row.slab3 || "NA",
+    },
+    {
+      name: "Slab4",
+      selector: (row) => row.slab4,
+    },
+    {
+      name: "Slab5",
+      selector: (row) => row.slab5,
+    },
+    {
+      name: "Slab6",
+      selector: (row) => row.slab6,
+    },
+    {
+      name: "Slab7",
+      selector: (row) => row.slab7,
     },
     {
       name: "Ad",
@@ -56,6 +77,7 @@ const AdminUtility = () => {
       name: "Md",
       selector: (row) => row.md,
     },
+ 
     {
       name: "Status",
       selector: (row) => (

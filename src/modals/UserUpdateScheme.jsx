@@ -439,28 +439,78 @@ const UserUpdateScheme = ({ row, refresh }) => {
                       </TableCell>
                     </TableRow>
 
+          
+                
                     <TableRow>
                       <TableCell>
                         <Typography variant="body1" fontWeight="bold">
-                          DD:
+                          Slab1:
                         </Typography>
                       </TableCell>
                       <TableCell sx={{ textAlign: "right" }}>
-                        <Typography variant="body1">{dd || "N/A"}</Typography>
+                        <Typography variant="body1">{slab1 || "N/A"}</Typography>
                       </TableCell>
                     </TableRow>
-
                     <TableRow>
                       <TableCell>
                         <Typography variant="body1" fontWeight="bold">
-                          Ret:
+                          Slab2:
                         </Typography>
                       </TableCell>
                       <TableCell sx={{ textAlign: "right" }}>
-                        <Typography variant="body1">{ret || "N/A"}</Typography>
+                        <Typography variant="body1">{slab2 || "N/A"}</Typography>
                       </TableCell>
                     </TableRow>
-
+                    <TableRow>
+                      <TableCell>
+                        <Typography variant="body1" fontWeight="bold">
+                          Slab3:
+                        </Typography>
+                      </TableCell>
+                      <TableCell sx={{ textAlign: "right" }}>
+                        <Typography variant="body1">{slab3 || "N/A"}</Typography>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <Typography variant="body1" fontWeight="bold">
+                          Slab4:
+                        </Typography>
+                      </TableCell>
+                      <TableCell sx={{ textAlign: "right" }}>
+                        <Typography variant="body1">{slab4 || "N/A"}</Typography>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <Typography variant="body1" fontWeight="bold">
+                          Slab5:
+                        </Typography>
+                      </TableCell>
+                      <TableCell sx={{ textAlign: "right" }}>
+                        <Typography variant="body1">{slab5 || "N/A"}</Typography>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <Typography variant="body1" fontWeight="bold">
+                          Slab6:
+                        </Typography>
+                      </TableCell>
+                      <TableCell sx={{ textAlign: "right" }}>
+                        <Typography variant="body1">{slab6 || "N/A"}</Typography>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <Typography variant="body1" fontWeight="bold">
+                          Slab7:
+                        </Typography>
+                      </TableCell>
+                      <TableCell sx={{ textAlign: "right" }}>
+                        <Typography variant="body1">{slab7 || "N/A"}</Typography>
+                      </TableCell>
+                    </TableRow>
                     <TableRow>
                       <TableCell>
                         <Typography variant="body1" fontWeight="bold">
@@ -482,7 +532,6 @@ const UserUpdateScheme = ({ row, refresh }) => {
                         <Typography variant="body1">{md || "N/A"}</Typography>
                       </TableCell>
                     </TableRow>
-
                     <TableRow>
                       <TableCell>
                         <Typography variant="body1" fontWeight="bold">
