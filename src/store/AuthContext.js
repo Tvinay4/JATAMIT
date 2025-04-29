@@ -71,9 +71,17 @@ export const AuthContextProvider = (props) => {
       }
     );
   };
+  const waitForTwoSeconds = () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, 2000); // 2000 milliseconds = 2 seconds
+    });
+  };
 
-  const logOutHandler = () => {
+  const logOutHandler = async() => {
     logOutFromApi();
+    await waitForTwoSeconds();
     setToken(null);
     setUser(null);
     localStorage.removeItem("access_token");
