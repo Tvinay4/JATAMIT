@@ -149,30 +149,25 @@ const RetDdDashboard = () => {
     {
       title: "Utility Payments",
       data: [
-        user?.recharge == 1&&
-            {
-              id: 7,
-              name: "Prepaid",
-              img: recharge1,
-              component: MobileRechargeForm,
-            },
-            user?.recharge == 1&&
-            {
-              id: 8,
-              name: "Postpaid",
-              img: postpaid1,
-              component: MobileRechargeForm,
-            },
-            user?.recharge == 1&&
-            {
-              id: 9,
-              name: "DTH",
-              img: dth1,
-              component: MobileRechargeForm,
-            },
-          
-        
-      
+        user?.recharge == 1 && {
+          id: 7,
+          name: "Prepaid",
+          img: recharge1,
+          component: MobileRechargeForm,
+        },
+        user?.recharge == 1 && {
+          id: 8,
+          name: "Postpaid",
+          img: postpaid1,
+          component: MobileRechargeForm,
+        },
+        user?.recharge == 1 && {
+          id: 9,
+          name: "DTH",
+          img: dth1,
+          component: MobileRechargeForm,
+        },
+
         {
           id: 10,
           name: "Electricity Bill",
@@ -183,7 +178,7 @@ const RetDdDashboard = () => {
           id: 11,
           name: "Credit Card Bill",
           img: creditcard1,
-          component: CommenBBPSView,
+          component: CreditcardForm,
         },
         {
           id: 12,
@@ -311,7 +306,7 @@ const RetDdDashboard = () => {
             ? "mobile"
             : item.name === "DTH"
             ? "dth"
-             : item.name === "Insurance"
+            : item.name === "Insurance"
             ? "C11"
             : item.name === "Piped Gas"
             ? "C07"

@@ -17,7 +17,7 @@ import { cardNumberFormat } from "../utils/FormattingUtils";
 import { PATTERNS } from "../utils/ValidationUtil";
 import { rupayimg, visaimg, masterimg, back } from "../iconsImports";
 
-const CreditcardForm = ({resetView}) => {
+const CreditcardForm = ({ resetView }) => {
   const authCtx = useContext(AuthContext);
   const userLat = authCtx.location && authCtx.location.lat;
   const userLong = authCtx.location && authCtx.location.long;
@@ -75,36 +75,35 @@ const CreditcardForm = ({resetView}) => {
   };
 
   return (
-  
     <div>
-         <Grid
-                    item
-                    md={12}
-                    xs={12}
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      mb: 2,
-                    }}
-                  >
-                    <Button
-                      size="small"
-                      id="verify-btn"
-                      className="button-props"
-                      onClick={handleBack}
-                    >
-                      <span style={{ marginRight: "5px" }}>Back</span>
-                      <img
-                        src={back}
-                        alt="UPI logo"
-                        style={{ width: "18px", height: "20px" }}
-                      />
-                    </Button>
-                    </Grid>
+      <Grid
+        item
+        md={12}
+        xs={12}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          mb: 2,
+        }}
+      >
+        <Button
+          size="small"
+          id="verify-btn"
+          className="button-props"
+          onClick={handleBack}
+        >
+          <span style={{ marginRight: "5px" }}>Back</span>
+          <img
+            src={back}
+            alt="UPI logo"
+            style={{ width: "18px", height: "20px" }}
+          />
+        </Button>
+      </Grid>
       <Box sx={{ p: 3 }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography sx={{ fontSize: "24px", fontWeight: "bold",ml:3 }}>
+          <Typography sx={{ fontSize: "24px", fontWeight: "bold", ml: 3 }}>
             Credit Card Bill Payment
           </Typography>
         </div>
@@ -120,11 +119,11 @@ const CreditcardForm = ({resetView}) => {
             overflowY: "scroll",
           }}
         >
-         
           <Grid container sx={{ pt: 1 }} disabled>
             <Grid item md={12} xs={12}>
               <FormControl sx={{ width: "100%" }}>
-                <TextField autoComplete="off"
+                <TextField
+                  autoComplete="off"
                   label="Registered Mobile Number"
                   id="mobile"
                   type="tel"
@@ -136,14 +135,14 @@ const CreditcardForm = ({resetView}) => {
                     setIsMobv(PATTERNS.MOBILE.test(e.target.value));
                     if (e.target.value === "") setIsMobv(true);
                   }}
-                 
                   required
                 />
               </FormControl>
             </Grid>
             <Grid item md={12} xs={12}>
               <FormControl sx={{ width: "100%" }}>
-                <TextField autoComplete="off"
+                <TextField
+                  autoComplete="off"
                   label="Name"
                   id="name"
                   size="small"
@@ -154,7 +153,8 @@ const CreditcardForm = ({resetView}) => {
             </Grid>
             <Grid item md={12} xs={12}>
               <FormControl sx={{ width: "100%" }}>
-                <TextField autoComplete="off"
+                <TextField
+                  autoComplete="off"
                   label="Card Number"
                   id="card_number"
                   size="small"
@@ -207,7 +207,8 @@ const CreditcardForm = ({resetView}) => {
 
             <Grid item md={12} xs={12}>
               <FormControl sx={{ width: "100%" }}>
-                <TextField autoComplete="off"
+                <TextField
+                  autoComplete="off"
                   label="Amount"
                   id="amount"
                   type="number"

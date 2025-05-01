@@ -53,7 +53,7 @@ const EnterMpinModal = ({
     // setAmount("")
     // setMobile("")
     // setInfoFetched(false)
-    setCustomerId()
+   if(setCustomerId) setCustomerId()
   };
   const handleSubmit = (e) => {
     e.preventDefault();
