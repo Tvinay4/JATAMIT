@@ -6,12 +6,14 @@ import {
   Grid,
   TextField,
   FormControl,
-  
 } from "@mui/material";
 import React, { useState, useContext, useEffect } from "react";
 
-import { CaptureFingerPrint, CaptureFingerPrintDmt1, CaptureFingerPrintDmt2, GetMFS100InfoLoad 
-  
+import {
+  CaptureFingerPrint,
+  CaptureFingerPrintDmt1,
+  CaptureFingerPrintDmt2,
+  GetMFS100InfoLoad,
 } from "../../utils/MantraCapture";
 import { apiErrorToast, okSuccessToast } from "../../utils/ToastUtil";
 import { postJsonData } from "../../network/ApiController";
@@ -165,7 +167,7 @@ const RemitterKyc = ({
         pidData: scanData?.pidData,
         rdsId: scanData?.rdsId,
         rdsVer: scanData?.rdsVer,
-        sessionKey: scanData?.sessionKey,
+        Skey: scanData?.sessionKey,
         srno: scanData?.srno,
         hmac: scanData?.hMac,
         // latitude:"28.6668",
@@ -206,10 +208,8 @@ const RemitterKyc = ({
         apiData,
         setRequest,
         (res) => {
-          if(dmtValue==="dmt1"){
-          
-              getRemitterStatus(rem_mobile);
-         
+          if (dmtValue === "dmt1") {
+            getRemitterStatus(rem_mobile);
           }
           console.log("rem kyc res----", res);
           if (dmtValue == "dmt2") {
@@ -251,7 +251,7 @@ const RemitterKyc = ({
       aria-describedby="modal-modal-description"
     >
       <Box sx={style} className="sm_modal">
-      <Loader circleBlue loading={request} />
+        <Loader circleBlue loading={request} />
 
         <ModalHeader title="Add Remitter" handleClose={onClose} />
         {/* <Button

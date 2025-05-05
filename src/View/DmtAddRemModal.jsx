@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { Fab, FormControl, Grid, TextField, Typography } from "@mui/material";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import ApiEndpoints from "../network/ApiEndPoints";
 import { postJsonData } from "../network/ApiController";
 import Loader from "../commons/Spinner";
@@ -10,8 +10,6 @@ import ModalHeader from "../modals/ModalHeader";
 import { apiErrorToast, okSuccessToast } from "../utils/ToastUtil";
 import ModalFooter from "../modals/ModalFooter";
 import RemitterKyc from "./aeps/RemitterKyc";
-
-
 
 const DmtAddRemModal = ({
   rem_mobile,
@@ -35,11 +33,11 @@ const DmtAddRemModal = ({
   const [openRemKyc, setOpenRemKyc] = useState(false);
   const [remainingTime, setRemainingTime] = useState(null); // State for remaining time
   const [timerInterval, setTimerInterval] = useState(null); // State for the interval ID
-const [dmr2RemRes, setDmr2RemRes] = useState()
+  const [dmr2RemRes, setDmr2RemRes] = useState();
   useEffect(() => {
     setOpen(true);
   }, [mobile]);
-console.log("dmr2RemRes",dmr2RemRes);
+  console.log("dmr2RemRes", dmr2RemRes);
   const style = {
     position: "absolute",
     top: "50%",
@@ -108,6 +106,7 @@ console.log("dmr2RemRes",dmr2RemRes);
           setOtpRefId("");
         },
         (error) => {
+          setOpenRemKyc(true);
           apiErrorToast(error);
         }
       );
@@ -197,14 +196,13 @@ console.log("dmr2RemRes",dmr2RemRes);
     return `${hours}:${minutes}:${seconds}`;
   };
 
-
   useEffect(() => {
-    if(remainingTime==="Time expired"){
-      handleClose()
+    if (remainingTime === "Time expired") {
+      handleClose();
     }
-    return () => {}
-  }, [])
-  
+    return () => {};
+  }, []);
+
   return (
     <Box sx={{ display: "flex", justifyContent: "end" }}>
       <Modal
@@ -261,7 +259,7 @@ console.log("dmr2RemRes",dmr2RemRes);
                           label="Aadhaar Number"
                           id="aadhaar_number"
                           size="small"
-                          disabled={showOtp || otpRef&&true}
+                          disabled={showOtp || (otpRef && true)}
                           required
                           inputProps={{ minLength: 3 }}
                         />
@@ -320,7 +318,7 @@ console.log("dmr2RemRes",dmr2RemRes);
                     color: remainingTime === "Time expired" ? "red" : "green",
                     fontWeight: 500,
                     fontSize: "0.8rem",
-                    pl:1
+                    pl: 1,
                   }}
                 >
                   Remaining Time: {formatRemainingTime(remainingTime)}
