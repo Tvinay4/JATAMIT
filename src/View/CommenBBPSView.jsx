@@ -65,7 +65,7 @@ const InnerIcon = styled(Box)(({ theme }) => ({
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   background: theme.palette.common.white,
 }));
-const CommenBBPSView = ({ resetView,type }) => {
+const CommenBBPSView = ({ resetView, type }) => {
   const [progress, setProgress] = useState(false);
 
   const [catKey, setCatKey] = useState("");
@@ -97,8 +97,8 @@ const CommenBBPSView = ({ resetView,type }) => {
   // const [showSecondPage, setShowSecondPage] = useState(false)
   const [showSecondPage, setShowSecondPage] = useState(2);
   // const [isEdit, setIsEdit] = useState(false);
- //(biller.length);
- 
+  //(biller.length);
+
   const [categoryGroup, setCategoryGroup] = useState([]);
   const [categoryData, setCategoryData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -109,9 +109,9 @@ const CommenBBPSView = ({ resetView,type }) => {
   const [biller_name, setBilerName] = useState();
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBillers, setFilteredBillers] = useState(biller);
-//("filteredBillers billers",filteredBillers.length);
- const [amountValue, setAmountValue] = useState("");
-   const [directPay,setDirectPay]=useState(false)
+  //("filteredBillers billers",filteredBillers.length);
+  const [amountValue, setAmountValue] = useState("");
+  const [directPay, setDirectPay] = useState(false);
   const filterOptions = createFilterOptions({
     matchFrom: "start",
     stringify: (option) => option.billerName,
@@ -124,25 +124,30 @@ const CommenBBPSView = ({ resetView,type }) => {
     setParams([]);
     setCurrentBiller("");
     setMpinVal(false);
+
     postJsonData(
       ApiEndpoints.BBPS_GET_BILLERS,
       { categoryKey: cat_key },
       setProgress,
       (res) => {
-        const data = res.data.data.records;
-        setBiller(data);
-        setDirectPay(false)
-        // setShowSecondPage(true)
-        setShowSecondPage(1);
-        if (cat_key === "C03") {
-          setBillers(
-            data.filter((item) => {
-              return item.type === "ONUS";
-            })
-          );
-        } else {
-          setBillers(data);
+        const records = res?.data?.data?.records;
+
+        if (!Array.isArray(records) || records.length === 0) {
+          apiErrorToast("No billers found. Please Complete 0utlet Registration");
+          setShowSecondPage(0); // Or false, if needed
+          return;
         }
+
+        setBiller(records);
+        setDirectPay(false);
+        setShowSecondPage(1);
+
+        if (cat_key === "C03") {
+          setBillers(records.filter((item) => item.type === "ONUS"));
+        } else {
+          setBillers(records);
+        }
+
         setFetchMandatory("");
       },
       (err) => {
@@ -150,6 +155,7 @@ const CommenBBPSView = ({ resetView,type }) => {
       }
     );
   };
+
   const [categories, setCategories] = useState([]);
 
   const [filteredCategories, setFilteredCategories] = useState([]);
@@ -158,7 +164,7 @@ const CommenBBPSView = ({ resetView,type }) => {
   const [err, setErr] = useState();
   const [allCategories, setAllCategories] = useState();
   const [billerValId, setBillerValId] = useState();
-//("filteredCategories lengtch",filteredCategories.length);
+  //("filteredCategories lengtch",filteredCategories.length);
 
   const getCategories = () => {
     get(
@@ -196,13 +202,14 @@ const CommenBBPSView = ({ resetView,type }) => {
         const data = res.data.data;
         setShowSecondPage(2);
         setParams(data.parameters);
-        setDirectPay(false)
-        setAmountValue("")
+        setDirectPay(false);
+        setAmountValue("");
         setBilerName(data.billerInfo.name);
         setFetchMandatory(data.fetchRequirement);
         // //("data.parameters", data?.parameters[1]?.name);
         if (
-         type&&type==="C04" &&
+          type &&
+          type === "C04" &&
           data?.parameters[1]?.desc !== "Mobile Number"
         ) {
           setParams((param) => [
@@ -239,7 +246,7 @@ const CommenBBPSView = ({ resetView,type }) => {
     );
   };
 
-  const { getRecentData ,refreshUser,recentData} = useCommonContext();
+  const { getRecentData, refreshUser, recentData } = useCommonContext();
 
   const fetchBill = (event) => {
     const data = {
@@ -272,10 +279,10 @@ const CommenBBPSView = ({ resetView,type }) => {
         setProgress,
         (res) => {
           setBillDetails(res.data.data.data);
-          setAmountValue("")
+          setAmountValue("");
         },
         (err) => {
-          setDirectPay(true)
+          setDirectPay(true);
           apiErrorToast(err);
         }
       );
@@ -306,7 +313,7 @@ const CommenBBPSView = ({ resetView,type }) => {
     const data = {
       operator: selectedBillerId && selectedBillerId,
       biller_name: biller_name,
-      amount: billValue?billValue:amountValue,
+      amount: billValue ? billValue : amountValue,
       pan: pan ? pan : undefined,
       pf: "web",
       cat: categoryName && categoryName.categoryKey,
@@ -645,10 +652,10 @@ const CommenBBPSView = ({ resetView,type }) => {
                       {groupName}
                     </Typography>
                     <Grid container spacing={2}>
-                      {//("groupedCategories  valie2333333",groupedCategories.length)
+                      {
+                        //("groupedCategories  valie2333333",groupedCategories.length)
                       }
                       {groupedCategories[groupName].map((item, index) => (
-                        
                         <Grid
                           item
                           xs={12}
@@ -678,7 +685,6 @@ const CommenBBPSView = ({ resetView,type }) => {
 
               {showSecondPage === 1 && (
                 <Box>
-                           
                   <Grid
                     container
                     justifyContent="space-between"
@@ -735,53 +741,65 @@ const CommenBBPSView = ({ resetView,type }) => {
                   <Divider
                     sx={{ m: 1, backgroundColor: "grey.500", height: 1.5 }}
                   />
-  
+
                   {/* Biller List */}
                   <Box>
-  {/* Fixed Total Count */}
-  <Box sx={{ display: "flex", justifyContent: "flex-end", width: "100%", position: "sticky", top: 0, zIndex: 1, py: 1 }}>
-    <Typography sx={{ mr: 2 }}>
-      Total {biller[0]?.categoryName} is <span style={{ color: "#1877F2",}}> ({filteredBillers.length})</span>
-    </Typography>
-  </Box>
+                    {/* Fixed Total Count */}
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        width: "100%",
+                        position: "sticky",
+                        top: 0,
+                        zIndex: 1,
+                        py: 1,
+                      }}
+                    >
+                      <Typography sx={{ mr: 2 }}>
+                        Total {biller[0]?.categoryName} is{" "}
+                        <span style={{ color: "#1877F2" }}>
+                          {" "}
+                          ({filteredBillers.length})
+                        </span>
+                      </Typography>
+                    </Box>
 
-  {/* Scrollable Billers List */}
-  <Box sx={{ height: "600px", overflowY: "auto" }}>
-    <Grid container spacing={2}>
-      {filteredBillers.length > 0 ? (
-        filteredBillers.map((item, index) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={3}
-            key={index}
-            sx={{ width: "100%", height: "75%" }}
-          >
-            <BbpsCardComponent2
-              onClick={() => {
-                setSelectedBillerId(item.billerId);
-                getBillersDetails(item.billerId);
-                setSelectedImage(item.iconUrl);
-              }}
-              title={item.billerName}
-              img={item.iconUrl}
-              isActive={selectedBillerId === item.billerId}
-            />
-          </Grid>
-        ))
-      ) : (
-        <Grid item xs={12}>
-          <Typography variant="h6" align="center">
-            No billers found
-          </Typography>
-        </Grid>
-      )}
-    </Grid>
-  </Box>
-</Box>
-
-
+                    {/* Scrollable Billers List */}
+                    <Box sx={{ height: "600px", overflowY: "auto" }}>
+                      <Grid container spacing={2}>
+                        {filteredBillers.length > 0 ? (
+                          filteredBillers.map((item, index) => (
+                            <Grid
+                              item
+                              xs={12}
+                              sm={6}
+                              md={3}
+                              key={index}
+                              sx={{ width: "100%", height: "75%" }}
+                            >
+                              <BbpsCardComponent2
+                                onClick={() => {
+                                  setSelectedBillerId(item.billerId);
+                                  getBillersDetails(item.billerId);
+                                  setSelectedImage(item.iconUrl);
+                                }}
+                                title={item.billerName}
+                                img={item.iconUrl}
+                                isActive={selectedBillerId === item.billerId}
+                              />
+                            </Grid>
+                          ))
+                        ) : (
+                          <Grid item xs={12}>
+                            <Typography variant="h6" align="center">
+                              No billers found
+                            </Typography>
+                          </Grid>
+                        )}
+                      </Grid>
+                    </Box>
+                  </Box>
                 </Box>
               )}
 
@@ -836,11 +854,25 @@ const CommenBBPSView = ({ resetView,type }) => {
                       <Divider
                         sx={{ m: 1, backgroundColor: "grey.500", height: 1.5 }}
                       />
-                            <Box sx={{ display: "flex", justifyContent: "flex-end", width: "100%", position: "sticky", top: 0, zIndex: 1, py: 1 }}>
-    <Typography sx={{ mr: 2 }}>
-      Total {biller[0]?.categoryName} is <span style={{ color: "#1877F2",}}> ({filteredBillers.length})</span>
-    </Typography>
-  </Box>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "flex-end",
+                          width: "100%",
+                          position: "sticky",
+                          top: 0,
+                          zIndex: 1,
+                          py: 1,
+                        }}
+                      >
+                        <Typography sx={{ mr: 2 }}>
+                          Total {biller[0]?.categoryName} is{" "}
+                          <span style={{ color: "#1877F2" }}>
+                            {" "}
+                            ({filteredBillers.length})
+                          </span>
+                        </Typography>
+                      </Box>
                       {/* Scrollable list of billers */}
                       <Box
                         sx={{
@@ -954,37 +986,38 @@ const CommenBBPSView = ({ resetView,type }) => {
                                       </FormControl>
                                     </Grid>
                                   ))}
-                                  {directPay&&
-                                      <Grid item xs={12}>
-                                                             <FormControl
-                                                               sx={{
-                                                                 width: "100%",
-                                                                 mr: "19%",
-                                                               }}
-                                                             >
-                                                               <TextField
-                                                                 label="Amount"
-                                                                 id="amount"
-                                                                //  size="small"
-                                                                 sx={{
-                                                                   "& .MuiInputBase-input": {
-                                                                     fontSize: "12px",
-                                                                     color: "black",
-                                                                   },
-                                                                   "& .MuiInputBase-input::placeholder": {
-                                                                     fontSize: "12px",
-                                                                     opacity: 1,
-                                                                   },
-                                                                 }}
-                                                                 value={amountValue}
-                                                                 onChange={(e) => {
-                                                                   setAmountValue(e.target.value);
-                                                                 }}
-                                                                 required
-                                                               />
-                                                             </FormControl>
-                                                           </Grid>
-}
+                                  {directPay && (
+                                    <Grid item xs={12}>
+                                      <FormControl
+                                        sx={{
+                                          width: "100%",
+                                          mr: "19%",
+                                        }}
+                                      >
+                                        <TextField
+                                          label="Amount"
+                                          id="amount"
+                                          //  size="small"
+                                          sx={{
+                                            "& .MuiInputBase-input": {
+                                              fontSize: "12px",
+                                              color: "black",
+                                            },
+                                            "& .MuiInputBase-input::placeholder":
+                                              {
+                                                fontSize: "12px",
+                                                opacity: 1,
+                                              },
+                                          }}
+                                          value={amountValue}
+                                          onChange={(e) => {
+                                            setAmountValue(e.target.value);
+                                          }}
+                                          required
+                                        />
+                                      </FormControl>
+                                    </Grid>
+                                  )}
                                   {/* Error message below text fields */}
                                   {err && (
                                     <Box
@@ -1006,7 +1039,7 @@ const CommenBBPSView = ({ resetView,type }) => {
                                     <FormControl sx={{ mt: 2, width: "100%" }}>
                                       {fetchMandatory === "MANDATORY" ? (
                                         <BillDetailsModal
-                                         billvaluePan={true}
+                                          billvaluePan={true}
                                           billerId={billerId}
                                           amountValue={amountValue}
                                           directPay={directPay}
