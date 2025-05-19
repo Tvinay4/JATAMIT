@@ -28,7 +28,7 @@ import * as yup from "yup";
 import Mount from "../component/Mount";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import AuthContext from "../store/AuthContext";
-
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 const style = {
   position: "absolute",
   top: "50%",
@@ -62,7 +62,7 @@ const ViewUserModal = ({ row, refresh, asmArray, adArray }) => {
   const [userRequest, setUserRequest] = useState(false);
   const authCtx = useContext(AuthContext);
   const user = authCtx.user;
-console.log("asmArray",asmArray);
+  console.log("asmArray", asmArray);
 
   const handleBankInfo = () => {
     setshowBankInfo(!showBankInfo);
@@ -313,7 +313,7 @@ console.log("asmArray",asmArray);
                       )}
                     />
                   </Grid>
-                  
+
                   <Grid item md={4} xs={6}>
                     <FormControl sx={{ width: "100%" }}>
                       <TextField
@@ -904,7 +904,7 @@ console.log("asmArray",asmArray);
                       )}
                     ></Controller>
                   </Grid>
-                  <Grid item md={4} xs={6} sx={{mt:2}}>
+                  <Grid item md={4} xs={6} sx={{ mt: 2 }}>
                     {/* <BankSearch
                       fromProfile={true}
                       label="Bank Name"
@@ -917,28 +917,29 @@ console.log("asmArray",asmArray);
                       }}
                     /> */}
                     <Controller
-                        name="bank"
-                        control={control}
-                        defaultValue={userDetails.bank}
-                        render={({
-                          field: { onChange, value },
-                          fieldState: { error },
-                        }) => (
-                          <FormControl sx={{ width: "100%" }}>
-                            <TextField autoComplete="off"
-                              label="Bank Name"
-                              id="bank"
-                              size="small"
-                              required
-                              defaultValue={userDetails.bank}
-                              value={value}
-                              onChange={onChange}
-                              error={!!error}
-                              helperText={error ? error.message : null}
-                            />
-                          </FormControl>
-                        )}
-                      ></Controller>
+                      name="bank"
+                      control={control}
+                      defaultValue={userDetails.bank}
+                      render={({
+                        field: { onChange, value },
+                        fieldState: { error },
+                      }) => (
+                        <FormControl sx={{ width: "100%" }}>
+                          <TextField
+                            autoComplete="off"
+                            label="Bank Name"
+                            id="bank"
+                            size="small"
+                            required
+                            defaultValue={userDetails.bank}
+                            value={value}
+                            onChange={onChange}
+                            error={!!error}
+                            helperText={error ? error.message : null}
+                          />
+                        </FormControl>
+                      )}
+                    ></Controller>
                   </Grid>
                   <Grid item md={4} xs={6}>
                     <Controller
@@ -1352,35 +1353,91 @@ console.log("asmArray",asmArray);
                     </Grid>
                   }
                   {
-                  <Grid item md={3} xs={6}>
-                  <Controller
-                    name="agreement"
-                    control={control}
-                    defaultValue={userDetails.aggreement || null}
-                    render={({
-                      field: { onChange, value },
-                      fieldState: { error },
-                    }) => (
-                      <FormControl sx={{ width: "100%" }}>
-                        <TextField
-                          autoComplete="off"
-                          label="aggreement"
-                          id="aggreement"
-                          size="small"
-                          defaultValue={userDetails?.aggreement }
-                          value={value}
-                          onChange={ onChange }
-                          error={!!error}
-                          sx={{ m: 2 }}
-                          helperText={error ? error.message : null}
-                          disabled={user.id !== 1}
-                         InputLabelProps={{ shrink: true }}
-                        />
-                      </FormControl>
-                    )}
-                  ></Controller>
-                </Grid>
-                 
+                    <Grid item md={3} xs={6}>
+                      <Controller
+                        name="agreement"
+                        control={control}
+                        defaultValue={userDetails.aggreement || null}
+                        render={({
+                          field: { onChange, value },
+                          fieldState: { error },
+                        }) => (
+                          <FormControl sx={{ width: "100%" }}>
+                            <TextField
+                              autoComplete="off"
+                              label="aggreement"
+                              id="aggreement"
+                              size="small"
+                              defaultValue={userDetails?.aggreement}
+                              value={value}
+                              onChange={onChange}
+                              error={!!error}
+                              sx={{ m: 2 }}
+                              helperText={error ? error.message : null}
+                              disabled={user.id !== 1}
+                              InputLabelProps={{ shrink: true }}
+                            />
+                          </FormControl>
+                        )}
+                      ></Controller>
+                    </Grid>
+                  }
+                  {
+                    <Grid item md={3} xs={6}>
+                      <Controller
+                        name="onb_location"
+                        control={control}
+                        defaultValue={userDetails?.onb_location || ""}
+                        rules={{
+                          pattern: {
+                            value:
+                              /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/,
+                            message:
+                              "Enter valid coordinates (e.g., 12.9716, 77.5946)",
+                          },
+                          required: "Location is required",
+                        }}
+                        render={({
+                          field: { onChange, value },
+                          fieldState: { error },
+                        }) => (
+                          <FormControl sx={{ width: "100%" }}>
+                            <Box
+                              sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                ml: 2,
+                              }}
+                            >
+                              <Typography variant="body2" sx={{ mr: 0.5 }}>
+                                Location (Latitude, Longitude)
+                              </Typography>
+                              <Tooltip title="Enter coordinates like: 28.6139,77.2090">
+                                <InfoOutlinedIcon
+                                  fontSize="small"
+                                  sx={{ color: "#555", cursor: "pointer" }}
+                                />
+                              </Tooltip>
+                            </Box>
+                            <TextField
+                              autoComplete="off"
+                              id="onb_location"
+                              size="small"
+                              value={value}
+                              onChange={onChange}
+                              error={!!error}
+                              sx={{ m: 2 }}
+                              helperText={
+                                error
+                                  ? error.message
+                                  : "Enter your location as latitude, longitude (e.g., 28.6139, 77.2090)"
+                              }
+                              InputLabelProps={{ shrink: true }}
+                            />
+                          </FormControl>
+                        )}
+                      />
+                    </Grid>
                   }
                 </Grid>
               </TabPanel>
