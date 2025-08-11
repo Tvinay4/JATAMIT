@@ -168,7 +168,7 @@ const SendMoneyModal = ({ refresh }) => {
           <CallMadeIcon
             className="hover-white hover-zoom"
             size="1.3rem"
-            sx={{ color: "#000000", fontWeight: "bold" }}
+            sx={{ color: "#da473d", fontWeight: "bold" }}
           />
         </Tooltip>
       </IconButton>

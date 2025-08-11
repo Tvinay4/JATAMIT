@@ -14,7 +14,7 @@ const ApiPaginateSearch = ({
   returnRefetch,
   setQuery,
   query,
-  setSumData=false,
+  setSumData = false,
   searchOptions = [],
   actionButtons,
   responses,
@@ -36,7 +36,7 @@ const ApiPaginateSearch = ({
   backButton,
   totalCard,
   showSearch = false,
-  filteredData
+  filteredData,
 }) => {
   const isDesktop = useResponsive("up", "sm");
 
@@ -105,7 +105,7 @@ const ApiPaginateSearch = ({
             {backButton}
           </Grid>
         </Mount>
-        <Mount visible={showSearch||!showSearch}>
+        <Mount visible={showSearch || !showSearch}>
           <Grid
             item
             md={12}

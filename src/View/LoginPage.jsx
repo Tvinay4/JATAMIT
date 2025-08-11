@@ -179,7 +179,6 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-   
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
@@ -349,7 +348,11 @@ const LoginPage = () => {
           </Box>
         </Modal>
       )}
-      <Grid container spacing={0} sx={{ overflow: "hidden", m: 0,position:"fixed" }}>
+      <Grid
+        container
+        spacing={0}
+        sx={{ overflow: "hidden", m: 0, position: "fixed" }}
+      >
         {/* Left Column - Hidden on medium and smaller screens */}
         <Hidden mdDown>
           <Grid

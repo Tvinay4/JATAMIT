@@ -294,18 +294,6 @@ const DmtContainer = ({
     user?.dmt2 === 1 && { label: "Dmt 2" },
   ].filter(Boolean);
 
-  // useEffect(() => {
-  //   if (user?.dmt1 === 1 && !tabs.includes({ label: "Dmt 1" })) {
-  //     setTabs(tabs.push({ label: "Dmt 1" }));
-  //   }
-  //   if (user?.dmt2 === 1 && !tabs.includes({ label: "Dmt 2" })) {
-  //     setTabs(tabs.push({ label: "Dmt 2" }));
-  //   }
-  //   if (user?.dmt3 === 1 && !tabs.includes({ label: "Dmt 3" })) {
-  //     setTabs(tabs.push({ label: "Dmt 3" }));
-  //   }
-  // }, []);
-
   const handleChange = (event, newValue) => {
     console.log("newval", newValue);
     setValue(newValue);
@@ -501,6 +489,7 @@ const DmtContainer = ({
                             letterSpacing: "0.05rem",
                             textAlign: "left",
                             mt: 1,
+                            color: "#ff9a8b",
                           }}
                         >
                           {type === "dmt1"
@@ -1017,7 +1006,13 @@ const DmtContainer = ({
                                     <TableCell sx={{ padding: 2 }}>
                                       Verified
                                     </TableCell>
-                                    <TableCell sx={{ padding: 2, ml: 2,textAlign:"center" }}>
+                                    <TableCell
+                                      sx={{
+                                        padding: 2,
+                                        ml: 2,
+                                        textAlign: "center",
+                                      }}
+                                    >
                                       Actions
                                     </TableCell>
                                     <TableCell sx={{ padding: 2 }}>

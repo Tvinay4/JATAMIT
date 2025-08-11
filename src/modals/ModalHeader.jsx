@@ -1,11 +1,9 @@
-import React from "react";
-import { Typography, IconButton, Box } from "@mui/material";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded"; // Using a rounded close icon
-import Mount from "../component/Mount";
+import { Box, Typography, IconButton } from '@mui/material';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 const ModalHeader = ({
   title = "Modal heading",
-  subtitle = "Start your journey with DIGIVOUCHERS.",
+  subtitle = "Start your journey with WALLETHUB.",
   handleClose,
   hideCloseBtn,
 }) => {
@@ -13,53 +11,69 @@ const ModalHeader = ({
     <Box
       sx={{
         width: "100%",
-        padding: "16px", // Adjust the padding
-        // backgroundColor: "#1a78f20a", // Light purple background similar to the image
-        backgroundColor: "#fae3bb",
-        borderRadius: "12px 12px 0 0", // Rounded corners at the top
+        padding: { xs: "16px", md: "20px" },
+        background: "linear-gradient(135deg, #8A40A5 0%, #F56C63 100%)",
+        borderRadius: "12px 12px 0 0",
         display: "flex",
-        flexDirection: "column", // Stacks title and subtitle vertically
-        alignItems: "center", // Center-aligns the text
+        flexDirection: "column",
+        alignItems: "center",
         position: "relative",
-        mb: 3,
+        mb: 2,
+        boxShadow: "0 4px 12px rgba(138, 64, 165, 0.3)",
       }}
     >
       {/* Title */}
       <Typography
+        variant="h5"
         sx={{
-          fontSize: "20px",
-          fontWeight: "600",
-          color: "#000000", // Black color
+          fontWeight: 700,
+          color: "#fff",
+          textAlign: "center",
+          fontSize: { xs: "1.25rem", md: "1.5rem" },
+          letterSpacing: "0.5px",
+          textShadow: "0 2px 4px rgba(0,0,0,0.2)",
         }}
       >
         {title}
       </Typography>
 
       {/* Subtitle */}
-
       <Typography
+        variant="body2"
         sx={{
-          fontSize: "14px",
-          color: "#6b6b6b", // Grey color similar to the image
-          marginTop: "4px", // Space between title and subtitle
+          color: "rgba(255,255,255,0.9)",
+          marginTop: 1,
+          textAlign: "center",
+          fontSize: { xs: "0.875rem", md: "0.9375rem" },
+          maxWidth: "80%",
+          lineHeight: 1.5,
         }}
       >
         {subtitle}
       </Typography>
 
       {/* Close Button */}
-
       {!hideCloseBtn && (
         <IconButton
           onClick={handleClose}
           sx={{
             position: "absolute",
-            top: "16px",
-            right: "16px",
-            color: "#757575", // Gray color for the close icon
+            top: "14px",
+            right: "14px",
+            color: "#fff",
+            backgroundColor: "rgba(255,255,255,0.2)",
+            "&:hover": {
+              backgroundColor: "rgba(255,255,255,0.3)",
+              transform: "rotate(90deg)",
+            },
+            transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+            width: "34px",
+            height: "34px",
+            backdropFilter: "blur(2px)",
           }}
+          aria-label="close"
         >
-          <CloseRoundedIcon />
+          <CloseRoundedIcon fontSize="small" />
         </IconButton>
       )}
     </Box>

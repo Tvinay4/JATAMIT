@@ -157,9 +157,9 @@ const RightNavbar = () => {
         py: 0.7,
         mt: 1.5,
         borderRadius: "10px",
-        border: "1px solid rgba(166, 126, 66, 0.85)",
-boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
-
+        border: "1px solid #da473d",
+        boxShadow: "0 0 8px rgba(218, 71, 61, 0.6)",
+        backgroundColor: "#fff",
       }}
     >
       <Box
@@ -168,10 +168,10 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-
           fontSize: "19px",
+          fontWeight: "bold",
           position: "relative",
-          color: "#D1AA65",
+          color: "#da473d",
         }}
       >
         Wallet Widgets
@@ -185,7 +185,6 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
-
           marginTop: 1,
         }}
       >
@@ -200,49 +199,13 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
         >
           <Box sx={{ display: "flex", flexDirection: "row" }}>
             <SendMoneyModal />
-            {/* <AddBalanceViaPG /> */}
           </Box>
-          {/* {user?.upi_qr !== 0 && (
-            <Mount visible={user}>
-              <Box className="hover-zoom">
-                <IconButton
-                  className="hover-zoom"
-                  sx={{ color: "#000000" }}
-                  onClick={() => {
-                    setOpen(true);
-                    handleWalletTransfer();
-                    handleBankTransfer();
-                  }}
-                >
-                  <Tooltip title="QR" placement="top">
-                    <QrCode2Icon className="hover-white" />
-                  </Tooltip>
-                </IconButton>
-              </Box>
-            </Mount>
-          )} */}
-          {/* <Mount visible={user.instId}>
-            <OutletRegistration
-              btn={
-                <Box className="hover-zoom">
-                  <IconButton className="hover-zoom">
-                    <Tooltip
-                      title="QR"
-                      placement="left"
-                      sx={{ color: "#000000" }}
-                    >
-                      <QrCode2Icon className="hover-white" />
-                    </Tooltip>
-                  </IconButton>
-                </Box>
-              }
-            />
-          </Mount> */}
 
+          {/* Bank Transfer Icon */}
           <Box className="hover-zoom">
             <IconButton
               className="hover-zoom"
-              sx={{ color: "#000000" }}
+              sx={{ color: "#da473d" }}
               size="1.3rem"
               onClick={() => {
                 setShowBankTransfer(!showBankTransfer);
@@ -254,10 +217,12 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
               </Tooltip>
             </IconButton>
           </Box>
+
+          {/* Wallet Transfer Icon */}
           {user?.wallet_transfer !== 0 && (
             <Box className="hover-zoom">
               <IconButton
-                sx={{ color: "#000000" }}
+                sx={{ color: "#da473d" }}
                 size="1.3rem"
                 onClick={() => {
                   setShowWalletTransfer(!showWalletTransfer);
@@ -273,66 +238,7 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
         </Box>
       </Grid>
 
-      {/* QR Modal Section */}
-      {/* {user?.upi_qr !== 0 && ( */}
-       {/* <Mount visible={showQr}> */}
-          {/* <Card
-            id="qrDrop"
-            sx={{
-              mt: 2,
-              p: { md: 1, sm: 1, xs: 2 },
-              width: "100%",
-            }}
-            className="position-relative"
-          >
-            <IconButton className="top-right-position">
-              <HighlightOffRoundedIcon
-                className="hover-red"
-                onClick={() => setShowQr(false)}
-              />
-            </IconButton>
-
-            <Box style={{ fontWeight: "bold" }}>{user.name}</Box>
-            <Box style={{ fontSize: "10px" }}>{selfqrValue}</Box>
-
-            <Box
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginTop: "12px",
-              }}
-            >
-              <QRCode value={selfqrValue} size={156} />
-            </Box>
-
-            <Box style={{ fontWeight: "bold" }}>Scan this code & pay me</Box>
-
-            <Box
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginTop: "12px",
-              }}
-            >
-              <img src={upiWeb} alt="upi apps" />
-            </Box>
-
-            {/* <Typography
-            sx={{
-              textAlign: "center",
-              fontSize: "11px",
-              fontWeight: "600",
-              color: "#676970",
-              p: 2.2,
-              pb: 0,
-            }}
-          >
-            *Note: This Payment will be added to W2
-          </Typography> */}
-          {/* </Card>  */}
-        {/* </Mount> */}
-      {/* )} */}
-      {/* Wallet Transfer Modal Section */}
+      {/* Wallet Transfer Section */}
       <Mount visible={showWalletTransfer}>
         <Grid
           id="qrDrop"
@@ -340,12 +246,16 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
             marginTop: "12px",
             px: 2,
             pt: 2,
-            backgroundColor: "#",
+            border: "1px solid #da473d",
+            borderRadius: "8px",
+            boxShadow: "0 0 5px rgba(82, 57, 171, 0.5)",
+            backgroundColor: "#faf8ff",
           }}
           className="position-relative card-css"
         >
           <IconButton className="top-right-position">
             <HighlightOffRoundedIcon
+              sx={{ color: "#da473d" }}
               className="hover-red"
               onClick={() => {
                 setShowWalletTransfer(false);
@@ -354,10 +264,16 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
               }}
             />
           </IconButton>
+
           <Loader loading={request} circleBlue />
 
           <Typography
-            sx={{ fontWeight: "bold", width: "100%", textAlign: "left" }}
+            sx={{
+              fontWeight: "bold",
+              width: "100%",
+              textAlign: "left",
+              color: "#da473d",
+            }}
           >
             W2 to W1 Transfer
           </Typography>
@@ -375,7 +291,6 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
                 label="Enter Amount"
                 id="w2_amount"
                 type="number"
-                sx={{ backgroundColor: "#" }}
                 onChange={() => {
                   setWalletTransferErrMsg("");
                 }}
@@ -392,12 +307,12 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
 
           <Box sx={{ width: "100%", textAlign: "right" }}>
             {err && (
-              <Typography sx={{ fontSize: "12px", color: "#4E5555" }}>
+              <Typography sx={{ fontSize: "12px", color: "#da473d" }}>
                 {err?.message}
               </Typography>
             )}
             {walletTransferErrMsg && (
-              <Typography sx={{ fontSize: "12px", color: "#4E5555" }}>
+              <Typography sx={{ fontSize: "12px", color: "#da473d" }}>
                 {walletTransferErrMsg}
               </Typography>
             )}
@@ -409,8 +324,9 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
                 my: 1,
                 textTransform: "capitalize",
                 mt: 1,
+                backgroundColor: "#da473d",
+                "&:hover": { backgroundColor: "#432B8B" },
               }}
-              className="otp-hover-purple"
               form="walletTransfer"
               type="submit"
               disabled={request}
@@ -428,6 +344,7 @@ boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
           setShowBankTransfer={setShowBankTransfer}
         />
       </Mount>
+
       {user?.upi_qr !== 0 && (
         <QRWarningModal
           open={open}

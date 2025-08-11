@@ -32,7 +32,7 @@ export const getHoverInActive = () => {
 
 export const getTableHeadRowColor = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#ff6f91"; // matches brand pink
+    return "#ff6f91"; 
   }
 };
 

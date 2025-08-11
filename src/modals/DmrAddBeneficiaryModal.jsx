@@ -472,6 +472,7 @@ const DmrAddBeneficiaryModal = ({
             <ModalFooter
               form="addbene"
               request={request}
+
               btn={
                 view === "MT_View" && (type === "dmt1" || type === "dmt2")
                   ? "Add Beneficiary"
