@@ -19,10 +19,14 @@ const RecentHistory = () => {
   return (
     <Box
       className="card-css"
-      sx={{ mt: 1.5, px: 1, py: 1.5, borderRadius: "10px" , border: "1px solid rgba(166, 126, 66, 0.85)",
-        boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)"
-        
-        ,}}
+      sx={{
+        mt: 1.5,
+        px: 1,
+        py: 1.5,
+        borderRadius: "10px",
+        border: "1px solid #da473d",
+        boxShadow: "0 0 8px rgba(218, 71, 61, 0.6)",
+      }}
     >
       <Box
         sx={{
@@ -32,7 +36,7 @@ const RecentHistory = () => {
           fontWeight: "500",
           fontSize: "20px",
           position: "relative",
-          color: "#D1AA65",
+          color: "#da473d",
           // ml: -1,
         }}
       >
@@ -100,7 +104,7 @@ const RecentHistory = () => {
                   <Icon
                     title="Success"
                     icon={
-                      <DoneIcon sx={{ fontSize: "25px", color: "	#259625" }} />
+                      <DoneIcon sx={{ fontSize: "25px", color: "#259625" }} />
                     }
                     onClick={() => console.log("Success clicked")}
                   />
