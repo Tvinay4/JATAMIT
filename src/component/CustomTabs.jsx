@@ -13,7 +13,7 @@ function CustomTabs({ tabs, value, onChange, heading }) {
           aria-label="full width tabs example"
           sx={{
             "& .MuiTabs-indicator": {
-              backgroundColor: "#000000",
+              backgroundColor: "#da473d",
             },
             "& .MuiTab-root": {
               color: "#000",
@@ -22,9 +22,9 @@ function CustomTabs({ tabs, value, onChange, heading }) {
               },
             },
             "& .MuiTab-root.Mui-selected": {
-              color: "#dba400",
+              color: "#da473d",
               "& .MuiSvgIcon-root": {
-                color: "#dba400",
+                color: "#da473d",
               },
             },
             minHeight: "30px",
@@ -81,7 +81,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ pt: 1,pr:1, overflow: "auto" }}>{children}</Box>
+        <Box sx={{ pt: 1, pr: 1, overflow: "auto" }}>{children}</Box>
       )}
     </div>
   );
