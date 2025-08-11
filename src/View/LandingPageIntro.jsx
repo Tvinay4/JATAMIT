@@ -1,154 +1,132 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import React, { useState } from "react";
-import { PrimaryButton, SecondaryButton } from "../theme/Theme";
 import { lp_illustration } from "../iconsImports";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { getEnv } from "../theme/setThemeColor";
+import { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import AndroidIcon from '@mui/icons-material/Android';
+import AndroidIcon from "@mui/icons-material/Android";
 
+import { getEnv } from "../theme/setThemeColor";
 const LandingPageIntro = () => {
   const navigate = useNavigate();
-  const [env] = useState(getEnv());
+  const [env] = useState("WALLETHUB");
 
   return (
     <Box
-      className="landing-bg"
       id="landing-intro"
       sx={{
-        background:
-          "linear-gradient(135deg,rgb(199, 161, 90) 40%,rgba(179, 173, 139, 0.41) 100%)",
-        color: "#fff",
+        background: "linear-gradient(135deg, #c8f2ff 0%, #ffe3f4 100%)",
         minHeight: "100vh",
-        width: "100%",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        padding: { xs: "3rem 1.5rem", md: "3rem 1.5rem" },
+        py: { xs: 5, md: 8 },
       }}
     >
       <Container maxWidth="xl">
-        <Grid container spacing={2} sx={{ alignItems: "center" ,mt:3,}}>
+        <Grid container spacing={5} alignItems="center">
           {/* Text Section */}
-          <Grid item md={6} xs={12} sx>
-            <Box sx={{ textAlign: { xs: "center", md: "left" },p:5 }}>
+          <Grid item xs={12} md={6}>
+            <Box textAlign={{ xs: "center", md: "left" }} px={{ xs: 1, md: 3 }}>
               <Typography
-                variant="h3"
+                variant="h2"
                 sx={{
                   fontWeight: 700,
                   fontFamily: "Poppins, sans-serif",
-                  color: "#fff",
-                  lineHeight: 1.4,
-                  fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // Adjusting font size for responsiveness
-                  marginBottom: 2, // Adds spacing below
-                  paddingX: { xs: 2, sm: 0 }, // Adds padding for smaller screens
+                  fontSize: { xs: "2.2rem", sm: "2.8rem", md: "3.4rem" },
+                  lineHeight: 1.3,
+                  background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}
               >
-                Seamless, Reliable, and <br />
-                <span style={{ color: "#8B4513", fontSize: "2.8rem" }}>
-                  Effortless
-                </span>{" "}
-                Transactions.
+                WalletHub — Your Money,
+                <span style={{ color: "#00bfa6" }}> Your Way</span>
               </Typography>
 
               <Typography
                 variant="h6"
                 sx={{
-                  mt: 3,
-                  textAlign: "justify",
-                  color: "#f8f8f8",
-                  fontWeight: 500,
+                  mt: 2,
+                  color: "#555",
+                  fontWeight: 400,
                   fontFamily: "Roboto, sans-serif",
-                  lineHeight: 1.8,
+                  lineHeight: 1.7,
+                  maxWidth: "500px",
+                  mx: { xs: "auto", md: "0" },
                 }}
               >
-                <b>{env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}</b>{" "}
-                redefines online transactions with security and ease. A trusted
-                name in the Indian recharge industry, ensuring a seamless
-                experience with high success rates.
+                WalletHub is your friendly finance companion — send, receive,
+                and manage your money with ease. Enjoy instant transfers, smart
+                budgeting, and a playful yet secure experience that makes money
+                feel a little more fun.
               </Typography>
 
-              {/* Button */}
+              {/* Buttons */}
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: { xs: "center", md: "left" },
+                  flexWrap: "wrap",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  gap: 2,
                   mt: 4,
-                  gap:2,
                 }}
               >
-                <PrimaryButton
+                <Button
                   variant="contained"
                   size="large"
                   sx={{
-                    borderRadius: "12px",
+                    borderRadius: "50px",
                     fontWeight: "bold",
-                    color: "#fff",
-                    backgroundColor: " #8B4513",
-                    padding: " 24px",
-                    transition: "all 0.3s ease-in-out",
-                    "&:hover": { backgroundColor: "#5a2e0d" },
+                    px: 4,
+                    py: 1.5,
+                    background: "linear-gradient(90deg, #ff9a8b, #ff6f91)",
+                    "&:hover": {
+                      background: "linear-gradient(90deg, #ff6f91, #ff9a8b)",
+                    },
                   }}
                   onClick={() => navigate("/login")}
                 >
-                  Get Started <ArrowForwardIcon sx={{ ml: 1 }} />
-                </PrimaryButton>
-                <SecondaryButton
-                    variant="contained"
-                    size="large"
-                 
-                    sx={{ borderRadius: "12px",
-                      fontWeight: "bold",
-                      display:"flex",
-                      color: "#fff",
-                      backgroundColor: " #8B4513",
-                      padding: "24px",
-                      p:1,
-                      transition: "all 0.3s ease-in-out",
-                      "&:hover": { backgroundColor: "#5a2e0d" },}}
-                    href={
-                      env === "MoneyOddr"
-                        ? "https://drive.google.com/drive/folders/1d_c8RT9UXCqqOmQqpTEd71PAHGX1rEW-?usp=drive_link"
-                        : "https://drive.google.com/drive/folders/1d_c8RT9UXCqqOmQqpTEd71PAHGX1rEW-?usp=drive_link"
-                      
-                    }
-                    target="_blank"
-                    startIcon={ <AndroidIcon />}
-                  >
-                   
-                    Download App
-                  </SecondaryButton>
+                  GET STARTED <ArrowForwardIcon sx={{ ml: 1 }} />
+                </Button>
+
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    borderRadius: "50px",
+                    fontWeight: "bold",
+                    px: 4,
+                    py: 1.5,
+                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    "&:hover": {
+                      background: "linear-gradient(90deg, #00bfa6, #6a5acd)",
+                    },
+                  }}
+                  href="https://play.google.com/store/apps/details?id=wallethub"
+                  target="_blank"
+                  startIcon={<AndroidIcon />}
+                >
+                  Download App
+                </Button>
               </Box>
             </Box>
           </Grid>
 
-          {/* Illustration Section */}
-          {env !== "MoneyOddr" && (
-            <Grid
-              item
-              md={6}
-              xs={12}
-              sx={{ display: "flex", justifyContent: "center",}}
-            >
-              <Box
-                component="img"
-                src={lp_illustration}
-                alt="illustration"
-                sx={{
-                  width: { md: "100%", xs: "80%" },
-                  maxWidth: "620px",
-                  
-                  height: "420px",
-                  
-                  backgroundColor: env === "PaisaKart" ? "#fff" : "transparent",
-                  borderRadius: env === "PaisaKart" ? "50%" : "12px",
-                  padding: env === "PaisaKart" ? "1rem" : "0",
-                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.25)",
-                }}
-              />
-            </Grid>
-          )}
+          {/* Image Section */}
+          <Grid item xs={12} md={6}>
+            <Box
+              component="img"
+              src={lp_illustration}
+              alt="WalletHub illustration"
+              sx={{
+                width: "100%",
+                maxWidth: "500px",
+                display: "block",
+                mx: "auto",
+                borderRadius: "20px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+              }}
+            />
+          </Grid>
         </Grid>
       </Container>
     </Box>

@@ -66,7 +66,8 @@ const LandingPageTestimonials = () => {
             fontFamily: "'Poppins', sans-serif",
           }}
         >
-          See how our customers have transformed their payment experiences with DIGIVOUCHERS.
+          See how our customers have transformed their payment experiences with
+          DIGIVOUCHERS.
         </Typography>
 
         <Box sx={{ mt: 3 }}>
@@ -117,7 +118,11 @@ const LandingPageTestimonials = () => {
                   </Typography>
                   <Typography
                     variant="subtitle2"
-                    sx={{ fontWeight: "bold", fontSize: "0.95rem", color: "#222" }}
+                    sx={{
+                      fontWeight: "bold",
+                      fontSize: "0.95rem",
+                      color: "#222",
+                    }}
                   >
                     {testimonial.name}
                   </Typography>
