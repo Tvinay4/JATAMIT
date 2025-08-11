@@ -136,7 +136,7 @@ const LandingAboutUsPage = () => {
             className="d-flex justify-content-center"
             sx={{
               pt: 3.5,
-              background: " #fff8e1",
+              background: "linear-gradient(135deg, #c8f2ff 0%, #ffe3f4 100%)",
               borderRadius: "15px",
             }}
           >
@@ -148,6 +148,7 @@ const LandingAboutUsPage = () => {
                 style={{ borderRadius: "15px" }}
               />
             </Grid>
+
             <Grid
               md={6.5}
               container
@@ -155,7 +156,6 @@ const LandingAboutUsPage = () => {
                 mt: { md: 10, xs: 0 },
                 display: "flex",
                 justifyContent: "center",
-
                 flexWrap: "wrap",
                 gap: 3,
               }}
@@ -171,16 +171,16 @@ const LandingAboutUsPage = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  background: "rgba(255, 255, 255, 0.67)",
+                  background: "linear-gradient(135deg, #fff8e1, #ffe0b2)",
                   borderRadius: "12px",
                   padding: "20px",
-                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
+                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.25)",
                 }}
               >
                 <div>
                   <StorefrontIcon
                     sx={{
-                      color: "#ff5722", // New vibrant red-orange icon
+                      color: "#ff7043",
                       fontSize: "3.5rem",
                       mb: 2,
                     }}
@@ -191,8 +191,8 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "1.7rem",
                         fontWeight: "800",
-                        color: "#d32f2f",
-                      }} // Bold and strong red
+                        color: "#e64a19",
+                      }}
                     >
                       5000+
                     </span>
@@ -200,7 +200,7 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "16px",
                         marginTop: "8px",
-                        color: "#ff5722",
+                        color: "#ff7043",
                       }}
                     >
                       <span style={{ fontWeight: "800", fontSize: "18px" }}>
@@ -223,16 +223,16 @@ const LandingAboutUsPage = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  background: "rgba(255, 255, 255, 0.67)",
+                  background: "linear-gradient(135deg, #e8f5e9, #c8e6c9)",
                   borderRadius: "12px",
                   padding: "20px",
-                  boxShadow: "0 4px 15px rgba(103, 158, 86, 0.5)", // Light shadow for pop
+                  boxShadow: "0 4px 15px rgba(76, 175, 80, 0.25)",
                 }}
               >
                 <div>
                   <GroupAddIcon
                     sx={{
-                      color: "#388e3c", // Keeping the vibrant green but changing icon style
+                      color: "#43a047",
                       fontSize: "3.5rem",
                       mb: 2,
                     }}
@@ -243,8 +243,8 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "1.7rem",
                         fontWeight: "800",
-                        color: "#388e3c",
-                      }} // Bold green text
+                        color: "#2e7d32",
+                      }}
                     >
                       11 Lakh+
                     </span>
@@ -252,7 +252,7 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "16px",
                         marginTop: "8px",
-                        color: "#388e3c",
+                        color: "#43a047",
                       }}
                     >
                       <span style={{ fontWeight: "800", fontSize: "18px" }}>
@@ -275,16 +275,16 @@ const LandingAboutUsPage = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  background: "rgba(255, 255, 255, 0.67)",
+                  background: "linear-gradient(135deg, #e0f7fa, #b2ebf2)",
                   borderRadius: "12px",
                   padding: "20px",
-                  boxShadow: "0 4px 15px rgba(0, 188, 212, 0.5)", // Light shadow for pop
+                  boxShadow: "0 4px 15px rgba(0, 188, 212, 0.25)",
                 }}
               >
                 <div>
                   <ApartmentIcon
                     sx={{
-                      color: "#0097a7", // Vibrant blue icon to complement the background
+                      color: "#00acc1",
                       fontSize: "3.5rem",
                       mb: 2,
                     }}
@@ -295,8 +295,8 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "1.7rem",
                         fontWeight: "800",
-                        color: "#0097a7",
-                      }} // Bold blue
+                        color: "#00838f",
+                      }}
                     >
                       5000+
                     </span>
@@ -304,7 +304,7 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "16px",
                         marginTop: "8px",
-                        color: "#0097a7",
+                        color: "#00acc1",
                       }}
                     >
                       <span style={{ fontWeight: "800", fontSize: "18px" }}>
@@ -327,16 +327,16 @@ const LandingAboutUsPage = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  background: "rgba(255, 255, 255, 0.67)",
+                  background: "linear-gradient(135deg, #fff3e0, #ffe0b2)",
                   borderRadius: "12px",
                   padding: "20px",
-                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.5)", // Light shadow for pop
+                  boxShadow: "0 4px 15px rgba(255, 152, 0, 0.25)",
                 }}
               >
                 <div>
                   <StorefrontIcon
                     sx={{
-                      color: "#ff6f00", // Icon color adjusted
+                      color: "#fb8c00",
                       fontSize: "3.5rem",
                       mb: 2,
                     }}
@@ -347,8 +347,8 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "1.7rem",
                         fontWeight: "800",
-                        color: "#d32f2f",
-                      }} // Bold red emphasis
+                        color: "#e64a19",
+                      }}
                     >
                       5,00,000+
                     </span>
@@ -356,7 +356,7 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "16px",
                         marginTop: "8px",
-                        color: "#ff5722",
+                        color: "#fb8c00",
                       }}
                     >
                       <span style={{ fontWeight: "800", fontSize: "18px" }}>
@@ -375,7 +375,10 @@ const LandingAboutUsPage = () => {
         {envName !== "MoneyOddr" && (
           <div
             className="builSecurity_bg"
-            style={{ background: "#FAE5D3", padding: "60px 0" }}
+            style={{
+              background: "linear-gradient(135deg, #e8f5e9, #c8e6c9)",
+              padding: "60px 0",
+            }}
           >
             <Container maxWidth="lg">
               <Grid container spacing={3} alignItems="center">
@@ -387,7 +390,9 @@ const LandingAboutUsPage = () => {
                       mb: 4,
                       fontSize: "28px",
                       fontWeight: "bold",
-                      color: "#8B4513",
+                      background: "#000080",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     Transforming India’s Retail Landscape
@@ -395,8 +400,9 @@ const LandingAboutUsPage = () => {
 
                   <Card
                     sx={{
-                      boxShadow: "rgba(0, 0, 0, 0.2) 0px 4px 12px",
-                      background: "rgb(240, 188, 148)",
+                      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.15)",
+                      background:
+                        "linear-gradient(135deg, #ffe3f4, rgb(255, 230, 255))",
                       width: { lg: "95%", md: "70%", sm: "85%", xs: "95%" },
                       p: { lg: 4, md: 4, sm: 3, xs: 3 },
                       borderRadius: "12px",
@@ -408,13 +414,13 @@ const LandingAboutUsPage = () => {
                       style={{
                         fontSize: "16px",
                         lineHeight: "1.6",
-                        color: "#4A2E18",
+                        color: "#ff6f91",
                       }}
                     >
                       India's retail ecosystem is largely dominated by kirana
                       stores, mom-and-pop shops, and local brick-and-mortar
-                      businesses, making up nearly
-                      <strong> 95% of the market</strong>. These businesses face
+                      businesses, making up nearly{" "}
+                      <strong>95% of the market</strong>. These businesses face
                       challenges in accessing modern financial and digital
                       solutions.
                       <br />
@@ -453,6 +459,7 @@ const LandingAboutUsPage = () => {
                       maxWidth: "100%",
                       height: "90%",
                       borderRadius: "12px",
+                      boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
                     }}
                   />
                 </Grid>
@@ -582,14 +589,15 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: " #FEDBBD",
-                            borderRadius: "16px",
-                            boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
+                            background:
+                              "linear-gradient(135deg, #c8f2ff, #ffe3f4)",
+                            borderRadius: "20px",
+                            boxShadow: "0px 8px 24px rgba(0,0,0,0.08)",
                             transition:
                               "transform 0.3s ease, box-shadow 0.3s ease",
                             "&:hover": {
-                              transform: "scale(1.05)",
-                              boxShadow: "0px 6px 25px rgba(0, 128, 0, 0.3)",
+                              transform: "translateY(-8px)",
+                              boxShadow: "0px 12px 32px rgba(0,0,0,0.12)",
                             },
                           }}
                         >
@@ -605,15 +613,16 @@ const LandingAboutUsPage = () => {
                               {/* Innovation Icon aligned to the right */}
                               <EmojiObjectsIcon
                                 sx={{
-                                  fontSize: "45px",
-                                  color: "#8B4513",
-                                  marginBottom: "10px",
+                                  fontSize: "50px",
+                                  color: "#ff6f91",
+                                  mb: 1,
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#8B4513",
+                                  background:
+                                    "linear-gradient(90deg, #ff6f91, #6a5acd)",
                                   fontWeight: "bold",
                                   textAlign: "right",
                                 }}
@@ -623,8 +632,9 @@ const LandingAboutUsPage = () => {
                               <Typography
                                 variant="body2"
                                 sx={{
-                                  textAlign: "right",
-                                  fontSize: "20px",
+                                  fontSize: "18px",
+                                  mt: 1,
+                                  color: "#333",
                                 }}
                               >
                                 Cutting-edge technology and continuous
@@ -641,14 +651,15 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: " #FEDBBD",
-                            borderRadius: "16px",
-                            boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
+                            background:
+                              "linear-gradient(135deg, #c8f2ff, #ffe3f4)",
+                            borderRadius: "20px",
+                            boxShadow: "0px 8px 24px rgba(0,0,0,0.08)",
                             transition:
                               "transform 0.3s ease, box-shadow 0.3s ease",
                             "&:hover": {
-                              transform: "scale(1.05)",
-                              boxShadow: "0px 6px 25px rgba(0, 128, 0, 0.3)",
+                              transform: "translateY(-8px)",
+                              boxShadow: "0px 12px 32px rgba(0,0,0,0.12)",
                             },
                           }}
                         >
@@ -663,17 +674,19 @@ const LandingAboutUsPage = () => {
                             >
                               <SecurityIcon
                                 sx={{
-                                  fontSize: "45px",
-                                  color: "#8B4513",
-                                  marginBottom: "10px",
+                                  fontSize: "50px",
+                                  color: "#00bfa6",
+                                  mb: 1,
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#8B4513",
                                   fontWeight: "bold",
-                                  textAlign: { lg: "right", sm: "center" },
+                                  background:
+                                    "linear-gradient(90deg, #00bfa6, #6a5acd)",
+                                  WebkitBackgroundClip: "text",
+                                  WebkitTextFillColor: "transparent",
                                 }}
                               >
                                 Security
@@ -681,8 +694,9 @@ const LandingAboutUsPage = () => {
                               <Typography
                                 variant="body2"
                                 sx={{
-                                  fontSize: "20px",
-                                  textAlign: { lg: "right", sm: "center" },
+                                  fontSize: "18px",
+                                  mt: 1,
+                                  color: "#333",
                                 }}
                               >
                                 Robust security measures to protect your
@@ -748,14 +762,15 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: " #FEDBBD",
-                            borderRadius: "16px",
-                            boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
+                            background:
+                              "linear-gradient(135deg, #c8f2ff, #ffe3f4)",
+                            borderRadius: "20px",
+                            boxShadow: "0px 8px 24px rgba(0,0,0,0.08)",
                             transition:
                               "transform 0.3s ease, box-shadow 0.3s ease",
                             "&:hover": {
-                              transform: "scale(1.05)",
-                              boxShadow: "0px 6px 25px rgba(0, 128, 0, 0.3)",
+                              transform: "translateY(-8px)",
+                              boxShadow: "0px 12px 32px rgba(0,0,0,0.12)",
                             },
                           }}
                         >
@@ -770,17 +785,19 @@ const LandingAboutUsPage = () => {
                             >
                               <IntegrationInstructionsIcon
                                 sx={{
-                                  fontSize: "45px",
-                                  color: "#8B4513",
-                                  marginBottom: "10px",
+                                  fontSize: "50px",
+                                  color: "#6a5acd",
+                                  mb: 1,
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#8B4513",
                                   fontWeight: "bold",
-                                  textAlign: { lg: "left", sm: "center" },
+                                  background:
+                                    "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                                  WebkitBackgroundClip: "text",
+                                  WebkitTextFillColor: "transparent",
                                 }}
                               >
                                 Integration
@@ -788,8 +805,9 @@ const LandingAboutUsPage = () => {
                               <Typography
                                 variant="body2"
                                 sx={{
-                                  fontSize: "20px",
-                                  textAlign: { lg: "left", sm: "center" },
+                                  fontSize: "18px",
+                                  mt: 1,
+                                  color: "#333",
                                 }}
                               >
                                 Smoothly integrate with diverse platforms,
@@ -806,14 +824,15 @@ const LandingAboutUsPage = () => {
                             height: "270px",
                             margin: "10px",
                             textAlign: "center",
-                            backgroundColor: " #FEDBBD",
-                            borderRadius: "16px",
-                            boxShadow: "0px 4px 20px rgba(0, 128, 0, 0.2)",
+                            background:
+                              "linear-gradient(135deg, #c8f2ff, #ffe3f4)",
+                            borderRadius: "20px",
+                            boxShadow: "0px 8px 24px rgba(0,0,0,0.08)",
                             transition:
                               "transform 0.3s ease, box-shadow 0.3s ease",
                             "&:hover": {
-                              transform: "scale(1.05)",
-                              boxShadow: "0px 6px 25px rgba(0, 128, 0, 0.3)",
+                              transform: "translateY(-8px)",
+                              boxShadow: "0px 12px 32px rgba(0,0,0,0.12)",
                             },
                           }}
                         >
@@ -828,17 +847,19 @@ const LandingAboutUsPage = () => {
                             >
                               <ShutterSpeedIcon
                                 sx={{
-                                  fontSize: "45px",
-                                  color: "#8B4513",
-                                  marginBottom: "10px",
+                                  fontSize: "50px",
+                                  color: "#ff6f91",
+                                  mb: 1,
                                 }}
                               />
                               <Typography
                                 variant="h4"
                                 sx={{
-                                  color: "#8B4513",
                                   fontWeight: "bold",
-                                  textAlign: { lg: "left", sm: "center" },
+                                  background:
+                                    "linear-gradient(90deg, #ff6f91, #00bfa6)",
+                                  WebkitBackgroundClip: "text",
+                                  WebkitTextFillColor: "transparent",
                                 }}
                               >
                                 Speed
@@ -866,227 +887,231 @@ const LandingAboutUsPage = () => {
             {/* mission vission and values section */}
 
             <Grid container md={12} xs={12}>
-  {/* 01 */}
-  <Grid
-    sx={{
-      mt: 12,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: "column",
-    }}
-    md={12}
-    className="bottom2top"
-  >
-    <Box
-      component="div"
-      sx={{
-        display: "flex",
-        flexDirection: {
-          lg: "row",
-          md: "row",
-          sm: "column",
-          xs: "column",
-        },
-        width: "80%",
-      }}
-    >
-      <Box
-        component="span"
-        sx={{
-          background: "linear-gradient(135deg, #FFBC87, #8B4513)", // Updated gradient colors
-          color: "#fff",
-          width: "70px",
-          height: "70px",
-          fontSize: "2.5rem",
-          borderRadius: "25%",
-          pt: 1,
-          fontWeight: "bold",
-          mr: 2,
-          transition: "transform 0.3s",
-          "&:hover": {
-            transform: "scale(1.1)",
-          },
-        }}
-      >
-        01
-      </Box>
-      <span
-        className="landingPageHeadings"
-        style={{
-          letterSpacing: "0.1rem",
-          color: "#333",
-          fontSize: "1.8rem", // Smaller, concise header
-        }}
-      >
-        Financial Accessibility
-      </span>
-    </Box>
+              {/* 01 */}
+              <Grid
+                sx={{
+                  mt: 12,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+                md={12}
+                className="bottom2top"
+              >
+                <Box
+                  component="div"
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      lg: "row",
+                      md: "row",
+                      sm: "column",
+                      xs: "column",
+                    },
+                    width: "80%",
+                  }}
+                >
+                  <Box
+                    component="span"
+                    sx={{
+                      background: "linear-gradient(135deg, #FFBC87, #8B4513)", // Updated gradient colors
+                      color: "#fff",
+                      width: "70px",
+                      height: "70px",
+                      fontSize: "2.5rem",
+                      borderRadius: "25%",
+                      pt: 1,
+                      fontWeight: "bold",
+                      mr: 2,
+                      transition: "transform 0.3s",
+                      "&:hover": {
+                        transform: "scale(1.1)",
+                      },
+                    }}
+                  >
+                    01
+                  </Box>
+                  <span
+                    className="landingPageHeadings"
+                    style={{
+                      letterSpacing: "0.1rem",
+                      color: "#333",
+                      fontSize: "1.8rem", // Smaller, concise header
+                    }}
+                  >
+                    Financial Accessibility
+                  </span>
+                </Box>
 
-    <Box
-      className="landing-bg_para"
-      component="div"
-      sx={{
-        textAlign: "justify",
-        width: "80%",
-        color: "#555",
-        fontSize: "1.3rem", // Larger content font size
-        lineHeight: "1.8",
-        mt: 2,
-      }}
-    >
-      We aim to make banking services accessible and bring them closer to communities, simplifying financial inclusion.
-    </Box>
-  </Grid>
+                <Box
+                  className="landing-bg_para"
+                  component="div"
+                  sx={{
+                    textAlign: "justify",
+                    width: "80%",
+                    color: "#555",
+                    fontSize: "1.3rem", // Larger content font size
+                    lineHeight: "1.8",
+                    mt: 2,
+                  }}
+                >
+                  We aim to make banking services accessible and bring them
+                  closer to communities, simplifying financial inclusion.
+                </Box>
+              </Grid>
 
-  {/* 02 */}
-  <Grid
-    md={12}
-    className="bottom2top"
-    sx={{
-      mt: 6,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: "column",
-    }}
-  >
-    <Box
-      component="div"
-      sx={{
-        display: "flex",
-        flexDirection: {
-          lg: "row",
-          md: "row",
-          sm: "column",
-          xs: "column",
-        },
-        width: "80%",
-      }}
-    >
-      <Box
-        component="span"
-        sx={{
-          background: "linear-gradient(135deg,rgb(183, 207, 99),rgb(129, 156, 67))", // Orange gradient for energy
-          color: "#fff",
-          width: "70px",
-          height: "70px",
-          fontSize: "2.5rem",
-          borderRadius: "25%",
-          pt: 1,
-          fontWeight: "bold",
-          mr: 2,
-          transition: "transform 0.3s",
-          "&:hover": {
-            transform: "scale(1.1)",
-          },
-        }}
-      >
-        02
-      </Box>
-      <span
-        className="landingPageHeadings"
-        style={{
-          letterSpacing: "0.1rem",
-          color: "#333",
-          fontSize: "1.8rem", // Smaller header for consistency
-        }}
-      >
-        Empowering Progress
-      </span>
-    </Box>
+              {/* 02 */}
+              <Grid
+                md={12}
+                className="bottom2top"
+                sx={{
+                  mt: 6,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Box
+                  component="div"
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      lg: "row",
+                      md: "row",
+                      sm: "column",
+                      xs: "column",
+                    },
+                    width: "80%",
+                  }}
+                >
+                  <Box
+                    component="span"
+                    sx={{
+                      background:
+                        "linear-gradient(135deg,rgb(183, 207, 99),rgb(129, 156, 67))", // Orange gradient for energy
+                      color: "#fff",
+                      width: "70px",
+                      height: "70px",
+                      fontSize: "2.5rem",
+                      borderRadius: "25%",
+                      pt: 1,
+                      fontWeight: "bold",
+                      mr: 2,
+                      transition: "transform 0.3s",
+                      "&:hover": {
+                        transform: "scale(1.1)",
+                      },
+                    }}
+                  >
+                    02
+                  </Box>
+                  <span
+                    className="landingPageHeadings"
+                    style={{
+                      letterSpacing: "0.1rem",
+                      color: "#333",
+                      fontSize: "1.8rem", // Smaller header for consistency
+                    }}
+                  >
+                    Empowering Progress
+                  </span>
+                </Box>
 
-    <Box
-      className="landing-bg_para"
-      component="div"
-      sx={{
-        textAlign: "justify",
-        width: "80%",
-        color: "#555",
-        fontSize: "1.3rem", // Larger content font size
-        lineHeight: "1.8",
-        mt: 2,
-      }}
-    >
-      Our mission is to enable businesses by providing seamless access to digital financial tools, fostering growth.
-    </Box>
-  </Grid>
+                <Box
+                  className="landing-bg_para"
+                  component="div"
+                  sx={{
+                    textAlign: "justify",
+                    width: "80%",
+                    color: "#555",
+                    fontSize: "1.3rem", // Larger content font size
+                    lineHeight: "1.8",
+                    mt: 2,
+                  }}
+                >
+                  Our mission is to enable businesses by providing seamless
+                  access to digital financial tools, fostering growth.
+                </Box>
+              </Grid>
 
-  {/* 03 */}
-  <Grid
-    sx={{
-      mt: 6,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: "column",
-    }}
-    md={12}
-    className="bottom2top"
-  >
-    <Box
-      component="div"
-      sx={{
-        display: "flex",
-        flexDirection: {
-          lg: "row",
-          md: "row",
-          sm: "column",
-          xs: "column",
-        },
-        width: "80%",
-      }}
-    >
-      <Box
-        component="span"
-        sx={{
-          background: "linear-gradient(135deg,rgb(86, 161, 130),rgb(110, 188, 155))", // Blue gradient for professionalism
-          color: "#fff",
-          width: "70px",
-          height: "70px",
-          fontSize: "2.5rem",
-          borderRadius: "25%",
-          pt: 1,
-          fontWeight: "bold",
-          mr: 2,
-          transition: "transform 0.3s",
-          "&:hover": {
-            transform: "scale(1.1)",
-          },
-        }}
-      >
-        03
-      </Box>
-      <span
-        className="landingPageHeadings"
-        style={{
-          letterSpacing: "0.1rem",
-          color: "#333",
-          fontSize: "1.8rem", // Smaller header for consistency
-        }}
-      >
-        Building Trust
-      </span>
-    </Box>
+              {/* 03 */}
+              <Grid
+                sx={{
+                  mt: 6,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+                md={12}
+                className="bottom2top"
+              >
+                <Box
+                  component="div"
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      lg: "row",
+                      md: "row",
+                      sm: "column",
+                      xs: "column",
+                    },
+                    width: "80%",
+                  }}
+                >
+                  <Box
+                    component="span"
+                    sx={{
+                      background:
+                        "linear-gradient(135deg,rgb(86, 161, 130),rgb(110, 188, 155))", // Blue gradient for professionalism
+                      color: "#fff",
+                      width: "70px",
+                      height: "70px",
+                      fontSize: "2.5rem",
+                      borderRadius: "25%",
+                      pt: 1,
+                      fontWeight: "bold",
+                      mr: 2,
+                      transition: "transform 0.3s",
+                      "&:hover": {
+                        transform: "scale(1.1)",
+                      },
+                    }}
+                  >
+                    03
+                  </Box>
+                  <span
+                    className="landingPageHeadings"
+                    style={{
+                      letterSpacing: "0.1rem",
+                      color: "#333",
+                      fontSize: "1.8rem", // Smaller header for consistency
+                    }}
+                  >
+                    Building Trust
+                  </span>
+                </Box>
 
-    <Box
-      className="landing-bg_para"
-      component="div"
-      sx={{
-        textAlign: "justify",
-        width: "80%",
-        color: "#555",
-        fontSize: "1.3rem", // Larger content font size
-        lineHeight: "1.8",
-        mt: 2,
-      }}
-    >
-      We focus on providing transparent and reliable financial solutions that ensure quality and consistency at every touchpoint.
-    </Box>
-  </Grid>
-</Grid>
-
-
+                <Box
+                  className="landing-bg_para"
+                  component="div"
+                  sx={{
+                    textAlign: "justify",
+                    width: "80%",
+                    color: "#555",
+                    fontSize: "1.3rem", // Larger content font size
+                    lineHeight: "1.8",
+                    mt: 2,
+                  }}
+                >
+                  We focus on providing transparent and reliable financial
+                  solutions that ensure quality and consistency at every
+                  touchpoint.
+                </Box>
+              </Grid>
+            </Grid>
           </Container>
         </div>
       </>

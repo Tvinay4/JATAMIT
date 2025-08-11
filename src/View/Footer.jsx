@@ -49,211 +49,146 @@ const handleClickScroll = (id) => {
 };
 const Footer = () => {
   const navigate = useNavigate();
-  return (
-    <Box component="div" className="footer">
-      <Container maxWidth="lg">
-        <Grid container xs={12}>
-          <Grid lg={5} md={5} sm={12} xs={12}>
-            <Box
-              component="div"
-              sx={{
-                width: {
-                  lg: "80%",
-                  md: "80%",
-                  sm: "90%",
-                  xs: "90%",
-                },
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                }}
-              >
-                <img
-                  style={{
-                    borderRadius: "4px",
-                    padding: "2px",
-                    background:
-                      process.env.REACT_APP_TITLE === "DIGIVOUCHERS"
-                        ? ""
-                        : "#ffffff",
-                  }}
-                  src={loginPage1}
-                  alt="logo"
-                  width="230px"
-                />
-              </div>
-              <div className="address-style" style={{ marginTop: "15px" }}>
-                {getFirmAddress()}
-              </div>
-              {process.env.REACT_APP_TITLE !== "DIGIVOUCHERS" && (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    marginTop: "20px",
-                  }}
-                >
-                  <img
-                    src={facebook}
-                    alt="facebook"
-                    width="40px"
-                    height="40px"
-                    className="hover-zoom mr-3"
-                    style={{ marginRight: "3px" }}
-                  />
-                  <img
-                    src={linkdin}
-                    alt="linkdin"
-                    width="40px"
-                    height="40px"
-                    className="hover-zoom mr-3"
-                    style={{ marginRight: "3px" }}
-                  />
-                  <img
-                    src={twitter}
-                    alt="twitter"
-                    width="40px"
-                    height="40px"
-                    className="hover-zoom mr-3"
-                    style={{ marginRight: "3px" }}
-                  />
-                  <img
-                    src={insta}
-                    alt="instagram"
-                    width="40px"
-                    height="40px"
-                    className="hover-zoom mr-3"
-                    style={{ marginRight: "3px" }}
-                  />
 
-                  {/* <span className="icon-bg">
-                  <FacebookIcon />
-                </span>
-                <span className="icon-bg">
-                  <LinkedInIcon />
-                </span>
-                <span className="icon-bg">
-                  <InstagramIcon />
-                </span>
-                <span className="icon-bg">
-                  <TwitterIcon />
-                </span> */}
-                </div>
-              )}
+  return (
+    <Box
+      component="footer"
+      sx={{
+        background: "linear-gradient(135deg, #c8f2ff 0%, #ffe3f4 100%)",
+        color: "#000",
+        pt: 6,
+        pb: 3,
+        mt: 6,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={5}>
+          {/* Logo & Address */}
+          <Grid item lg={5} md={5} sm={12} xs={12}>
+            <Box>
+              <img
+                src={loginPage1}
+                alt="logo"
+                width="200"
+                style={{
+                  borderRadius: "6px",
+                  padding: "6px",
+                  background: "#ffffff22",
+                  backdropFilter: "blur(10px)",
+                }}
+              />
+              <Typography sx={{ mt: 2, fontSize: "14px" }}>
+                {getFirmAddress()}
+              </Typography>
+
+              {/* Social Icons */}
+              <Box sx={{ display: "flex", gap: 2, mt: 3 }}>
+                {[facebook, linkdin, twitter, insta].map((icon, i) => (
+                  <img
+                    key={i}
+                    src={icon}
+                    alt="social"
+                    width="38"
+                    height="38"
+                    style={{
+                      borderRadius: "50%",
+                      padding: "6px",
+                      background: "#ffffff22",
+                      transition: "all 0.3s ease",
+                      cursor: "pointer",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.background = "#ffffff44")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.background = "#ffffff22")
+                    }
+                  />
+                ))}
+              </Box>
             </Box>
           </Grid>
-          <Grid container lg={7} md={7}>
-            <Grid
-              lg={4}
-              md={4}
-              sm={4}
-              xs={12}
-              sx={{
-                pl: { lg: 4, md: 4, sm: 1, xs: 1 },
-                mt: { lg: 0, md: 0, sm: 5, xs: 5 },
-              }}
-            >
-              <div className="footer-head-text">Company</div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Home
-              </div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  navigate("/about-us");
-                }}
-              >
-                About US
-              </div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  navigate("/contact-us");
-                }}
-              >
-                Contact Us
-              </div>
-            </Grid>
-            <Grid
-              lg={4}
-              md={4}
-              sm={4}
-              xs={12}
-              sx={{
-                pl: { lg: 4, md: 4, sm: 1, xs: 1 },
-                mt: { lg: 0, md: 0, sm: 5, xs: 5 },
-              }}
-            >
-              <div className="footer-head-text">Company</div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  window.open("/terms-conditions", "_blank");
-                }}
-              >
-                Terms & Condition
-              </div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  window.open("/privacy-policy", "_blank");
-                }}
-              >
-                Privacy Policy
-              </div>
-              <div
-                className="text-style"
-                onClick={() => {
-                  window.open("/refund-policy", "_blank");
-                }}
-              >
-                Refund Policy
-              </div>
-            </Grid>
-            <Grid
-              lg={4}
-              md={4}
-              sm={4}
-              xs={12}
-              sx={{
-                pl: { lg: 4, md: 4, sm: 1, xs: 1 },
-                mt: { lg: 0, md: 0, sm: 5, xs: 5 },
-              }}
-            >
-              <div className="footer-head-text">Contact Us</div>
-              <div className="text-style">{getFirmContact()}</div>
-              <div className="text-style text-lowercase">{getFirmEmail()}</div>
-            </Grid>
-            <Grid md={12} sx={{ textAlign: "center", px: 4, mt: 1 }}>
-              <Typography sx={{ color: "#000", fontSize: "14px", mt: 1 }}>
-                <span className="mx-1">© Copyright 2025</span>
-                {process.env.REACT_APP_TITLE === "DIGIVOUCHERS"
-                  ? "DIGIVOUCHERS"
-                  : process.env.REACT_APP_TITLE === "PaisaKart"
-                  ? "PEHEKART WALLET (OPC)"
-                  : process.env.REACT_APP_TITLE}
-                <span className="mx-1">
-                  INDIA PRIVATE LIMITED. All Rights Reserve
-                </span>
+
+          {/* Navigation Links */}
+          <Grid item lg={7} md={7} sm={12} xs={12} container spacing={3}>
+            <Grid item xs={12} sm={4}>
+              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+                Company
               </Typography>
-              <Typography sx={{ color: "#000", fontSize: "14px", mt: 0.5 }}>
-                Disclaimer:  Any dispute arising under these terms and
-                conditions shall be subject to the jurisdiction of the courts of
-                Delhi.
+              {[
+                { text: "Home", path: "/" },
+                { text: "About Us", path: "/about-us" },
+                { text: "Contact Us", path: "/contact-us" },
+              ].map((link, idx) => (
+                <Typography
+                  key={idx}
+                  sx={{
+                    cursor: "pointer",
+                    mb: 1,
+                    "&:hover": { color: "#ff6f91" },
+                  }}
+                  onClick={() => navigate(link.path)}
+                >
+                  {link.text}
+                </Typography>
+              ))}
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+                Policies
+              </Typography>
+              {[
+                { text: "Terms & Conditions", url: "/terms-conditions" },
+                { text: "Privacy Policy", url: "/privacy-policy" },
+                { text: "Refund Policy", url: "/refund-policy" },
+              ].map((link, idx) => (
+                <Typography
+                  key={idx}
+                  sx={{
+                    cursor: "pointer",
+                    mb: 1,
+                    "&:hover": { color: "#ff6f91" },
+                  }}
+                  onClick={() => window.open(link.url, "_blank")}
+                >
+                  {link.text}
+                </Typography>
+              ))}
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+                Contact Us
+              </Typography>
+              <Typography sx={{ mb: 1 }}>{getFirmContact()}</Typography>
+              <Typography sx={{ textTransform: "lowercase" }}>
+                {getFirmEmail()}
               </Typography>
             </Grid>
           </Grid>
         </Grid>
+
+        {/* Bottom Note */}
+        <Box
+          sx={{
+            textAlign: "center",
+            mt: 4,
+            borderTop: "1px solid #ffffff33",
+            pt: 2,
+          }}
+        >
+          <Typography sx={{ fontSize: "14px", opacity: 0.8 }}>
+            © Copyright 2025 {process.env.REACT_APP_TITLE} INDIA PRIVATE
+            LIMITED. All Rights Reserved.
+          </Typography>
+          <Typography sx={{ fontSize: "13px", opacity: 0.6, mt: 0.5 }}>
+            Disclaimer: Any dispute arising under these terms and conditions
+            shall be subject to the jurisdiction of the courts of Delhi.
+          </Typography>
+        </Box>
       </Container>
     </Box>
   );
 };
-
 export default Footer;

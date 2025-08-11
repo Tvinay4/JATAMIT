@@ -13,17 +13,21 @@ import { getEnv } from "../theme/setThemeColor";
 import useCommonContext from "../store/CommonContext";
 import { loginPage1 } from "../iconsImports";
 import MenuIcon from "@mui/icons-material/Menu";
-// Change color on scroll
-const theme2 = {
-  background: "rgba(255, 255, 255, 0)",
-  boxShadow: "none !Important",
-  backdropFilter: "blur(0px)",
+
+const gradientBg = "linear-gradient(90deg, #c8f2ff 0%, #ffe3f4 100%)";
+const navTextColor = "#6a5acd";
+const buttonGradient = "linear-gradient(90deg, #ff6f91 0%, #ff9a8b 100%)";
+
+const themeScrolled = {
+  background: "#fff",
+  boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
   color: "#000",
 };
 
-const theme = {
-  background: "#fff",
-  boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+const themeTop = {
+  background: "transparent",
+  boxShadow: "none",
+  backdropFilter: "blur(0px)",
   color: "#000",
 };
 
@@ -36,7 +40,7 @@ function ElevationScroll(props) {
   });
 
   return React.cloneElement(children, {
-    style: trigger ? theme : theme2,
+    style: trigger ? themeScrolled : themeTop,
     elevation: trigger ? 4 : 0,
   });
 }
@@ -72,30 +76,14 @@ const pagesSm = [
   { navItems: "LOGIN/SIGN UP", to: "/login", sName: "" },
 ];
 
-if (process.env.REACT_APP_TITLE === "MoneyOddr") {
-  pagesLg.unshift({
-    navItems: "HOME",
-    to: "/",
-    id: "landing-intro",
-    sName: "homeSec",
-  });
-}
-
-// Scroll function for MoneyOddr
-const handleClickScroll = (id) => {
-  // Your scrolling logic here
-};
-
 export default function Navbar(props) {
   const { section } = useCommonContext();
-  const [env, setEnv] = React.useState(getEnv());
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -104,15 +92,19 @@ export default function Navbar(props) {
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll {...props}>
-        <AppBar sx={{ width: "100%" }}>
+        <AppBar
+          sx={{
+            background: gradientBg,
+            transition: "all 0.3s ease",
+          }}
+        >
           <Toolbar
             sx={{
-              justifyContent: "space-between", // Adjusted to space-between for logo and button positioning
-              // background: "linear-gradient(to right, #7fb4f9, #ee5f5f)",
-              background:"#fff",
+              justifyContent: "space-between",
+              minHeight: "70px",
             }}
           >
-            {/* Logo on the left */}
+            {/* Logo */}
             <Typography
               variant="h6"
               noWrap
@@ -120,150 +112,120 @@ export default function Navbar(props) {
               href="/"
               sx={{
                 display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: navTextColor,
                 textDecoration: "none",
                 transition: "transform .2s",
-                "&:hover": {
-                  transform: "scale(1.1)",
-                },
+                "&:hover": { transform: "scale(1.1)" },
               }}
             >
-              <LogoComponent />
+              <LogoComponent width="70px"/>
             </Typography>
 
+            {/* Mobile Logo */}
             <Typography
               variant="h5"
               noWrap
               component="a"
-              href=""
+              href="/"
               sx={{
                 display: { xs: "flex", md: "none" },
-                fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
-                justifyContent: "left",
+                color: navTextColor,
                 textDecoration: "none",
-                transition: "transform .2s",
-                "&:hover": {
-                  transform: "scale(1.1)",
-                },
               }}
             >
-              <img src={loginPage1} width="140px" alt="logo" />
+              <img src={loginPage1} width="70px" alt="logo" />
             </Typography>
 
-            {/* Center Menu Items */}
+            {/* Menu Items */}
             <Box
               sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
                 justifyContent: "center",
-                alignItems: "center",
-                gap: 4,
+                gap: 3,
               }}
             >
               {pagesLg.map((item) => (
                 <MenuItem
                   key={item.to}
-                  onClick={() => {
-                    if (getEnv() === "MoneyOddr") {
-                      handleClickScroll(item.id);
-                    } else {
-                      navigate(item.to);
-                    }
+                  onClick={() => navigate(item.to)}
+                  sx={{
+                    color: navTextColor,
+                    fontWeight: "500",
+                    position: "relative",
+                    "&:hover": {
+                      color: "#ff6f91",
+                    },
+                    "&::after": {
+                      content: '""',
+                      position: "absolute",
+                      left: 0,
+                      bottom: 0,
+                      width: "0%",
+                      height: "2px",
+                      backgroundColor: "#ff6f91",
+                      transition: "width 0.3s",
+                    },
+                    "&:hover::after": {
+                      width: "100%",
+                    },
                   }}
                 >
                   <Link className="navLinks">{item.navItems}</Link>
                 </MenuItem>
               ))}
-              {/* {process.env.REACT_APP_TITLE !== "MoneyOddr" && (
-                <Box
-                  component="div"
-                  sx={{
-                    textAlign: "center",
-                    mt: 1,
-                    mb: 3,
-                  }}
-                >
-                  <IconButton
-                    aria-label="delete"
-                    sx={{ mt: 1, marginRight: "0.5rem", color: "#fff" }}
-                  >
-                    <FacebookRoundedIcon />
-                  </IconButton>
-                  <IconButton
-                    aria-label="delete"
-                    sx={{ mt: 1, marginRight: "0.5rem", color: "#fff" }}
-                  >
-                    <InstagramIcon />
-                  </IconButton>
-                  <IconButton
-                    aria-label="delete"
-                    sx={{ mt: 1, marginRight: "0.5rem", color: "#fff" }}
-                  >
-                    <TwitterIcon />
-                  </IconButton>
-                </Box>
-              )} */}
             </Box>
 
-            {/* Login Button on the right */}
-            <Box
-              sx={{
-                display: { xs: "none", md: "flex" },
-              }}
-            >
-              <Button className="button" onClick={() => navigate("/login")}>
+            {/* Desktop Button */}
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              <Button
+                onClick={() => navigate("/login")}
+                sx={{
+                  background: buttonGradient,
+                  color: "#fff",
+                  fontWeight: "600",
+                  px: 3,
+                  borderRadius: "25px",
+                  "&:hover": {
+                    background: "linear-gradient(90deg, #ff9a8b, #ff6f91)",
+                  },
+                }}
+              >
                 {loginPage.navItems}
               </Button>
             </Box>
 
             {/* Mobile Menu Icon */}
-            <Box
-              sx={{
-                display: { xs: "flex", md: "none" },
-                justifyContent: "flex-end",
-              }}
-            >
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton onClick={handleOpenNavMenu} color="inherit">
                 <MenuIcon />
               </IconButton>
               <Menu
-                id="menu-appbar"
                 anchorEl={anchorElNav}
-                anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-                keepMounted
-                transformOrigin={{ vertical: "top", horizontal: "left" }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
               >
                 {pagesSm.map((item) => (
                   <MenuItem
                     key={item.to}
-                    onClick={handleCloseNavMenu}
+                    onClick={() => {
+                      handleCloseNavMenu();
+                      navigate(item.to);
+                    }}
                     sx={{
-                      background: "rgb(155, 106, 49)",
-                      color: "#fff",
+                      background: gradientBg,
+                      color: navTextColor,
                       "&:hover": {
-                        background: "rgb(231, 162, 102)",
+                        background: buttonGradient,
+                        color: "#fff",
                       },
                     }}
                   >
-                    <Link to={item.to} className="navLinks">
-                      {item.navItems}
-                    </Link>
+                    {item.navItems}
                   </MenuItem>
                 ))}
               </Menu>

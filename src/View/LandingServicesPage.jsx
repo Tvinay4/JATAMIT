@@ -1,5 +1,23 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Button,
+  Card,
+  CardContent,
+} from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import {
+  StayCurrentPortrait as BillIcon,
+  SatelliteAlt as DthIcon,
+  Aod as UtilityIcon,
+  Train as TravelIcon,
+  QrCode as QrIcon,
+  Smartphone as MobileIcon,
+  Api as ApiIcon,
+} from "@mui/icons-material";
 import {
   aadharAtm_img,
   api,
@@ -8,683 +26,304 @@ import {
   mt,
   qrCode_img,
 } from "../iconsImports";
-import { primaryColor, getEnv } from "../theme/setThemeColor";
-import StayCurrentPortraitIcon from "@mui/icons-material/StayCurrentPortrait";
-import SatelliteAltIcon from "@mui/icons-material/SatelliteAlt";
-import AodIcon from "@mui/icons-material/Aod";
-import TrainIcon from "@mui/icons-material/Train";
-import { useNavigate } from "react-router-dom";
-
-const LandingServicesPage = () => {
-  const envName = getEnv();
+const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  // }, []);
+
+  const services = [
+    {
+      icon: <BillIcon sx={{ fontSize: "2.5rem" }} />,
+      title: "Bill Payments & Recharges",
+      description:
+        "Earn more by doing DTH/Mobile recharges, Utility bill payments for your customers easily and quickly across 150+ companies.",
+    },
+    {
+      icon: <DthIcon sx={{ fontSize: "2.5rem" }} />,
+      title: "DTH Recharge",
+      description: `Choose from a variety of operators like Airtel DTH, Dish TV, Videocon D2h with ${
+        envName === "WALLETHUB" ? "WALLETHUB" : "DIGIVOUCHERS"
+      } merchant app.`,
+    },
+    {
+      icon: <UtilityIcon sx={{ fontSize: "2.5rem" }} />,
+      title: "Utility Recharge",
+      description:
+        "No more long queues. Easily pay Electricity, Water, and Gas bills for your customers through our platform.",
+    },
+  ];
+
+  const featuredServices = [
+    {
+      title:
+        envName === "WALLETHUB" ? "Travel Services" : "IRCTC Ticket Booking",
+      description:
+        envName === "WALLETHUB"
+          ? "WALLETHUB offers comprehensive travel options including flights, hotels, trains, buses and vacation packages in one convenient platform."
+          : `${envName} is authorized by IRCTC to book train tickets. Book tickets for any train, class, or destination quickly and reliably.`,
+      image: { src:irctc_img, alt: "IRCTC Ticket Booking" },
+      icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title: "My QR/UPI",
+      description: `${
+        envName === "WALLETHUB" ? "WALLETHUB" : "DIGIVOUCHERS"
+      } offers contactless payment services through QR codes or UPI, enabling instant, secure transactions for your customers.`,
+      image: { src: qrCode_img, alt: "My QR/UPI" },
+      icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title:
+        envName === "WALLETHUB"
+          ? "Prepaid Mobile & DTH Recharges"
+          : "Mobile Recharge",
+      description:
+        envName === "WALLETHUB"
+          ? "Find multiple operators and suitable plans for your customers and earn commission on each recharge."
+          : `Earn by doing mobile/DTH recharges and utility bill payments for 150+ companies. ${envName} converts any shop into a one-stop solution.`,
+      image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
+      icon: <MobileIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title: "API Banking",
+      description:
+        "An intuitive, simple-to-implement API banking stack built for scalability. Integrate with your backend ERP for balance inquiries and financial operations.",
+      image: { src: api, alt: "API Banking" },
+      icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+  ];
+
   return (
-    <div
-      className={envName === "MoneyOddr" ? "" : "builSecurity_bg"}
-      sx={{ paddingBottom: "none !important" }}
+    <Box
+      sx={{
+        background: "linear-gradient(135deg, #f5f7fa 0%, #f8f9fb 100%)",
+        py: { xs: 4, md: 8 },
+        position: "relative",
+        overflow: "hidden",
+      }}
       id="our-services"
     >
-      <Grid xs={12} sm={6} className="servicePageBg1">
-        <Box
-          component="div"
-          className="pageHead1"
-          sx={{
-            textAlign: "center",
-            marginTop: "-3px",
-          }}
-        >
-          {/* Our Services */}
-        </Box>
-        {envName === "MoneyOddr" ? (
-          <>
-            <div className="landingPageSubHeading px-5">
-              Unlock new possibilities for your business and boost your earnings
-              with <span style={{ fontWeight: "900" }}>MoneyOddR</span>. <br />
-              It is a single platform and a one stop solution offering multiple
-              range of services
-              <br /> which you can provide to your customer and maximise your
-              earnings.
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="landingPageSubHeading">
-              {/* We have exciting services for you on our application */}
-            </div>
-          </>
-        )}
-      </Grid>
-      {/* <Container maxWidth="lg" className="sectionBreake" sx={{ pb: 10 }}> */}
-      <Container maxWidth="lg" sx={{ pb: 7, mt: 7 }}>
-        <Grid container className="flex-hc-vc mb-5 " >
-          <Grid
-            md={2.7}
-            className="icon-box"
+      {/* Decorative elements */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          right: 0,
+          width: "300px",
+          height: "300px",
+          background:
+            "radial-gradient(circle, rgba(255,111,145,0.1) 0%, rgba(255,255,255,0) 70%)",
+          zIndex: 0,
+        }}
+      />
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "400px",
+          height: "400px",
+          background:
+            "radial-gradient(circle, rgba(106,90,205,0.1) 0%, rgba(255,255,255,0) 70%)",
+          zIndex: 0,
+        }}
+      />
+
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
+        {/* Header Section */}
+        <Box textAlign="center" mb={6}>
+          <Typography
+            variant="h3"
             sx={{
-              textAlign: "left",
-              mb: { md: 0, sm: 2, xs: 2 },
-              mt: { md: 0, sm: 3, xs: 3 },
+              fontWeight: 700,
+              fontFamily: "Poppins, sans-serif",
+              background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              mb: 2,
+              fontSize: { xs: "2rem", md: "2.5rem" },
             }}
           >
-            <span className="icon">
-              <StayCurrentPortraitIcon
-                sx={{
-                  // color: secondaryColor(),
-                  fontSize: "2.2rem",
-                }}
-                className="actual-icon"
-              />
-            </span>
-            <Typography className="icon-box-heading">
-              Bill Payments & Recharges
-            </Typography>
-            <Typography className="box-para justify-content ">
-              Earn more by doing DTH/ Mobile recharges, Utility bill payments,
-              for your customers easily and quickly of more than 150 companies.
-            </Typography>
-          </Grid>
-          <Grid
-            md={2.7}
-            className="icon-box"
-            sx={{ textAlign: "left", mb: { md: 0, sm: 2, xs: 2 } }}
-          >
-            <span className="icon">
-              <SatelliteAltIcon
-                sx={{
-                  // color: secondaryColor(),
-                  fontSize: "2.2rem",
-                }}
-                className="actual-icon"
-              />
-            </span>
-            <Typography className="icon-box-heading">DTH Recharge</Typography>
-            <Typography className="box-para justify-content">
-              With
-              <span style={{ marginRight: "3px", marginLeft: "3px" }}>
-                {envName === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
-              </span>
-              merchant app, choose from a variety of operators like Airtel DTH,
-              Dish TV, Videocon D2h.
-            </Typography>
-          </Grid>
-          <Grid
-            md={2.7}
-            className="icon-box"
-            sx={{ textAlign: "left", mb: { md: 0, sm: 2, xs: 2 } }}
-          >
-            <span className="icon">
-              <AodIcon
-                sx={{
-                  // color: secondaryColor(),
-                  fontSize: "2.2rem",
-                }}
-                className="actual-icon"
-              />
-            </span>
-            <Typography className="icon-box-heading">
-              Utility Recharge
-            </Typography>
-            <Typography className="box-para justify-content">
-              Gone are the days when anyone used to stand in a long queue,
-              waiting for hours just for filling their monthly bills namely
-              Electricity, Water, and Gas.
-            </Typography>
-          </Grid>
-          {/* <Grid
-            md={2.7}
-            className="icon-box"
-            sx={{ textAlign: "left", mb: { md: 0, sm: 2, xs: 2 } }}
-          >
-            <span className="icon">
-              <TrainIcon
-                sx={{
-                  // color: secondaryColor(),
-                  fontSize: "2.2rem",
-                }}
-                className="actual-icon"
-              />
-            </span>
-            <Typography className="icon-box-heading">Money Transfer</Typography>
-            <Typography className="box-para justify-content">
-              We are proud to say that we are Offering Instant and Secure
-              Payment Soution to our Customer. Now Our Customers can do Instant
-              Money Transfer from our portal
-            </Typography>
-          </Grid> */}
-          {/* <Grid item md={12}>
-            {" "}
-            <img src={braj} alt="" />
-          </Grid> */}
-        </Grid>
+            Our Services
+          </Typography>
 
-        <Grid container maxWidth="lg" className="bottom2top">
-          <Grid
-            lg={6}
-            md={6}
-            sm={12}
-            sx={{ display: { md: "block", sm: "block", xs: "block" } }}
-          >
-            <img src={irctc_img} alt="irctc img " width="80%"></img>
-          </Grid>
-          {envName === "MoneyOddr" ? (
-            <Grid md={6} lg={6} sm={12} xs={12} sx={{ mt: { md: 5, xs: 0 } }}>
-              <span
-                className="landingPageHeadings"
-                style={{
-                  textAlign: "left",
-                  display: "flex",
-                  justifyContent: "start",
-                }}
-              >
-                Travel Services
-              </span>
-              <Box
-                style={{
-                  width: "60px",
-                  height: "10px",
-                  backgroundColor:
-                    envName === "MoneyOddr" ? "#01A0E2" : "#0077b6",
-                }}
-              ></Box>
-              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-                MoneyOddR offers you a comprehensive range of travel options,
-                including flights, hotels, train, bus and vacation packages all
-                in one convenient platform. With our user-friendly interface and
-                reliable service partners you can effortlessly search, compare,
-                and book the best deals as per your customer preferences.
-              </div>
-              <Box
-                sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-              >
-                <Button
-                  // className="button-red"
-                  sx={{
-                    backgroundColor: "rgb(151, 86, 40)",
-                    color: "#fff",
-                  }}
-                  onClick={() => {
-                    navigate("/sign-up");
-                  }}
-                >
-                  Signup now
-                </Button>
-              </Box>
-            </Grid>
-          ) : (
-            
-            <Grid md={6} lg={6} sm={12} xs={12} sx={{ mt: { md: 5, xs: 0 } }}>
-              <span
-                className="landingPageHeadings"
-                style={{
-                  textAlign: "left",
-                  display: "flex",
-                  justifyContent: "start",
-                }}
-              >
-                IRCTC Ticket Booking
-              </span>
-              <Box
-                style={{
-                  width: "60px",
-                  height: "10px",
-                  backgroundColor:
-                    envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-                }}
-              ></Box>
-              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-                {getEnv()} proud to say that we are one of the few vendors who
-                are authorized from IRCTC to book train tickets. Now you can
-                easily book tickets online for any train, class, or destination.
-                With us, you don’t need to worry about the status of your
-                booking because our service is highly fast, safe, simple and
-                reliable. So before you miss on to your favorite berth, download
-                our app today !
-              </div>
-              <Box
-                sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-              >
-                <Button
-                  // className="button-red"
-                  sx={{
-                    backgroundColor: "rgb(151, 86, 40)",
-                    color: "#fff",
-                  }}
-                  onClick={() => {
-                    navigate("/sign-up");
-                  }}
-                >
-                  Signup now
-                </Button>
-              </Box>
-            </Grid>
-          )}
-        </Grid>
-
-        <Grid container maxWidth="lg" className="bottom2top">
-          <Grid md={6} lg={6} sm={12} xs={12} sx={{ mt: { md: 5, xs: 0 } }}>
-            <span
-              className="landingPageHeadings"
-              style={{
-                textAlign: "left",
-                display: "flex",
-                justifyContent: "start",
+          {envName === "WALLETHUB" ? (
+            <Typography
+              variant="h6"
+              sx={{
+                maxWidth: "800px",
+                mx: "auto",
+                color: "#555",
+                lineHeight: 1.7,
+                fontSize: { xs: "1rem", md: "1.1rem" },
               }}
             >
-              My QR/UPI
-            </span>
-            <Box
-              style={{
-                width: "60px",
-                height: "10px",
-                backgroundColor:
-                  envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-              }}
-            ></Box>
-            <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-              <span style={{ marginRight: "10px" }}>
-                {getEnv() === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
+              Unlock new possibilities for your business and boost your earnings
+              with{" "}
+              <span style={{ fontWeight: 900, color: "#01A0E2" }}>
+                WALLETHUB
               </span>
-              brings you one more attractive option of increasing your options
-              of accepting payments in the form of QR codes or UPI. Basically QR
-              code is a contactless payment service that enables your customers
-              to simply scan a code from their smartphone and complete the
-              transaction. The service is highly reliable, safe, and secure and
-              the transaction is performed almost instantly.{" "}
-            </div>
-            <Box sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}>
-              <Button
-                // className="button-red"
-                sx={{
-                  backgroundColor: "rgb(151, 86, 40)",
-                  color: "#fff",
-                }}
-                onClick={() => {
-                  navigate("/sign-up");
-                }}
-              >
-                Signup now
-              </Button>
-            </Box>
-          </Grid>
-          <Grid
-            lg={6}
-            md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-          >
-            <img src={qrCode_img} alt="qrCode img " width="85%"></img>
-          </Grid>
-        </Grid>
-        {/* <Grid container maxWidth="lg" className="bottom2top">
-          <Grid
-            lg={6}
-            md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-          >
-            <img src={mt} alt="irctc" width="80%"></img>
-          </Grid>
-          {envName === "MoneyOddr" ? (
-            ""
-            // <Grid md={6} lg={6} sm={12} xs={12}>
-            //   <span
-            //     className="landingPageHeadings"
-            //     style={{
-            //       textAlign: "left",
-            //       display: "flex",
-            //       justifyContent: "start",
-            //     }}
-            //   >
-            //     Domestic Money Transfer
-            //   </span>
-            //   <Box
-            //     style={{
-            //       width: "60px",
-            //       height: "10px",
-            //       backgroundColor:
-            //         envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-            //     }}
-            //   ></Box>
-            //   <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-            //     Money Transfer is a facility through which money can be easily
-            //     transferred to any account across india instantly without
-            //     visiting the bank branch. This Service was introduced to help
-            //     and support the unorganised and rural areas where the majority
-            //     of the population are not aware of the banking system. With this
-            //     facility you can help your local population to transfer their
-            //     money to their designated account and earn attractive
-            //     commission.
-            //     <Box
-            //       sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-            //     >
-            //       <Button
-            //         // className="button-red"
-            //         sx={{
-            //           backgroundColor: "#FF7F50",
-            //           color: "#fff",
-            //         }}
-            //         onClick={() => {
-            //           navigate("/sign-up");
-            //         }}
-            //       >
-            //         Signup now
-            //       </Button>
-            //     </Box>
-            //   </div>
-            // </Grid>
+              . A single platform offering multiple services you can provide to
+              your customers.
+            </Typography>
           ) : (
-            ""
-            // <Grid md={6} lg={6} sm={12} xs={12}>
-            //   <span
-            //     className="landingPageHeadings"
-            //     style={{
-            //       textAlign: "left",
-            //       display: "flex",
-            //       justifyContent: "start",
-            //     }}
-            //   >
-            //     Money Transfer
-            //   </span>
-            //   <Box
-            //     style={{
-            //       width: "60px",
-            //       height: "10px",
-            //       backgroundColor:
-            //         envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-            //     }}
-            //   ></Box>
-            //   <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-            //     At {getEnv()} we understand your concerns and try to come up
-            //     with solutions for addressing those issues. We realized that
-            //     sending money to your friends and family was still a difficult
-            //     task for many people and for solving that problem, we bring you
-            //     the
-            //     <span className="mx-1">{getEnv()}</span> money transfer feature.
-            //     This can be used to send money anywhere across India and Nepal.
-            //     It is highly safe, secure, and reliable
-            //   </div>
-            //   <Box
-            //     sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-            //   >
-            //     <Button
-            //       // className="button-red"
-            //       sx={{
-            //         backgroundColor: "#FF7F50",
-            //         color: "#fff",
-            //       }}
-            //       onClick={() => {
-            //         navigate("/sign-up");
-            //       }}
-            //     >
-            //       Signup now
-            //     </Button>
-            //   </Box>
-            // </Grid>
-          )}
-        </Grid> */}
-        <Grid container maxWidth="lg" className="bottom2top">
-          {
-            envName === "MoneyOddr" &&
-              ""
-              // <Grid md={6} lg={6} sm={12} xs={12}>
-              //   <span
-              //     className="landingPageHeadings"
-              //     style={{
-              //       textAlign: "left",
-              //       display: "flex",
-              //       justifyContent: "start",
-              //     }}
-              //   >
-              //     AEPS
-              //   </span>
-              //   <Box
-              //     style={{
-              //       width: "60px",
-              //       height: "10px",
-              //       backgroundColor:
-              //         envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-              //     }}
-              //   ></Box>
-              //   <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-              //     <span style={{ fontWeight: "900" }}>
-              //       Aadhaar Enabled Payment System
-              //     </span>
-              //     is one of the major initiatives of Indian banking system by
-              //     which a customer can use the banking services like Cash Deposit
-              //     & Withdrawal, Balance Enquiry and Mini Statement etc. from their
-              //     aadhaar linked bank account by using the biometric
-              //     authentication. This service is majorly used in the area where
-              //     either ATM(s) are Not available/Non Operative or by the people
-              //     who are non active banking user(s). Join MoneyOddR today and
-              //     make a difference in people's lives while growing your business.
-              //   </div>
-              //   <Box
-              //     sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-              //   >
-              //     <Button
-              //       // className="button-red"
-              //       sx={{
-              //         backgroundColor: "#FF7F50",
-              //         color: "#fff",
-              //       }}
-              //       onClick={() => {
-              //         navigate("/sign-up");
-              //       }}
-              //     >
-              //       Signup now
-              //     </Button>
-              //   </Box>
-              // </Grid>
-            // : (
-            //   <Grid md={6} lg={6} sm={12} xs={12}>
-            //     <span
-            //       className="landingPageHeadings"
-            //       style={{
-            //         textAlign: "left",
-            //         display: "flex",
-            //         justifyContent: "start",
-            //       }}
-            //     >
-            //       Aadhar ATM
-            //     </span>
-            //     <Box
-            //       style={{
-            //         width: "60px",
-            //         height: "10px",
-            //         backgroundColor:
-            //           envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-            //       }}
-            //     ></Box>
-            //     <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-            //       Are you fed up with the lengthy lines, computer issues, and lack
-            //       of cash at your local bank branch. But stop worrying since
-            //       {getEnv()} has a feature called Aadhar ATM that will instantly
-            //       transform your everyday store into an ATM outlet. With us, you
-            //       might offer your customers fundamental ATM services like cash
-            //       withdrawal and balance inquiries.
-            //     </div>
-            //     <Box
-            //       sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-            //     >
-            //       <Button
-            //         // className="button-red"
-            //         sx={{
-            //           backgroundColor: "#FF7F50",
-            //           color: "#fff",
-            //         }}
-            //         onClick={() => {
-            //           navigate("/sign-up");
-            //         }}
-            //       >
-            //         Signup now
-            //       </Button>
-            //     </Box>
-            //   </Grid>
-            // )}
-          }
-          {/* <Grid
-            lg={6}
-            md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-          >
-            <img src={aadharAtm_img} alt="irctc" width="80%"></img>
-          </Grid> */}
-        </Grid>
-        <Grid container maxWidth="lg" className="bottom2top">
-          <Grid
-            lg={6}
-            md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-          >
-            <img src={mobileR_img} alt="Mobile recharge" width="85%"></img>
-          </Grid>
-          {envName === "MoneyOddr" ? (
-            <Grid md={6} lg={6} sm={12} xs={12}>
-              <span
-                className="landingPageHeadings"
-                style={{
-                  textAlign: "left",
-                  display: "flex",
-                  justifyContent: "start",
-                }}
-              >
-                Prepaid Mobile & DTH Recharges
-              </span>
-              <Box
-                style={{
-                  width: "60px",
-                  height: "10px",
-                  backgroundColor:
-                    envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-                }}
-              ></Box>
-              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-                MoneyOddR gives you the platform where you can find multiple
-                operators and suitable plans for your customers and makes the
-                recharge experience better than ever. Also MoneyOddR gives you
-                the opportunity to earn a good commission on each recharge.
-              </div>
-              <Box
-                sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-              >
-                <Button
-                  // className="button-red"
-                  sx={{
-                    backgroundColor: "rgb(151, 86, 40)",
-                    color: "#fff",
-                  }}
-                  onClick={() => {
-                    navigate("/sign-up");
-                  }}
-                >
-                  Signup now
-                </Button>
-              </Box>
-            </Grid>
-          ) : (
-            <Grid md={6} lg={6} sm={12} xs={12}>
-              <span
-                className="landingPageHeadings"
-                style={{
-                  textAlign: "left",
-                  display: "flex",
-                  justifyContent: "start",
-                }}
-              >
-                Mobile Recharge
-              </span>
-              <Box
-                style={{
-                  width: "60px",
-                  height: "10px",
-                  backgroundColor:
-                    envName === "MoneyOddr" ? "#01A0E2" : primaryColor(),
-                }}
-              ></Box>
-              <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-                Earn more by doing DTH/ Mobile recharges, Utility bill payments,
-                for your customers easily and quickly of more than 150
-                companies. Now help your customers by making bill payments and
-                recharge at the snap of your fingertips with the help of the{" "}
-                {getEnv()} Merchant App. {getEnv()} enables any retailer to make
-                any recharge and bill payments associated with Electricity,
-                Water, Gas, DTH, and Telecomm to name a few. Thereby, {getEnv()}{" "}
-                converts any shop into a one-stop solution for any of the
-                customer needs associating with bill payment and recharge.
-              </div>
-              <Box
-                sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}
-              >
-                <Button
-                  // className="button-red"
-                  sx={{
-                    backgroundColor: "rgb(151, 86, 40)",
-                    color: "#fff",
-                  }}
-                  onClick={() => {
-                    navigate("/sign-up");
-                  }}
-                >
-                  Signup now
-                </Button>
-              </Box>
-            </Grid>
-          )}
-        </Grid>
-        <Grid container maxWidth="lg" className="bottom2top">
-          <Grid md={6} lg={6} sm={12} xs={12}>
-            <span
-              className="landingPageHeadings"
-              style={{
-                textAlign: "left",
-                display: "flex",
-                justifyContent: "start",
+            <Typography
+              variant="h6"
+              sx={{
+                maxWidth: "800px",
+                mx: "auto",
+                color: "#555",
+                lineHeight: 1.7,
+                fontSize: { xs: "1rem", md: "1.1rem" },
               }}
             >
-              API banking
-            </span>
-            <Box
-              style={{
-                width: "60px",
-                height: "10px",
-                backgroundColor: primaryColor(),
-              }}
-            ></Box>
-            <div className="landing-bg_para" style={{ textAlign: "justify" }}>
-              An intuitive, simple-to-implement, and iterative modern API
-              banking stack. has been built with scalability and dependability
-              in mind.An great banking tool, API banking simplifies the process
-              of doing online banking through your website. Simply integrate the
-              system into your backend ERP to begin doing balance inquiries,
-              {/* money transfers, */}
-              and other financial operations on our platform!
-            </div>
-            <Box sx={{ display: "flex", justifyContent: "left", mt: 2, mb: 3 }}>
-              <Button
-                // className="button-red"
+              We have exciting services for you on our application
+            </Typography>
+          )}
+        </Box>
+
+        {/* Core Services Grid */}
+        <Grid container spacing={4} sx={{ mb: 8 }}>
+          {services.map((service, index) => (
+            <Grid item xs={12} md={4} key={index}>
+              <Card
                 sx={{
-                  backgroundColor: "rgb(151, 86, 40)",
-                  color: "#fff",
-                }}
-                onClick={() => {
-                  navigate("/sign-up");
+                  height: "100%",
+                  borderRadius: "16px",
+                  boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  "&:hover": {
+                    transform: "translateY(-5px)",
+                    boxShadow: "0 12px 28px rgba(0,0,0,0.12)",
+                  },
                 }}
               >
-                Signup now
-              </Button>
-            </Box>
-          </Grid>
-          <Grid
-            lg={6}
-            md={6}
-            sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-          >
-            <img src={api} alt="Mobile recharge" width="85%"></img>
-          </Grid>
+                <CardContent sx={{ p: 4, height: "100%" }}>
+                  <Box
+                    sx={{
+                      width: "80px",
+                      height: "80px",
+                      borderRadius: "50%",
+                      background: "linear-gradient(135deg, #ff9a8b, #ff6f91)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      mb: 3,
+                      color: "white",
+                    }}
+                  >
+                    {service.icon}
+                  </Box>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: 600,
+                      mb: 2,
+                      fontFamily: "Poppins, sans-serif",
+                      color: "#333",
+                    }}
+                  >
+                    {service.title}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{ color: "#666", lineHeight: 1.7 }}
+                  >
+                    {service.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
         </Grid>
+
+        {/* Featured Services */}
+        {featuredServices.map((service, index) => (
+          <Grid
+            container
+            spacing={6}
+            alignItems="center"
+            sx={{
+              mb: 10,
+              flexDirection: {
+                xs: "column-reverse",
+                md: index % 2 === 0 ? "row" : "row-reverse",
+              },
+            }}
+            key={index}
+          >
+            <Grid item xs={12} md={6}>
+              <Box sx={{ position: "relative" }}>
+                <Box
+                  sx={{
+                    width: "60px",
+                    height: "6px",
+                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    mb: 3,
+                    borderRadius: "3px",
+                  }}
+                />
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontWeight: 700,
+                    mb: 3,
+                    fontFamily: "Poppins, sans-serif",
+                    color: "#333",
+                  }}
+                >
+                  {service.title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    color: "#666",
+                    lineHeight: 1.8,
+                    mb: 4,
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  {service.description}
+                </Typography>
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    borderRadius: "50px",
+                    fontWeight: "bold",
+                    px: 4,
+                    py: 1.5,
+                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    "&:hover": {
+                      background: "linear-gradient(90deg, #00bfa6, #6a5acd)",
+                    },
+                  }}
+                  onClick={() => navigate("/sign-up")}
+                  startIcon={service.icon}
+                >
+                  Sign Up Now
+                </Button>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  // boxShadow: "0 15px 30px rgba(0,0,0,0.1)",
+                  lineHeight: 0,
+                  "& img": {
+                    width: "50%",
+                    height: "auto",
+                    objectFit: "cover",
+                  },
+                }}
+              >
+                  <img src={service.image.src} alt={service.image.alt} />
+              </Box>
+            </Grid>
+          </Grid>
+        ))}
       </Container>
-    </div>
+    </Box>
   );
 };
 
