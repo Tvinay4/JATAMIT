@@ -6,18 +6,14 @@ import {
   Grid,
   InputAdornment,
   TextField,
+  Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 import { Box } from "@mui/system";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import EmailIcon from "@mui/icons-material/Email";
+
 import { PATTERNS } from "../utils/ValidationUtil";
-import PhoneIcon from "@mui/icons-material/Phone"; // Import the mobile icon
-import PersonIcon from "@mui/icons-material/Person";
-import MessageIcon from "@mui/icons-material/Message";
-import LocationCityIcon from "@mui/icons-material/LocationCity";
-import BusinessIcon from "@mui/icons-material/Business";
+
 import {
   primaryColor,
   getEnv,
@@ -26,461 +22,334 @@ import {
   getFirmEmail,
   primaryLight,
 } from "../theme/setThemeColor";
+import {
+  Person as PersonIcon,
+  Phone as PhoneIcon,
+  Email as EmailIcon,
+  LocationCity as LocationCityIcon,
+  Business as BusinessIcon,
+  Message as MessageIcon,
+  LocationOn as LocationOnIcon,
+  PhoneAndroid as PhoneAndroidIcon,
+} from "@mui/icons-material";
 
 const LandingContactUsPage = () => {
-  const [isEmailv, setIsEmailv] = useState(true);
-  const [isMobv, setIsMobv] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isMobileValid, setIsMobileValid] = useState(true);
   const [name, setName] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    mobile: "",
+    email: "",
+    city: "",
+    company: "",
+    message: "",
+  });
 
-  const isLetters = (str) => /^[A-Za-z]*$/.test(str);
+  const isLetters = (str) => /^[A-Za-z\s]*$/.test(str);
 
-  const onInputChange = (e) => {
-    const { value } = e.target;
-    if (isLetters(value)) {
-      setName(value);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "firstName" && !isLetters(value)) return;
+    if (name === "mobile" && value.length > 10) return;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    // Validation
+    if (name === "email") {
+      setIsEmailValid(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || value === "");
+    }
+    if (name === "mobile") {
+      setIsMobileValid(/^\d{0,10}$/.test(value));
     }
   };
 
-  const envValue = getEnv();
   const handleSubmit = (event) => {
     event.preventDefault();
-    const form = event.currentTarget;
-    let data;
-
-    data = {
-      first_name: form.c_fname.value,
-      mobile: form.c_mobile.value,
-      email: form.c_email.value,
-      city: form.c_city.value,
-      company: form.c_company.value,
-      message: form.c_message.value,
-    };
-    console.log(data);
+    console.log(formData);
+    // Add your form submission logic here
   };
 
   useEffect(() => {
-    // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
+  const contactCards = [
+    {
+      icon: <LocationOnIcon sx={{ fontSize: "2rem" }} />,
+      title: "OUR MAIN OFFICE",
+      content: "123 Business Street, Financial District, Mumbai 400001, India",
+      color: "#FFBC87",
+    },
+    {
+      icon: <PhoneAndroidIcon sx={{ fontSize: "2rem" }} />,
+      title: "PHONE NUMBER",
+      content: "+91 98765 43210\n+91 11 2345 6789",
+      color: "#FF6347",
+    },
+    {
+      icon: <EmailIcon sx={{ fontSize: "2rem" }} />,
+      title: "EMAIL",
+      content: "info@wallethub.com\nsupport@wallethub.com",
+      color: "#FF1493",
+    },
+  ];
+  const envValue = getEnv();
   return (
-    <div id="contact-us">
-      <div className={envValue !== "MoneyOddr" && "builSecurity_bg"}>
-        {envValue !== "MoneyOddr" && (
-          <Grid xs={12} className="servicePageBg">
-            {/* <Box component="div" className="pageHead" sx={{ textAlign: "center", mt: 7 }}>
-              Contact Us!
-            </Box> */}
-          </Grid>
-        )}
-        <Grid container>
-          <Container maxWidth="lg">
-            {envValue !== "MoneyOddr" && (
-              <Grid
-                container
-                spacing={3}
-                sx={{ mt: { lg: 5, md: 5, sm: 0, xs: 0 } }}
+    <Box
+      id="contact-us"
+      sx={{
+        // py: { xs: 4, md: 8 },
+        background: "linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)",
+        minHeight: "100vh",
+      }}
+    >
+      {envValue !== "MoneyOddr" && (
+        <Grid className="servicePageBg">
+          {/* <Box component="div" className="pageHead" sx={{ textAlign: "center", mt: 7 }}>
+            Contact Us!
+          </Box> */}
+        </Grid>
+      )}
+      <Container maxWidth="lg">
+        {/* <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 700,
+            mb: 4,
+            textAlign: "center",
+            background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Contact Us
+        </Typography> */}
+
+        <Typography
+          variant="h6"
+          sx={{
+            mb: 6,
+            textAlign: "center",
+            color: "#555",
+            maxWidth: "700px",
+            mx: "auto",
+          }}
+        >
+          Have questions or need assistance? Reach out to our team and we'll get
+          back to you promptly.
+        </Typography>
+
+        <Grid container spacing={4}>
+          {/* Contact Form */}
+          <Grid item xs={12} md={7}>
+            <Box
+              component="form"
+              onSubmit={handleSubmit}
+              sx={{
+                p: { xs: 3, md: 4 },
+                borderRadius: 3,
+                boxShadow: 3,
+                backgroundColor: "white",
+                "& .MuiTextField-root": { mb: 3 },
+              }}
+            >
+              <TextField
+                fullWidth
+                name="firstName"
+                label="Full Name"
+                variant="outlined"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                required
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <PersonIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <TextField
+                fullWidth
+                name="mobile"
+                label="Mobile Number"
+                variant="outlined"
+                value={formData.mobile}
+                onChange={handleInputChange}
+                required
+                error={!isMobileValid}
+                helperText={
+                  !isMobileValid ? "Please enter a valid 10-digit number" : ""
+                }
+                inputProps={{ maxLength: 10 }}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <PhoneIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <TextField
+                fullWidth
+                name="email"
+                label="Email Address"
+                variant="outlined"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                error={!isEmailValid}
+                helperText={!isEmailValid ? "Please enter a valid email" : ""}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <EmailIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <TextField
+                fullWidth
+                name="city"
+                label="City"
+                variant="outlined"
+                value={formData.city}
+                onChange={handleInputChange}
+                required
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <LocationCityIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <TextField
+                fullWidth
+                name="company"
+                label="Company/Organization"
+                variant="outlined"
+                value={formData.company}
+                onChange={handleInputChange}
+                required
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <BusinessIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <TextField
+                fullWidth
+                name="message"
+                label="Your Message"
+                variant="outlined"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                multiline
+                rows={4}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <MessageIcon color="primary" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                size="large"
+                sx={{
+                  mt: 2,
+                  py: 1.5,
+                  borderRadius: "50px",
+                  background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+                  "&:hover": {
+                    background: "linear-gradient(90deg, #6a5acd, #ff6f91)",
+                  },
+                }}
               >
-                <Grid item lg={7} md={7} sm={12} xs={12}>
-                  <Box className="landingPageHeadings">Connect with us!</Box>
-                  <Box
-                    component="form"
-                    id="contact"
+                Submit
+              </Button>
+            </Box>
+          </Grid>
+
+          {/* Contact Cards */}
+          <Grid item xs={12} md={5}>
+            <Grid container spacing={3}>
+              {contactCards.map((card, index) => (
+                <Grid item xs={12} key={index}>
+                  <Card
                     sx={{
-                      width: "100%",
-                      padding: 4,
-                      borderRadius: 2,
+                      p: 3,
+                      height: "100%",
+                      borderRadius: 3,
                       boxShadow: 3,
-                      backgroundColor: " #eccc94", // Lighter background color for a clean look
-                      border: "2px solid #FFBC87", // Subtle border for definition
+                      transition: "transform 0.3s, box-shadow 0.3s",
+                      "&:hover": {
+                        transform: "translateY(-5px)",
+                        boxShadow: 6,
+                      },
+                      borderLeft: `4px solid ${card.color}`,
                     }}
-                    onSubmit={handleSubmit}
                   >
-                    <Grid container spacing={3}>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            id="c_fname"
-                            placeholder="Full Name"
-                            variant="outlined"
-                            type="text"
-                            value={name}
-                            onChange={onInputChange}
-                            required
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <PersonIcon sx={{ color: "#FF6347" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF6347",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF6347" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            id="c_mobile"
-                            placeholder="Mobile Number"
-                            variant="outlined"
-                            error={!isMobv}
-                            required
-                            helperText={!isMobv ? "Enter a valid mobile" : ""}
-                            onChange={(e) => {
-                              setIsMobv(PATTERNS.MOBILE.test(e.target.value));
-                              if (e.target.value === "") setIsMobv(true);
-                            }}
-                            onKeyDown={(e) => {
-                              if (e.key === "+" || e.key === "-") {
-                                e.preventDefault();
-                              }
-                              if (
-                                e.target.value.length === 10 &&
-                                e.key.toLowerCase() !== "backspace"
-                              ) {
-                                e.preventDefault();
-                              }
-                            }}
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <PhoneIcon sx={{ color: "#FF8C00" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF8C00",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF8C00" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            id="c_email"
-                            placeholder="Email Id"
-                            variant="outlined"
-                            error={!isEmailv}
-                            required
-                            helperText={!isEmailv ? "Enter a valid email" : ""}
-                            onChange={(e) => {
-                              setIsEmailv(PATTERNS.EMAIL.test(e.target.value));
-                              if (e.target.value === "") setIsEmailv(true);
-                            }}
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <EmailIcon sx={{ color: "#FF1493" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF1493",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF1493" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            id="c_city"
-                            placeholder="City"
-                            variant="outlined"
-                            required
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <LocationCityIcon sx={{ color: "#FF6347" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF6347",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF6347" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            id="c_company"
-                            placeholder="Company/Organization"
-                            variant="outlined"
-                            required
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <BusinessIcon sx={{ color: "#FF8C00" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF8C00",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF8C00" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                      <Grid item lg={12} sm={12} xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                          <TextField
-                            autoComplete="off"
-                            multiline
-                            id="c_message"
-                            placeholder="Your Message"
-                            required
-                            InputProps={{
-                              startAdornment: (
-                                <InputAdornment position="start">
-                                  <MessageIcon sx={{ color: "#FF1493" }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{
-                              bgcolor: "white",
-                              borderColor: "#FF1493",
-                              "& .MuiOutlinedInput-root": {
-                                "& fieldset": { borderColor: "#FF1493" },
-                              },
-                            }}
-                          />
-                        </FormControl>
-                      </Grid>
-                    </Grid>
-                    <Button
-                      type="submit"
-                      variant="contained"
+                    <Box textAlign="center" mb={2}>
+                      <Box
+                        sx={{
+                          display: "inline-flex",
+                          p: 1.5,
+                          borderRadius: "50%",
+                          backgroundColor: `${card.color}20`,
+                          color: card.color,
+                        }}
+                      >
+                        {card.icon}
+                      </Box>
+                    </Box>
+                    <Typography
+                      variant="h6"
                       sx={{
-                        width: "100%",
-                        mt: 3,
-                        padding: "12px",
-                        backgroundColor: "#FF6347",
-                        "&:hover": {
-                          backgroundColor: "#FF6347",
-                        },
-                        borderRadius: 2,
-                        boxShadow: 2,
-                        fontSize: "1.1rem",
-                        fontWeight: "bold",
+                        fontWeight: 600,
+                        mb: 2,
+                        textAlign: "center",
+                        color: card.color,
                       }}
                     >
-                      Submit
-                    </Button>
-                  </Box>
+                      {card.title}
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        textAlign: "center",
+                        whiteSpace: "pre-line",
+                        color: "#555",
+                      }}
+                    >
+                      {card.content}
+                    </Typography>
+                  </Card>
                 </Grid>
-                <Grid
-                  item
-                  lg={5}
-                  md={5}
-                  sm={6}
-                  xs={12}
-                  sx={{
-                    display: { md: "block", xs: "block" },
-                    mt: 4,
-                    
-                    animation: "slideInFromRight 1.5s ease-in-out",
-                  }}
-                >
-                  <Grid container spacing={5}>
-                    {/* Card 1 */}
-                    <Grid item xs={12}>
-                      <Card
-                        sx={{
-                          width: "100%",
-                          maxWidth: 450, // Smaller width
-                          borderRadius: "8px",
-                          textAlign: "center",
-                          boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px",
-                          transition:
-                            "transform 0.3s, box-shadow 0.3s, border-color 0.3s, filter 0.3s",
-                          "&:hover": {
-                            transform: "scale(1.05)",
-                            boxShadow: "0px 6px 30px rgba(0, 0, 0, 0.15)",
-                            filter: "brightness(1.1)",
-                          },
-                          border: "2px solid transparent",
-                          ":hover": {
-                            border: "2px solid #FFBC87", // Vibrant hover color
-                          },
-                        }}
-                      >
-                        <LocationOnIcon
-                          sx={{ color: "#FFBC87", fontSize: "2rem", mt: 2 }}
-                        />
-                        <div
-                          className="landing-bg_para"
-                          style={{
-                            fontWeight: 500,
-                            textAlign: "center",
-                            color: "#8B4513",
-                          }}
-                        >
-                          OUR MAIN OFFICE
-                        </div>
-                        <Box
-                          component="div"
-                          sx={{
-                            color: "#000",
-                            p: 2,
-                            backgroundColor: "#D2B48C", // Light brown color
-                            height: "80px", // Smaller height
-                            width: "100%",
-                            transition:
-                              "background-color 0.3s, background-size 0.3s",
-                            ":hover": {
-                              backgroundColor: "#C8A67D", // Slightly darker brown on hover
-                            },
-                          }}
-                        >
-                          {getFirmAddress()}
-                        </Box>
-                      </Card>
-                    </Grid>
-
-                    {/* Card 2 */}
-                    <Grid item xs={12}>
-                      <Card
-                        sx={{
-                          width: "100%",
-                          maxWidth: 450, // Smaller width
-                          borderRadius: "8px",
-                          textAlign: "center",
-                          boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px",
-                          transition:
-                            "transform 0.3s, box-shadow 0.3s, border-color 0.3s, filter 0.3s",
-                          "&:hover": {
-                            transform: "scale(1.05)",
-                            boxShadow: "0px 6px 30px rgba(0, 0, 0, 0.15)",
-                            filter: "brightness(1.1)",
-                          },
-                          border: "2px solid transparent",
-                          ":hover": {
-                            border: "2px solid #FF6347",
-                          },
-                        }}
-                      >
-                        <PhoneAndroidIcon
-                          sx={{ color: "#FF6347", fontSize: "2rem", mt: 2 }}
-                        />
-                        <div
-                          className="landing-bg_para"
-                          style={{
-                            fontWeight: 500,
-                            textAlign: "center",
-                            color: "#FF6347",
-                          }}
-                        >
-                          PHONE NUMBER
-                        </div>
-                        <Box
-                          component="div"
-                          sx={{
-                            color: "#000",
-                            p: 1,
-                            backgroundColor: "#D2B48C", // Light brown color
-                            height: "80px", // Smaller height
-                            width: "100%",
-                            transition:
-                              "background-color 0.3s, background-size 0.3s",
-                            ":hover": {
-                              backgroundColor: "#C8A67D",
-                            },
-                          }}
-                        >
-                          {getFirmContact()}
-                        </Box>
-                      </Card>
-                    </Grid>
-
-                    {/* Card 3 */}
-                    <Grid item xs={12}>
-                      <Card
-                        sx={{
-                          width: "100%",
-                          maxWidth: 450, // Smaller width
-                          borderRadius: "8px",
-                          textAlign: "center",
-                          boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px",
-                          transition:
-                            "transform 0.3s, box-shadow 0.3s, border-color 0.3s, filter 0.3s",
-                          "&:hover": {
-                            transform: "scale(1.05)",
-                            boxShadow: "0px 6px 30px rgba(0, 0, 0, 0.15)",
-                            filter: "brightness(1.1)",
-                          },
-                          border: "2px solid transparent",
-                          ":hover": {
-                            border: "2px solid #FF1493",
-                          },
-                        }}
-                      >
-                        <EmailIcon
-                          sx={{ color: "#FF1493", fontSize: "2rem", mt: 2 }}
-                        />
-                        <div
-                          className="landing-bg_para"
-                          style={{
-                            fontWeight: 500,
-                            textAlign: "center",
-                            color: "#FF1493",
-                          }}
-                        >
-                          EMAIL
-                        </div>
-                        <Box
-                          component="div"
-                          sx={{
-                            color: "#000",
-                            p: 1,
-                            backgroundColor: "#D2B48C", // Light brown color
-                            height: "80px", // Smaller height
-                            width: "100%",
-                            transition:
-                              "background-color 0.3s, background-size 0.3s",
-                            ":hover": {
-                              backgroundColor: "#C8A67D",
-                            },
-                          }}
-                        >
-                          {getFirmEmail()}
-                        </Box>
-                      </Card>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-            )}
-          </Container>
+              ))}
+            </Grid>
+          </Grid>
         </Grid>
-      </div>
-    </div>
+      </Container>
+    </Box>
   );
 };
 
