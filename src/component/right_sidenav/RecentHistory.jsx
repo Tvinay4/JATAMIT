@@ -37,7 +37,6 @@ const RecentHistory = () => {
           fontSize: "20px",
           position: "relative",
           color: "#da473d",
-          // ml: -1,
         }}
       >
         Recent Transactions
