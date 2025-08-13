@@ -32,8 +32,8 @@ const LandingPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>{process.env.REACT_APP_TITLE}</title>
-        <meta name="description" content="DIGIVOUCHERS" />
-        <meta name="keywords" content="DIGIVOUCHERS" />
+        <meta name="description" content="WALLETHUB" />
+        <meta name="keywords" content="WALLETHUB" />
       </Helmet>
       <div
         className="app-content

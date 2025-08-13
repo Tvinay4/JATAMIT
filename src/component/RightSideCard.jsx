@@ -64,7 +64,7 @@ const RightNavbar = () => {
     vqr && vqr
       ? `upi://pay?pa=` +
         vqr +
-        `&pn=DigiVouchers Technologies Limited` +
+        `&pn=WALLETHUB Technologies Limited` +
         "&cu=INR"
       : "if you want to use our qr ";
 

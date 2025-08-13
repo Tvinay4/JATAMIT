@@ -121,7 +121,7 @@ const AddUtilityModel = ({ refresh }) => {
       <Box>
         <Drawer open={open} anchor="right" onClose={handleClose}>
           <Box sx={{ width: 400 }}>
-            <ModalHeader title="Add Scheme" handleClose={handleClose} subtitle="Easily Add New scheme with DIGIVOUCHERS" />
+            <ModalHeader title="Add Scheme" handleClose={handleClose} subtitle="Easily Add New scheme with WALLETHUB" />
             <Box
               component="form"
               id="update-Scheme"

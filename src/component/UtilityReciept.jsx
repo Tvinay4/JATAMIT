@@ -128,7 +128,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Email: support@digivouchers.com
+                      Email: support@WALLETHUB.com
                     </p>
                   </Typography>
 
@@ -341,7 +341,7 @@ export const UtilityReceipt = () => {
                 color: "#327B2E",
               }}
             >
-              DIGIVOUCHERS: Your Trusted Bill Payment Partner
+              WALLETHUB: Your Trusted Bill Payment Partner
             </Typography>
           </Box>
         </Box>
@@ -452,7 +452,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Email: support@digivouchers.com
+                        Email: support@WALLETHUB.com
                       </p>
                     </Typography>
 
@@ -674,7 +674,7 @@ export const UtilityReceipt = () => {
                   fontSize: "12px",
                 }}
               >
-                DIGIVOUCHERS: Your Trusted Bill Payment Partner
+                WALLETHUB: Your Trusted Bill Payment Partner
               </Typography>
             </Box>
           </Box>

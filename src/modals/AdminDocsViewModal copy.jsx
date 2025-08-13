@@ -226,7 +226,7 @@
 //     <Modal open={open} onClose={handleClose}>
 //       <Box sx={style} className="sm_modal">
 //         <ModalHeader
-//         subtitle="Secure Your Trust: Easily Verify Your Documents with DIGIVOUCHERS!"
+//         subtitle="Secure Your Trust: Easily Verify Your Documents with WALLETHUB!"
 //           title="Verify Documents"
 //           handleClose={handleClose}
 //           icon={<UploadIcon />}

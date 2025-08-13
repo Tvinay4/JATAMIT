@@ -32,7 +32,7 @@ const LandingPageIntro3 = () => {
         >
           <Grid
             item
-            md={env === "DIGIVOUCHERS" || env === "PaisaKart" ? 6 : 12}
+            md={env === "WALLETHUB" || env === "PaisaKart" ? 6 : 12}
             sm={12}
           >
             <Box
@@ -83,7 +83,7 @@ const LandingPageIntro3 = () => {
                       color: "#000",
                     }}
                   >
-                    {/* <b>{env === "DIGIVOUCHERS" ? "DIGIVOUCHERS" : "PaisaKart"}</b> */}
+                    {/* <b>{env === "WALLETHUB" ? "WALLETHUB" : "PaisaKart"}</b> */}
                     IRCTC – Simplifying your travel experience, one click at a
                     time.
                   </p>
@@ -155,8 +155,8 @@ const LandingPageIntro3 = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 style={{
-                  backgroundColor: getEnv() === "DigiVouchers" ? "#fff" : "",
-                  borderRadius: getEnv() === "DigiVouchers" ? "50%" : "",
+                  backgroundColor: getEnv() === "WALLETHUB" ? "#fff" : "",
+                  borderRadius: getEnv() === "WALLETHUB" ? "50%" : "",
                 }}
               />
             </Grid>

@@ -67,7 +67,7 @@ const LandingPageTestimonials = () => {
           }}
         >
           See how our customers have transformed their payment experiences with
-          DIGIVOUCHERS.
+          WALLETHUB.
         </Typography>
 
         <Box sx={{ mt: 3 }}>

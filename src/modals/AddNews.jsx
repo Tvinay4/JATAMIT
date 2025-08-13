@@ -89,7 +89,7 @@ const AddNews = ({ refresh }) => {
             <ModalHeader
               title="Add news"
               handleClose={handleClose}
-              subtitle="Easily Add New news with DIGIVOUCHERS"
+              subtitle="Easily Add New news with WALLETHUB"
             />
             <Box
               component="form"

@@ -149,7 +149,7 @@ export const getFirmContact = () => {
 };
 export const getFirmEmail = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `support@digivouchers.com`;
+    return `support@WALLETHUB.com`;
   }
 };
 

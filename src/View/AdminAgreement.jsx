@@ -453,14 +453,14 @@ const AdminAgreement = () => {
           </Typography>
 
           <Typography variant="h5" fontWeight="bold" gutterBottom>
-            DIGIVOUCHERS INDIA PRIVATE LIMITED
+            WALLETHUB INDIA PRIVATE LIMITED
           </Typography>
           <Typography variant="body1" paragraph>
             A company incorporated under The Companies Act, 2013, having its
             registered office at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old Town,Ambala,Haryana,134003.
           </Typography>
           <Typography variant="body1" paragraph>
-            (Hereinafter referred to as “DIGIVOUCHERS” which expression shall,
+            (Hereinafter referred to as “WALLETHUB” which expression shall,
             unless repugnant to the context or meaning thereof, include their
             successors and permitted assigns) of the ONE PART; and
           </Typography>
@@ -474,7 +474,7 @@ const AdminAgreement = () => {
             successors and permitted assigns) of the SECOND PART.
           </Typography>
           <Typography variant="body1" paragraph>
-            The DIGIVOUCHERS and the Retailer are herein collectively referred
+            The WALLETHUB and the Retailer are herein collectively referred
             to as the “Parties” and individually as a “Party.”
           </Typography>
 
@@ -490,15 +490,15 @@ const AdminAgreement = () => {
           </Typography>
           <Typography variant="body1" paragraph>
             Subject to the terms and conditions contained in this Retailer
-            Agreement, DIGIVOUCHERS hereby appoints the Retailer on a
+            Agreement, WALLETHUB hereby appoints the Retailer on a
             non-exclusive basis for the Territory to provide the services
             mentioned in Annexure-I (hereinafter referred to as "Services"), and
             the Retailer hereby agrees to provide the Services.
           </Typography>
           <Typography variant="body1" paragraph>
-            The Retailer may describe himself as DIGIVOUCHERS’s authorised
+            The Retailer may describe himself as WALLETHUB’s authorised
             Retailer, but must not hold itself out as being entitled to bind
-            DIGIVOUCHERS in any way.
+            WALLETHUB in any way.
           </Typography>
 
           <Typography
@@ -519,8 +519,8 @@ const AdminAgreement = () => {
             either Party in accordance with clause 13.
           </Typography>
           <Typography variant="body1" paragraph>
-            Upon expiry, the Agreement may be renewed at DIGIVOUCHERS’s option,
-            on mutually agreed terms, provided that DIGIVOUCHERS informs the
+            Upon expiry, the Agreement may be renewed at WALLETHUB’s option,
+            on mutually agreed terms, provided that WALLETHUB informs the
             Retailer one month prior to the completion of the Term.
           </Typography>
         </Page>
@@ -538,8 +538,8 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              During the Term, the Retailer shall render to DIGIVOUCHERS
-              services as defined in Annexure-I. DIGIVOUCHERS reserves the right
+              During the Term, the Retailer shall render to WALLETHUB
+              services as defined in Annexure-I. WALLETHUB reserves the right
               to modify, alter, or amend the list of Services, and the Retailer
               agrees to be bound by any such changes.
             </Typography>
@@ -559,14 +559,14 @@ const AdminAgreement = () => {
 
             <Typography variant="body1" paragraph>
               The Distributor and Retailer shall mutually agree upon a Business
-              Plan for sourcing retailers for DIGIVOUCHERS. DIGIVOUCHERS
+              Plan for sourcing retailers for WALLETHUB. WALLETHUB
               reserves the right to appoint additional Distributors or terminate
               this Agreement if the Distributor fails to meet the agreed minimum
               targets.
             </Typography>
             <Typography variant="body1" paragraph>
               The Distributor is solely responsible for managing credit
-              transactions with the retailers in its Territory, and DIGIVOUCHERS
+              transactions with the retailers in its Territory, and WALLETHUB
               is not liable for any disputes arising from such transactions.
             </Typography>
           </section>
@@ -585,7 +585,7 @@ const AdminAgreement = () => {
 
             <Typography variant="body1" paragraph>
               The Retailer shall deposit a sum of INR [……….../=] [……..in
-              words……...] with the DIGIVOUCHERS on or before the effective date.
+              words……...] with the WALLETHUB on or before the effective date.
               The deposit shall be non-interest bearing and shall be refunded at
               the time of termination of the Retailer Agreement in accordance
               with the provision defined in clause 14 (Consequences of
@@ -593,16 +593,16 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              The Retailer acknowledges that the DIGIVOUCHERS may reject the
+              The Retailer acknowledges that the WALLETHUB may reject the
               deposit at its sole discretion on or before the effective date.
             </Typography>
             <Typography variant="body1" paragraph>
-              The Retailer acknowledges that the DIGIVOUCHERS may reject the
+              The Retailer acknowledges that the WALLETHUB may reject the
               deposit at its sole discretion on or before the effective date.
             </Typography>
 
             <Typography variant="body1" paragraph>
-              Retailer agrees and acknowledges that the DIGIVOUCHERS shall not
+              Retailer agrees and acknowledges that the WALLETHUB shall not
               be responsible or liable in any manner whatsoever for the sources
               of such deposits and/or working capital, and it is the sole
               responsibility of the Retailer to ensure that the sources of such
@@ -610,38 +610,38 @@ const AdminAgreement = () => {
               accordance with the law of India.
             </Typography>
             <Typography variant="body1" paragraph>
-              All the amount due to DIGIVOUCHERS under this Retailer Agreement,
+              All the amount due to WALLETHUB under this Retailer Agreement,
               including the deposit and working capital and/or platform fee,
               shall be deposited in accordance with the instructions provided in
               Annexure-II. Retailer agrees and acknowledges that the
-              DIGIVOUCHERS may, by prior written notice of two business days,
+              WALLETHUB may, by prior written notice of two business days,
               modify any of the details mentioned in Annexure-II and the
               Retailer shall be bound by all such modifications
             </Typography>
 
             <Typography variant="body1" paragraph>
-              Retailer acknowledges and agrees that DIGIVOUCHERS strictly
+              Retailer acknowledges and agrees that WALLETHUB strictly
               prohibits any third-party deposits in any bank accounts via any
               mode whatsoever. In the event that Retailer or its Retailer
               indulges in any such transaction(s) knowingly or unknowingly, the
-              Retailer authorizes DIGIVOUCHERS to freeze its account
+              Retailer authorizes WALLETHUB to freeze its account
               immediately.
             </Typography>
 
             <Typography variant="body1" paragraph>
               Retailer shall be entitled to the commission, discount or service
               fee, or such other remuneration referred in the Services, as may
-              be specified by the DIGIVOUCHERS, from time to time and published
-              on DIGIVOUCHERS’s portal. All the amounts paid by way of the
+              be specified by the WALLETHUB, from time to time and published
+              on WALLETHUB’s portal. All the amounts paid by way of the
               commission shall be exclusive to all applicable taxes, including
               goods and service tax, surcharge, cess etc., by whatsoever name
               called, and such taxes will be subject to the deduction of tax at
-              source, if applicable; DIGIVOUCHERS shall debit the account of the
+              source, if applicable; WALLETHUB shall debit the account of the
               Retailer to the extent of such taxes.
             </Typography>
             <Typography variant="body1" paragraph>
               The commission shall accrue to the Retailer only on receipt and
-              realization of full payment by the DIGIVOUCHERS of all dues from
+              realization of full payment by the WALLETHUB of all dues from
               the retailers who are managed by the Distributor.
             </Typography>
             <Typography variant="body1" paragraph>
@@ -652,7 +652,7 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               Payments made to the Retailer shall be subject to such withholding
               as prescribed under the applicable law, subject to the aforesaid,
-              DIGIVOUCHERS assumes no responsibility for the tax compliance of
+              WALLETHUB assumes no responsibility for the tax compliance of
               the Retailer.
             </Typography>
 
@@ -664,7 +664,7 @@ const AdminAgreement = () => {
               transactions whatsoever.
             </Typography>
             <Typography variant="body1" paragraph>
-              The Retailer agrees and authorizes DIGIVOUCHERS to impose cash
+              The Retailer agrees and authorizes WALLETHUB to impose cash
               deposit bank charges which shall be subject to deduction from the
               payments made to the Retailer.
             </Typography>
@@ -677,37 +677,37 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               Retailer agrees and acknowledges that in case of any deviation
               with respect to the use of key salt, it shall be solely liable and
-              responsible; and in such event, DIGIVOUCHERS is authorized to
+              responsible; and in such event, WALLETHUB is authorized to
               immediately deactivate the account of Retailer without any prior
-              notice. DIGIVOUCHERS shall not be held responsible for any
+              notice. WALLETHUB shall not be held responsible for any
               consequences that arise out of any unauthorized use of its
               platform in any manner.
             </Typography>
 
             <Typography variant="body1" paragraph>
-              The Retailer agrees and authorizes DIGIVOUCHERS to freeze its
-              account or account of its Retailer in the event DIGIVOUCHERS
+              The Retailer agrees and authorizes WALLETHUB to freeze its
+              account or account of its Retailer in the event WALLETHUB
               receives any complaint from any relevant statutory or
               non-statutory authority or any government department or agency.
-              The Retailer further agrees and authorizes DIGIVOUCHERS to
+              The Retailer further agrees and authorizes WALLETHUB to
               withdraw the disputed amount along with the anticipated penalty
               from the such frozen account.
             </Typography>
 
             <Typography variant="body1" paragraph>
               Retailer agrees and acknowledges that all the sales/ receipts of
-              the Retailer regarding the DIGIVOUCHERS shall be immediately
+              the Retailer regarding the WALLETHUB shall be immediately
               Deposit or transfer of the funds into the designated Bank Accounts
-              of the DIGIVOUCHERS and shall get limit from the Company/
-              DIGIVOUCHERS thereafter. The Retailer shall ensure that the
-              working limit in the portal by DIGIVOUCHERS against the cash
+              of the WALLETHUB and shall get limit from the Company/
+              WALLETHUB thereafter. The Retailer shall ensure that the
+              working limit in the portal by WALLETHUB against the cash
               deposit or funds transfer is made available to the Retailer
               immediately. The Retailer shall inform to the Company/
-              DIGIVOUCHERS in predefined format, if the Retailer fails to inform
+              WALLETHUB in predefined format, if the Retailer fails to inform
               the same within seven calendar days the amount will be forfeit by
-              the Company/ DIGIVOUCHERS. Retailer may deposit such cash self or
+              the Company/ WALLETHUB. Retailer may deposit such cash self or
               via its employee or agent or any authorized person into the
-              designated Bank Accounts of the DIGIVOUCHERS.
+              designated Bank Accounts of the WALLETHUB.
             </Typography>
           </section>
 
@@ -728,14 +728,14 @@ const AdminAgreement = () => {
               independent offices equipped with the necessary infrastructure and
               workforce required to provide the Services. The Retailer shall
               provide a prior written intimation of any changes in the location
-              of such office to DIGIVOUCHERS.
+              of such office to WALLETHUB.
             </Typography>
             <Typography variant="body1" paragraph>
-              DIGIVOUCHERS may, at its discretion, provide advice to the
+              WALLETHUB may, at its discretion, provide advice to the
               Retailer in relation to exteriors and interiors of the Retailer’s
               office, investment information technology systems, basic
               accounting and business procedure etc. The Retailer shall be bound
-              by such advice of DIGIVOUCHERS.
+              by such advice of WALLETHUB.
             </Typography>
           </section>
           <section>
@@ -753,7 +753,7 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               The Retailer shall develop adequate and relevant market
               intelligence in relation to the Territory and shall inform
-              DIGIVOUCHERS from time to time about the activities of other
+              WALLETHUB from time to time about the activities of other
               persons/companies engaged in a similar business.
             </Typography>
           </section>
@@ -772,7 +772,7 @@ const AdminAgreement = () => {
 
           <Typography variant="body1" paragraph>
             The Retailer shall engage the minimum number of personnel as
-            specified by the DIGIVOUCHERS and such other additional personnel as
+            specified by the WALLETHUB and such other additional personnel as
             may be required to effectively provide the Services. The Retailer
             shall ensure that all personnel employed in the provision of the
             Services shall be adequately trained and shall comply with the Term
@@ -782,11 +782,11 @@ const AdminAgreement = () => {
           </Typography>
           <Typography variant="body1" paragraph>
             The Retailer shall be liable and responsible for any data theft or
-            misuse of any data related to clients of DIGIVOUCHERS from its
+            misuse of any data related to clients of WALLETHUB from its
             office.
           </Typography>
           <Typography variant="body1" paragraph>
-            The Retailer agrees and acknowledges that DIGIVOUCHERS will not have
+            The Retailer agrees and acknowledges that WALLETHUB will not have
             any obligations, liability or responsibility whatsoever to supervise
             or manage the Retailer's employees, agents or independent
             contractors.
@@ -806,11 +806,11 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              DIGIVOUCHERS hereby grants the Retailer a limited, non-exclusive,
+              WALLETHUB hereby grants the Retailer a limited, non-exclusive,
               non-transferable, non-assignable and royalty- free license to use
               the Software for the purpose of providing the Services as
               contemplated under this Retailer Agreement, which may be revoked
-              by DIGIVOUCHERS at its sole discretion.
+              by WALLETHUB at its sole discretion.
             </Typography>
             <Typography variant="body1" paragraph>
               The Retailer is expressly prohibited from distributing,
@@ -820,28 +820,28 @@ const AdminAgreement = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               The Retailer may utilize any third-party software other than the
-              Software provided by DIGIVOUCHERS, only with prior permission from
-              DIGIVOUCHERS. Further, the Retailer shall ensure that the
+              Software provided by WALLETHUB, only with prior permission from
+              WALLETHUB. Further, the Retailer shall ensure that the
               third-party software is validly licenced and installed.
             </Typography>
             <Typography variant="body1" paragraph>
-              The DIGIVOUCHERS shall retain all the rights over all the
+              The WALLETHUB shall retain all the rights over all the
               intellectual property, including the Software, its name and logo
               and all the rights in relation to the promotion and marketing
               materials. The Retailer hereby acknowledges that (a) the execution
               of this Retailer Agreement does not amount to any transfer to it
-              of any intellectual property rights held by the DIGIVOUCHERS prior
+              of any intellectual property rights held by the WALLETHUB prior
               to the execution of this Retailer Agreement, nor does this
-              Retailer Agreement in any way limit the DIGIVOUCHERS’s rights over
+              Retailer Agreement in any way limit the WALLETHUB’s rights over
               its intellectual property, including the right to licence to
               others and, (b) any and all goodwill arising from the Retailer’s
               use of the intellectual property shall be exclusive of DIGIVOUCHER
               without any compensation to anyone.
             </Typography>
             <Typography variant="body1" paragraph>
-              The Retailer shall not use the Software of the DIGIVOUCHERS in any
+              The Retailer shall not use the Software of the WALLETHUB in any
               manner whatsoever without the written permission of the
-              DIGIVOUCHERS.
+              WALLETHUB.
             </Typography>
           </section>
 
@@ -871,7 +871,7 @@ const AdminAgreement = () => {
               course of its business.
             </Typography>
             <Typography variant="body1" paragraph>
-              That Retailer agrees and acknowledges that the DIGIVOUCHERS has a
+              That Retailer agrees and acknowledges that the WALLETHUB has a
               responsibility to its customers to keep customer information
               strictly confidential. The Retailer agrees and acknowledges to
               keep all information related to customers strictly confidential
@@ -907,32 +907,32 @@ const AdminAgreement = () => {
               Retailer or any relative or nominee of the Retailer is a director
               or shareholder, 1.) be appointed as a Retailer for any other
               person or legal entity which is carrying on a business similar or
-              in competition with any business carried by DIGIVOUCHERS at the
+              in competition with any business carried by WALLETHUB at the
               relevant time, whether in India or abroad, or 2.) engage in any
               business that is similar to or in competition with any business
-              carried on by the DIGIVOUCHERS at the relevant time.
+              carried on by the WALLETHUB at the relevant time.
             </Typography>
             <Typography variant="body1" paragraph>
               During the Term of Retailer Agreement, the Retailer shall not
-              either directly or indirectly solicit any employee of DIGIVOUCHERS
+              either directly or indirectly solicit any employee of WALLETHUB
               for employment, induce or attempt to induce any such employee to
               terminate or breach his or her employment agreement with
-              DIGIVOUCHERS, or hire any such employee or associate with any such
+              WALLETHUB, or hire any such employee or associate with any such
               employee, either during the course of their employment with
-              DIGIVOUCHERS or after the termination of their employment with the
-              DIGIVOUCHERS.
+              WALLETHUB or after the termination of their employment with the
+              WALLETHUB.
             </Typography>
             <Typography variant="body1" paragraph>
               During the Term of this Retailer Agreement, the Retailer shall not
               either directly or indirectly, solicit, cause in any part or
               knowingly encourage any existing or potential clients or customers
-              of DIGIVOUCHERS to cease doing business or not to do business, in
-              whole or in part of with DIGIVOUCHERS, or solicit, cause in any
+              of WALLETHUB to cease doing business or not to do business, in
+              whole or in part of with WALLETHUB, or solicit, cause in any
               part or knowingly encourage any existing or potential clients or
-              customers of DIGIVOUCHERS to do business with any person other
-              then DIGIVOUCHERS, or associate with any prospective clients or
+              customers of WALLETHUB to do business with any person other
+              then WALLETHUB, or associate with any prospective clients or
               customers while they continue to be clients or customers of
-              DIGIVOUCHERS.
+              WALLETHUB.
             </Typography>
           </section>
 
@@ -950,7 +950,7 @@ const AdminAgreement = () => {
 
             <Typography variant="body1" paragraph>
               The Retailer shall only market and promote Services of
-              DIGIVOUCHERS, as authorized by the DIGIVOUCHERS.
+              WALLETHUB, as authorized by the WALLETHUB.
             </Typography>
           </section>
 
@@ -967,23 +967,23 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              DIGIVOUCHERS may terminate this Retailer Agreement of the Retailer
-              with immediate effect, if a. in the opinion of DIGIVOUCHERS,
+              WALLETHUB may terminate this Retailer Agreement of the Retailer
+              with immediate effect, if a. in the opinion of WALLETHUB,
               Retailer is not the fit person to perform Services under the
               provision of Retailer Agreement. b. Retailer fails to deposit the
               proceeds of sale/ receipts made by the Retailer or its retailers
-              to DIGIVOUCHERS on a daily basis and perpetual basis. c. Retailer
+              to WALLETHUB on a daily basis and perpetual basis. c. Retailer
               becomes the subject of a voluntary petitioner in bankruptcy or any
               voluntary proceedings relating to insolvency, liquidation or
               composition for the benefit of the creditors. d. Retailer fails to
-              comply with directions issued by the DIGIVOUCHERS under the
+              comply with directions issued by the WALLETHUB under the
               provision of this Retailer Agreement. Notwithstanding anything to
-              the contrary herein, DIGIVOUCHERS may terminate this Retailer
+              the contrary herein, WALLETHUB may terminate this Retailer
               Agreement without notice.
             </Typography>
             <Typography variant="body1" paragraph>
               Retailer may terminate this Retailer Agreement with written notice
-              of 60 (sixty) days to DIGIVOUCHERS.
+              of 60 (sixty) days to WALLETHUB.
             </Typography>
           </section>
           <section>
@@ -1002,18 +1002,18 @@ const AdminAgreement = () => {
               Upon termination of this Retailer Agreement for any reason as
               stated in clause 13 above, the Retailer shall a. immediately
               discontinue and cease to use the trade mark, logo, other
-              intellectual property, Software provided by the DIGIVOUCHERS and
+              intellectual property, Software provided by the WALLETHUB and
               shall immediately hand over all copies or documents of such
-              intellectual property to DIGIVOUCHERS. b. immediately return to
-              DIGIVOUCHERS all confidential information, originals and copies of
+              intellectual property to WALLETHUB. b. immediately return to
+              WALLETHUB all confidential information, originals and copies of
               any and all materials provided to the Retailer under this Retailer
               Agreement or in the course of provision of the services. c.
-              immediately provide remote access to DIGIVOUCHERS to disable any
-              Software that DIGIVOUCHERS has installed with the Retailer. d.
+              immediately provide remote access to WALLETHUB to disable any
+              Software that WALLETHUB has installed with the Retailer. d.
               immediately remove all sign board, banners, and glowboards of
-              DIGIVOUCHERS from its offices and also all such materials which
-              will indicate any association with DIGIVOUCHERS. e. immediately
-              ceases to promote, market or advertise DIGIVOUCHERS or its
+              WALLETHUB from its offices and also all such materials which
+              will indicate any association with WALLETHUB. e. immediately
+              ceases to promote, market or advertise WALLETHUB or its
               products/services. f. immediately clear all dues within the period
               of 7 days from the date of termination.
             </Typography>
@@ -1031,7 +1031,7 @@ const AdminAgreement = () => {
               15. INDEMNITY
             </Typography>
             <Typography variant="body1" paragraph>
-              The Retailer shall indemnify itself and hold DIGIVOUCHERS and all
+              The Retailer shall indemnify itself and hold WALLETHUB and all
               its financial partners, affiliates, officers, directors,
               employees, successors, and assignees harmless against all customer
               claims, actions, demands, litigations, suits, proceedings, and
@@ -1042,13 +1042,13 @@ const AdminAgreement = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               Notwithstanding anything contained in this Retailer Agreement,
-              DIGIVOUCHERS shall not be liable to the Retailer for any
+              WALLETHUB shall not be liable to the Retailer for any
               incidental, indirect, consequential damages, or loss of revenue or
               business opportunities.
             </Typography>
 
             <Typography variant="body1" paragraph>
-              The Retailer shall ensure that the DIGIVOUCHERS platform or
+              The Retailer shall ensure that the WALLETHUB platform or
               services are not used for money laundering and comply with
               Anti-Money Laundering laws, including but not limited to the
               Prevention of Money Laundering Act, 2002 and the rules and
@@ -1106,7 +1106,7 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               The Services rendered by the Retailer under this Retailer
               Agreement shall be provided as an independent contractor to
-              DIGIVOUCHERS, and nothing in this Retailer Agreement creates or
+              WALLETHUB, and nothing in this Retailer Agreement creates or
               shall be deemed to create the relationship of partners, joint
               venture, employees, or principal-agent between the Parties.
             </Typography>
@@ -1128,17 +1128,17 @@ const AdminAgreement = () => {
 
             <Typography variant="body1" paragraph>
               The Retailer shall maintain all statutory books as required under
-              applicable laws. The Retailer shall permit DIGIVOUCHERS to inspect
+              applicable laws. The Retailer shall permit WALLETHUB to inspect
               all books of accounts, records, and materials during normal
               business hours.
             </Typography>
             <Typography variant="body1" paragraph>
               The Retailer shall ensure KYC details are verified and carry out
-              proper due diligence as instructed by DIGIVOUCHERS.
+              proper due diligence as instructed by WALLETHUB.
             </Typography>
             <Typography variant="body1" paragraph>
               During the Term and up to sixty days after the termination of this
-              Retailer Agreement, DIGIVOUCHERS may carry out an audit to
+              Retailer Agreement, WALLETHUB may carry out an audit to
               determine whether the Retailer has fulfilled its obligations.
             </Typography>
           </section>
@@ -1181,7 +1181,7 @@ const AdminAgreement = () => {
             <Typography variant="body1" paragraph>
               The Retailer shall not assign, sub-let, or subcontract any of its
               obligations under this Retailer Agreement to a third party unless
-              prior written permission is obtained from DIGIVOUCHERS.
+              prior written permission is obtained from WALLETHUB.
             </Typography>
           </section>
 
@@ -1198,9 +1198,9 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              The Retailer agrees that DIGIVOUCHERS may communicate with them
+              The Retailer agrees that WALLETHUB may communicate with them
               via voice, email, SMS, or any innovative communication method
-              deemed fit by DIGIVOUCHERS.
+              deemed fit by WALLETHUB.
             </Typography>
           </section>
 
@@ -1219,7 +1219,7 @@ const AdminAgreement = () => {
             </Typography>
 
             <Typography variant="body1" paragraph>
-              No legal action or suit can be initiated against DIGIVOUCHERS
+              No legal action or suit can be initiated against WALLETHUB
               without giving prior legal notice within 15 days from when the
               dispute arises. Any legal proceedings shall be subject to the
               jurisdiction of the courts at Delhi.
@@ -1270,7 +1270,7 @@ const AdminAgreement = () => {
                     verticalAlign: "top",
                   }}
                 >
-                  DIGIVOUCHERS INDIA PRIVATE LIMITED
+                  WALLETHUB INDIA PRIVATE LIMITED
                 </td>
 
                 <td

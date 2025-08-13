@@ -383,7 +383,7 @@ const AEPS2FAModal = ({
             title={
               isAepsOne && isAepsTwo ? "AePS 1" : "2 Factor Authentication"
             }
-            subtitle="Enjoy seamless aadhaar services with DIGIVOUCHERS"
+            subtitle="Enjoy seamless aadhaar services with WALLETHUB"
             handleClose={handleClose}
           />
           <Box

@@ -17,8 +17,8 @@ const PrivacyPolicyView = () => {
           <Box sx={{ mt: 3 }}>
             <div>
               <p className="landing-bg_para">
-                DIGIVOUCHERS INDIA PRIVATE LIMITED (
-                <strong>“DIGIVOUCHERS ”, “we”, “us”, “our”</strong>), respects
+                WALLETHUB INDIA PRIVATE LIMITED (
+                <strong>“WALLETHUB ”, “we”, “us”, “our”</strong>), respects
                 every individual’s right to privacy and it is our endeavour to
                 protect their personal and Sensitive personal data or
                 information (defined below).
@@ -26,8 +26,8 @@ const PrivacyPolicyView = () => {
               <p className="landing-bg_para">
                 This Privacy Policy (<strong>“Policy”</strong>) applies to all
                 visitors (i.e. those who do not have an Account with
-                DIGIVOUCHERS ) and users (i.e. those who have an Account with
-                DIGIVOUCHERS ) (collectively referred to as
+                WALLETHUB ) and users (i.e. those who have an Account with
+                WALLETHUB ) (collectively referred to as
                 <strong>“User”</strong>) who share their personal and Sensitive
                 personal data with us, while visiting, accessing, browsing and
                 using our website and mobile application (collectively referred
@@ -39,7 +39,7 @@ const PrivacyPolicyView = () => {
                 treat your information.
               </p>
               <p className="landing-bg_para">
-                The User acknowledges that this Policy is a part of DIGIVOUCHERS
+                The User acknowledges that this Policy is a part of WALLETHUB
                 ’s
                 <strong>Terms &amp; Conditions available at</strong>
                 <a href="/terms&condition">Terms &amp; Conditions</a> and all
@@ -53,7 +53,7 @@ const PrivacyPolicyView = () => {
                 account with us on our Website.
               </p>
               <p className="landing-bg_para">
-                DIGIVOUCHERS reserves its right to modify, alter, and update
+                WALLETHUB reserves its right to modify, alter, and update
                 this Policy at any time, with or without prior notice. Although,
                 Users shall be notified of material changes through their
                 registered email address or any other mode of communication
@@ -63,7 +63,7 @@ const PrivacyPolicyView = () => {
                 modification, amendment, alteration or change of this Policy,
                 irrespective of whether notice was sent to the User or published
                 on the Website, such User is hereby deemed to provide consent to
-                this Policy and DIGIVOUCHERS ’s other Policies and practices
+                this Policy and WALLETHUB ’s other Policies and practices
                 existing at the time of visiting, accessing and/or using the
                 Website.
               </p>
@@ -179,7 +179,7 @@ const PrivacyPolicyView = () => {
                 time of creation of their Account on the Website.
               </p>
               <p className="landing-bg_para">
-                DIGIVOUCHERS presumes adequate and lawful parental consent in
+                WALLETHUB presumes adequate and lawful parental consent in
                 case the Personal Information or Sensitive personal data or
                 information is shared by a User under the age of 18 years.
               </p>
@@ -322,7 +322,7 @@ const PrivacyPolicyView = () => {
                 where such disclosure is (i) obligated by law, (ii) requested by
                 a lawfully authorized government authority, (iii) pursuant to a
                 judicial decree, (iv) for enforcing and protecting the legal
-                rights of DIGIVOUCHERS or others’, (v) for seeking any relief,
+                rights of WALLETHUB or others’, (v) for seeking any relief,
                 (vi) for defending any charge, (vii) for opposing any claim,
                 (viii) for enforcing this Policy or our Terms of Use, (ix) for
                 obtaining any legal advice. We also reserve our right to
@@ -398,16 +398,16 @@ const PrivacyPolicyView = () => {
                 <h3 className="h5">Mailers</h3>
               </div>
               <p className="landing-bg_para">
-                DIGIVOUCHERS may send direct mailers to the User at the email
+                WALLETHUB may send direct mailers to the User at the email
                 address given by the User. The User has the option to opt-out of
                 this direct mailer by way of links provided at the bottom of
-                each mailer or any other means as DIGIVOUCHERS TECHNOLOGIES
-                deems appropriate. DIGIVOUCHERS respects every User’s privacy
+                each mailer or any other means as WALLETHUB TECHNOLOGIES
+                deems appropriate. WALLETHUB respects every User’s privacy
                 and in the event that User chooses to not receive such mailers,
-                DIGIVOUCHERS will take all steps to remove the User from the
+                WALLETHUB will take all steps to remove the User from the
                 list. If a User wants to remove his/her/it’s contact information
                 from all mailing lists and newsletters, the same can be done
-                through “Profile” page of his/her/it’s account with DIGIVOUCHERS
+                through “Profile” page of his/her/it’s account with WALLETHUB
                 .
               </p>
 
@@ -433,7 +433,7 @@ const PrivacyPolicyView = () => {
                 April 6, 2018, all Users, including system participants, service
                 providers, intermediaries, payment gateways, third party vendors
                 and other entities in the payments ecosystem, who are retained
-                or engaged by DIGIVOUCHERS for providing payment services shall
+                or engaged by WALLETHUB for providing payment services shall
                 mandatorily store entire Payment Data in systems located only in
                 India. Notwithstanding the above, for cross border transaction
                 data, consisting of a foreign component and a domestic

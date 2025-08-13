@@ -142,7 +142,7 @@ const UpiAddRemitterModal = ({
       <Loader loading={request} />
       <ModalHeader
         title="Register Sender"
-        subtitle="Get started with DIGIVOUCHERS – your gateway to effortless transfers."
+        subtitle="Get started with WALLETHUB – your gateway to effortless transfers."
         handleClose={handleClose}
       />
       <Box

@@ -303,7 +303,7 @@ const AdminDocsViewModal = ({ row, refresh }) => {
             }}
           >
             <ModalHeader
-              subtitle="Secure Your Trust: Easily Verify Your Documents with DIGIVOUCHERS!"
+              subtitle="Secure Your Trust: Easily Verify Your Documents with WALLETHUB!"
               title="Verify Documents"
               handleClose={handleClose}
               icon={<UploadIcon />}

@@ -55,7 +55,7 @@ const TransactionsData = () => {
     },
   ]);
   const handleChange = (event, newValue) => {
-    if (process.env.REACT_APP_TITLE === "DIGIVOUCHERS")
+    if (process.env.REACT_APP_TITLE === "WALLETHUB")
       setTxnDataDuration(newValue);
     else setTxnDataDuration(event);
   };

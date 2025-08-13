@@ -227,7 +227,7 @@ const CreateCreditRequest = ({ refresh, row }) => {
           <Typography variant="body2" sx={{ mb: 4 }}>
             2. The proper records of Fund Request(s), slips, Ref no etc shall
             keep handy by the user of portal/ platform for the purpose of
-            Reconciliation purpose of the company (DigiVouchers Technologies
+            Reconciliation purpose of the company (WALLETHUB Technologies
             Ltd) for 12 months from the date of Deposit.
           </Typography>
           <Typography variant="body2" sx={{ mb: 4 }}>
@@ -255,8 +255,10 @@ const CreateCreditRequest = ({ refresh, row }) => {
                   Cancel
                 </Button>
                 <Button
+                  sx={{
+                    backgroundColor: "#6a5acd",
+                  }}
                   variant="contained"
-                  color="primary"
                   onClick={handleOpen}
                 >
                   Proceed
@@ -282,7 +284,7 @@ const CreateCreditRequest = ({ refresh, row }) => {
           <ModalHeader
             title="Add Credit Request"
             handleClose={handleClose}
-            subtitle="Quickly Request Credit with DIGIVOUCHERS Now!"
+            subtitle="Quickly Request Credit with WALLETHUB Now!"
           />
           <Box
             component="form"
@@ -383,53 +385,6 @@ const CreateCreditRequest = ({ refresh, row }) => {
                     onChange={(e) => setRemark(e.target.value)} // Handle referenceId change
                   />
                 </FormControl>
-
-                {/* <FormControl sx={{ width: "100%" }}>
-                  {remark !== "other" ? (
-                    <TextField
-                      autoComplete="off"
-                      select
-                      label="Remark"
-                      id="remark"
-                      size="small"
-                      value={remark}
-                      onChange={(e) => setRemark(e.target.value)} // Handle referenceId change
-                      required
-                    >
-                      <MenuItem value="1">Reason</MenuItem>
-                      <MenuItem value="0">Amt Mismatch</MenuItem>
-                      <MenuItem value="2">Date Mismatch</MenuItem>
-                      <MenuItem value="3">UTR/REF No. Mismatch</MenuItem>
-                      <MenuItem value="4">Wrong Bank Selection</MenuItem>
-                      <MenuItem value="5">Amt Already Approved</MenuItem>
-                      <MenuItem value="6">
-                        Amt Already Approved to Others
-                      </MenuItem>
-                      <MenuItem value="7">
-                        Payment Mode Wrong Selection
-                      </MenuItem>
-                      <MenuItem value="8">
-                        Contact Your ASM Sales Person
-                      </MenuItem>
-                      <MenuItem value="9">Slip Attachment Not Clear</MenuItem>
-                      <MenuItem value="10">Slip Attachment Not Valid</MenuItem>
-                      <MenuItem value="10">Amt Not Recieved</MenuItem>
-                      <MenuItem value="other">Others</MenuItem>
-                    </TextField>
-                  ) : (
-                    <TextField
-                      autoComplete="off"
-                      label="Enter Custom Remark"
-                      id="custom-remark"
-                      size="small"
-                      value={customRemark}
-                      onChange={handleCustomRemarkChange}
-                      // onChange={(e) => setRemark(e.target.value)} // Handle referenceId change
-                      fullWidth
-                      required
-                    />
-                  )}
-                </FormControl> */}
               </Grid>
               <Grid item md={12} xs={12}>
                 <FormControl sx={{ width: "100%" }}>

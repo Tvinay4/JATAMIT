@@ -45,7 +45,7 @@ const BankList = () => {
             .filter(
               (bank) =>
                 ![
-                  "DIGIVOUCHERS  RBI",
+                  "WALLETHUB  RBI",
                   "CASH AT OFFICE",
                   "OTHER WALLET 1",
                 ].includes(bank.name)

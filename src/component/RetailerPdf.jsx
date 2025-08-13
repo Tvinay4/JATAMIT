@@ -150,7 +150,7 @@ const RetailerPdf = ({ user }) => {
               opacity: "0.7",
             }}
           >
-            DIGIVOUCHERS INDIA PRIVATE LIMITED
+            WALLETHUB INDIA PRIVATE LIMITED
           </Text>
           <Text
             style={{

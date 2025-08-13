@@ -87,7 +87,7 @@ const AddAepsModel = ({ refresh }) => {
             <ModalHeader
               title="Add Scheme"
               handleClose={handleClose}
-              subtitle="Easily Add New scheme with DIGIVOUCHERS"
+              subtitle="Easily Add New scheme with WALLETHUB"
             />
             <Box
               component="form"

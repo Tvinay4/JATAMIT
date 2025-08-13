@@ -40,7 +40,7 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
       icon: <DthIcon sx={{ fontSize: "2.5rem" }} />,
       title: "DTH Recharge",
       description: `Choose from a variety of operators like Airtel DTH, Dish TV, Videocon D2h with ${
-        envName === "WALLETHUB" ? "WALLETHUB" : "DIGIVOUCHERS"
+        envName === "WALLETHUB" ? "WALLETHUB" : "WALLETHUB"
       } merchant app.`,
     },
     {
@@ -65,7 +65,7 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
     {
       title: "My QR/UPI",
       description: `${
-        envName === "WALLETHUB" ? "WALLETHUB" : "DIGIVOUCHERS"
+        envName === "WALLETHUB" ? "WALLETHUB" : "WALLETHUB"
       } offers contactless payment services through QR codes or UPI, enabling instant, secure transactions for your customers.`,
       image: { src: qrCode_img, alt: "My QR/UPI" },
       icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,

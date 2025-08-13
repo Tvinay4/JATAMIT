@@ -26,7 +26,7 @@ const LandingPartnersPage = () => {
               <div className="landing-bg_main_font">
                 Join
                 <span style={{ marginLeft: "10px", marginRight: "10px" }}>
-                  {getEnv() === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
+                  {getEnv() === "MoneyOddr" ? "MoneyOddR" : "WALLETHUB"}
                 </span>
                 Network & Expand your Distributor Business & Earn Extra Income
               </div>
@@ -230,7 +230,7 @@ const LandingPartnersPage = () => {
                 >
                   Why become a
                   <span style={{ marginLeft: "10px", marginRight: "10px" }}>
-                    {getEnv() === "MoneyOddr" ? "MoneyOddR" : "DIGIVOUCHERS"}
+                    {getEnv() === "MoneyOddr" ? "MoneyOddR" : "WALLETHUB"}
                   </span>
                   Retailer ?
                 </div>

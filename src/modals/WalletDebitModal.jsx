@@ -110,7 +110,7 @@ const WalletDebitModal = ({ row }) => {
           <Loader loading={request} />
           <ModalHeader
             title="Wallet Debit"
-            subtitle="Spend Smart: Effortless Wallet Debit with DIGIVOUCHERS!"
+            subtitle="Spend Smart: Effortless Wallet Debit with WALLETHUB!"
             handleClose={handleClose}
           />
 

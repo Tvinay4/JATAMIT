@@ -112,7 +112,7 @@ const AddBlockedAccount = ({ refresh }) => {
             <ModalHeader
               title="Add Account"
               handleClose={handleClose}
-              subtitle="Easily Add New Accounts with DIGIVOUCHERS"
+              subtitle="Easily Add New Accounts with WALLETHUB"
             />
             <Box
               component="form"
