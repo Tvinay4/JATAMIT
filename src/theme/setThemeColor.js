@@ -1,6 +1,6 @@
 export const primaryColor = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#ff6f91"; 
+    return "#ff6f91";
   }
 };
 export const primaryLight = () => {
@@ -10,7 +10,7 @@ export const primaryLight = () => {
 };
 export const primaryLightest = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#c8f2ff"; 
+    return "#c8f2ff";
   }
 };
 export const secondaryColor = () => {
@@ -21,18 +21,18 @@ export const secondaryColor = () => {
 
 export const getHoverActive = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#ff9a8b"; 
+    return "#ff9a8b";
   }
 };
 export const getHoverInActive = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#ffe3f4"; 
+    return "#ffe3f4";
   }
 };
 
 export const getTableHeadRowColor = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "#ff6f91"; 
+    return "#ff6f91";
   }
 };
 
@@ -41,8 +41,6 @@ export const getEnv = () => {
     return "WALLETHUB";
   }
 };
-
-
 
 export const blackColor = () => {
   return "#1a1a1a";
@@ -139,17 +137,19 @@ export const getStatusColor = (status) => {
 
 export const getFirmAddress = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old Town,Ambala,Haryana,134003`;
+    return `810 C, MONA AERO VIEW, SWASTIK VIHAR,PATIALA
+ROAD, ZIRAKPUR, SAS Nagar, Punjab, 140603
+`;
   }
 };
 export const getFirmContact = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return ``;
+    return `8427738499`;
   }
 };
 export const getFirmEmail = () => {
   if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `support@WALLETHUB.com`;
+    return `admin@wallethub.co.in`;
   }
 };
 

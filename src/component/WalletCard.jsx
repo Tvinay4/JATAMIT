@@ -210,7 +210,7 @@ const WalletCard = () => {
                       marginLeft: "4px",
                     }}
                   >
-                    {/* {getFirmContact()} */}
+                    {getFirmContact()}
                   </span>
                 </Typography>
 
