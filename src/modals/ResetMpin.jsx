@@ -72,7 +72,7 @@ const ResetMpin = ({ variant, py, mt, username }) => {
           mt: mt ? 1 : undefined,
         }}
         onClick={handleOpen}
-        className="button-green"
+        className="button-red"
       >
         RESET MPIN
       </Button>
