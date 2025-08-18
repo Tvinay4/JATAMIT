@@ -34,6 +34,7 @@ import {
   lockicon,
   loginPage1,
   LoginPageIllustratorImg1,
+  LoginPageIllustratorImg2,
   mobilelogin,
 } from "../iconsImports";
 import ForgotPass from "../modals/ForgotPass";
@@ -363,7 +364,7 @@ const LoginPage = () => {
           >
             <Box
               sx={{
-                backgroundImage: `url(${LoginPageIllustratorImg1})`,
+                backgroundImage: `url(${LoginPageIllustratorImg2})`,
                 backgroundSize: "cover", // Ensures the full SVG is visible
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
@@ -394,7 +395,7 @@ const LoginPage = () => {
             width: "100%",
           }}
         >
-          <img
+          {/* <img
             src={BottomEndLogin}
             alt="Bottom End"
             style={{
@@ -407,7 +408,7 @@ const LoginPage = () => {
               transformOrigin: "bottom right",
               transform: "rotate(0deg)",
             }}
-          />
+          /> */}
           <Box sx={{ p: 1, m: 3 }}>
             <Box
               component="img"
@@ -445,34 +446,7 @@ const LoginPage = () => {
                       >
                         Mobile Number
                       </Typography>
-                      {/* <TextField autoComplete="off"
-                      placeholder="Enter your Mobile Number"
-                      name="username"
-                      control={control}
-                      errors={errors}
-                      variant="standard"
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <Icon icon="mi:call" style={{ color: "#292D32" }} />
-                          </InputAdornment>
-                        ),
-                      }}
-                      sx={{
-                        "& .MuiInputBase-root": {
-                          border: "none",
-                        },
-                        "& .MuiInput-underline:before": {
-                          borderBottom: "1px solid #4253F0",
-                        },
-                        "& .MuiInput-underline:hover:before": {
-                          borderBottom: "2px solid #4253F0",
-                        },
-                        "& .MuiInput-underline:after": {
-                          borderBottom: "2px solid #4253F0",
-                        },
-                      }}
-                    /> */}
+
                       <TextField
                         autoComplete="off"
                         // label="Mobile"
@@ -687,11 +661,11 @@ const LoginPage = () => {
                         // mt: 2,
                         // marginLeft:3,
                         // borderRadius: 6,
-                        color: "#000",
-                        backgroundColor: " #D8BA87",
+                        color: "#fff",
+                        backgroundColor: " #ff6f91",
                         fontWeight: "bold",
                         "&:hover": {
-                          backgroundColor: "rgb(190, 170, 135)",
+                          backgroundColor: "#ff9a8b",
                           fontWeight: "bold",
                           color: "#FFF",
                         },
@@ -755,13 +729,12 @@ const LoginPage = () => {
                         // mt: 2,
                         // marginLeft:3,
                         // borderRadius: 6,
-                        color: " #D8BA87",
-
+                        color: " #fff",
                         fontWeight: "bold",
-                        backgroundColor: "#000",
+                        backgroundColor: "#6a5acd",
                         "&:hover": {
-                          backgroundColor: "000",
-                          color: "#D8BA87",
+                          backgroundColor: "#c8f2ff",
+                          color: "#fff",
                         },
                       }}
                       // disabled={!(captchaChecked && agreedToTerms) && (isMobv && username !== "")}

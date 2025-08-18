@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6f91"/>
+      <stop offset="55%" stop-color="#6a5acd"/>
+      <stop offset="100%" stop-color="#ff9a8b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#3a2e84" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6a5acd"/>
+      <stop offset="100%" stop-color="#4f3fb7"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7b68ee"/>
+      <stop offset="100%" stop-color="#6a5acd"/>
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9a8b"/>
+      <stop offset="100%" stop-color="#ff6f91"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="scale(1)">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+    <clipPath id="roundPhone">
+      <rect x="0" y="0" rx="52" ry="52" width="360" height="600"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+
+  <g opacity="0.2">
+    <circle cx="180" cy="140" r="110" fill="#ff9a8b"/>
+    <circle cx="1000" cy="740" r="160" fill="#6a5acd"/>
+  </g>
+
+  <g transform="translate(600,120)">
+    <g transform="translate(-180,0)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="360" height="600" rx="52" ry="52" fill="url(#phoneGrad)"/>
+      <rect x="110" y="18" width="140" height="14" rx="7" fill="#3a2e84" opacity="0.45"/>
+      <g clip-path="url(#roundPhone)">
+        <ellipse cx="180" cy="300" rx="220" ry="260" fill="white" opacity="0.06"/>
+      </g>
+      <g filter="url(#glow)">
+        <text x="180" y="320" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui" font-size="180" font-weight="800" fill="white">$</text>
+      </g>
+    </g>
+
+    <g transform="translate(-210,520)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="220" rx="28" fill="url(#cardGrad)"/>
+      <rect x="24" y="84" width="372" height="20" rx="10" fill="rgba(255,255,255,0.15)"/>
+      <rect x="24" y="120" width="220" height="18" rx="9" fill="rgba(255,255,255,0.12)"/>
+      <rect x="330" y="156" width="44" height="30" rx="6" fill="#ff9a8b" opacity="0.9"/>
+      <circle cx="60" cy="168" r="16" fill="#ff6f91" opacity="0.9"/>
+      <circle cx="84" cy="168" r="16" fill="#ff9a8b" opacity="0.9"/>
+    </g>
+
+    <g transform="translate(260,110)">
+      <g filter="url(#softShadow)">
+        <rect x="0" y="290" width="48" height="120" rx="12" fill="#3a2e84" opacity="0.35"/>
+        <rect x="72" y="250" width="48" height="160" rx="12" fill="#3a2e84" opacity="0.45"/>
+        <rect x="144" y="200" width="48" height="210" rx="12" fill="#3a2e84" opacity="0.55"/>
+        <rect x="216" y="120" width="48" height="290" rx="12" fill="#3a2e84" opacity="0.7"/>
+      </g>
+      <path d="M 10 360 C 120 320, 220 240, 250 120" fill="none" stroke="#ff9a8b" stroke-width="18" stroke-linecap="round"/>
+      <polygon points="250,120 232,132 262,140" fill="#ff9a8b"/>
+
+      <g transform="translate(40,-10)" filter="url(#softShadow)">
+        <circle cx="150" cy="60" r="60" fill="url(#coinGrad)"/>
+        <circle cx="150" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="6"/>
+        <text x="150" y="84" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui" font-size="72" font-weight="900" fill="white">$</text>
+      </g>
+
+      <g transform="translate(66,340)" filter="url(#softShadow)">
+        <rect x="0" y="36" width="180" height="140" rx="24" fill="#5a49c7"/>
+        <path d="M40,36 a50,50 0 0 1 100,0 v36 h-20 v-36 a30,30 0 0 0 -60,0 v36 h-20 z" fill="#6a5acd"/>
+        <circle cx="90" cy="120" r="18" fill="#3a2e84"/>
+      </g>
+    </g>
+  </g>
+
+  <g opacity="0.12">
+    <path d="M0,220 C180,180 240,120 340,0 L0,0 Z" fill="#ffffff"/>
+    <path d="M1200,900 C980,860 900,820 820,740 L1200,740 Z" fill="#ffffff"/>
+  </g>
+</svg>
