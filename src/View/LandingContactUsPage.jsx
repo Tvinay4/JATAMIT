@@ -82,19 +82,19 @@ const LandingContactUsPage = () => {
     {
       icon: <LocationOnIcon sx={{ fontSize: "2rem" }} />,
       title: "OUR MAIN OFFICE",
-      content: "123 Business Street, Financial District, Mumbai 400001, India",
+      content: getFirmAddress(),
       color: "#FFBC87",
     },
     {
       icon: <PhoneAndroidIcon sx={{ fontSize: "2rem" }} />,
       title: "PHONE NUMBER",
-      content: "+91 98765 43210\n+91 11 2345 6789",
+      content: getFirmContact(),
       color: "#FF6347",
     },
     {
       icon: <EmailIcon sx={{ fontSize: "2rem" }} />,
       title: "EMAIL",
-      content: "info@wallethub.com\nsupport@wallethub.com",
+      content: getFirmEmail(),
       color: "#FF1493",
     },
   ];

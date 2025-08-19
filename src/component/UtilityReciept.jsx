@@ -6,6 +6,7 @@ import { Email, LegendToggleRounded, Phone } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 import { datemonthYear } from "../utils/DateUtils";
 import PrintIcon from "@mui/icons-material/Print";
+import { getFirmEmail,getFirmContact } from "../theme/setThemeColor";
 
 export const UtilityReceipt = () => {
   const [isLarge, setIsLarge] = useState(true);
@@ -128,7 +129,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Email: support@WALLETHUB.com
+                      Email: {getFirmEmail()}
                     </p>
                   </Typography>
 
@@ -165,8 +166,9 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      Phone: ""
+                      Phone: {getFirmContact()}
                     </p>
+
                   </Typography>
                 </Box>
               </Grid>

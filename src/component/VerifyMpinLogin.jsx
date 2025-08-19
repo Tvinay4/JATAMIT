@@ -248,14 +248,14 @@ const VerifyMpinLogin = ({
         data = {
           username: username,
           otp: otp,
-          password:password
+          password: password,
         };
       }
       if (secureValidate === "MPIN") {
         data = {
           username: username,
           mpin: otp,
-          password:password
+          password: password,
         };
       }
       postJsonData(
@@ -481,9 +481,9 @@ const VerifyMpinLogin = ({
                 />
 
                 <Box sx={{ mt: 2, marginLeft: 25 }}>
-                {secureValidate !== "OTP" &&(
-                  <ResetMpin variant="text" username={username} />)
-                }
+                  {secureValidate !== "OTP" && (
+                    <ResetMpin variant="text" username={username} />
+                  )}
                 </Box>
               </FormControl>
             </Grid>
@@ -578,9 +578,15 @@ const VerifyMpinLogin = ({
                   mt: 2,
                   borderRadius: 6,
                   color: "#000",
-                  fontWeight:"bold",
-                  backgroundColor: " #D8BA87",
-                  border:"2px solid #937e5c"
+                  fontWeight: "bold",
+                  backgroundColor: " #ff6f91",
+                  fontWeight: "bold",
+                  "&:hover": {
+                    backgroundColor: "#ff9a8b",
+                    fontWeight: "bold",
+                    color: "#FFF",
+                  },
+                
                 }}
               >
                 Login

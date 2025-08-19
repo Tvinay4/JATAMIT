@@ -303,7 +303,7 @@ const MoneyTransferReceipt = () => {
           >
             <div>
               {!vendordata&&
-              <LogoComponent width="60%" />}
+              <LogoComponent width="40%" />}
               <div className="just-bold just-bigger-font just-top-bottom-margin ">
                 RECEIPT
               </div>
