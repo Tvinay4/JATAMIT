@@ -233,7 +233,7 @@ const Terms = () => {
 
                 <p className="landing-bg_para">
                   <strong>“Service Provider”</strong> shall mean any banking
-                  and/or non-banking entity with which WALLETHUB TECHNOLOGIES
+                  and/or non-banking entity with which WALLETHUB INDIA PRIVATE LIMITED
                   has, directly or indirectly, executed an agreement for
                   facilitating Transactions between such entity and its
                   customers.
@@ -528,7 +528,7 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       The User hereby acknowledges and agrees that WALLETHUB
                       SERVICES is a facilitator for payment processing services
-                      which are requested by Users and WALLETHUB TECHNOLOGIES
+                      which are requested by Users and WALLETHUB INDIA PRIVATE LIMITED
                       shall not be responsible for any unauthorized transaction
                       done by any person including third party and amounting to
                       infringement of another’s rights or any chargebacks
