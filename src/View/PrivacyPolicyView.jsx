@@ -401,7 +401,7 @@ const PrivacyPolicyView = () => {
                 WALLETHUB may send direct mailers to the User at the email
                 address given by the User. The User has the option to opt-out of
                 this direct mailer by way of links provided at the bottom of
-                each mailer or any other means as WALLETHUB TECHNOLOGIES
+                each mailer or any other means as WALLETHUB INDIA PRIVATE LIMITED
                 deems appropriate. WALLETHUB respects every User’s privacy
                 and in the event that User chooses to not receive such mailers,
                 WALLETHUB will take all steps to remove the User from the

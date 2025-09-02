@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import React from "react";
+import { getFirmAddress, getFirmEmail } from "../theme/setThemeColor";
 
 const Terms = () => {
   return (
@@ -28,22 +29,21 @@ const Terms = () => {
                 <strong> “Platform”</strong>
                 created by WALLETHUB INDIA PRIVATE LIMITED, a company
                 incorporated under the laws of India, with its registered office
-                at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
-                Town,Ambala,Haryana,134003.
+                at {getFirmAddress()}
                 <strong>(“WALLETHUB” or “Company”)</strong>.
               </p>
 
               <p className="landing-bg_para">
-                These Terms are a binding agreement between you and WALLETHUB
-                . These Terms are in addition to and not in derogation of any
-                other terms stipulated by WALLETHUB from time to time. In
-                case of any conflict between these Terms and such other terms,
-                these Terms will prevail. Throughout this document, we use the
-                terms <strong>“we”</strong> and
+                These Terms are a binding agreement between you and WALLETHUB .
+                These Terms are in addition to and not in derogation of any
+                other terms stipulated by WALLETHUB from time to time. In case
+                of any conflict between these Terms and such other terms, these
+                Terms will prevail. Throughout this document, we use the terms{" "}
+                <strong>“we”</strong> and
                 <strong>“our”</strong> to refer to WALLETHUB and the terms
                 <strong>“you”</strong> and <strong>“your”</strong> to refer to
-                you, the User of the Platform. Both WALLETHUB and the User
-                are collectively referred to as <strong>“Parties”</strong> and
+                you, the User of the Platform. Both WALLETHUB and the User are
+                collectively referred to as <strong>“Parties”</strong> and
                 singularly referred to as
                 <strong>“Party”</strong>.
               </p>
@@ -82,17 +82,17 @@ const Terms = () => {
                   <abbr>ELIGIBILITY</abbr>
                 </h3>
                 <p className="landing-bg_para">
-                  WALLETHUB ’s services are available to anyone having a
-                  valid email address and an Indian mobile phone number.
+                  WALLETHUB ’s services are available to anyone having a valid
+                  email address and an Indian mobile phone number.
                   The&nbsp;Platform must be accessed/used only by the persons
                   who are eligible to enter into legally binding contracts under
                   the Indian Contract Act and are ‘competent to contract’
                   according to Section 11 of the Indian Contract Act. Users who
                   have been previously suspended or removed from availing any
-                  service by WALLETHUB shall not be eligible to avail
-                  services from WALLETHUB . Users shall not impersonate any
-                  person or entity, or falsely state or otherwise misrepresent
-                  identity, age or affiliation with any person or entity.
+                  service by WALLETHUB shall not be eligible to avail services
+                  from WALLETHUB . Users shall not impersonate any person or
+                  entity, or falsely state or otherwise misrepresent identity,
+                  age or affiliation with any person or entity.
                 </p>
               </div>
 
@@ -155,23 +155,22 @@ const Terms = () => {
                   affiliates that is related to any of the arrangements
                   contemplated in these Terms of Use or any other document in
                   which these Terms of Use are incorporated by reference or
-                  otherwise disclosed by WALLETHUB to the User any
-                  information which relates to its financial and/or business
-                  operations, including but not limited to, specifications,
-                  models, merchant lists/information samples, reports,
-                  forecasts, current or historical data, computer programs or
-                  documentation and all other technical, financial or business
-                  data, information related to its internal management,
-                  customers, products, services, anticipated products/services,
-                  processes, financial condition, employees, merchants,
-                  Intellectual Property, marketing strategies, experimental
-                  work, trade secrets, business plans, business proposals,
-                  customer contract terms and conditions,
-                  compensation/commission/ service charges payable to the User,
-                  and other valuable confidential information and materials that
-                  are customarily treated as confidential or proprietary,
-                  whether or not specifically identified as confidential or
-                  proprietary.
+                  otherwise disclosed by WALLETHUB to the User any information
+                  which relates to its financial and/or business operations,
+                  including but not limited to, specifications, models, merchant
+                  lists/information samples, reports, forecasts, current or
+                  historical data, computer programs or documentation and all
+                  other technical, financial or business data, information
+                  related to its internal management, customers, products,
+                  services, anticipated products/services, processes, financial
+                  condition, employees, merchants, Intellectual Property,
+                  marketing strategies, experimental work, trade secrets,
+                  business plans, business proposals, customer contract terms
+                  and conditions, compensation/commission/ service charges
+                  payable to the User, and other valuable confidential
+                  information and materials that are customarily treated as
+                  confidential or proprietary, whether or not specifically
+                  identified as confidential or proprietary.
                 </p>
 
                 <p className="landing-bg_para">
@@ -233,8 +232,8 @@ const Terms = () => {
 
                 <p className="landing-bg_para">
                   <strong>“Service Provider”</strong> shall mean any banking
-                  and/or non-banking entity with which WALLETHUB INDIA PRIVATE LIMITED
-                  has, directly or indirectly, executed an agreement for
+                  and/or non-banking entity with which WALLETHUB INDIA PRIVATE
+                  LIMITED has, directly or indirectly, executed an agreement for
                   facilitating Transactions between such entity and its
                   customers.
                 </p>
@@ -242,7 +241,7 @@ const Terms = () => {
                 <p className="landing-bg_para">
                   <strong>“Users”</strong> shall mean individuals&nbsp;including
                   all body&nbsp;corporates, partnerships, limited liability
-                  partnerships, etc., who are availing WALLETHUB TECHNOLOGIES
+                  partnerships, etc., who are availing  WALLETHUB INDIA PRIVATE LIMITED 
                   services through the WALLETHUB INDIA PRIVATE LIMITED.
                 </p>
               </div>
@@ -257,9 +256,9 @@ const Terms = () => {
 
               <div className="landing-bg_para">
                 <div>
-                  <u>INFORMATION SUPPLIED TO INSTANTPAY.</u> Users agree that
-                  the information provided by the Users to WALLETHUB
-                  TECHNOLOGIES on registration and at all other times, including
+                  <u>INFORMATION SUPPLIED TO DILLIPAY.</u> Users agree that
+                  the information provided by the Users to WALLETHUB INDIA PRIVATE LIMITED
+                   on registration and at all other times, including
                   payment, is true, accurate, current, and complete.
                 </div>
                 <div className="landing-bg_para">
@@ -267,16 +266,16 @@ const Terms = () => {
                   identifies a Users’ account with WALLETHUB through which
                   WALLETHUB services are dispensed (“
                   <strong>Account</strong>
-                  ”). WALLETHUB encourages Users to choose a strong password
-                  to protect their Account. It is advised that Users do not
-                  share their password with anyone or write it down. Neither
-                  WALLETHUB nor its Service Providers, under any
-                  circumstances, will ever ask for a User's Account password or
-                  any other confidential information. If a User has any reason
-                  to believe that his Account is no longer secure, then the User
-                  shall immediately change the Account password and indemnify
-                  WALLETHUB TECHNOLOGIES from any liabilities that may arise
-                  from the misuse of such User’s Account.
+                  ”). WALLETHUB encourages Users to choose a strong password to
+                  protect their Account. It is advised that Users do not share
+                  their password with anyone or write it down. Neither WALLETHUB
+                  nor its Service Providers, under any circumstances, will ever
+                  ask for a User's Account password or any other confidential
+                  information. If a User has any reason to believe that his
+                  Account is no longer secure, then the User shall immediately
+                  change the Account password and indemnify WALLETHUB INDIA PRIVATE LIMITED
+                   from any liabilities that may arise from the
+                  misuse of such User’s Account.
                 </div>
 
                 <div className="landing-bg_para">
@@ -291,25 +290,25 @@ const Terms = () => {
                 <div className="landing-bg_para">
                   <u>RECLAIMING INACTIVE ACCOUNTS.</u>. If an Account is found
                   to be overly inactive, the Account may be reclaimed by
-                  WALLETHUB without providing notice to the concerned User.
-                  An Account is considered as inactive if the concerned User is
-                  not signing in and/or has not done any transactions for more
-                  than 6 consecutive months.
+                  WALLETHUB without providing notice to the concerned User. An
+                  Account is considered as inactive if the concerned User is not
+                  signing in and/or has not done any transactions for more than
+                  6 consecutive months.
                 </div>
 
                 <div className="landing-bg_para">
-                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> WALLETHUB
-                  ’s services and/or the Site may include links or references to
+                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> WALLETHUB ’s
+                  services and/or the Site may include links or references to
                   other web sites or services solely for the Users’ convenience
-                  (“<strong>Reference Sites</strong>”). WALLETHUB
-                  TECHNOLOGIES does not endorse any such Reference Sites or the
-                  information, materials, products, or services contained on or
-                  accessible through Reference Sites. Correspondence or business
-                  dealings between Users and concerned Reference Sites are
-                  solely between such User and the concerned Reference Site.
-                  Access and use of Reference Sites, including the information,
-                  materials, products, and services on or available through
-                  Reference Sites is solely at the concerned User’s own risk.
+                  (“<strong>Reference Sites</strong>”).  WALLETHUB INDIA PRIVATE LIMITED 
+                  does not endorse any such Reference Sites or the information,
+                  materials, products, or services contained on or accessible
+                  through Reference Sites. Correspondence or business dealings
+                  between Users and concerned Reference Sites are solely between
+                  such User and the concerned Reference Site. Access and use of
+                  Reference Sites, including the information, materials,
+                  products, and services on or available through Reference Sites
+                  is solely at the concerned User’s own risk.
                 </div>
 
                 <div className="landing-bg_para">
@@ -321,17 +320,17 @@ const Terms = () => {
                       notifications as part of its efforts to fulfil the User’s
                       request or service your account. A User may continue to
                       receive transactional and critical&nbsp;communication from
-                      WALLETHUB TECHNOLOGIES even after opting out of
-                      marketing communications.
+                       WALLETHUB INDIA PRIVATE LIMITED  even after opting out of marketing
+                      communications.
                     </div>
                     <div className="landing-bg_para">
                       WALLETHUB will make the best efforts to provide
                       notifications and it shall be deemed that the User shall
                       have received the information sent from the Company during
                       the course of, or in relation to, using the WALLETHUB
-                      Platform or availing any Services. WALLETHUB
-                      TECHNOLOGIES shall not be under any obligation to confirm
-                      the authenticity of the person(s) receiving the alert. The
+                      Platform or availing any Services.  WALLETHUB INDIA PRIVATE LIMITED 
+                      shall not be under any obligation to confirm the
+                      authenticity of the person(s) receiving the alert. The
                       User cannot hold the Company liable for non-availability
                       of any notification service in any manner whatsoever.
                     </div>
@@ -361,7 +360,7 @@ const Terms = () => {
                       <p>
                         c)&nbsp; User’s use or inability to use WALLETHUB ’s
                         services, the Site or any Reference Sites, even if
-                        WALLETHUB or a WALLETHUB TECHNOLOGIES authorized
+                        WALLETHUB or a  WALLETHUB INDIA PRIVATE LIMITED  authorized
                         representative has advised of the possibility of such
                         damages,
                       </p>
@@ -383,8 +382,8 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      It shall be at the sole discretion of WALLETHUB
-                      TECHNOLOGIES to reverse any transaction subject to
+                      It shall be at the sole discretion of WALLETHUB INDIA PRIVATE LIMITED
+                       to reverse any transaction subject to
                       approval of the concerned Service Provider.
                       Notwithstanding the above, if any court of law finds that
                       WALLETHUB or its directors, officers, or employees, are
@@ -396,11 +395,11 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      Users acknowledge and agree that WALLETHUB has offered
-                      its products and services, set its prices, and entered
-                      into these Terms of Use and Applicable Agreement in
-                      reliance upon the warranty, disclaimers, and the
-                      limitations of liability set forth herein.
+                      Users acknowledge and agree that WALLETHUB has offered its
+                      products and services, set its prices, and entered into
+                      these Terms of Use and Applicable Agreement in reliance
+                      upon the warranty, disclaimers, and the limitations of
+                      liability set forth herein.
                     </div>
 
                     <div className="landing-bg_para">
@@ -409,16 +408,16 @@ const Terms = () => {
                       reasonable and fair allocation of risk between Users and
                       WALLETHUB , and that the warranty, disclaimers, and the
                       limitations of liability set forth herein form an
-                      essential basis of the bargain between Users and
-                      WALLETHUB . WALLETHUB would not be able to provide
-                      the services to Users on an economically reasonable basis
-                      without these limitations.
+                      essential basis of the bargain between Users and WALLETHUB
+                      . WALLETHUB would not be able to provide the services to
+                      Users on an economically reasonable basis without these
+                      limitations.
                     </div>
                     <div className="landing-bg_para">
-                      Users understand that WALLETHUB or the Service
-                      Providers may reject authentication and/or authorization
-                      of transaction placed by Users for any reason including
-                      but not limited to insufficient funds, incorrect
+                      Users understand that WALLETHUB or the Service Providers
+                      may reject authentication and/or authorization of
+                      transaction placed by Users for any reason including but
+                      not limited to insufficient funds, incorrect
                       authentication details provided, expired card/bank
                       account, risk management, suspicion of fraudulent
                       transactions, selling of restricted or banned items, use
@@ -458,8 +457,8 @@ const Terms = () => {
                       If WALLETHUB is intimated, by the bank, that a customer
                       has reported an unauthorized debit/chargeback of the
                       customer’s Payment Instrument (“Fraudulent Transaction”),
-                      the User shall be notified by WALLETHUB . The User
-                      shall be entitled to furnish documents and information
+                      the User shall be notified by WALLETHUB . The User shall
+                      be entitled to furnish documents and information
                       pertaining to the Transaction associated with the
                       Chargeback within one&nbsp;(1) day&nbsp;(or such other
                       period specified by the bank).
@@ -473,17 +472,17 @@ const Terms = () => {
                       <p>
                         b)&nbsp; the bank is not satisfied with the Chargeback
                         documents furnished by the User, then the bank shall be
-                        entitled to order the WALLETHUB to affect a reversal
-                        of the debit of the Chargeback Amount associated with
-                        the Chargeback such that the said chargeback amount is
+                        entitled to order the WALLETHUB to affect a reversal of
+                        the debit of the Chargeback Amount associated with the
+                        Chargeback such that the said chargeback amount is
                         credited to the customer’s Payment Instrument.
                       </p>
                     </div>
                     <div className="landing-bg_para">
-                      WALLETHUB shall also be entitled to suspend the
-                      settlement of the amount under dispute or hold the value
-                      of transaction under dispute from following the settlement
-                      of the transaction during the pendency of inquiries,
+                      WALLETHUB shall also be entitled to suspend the settlement
+                      of the amount under dispute or hold the value of
+                      transaction under dispute from following the settlement of
+                      the transaction during the pendency of inquiries,
                       investigations and resolution thereof by the Service
                       Providers to the User.
                     </div>
@@ -528,18 +527,18 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       The User hereby acknowledges and agrees that WALLETHUB
                       SERVICES is a facilitator for payment processing services
-                      which are requested by Users and WALLETHUB INDIA PRIVATE LIMITED
-                      shall not be responsible for any unauthorized transaction
-                      done by any person including third party and amounting to
-                      infringement of another’s rights or any chargebacks
-                      claimed by the customers. It will be the responsibility of
-                      Users to ensure due protection while transacting online or
-                      otherwise. WALLETHUB will assist the Users in settling
-                      any queries related to the Services that arise between the
-                      Users, and its customers. However, WALLETHUB SERVICES
-                      shall bear no responsibility with respect to the dispute
-                      or query related to payment made by the customers to the
-                      Users.
+                      which are requested by Users and WALLETHUB INDIA PRIVATE
+                      LIMITED shall not be responsible for any unauthorized
+                      transaction done by any person including third party and
+                      amounting to infringement of another’s rights or any
+                      chargebacks claimed by the customers. It will be the
+                      responsibility of Users to ensure due protection while
+                      transacting online or otherwise. WALLETHUB will assist the
+                      Users in settling any queries related to the Services that
+                      arise between the Users, and its customers. However,
+                      WALLETHUB SERVICES shall bear no responsibility with
+                      respect to the dispute or query related to payment made by
+                      the customers to the Users.
                     </div>
                   </div>
                 </div>
@@ -570,10 +569,10 @@ const Terms = () => {
                       full end to end transaction details/information
                       collected/carried/processed as part of the message/payment
                       instructions. The User also acknowledges and agrees that
-                      the account balance maintained by the Users on
-                      WALLETHUB Platform shall be non-interest bearing and
-                      shall be forfeited by WALLETHUB if found lying unused
-                      for more than 365 days.
+                      the account balance maintained by the Users on WALLETHUB
+                      Platform shall be non-interest bearing and shall be
+                      forfeited by WALLETHUB if found lying unused for more than
+                      365 days.
                     </div>
                   </div>
                 </div>
@@ -590,10 +589,10 @@ const Terms = () => {
                       and risks associated with the same.
                     </div>
                     <div className="landing-bg_para">
-                      it shall immediately intimate WALLETHUB of any
-                      violation or potential violation of these Terms of Use or
-                      of other circumstances that may cause damage to the
-                      goodwill and reputation of WALLETHUB ,
+                      it shall immediately intimate WALLETHUB of any violation
+                      or potential violation of these Terms of Use or of other
+                      circumstances that may cause damage to the goodwill and
+                      reputation of WALLETHUB ,
                     </div>
                     <div className="landing-bg_para">
                       it shall be responsible to obtain any and all consents and
@@ -623,8 +622,8 @@ const Terms = () => {
                       deep-link, page scrape, robot, spider or other automatic
                       device, program, algorithm or methodology, or any similar
                       or equivalent manual process, to access, acquire, copy or
-                      monitor any portion of the WALLETHUB PRIVATE LIMITED,
-                      or in any way reproduce or circumvent the navigational
+                      monitor any portion of the WALLETHUB INDIA PRIVATE LIMITED, or
+                      in any way reproduce or circumvent the navigational
                       structure or presentation of the platform, without
                       WALLETHUB ’s express prior written consent.
                     </div>
@@ -641,11 +640,11 @@ const Terms = () => {
                       not filed by the User as per sec 139(1) of Income Tax Act,
                       1961 for the previous financial years starting from FY
                       2018-19 and undertake to indemnify and keep indemnified
-                      WALLETHUB against any and all losses, claims,
-                      liabilities, costs, taxes, interest, penalties imposed by
-                      any government and regulatory authority for non-complying
-                      with Section 206AB or any other provisions of Income Tax
-                      Act, 1961. The User also agrees that in case of any
+                      WALLETHUB against any and all losses, claims, liabilities,
+                      costs, taxes, interest, penalties imposed by any
+                      government and regulatory authority for non-complying with
+                      Section 206AB or any other provisions of Income Tax Act,
+                      1961. The User also agrees that in case of any
                       non-compliance as per the above-mentioned section the
                       Company shall recover the TDS amount from the User along
                       with interest and penalty.
@@ -680,15 +679,15 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       any claim or legal notice or quasi-legal proceedings to
                       which WALLETHUB may be required to become party or to
-                      which WALLETHUB may be subjected by any person
-                      including any governmental authority, by reason of breach
-                      of any Applicable Law,
+                      which WALLETHUB may be subjected by any person including
+                      any governmental authority, by reason of breach of any
+                      Applicable Law,
                     </div>
                     <div className="landing-bg_para">
                       due to failure of a User to obtain any required statutory
                       or regulatory approval necessary for the performance of
-                      its obligations in the Applicable Agreement with
-                      WALLETHUB ,
+                      its obligations in the Applicable Agreement with WALLETHUB
+                      ,
                     </div>
                     <div className="landing-bg_para">
                       all liability, claims, damages, costs, expenses suffered
@@ -697,15 +696,15 @@ const Terms = () => {
                       Act, 1961 while acting as collection agent of the Company.
                     </div>
                     <div className="landing-bg_para">
-                      WALLETHUB reserves the right, at User’s expense, to
-                      assume the exclusive defense and control of any matter,
-                      including rights to settle, for which concerned User is
-                      required to indemnify WALLETHUB . The User agrees to
-                      cooperate with WALLETHUB ’s defense and settlement of
-                      these claims. WALLETHUB will use reasonable efforts to
-                      notify the User of any claim, action, or proceeding
-                      brought by a third party that is subject to the foregoing
-                      indemnification upon becoming aware of it.
+                      WALLETHUB reserves the right, at User’s expense, to assume
+                      the exclusive defense and control of any matter, including
+                      rights to settle, for which concerned User is required to
+                      indemnify WALLETHUB . The User agrees to cooperate with
+                      WALLETHUB ’s defense and settlement of these claims.
+                      WALLETHUB will use reasonable efforts to notify the User
+                      of any claim, action, or proceeding brought by a third
+                      party that is subject to the foregoing indemnification
+                      upon becoming aware of it.
                     </div>
                   </div>
                 </div>
@@ -713,61 +712,60 @@ const Terms = () => {
                 <div className="landing-bg_para">
                   <u>DISCLAIMER</u>
                   To the fullest extent permissible pursuant to Applicable Law,
-                  WALLETHUB and its officers, directors, employees, and
-                  agents disclaim all warranties, express or implied, including,
-                  but not limited to, implied warranties of merchantability,
-                  fitness for a particular purpose, and non-infringement of
-                  proprietary rights. No advice or information, whether oral or
-                  written, obtained by a User from WALLETHUB or through
-                  WALLETHUB ’s services or the Site will create any warranty
-                  not expressly stated herein. WALLETHUB does not authorize
-                  anyone to make any warranty on its behalf and Users should not
-                  rely on any such statement. Users acknowledge that
-                  WALLETHUB SERVICES is a reseller and is not liable for any
-                  third-party seller’s obligations. It is User’s responsibility
-                  to evaluate the accuracy, completeness and usefulness of all
-                  opinions, advice, merchandise and other information provided
-                  through the Site or on the internet generally. WALLETHUB
-                  does not warrant that its services will be uninterrupted, or
-                  free of errors, viruses or other harmful components, and that
-                  any of the foregoing defects will be corrected. WALLETHUB
-                  ’s services and the Site and any data, information, third
-                  party software, Reference Sites, or Software made available in
-                  conjunction with or through its services and the Site are
-                  provided on an “as is” and “as available”, “with all faults”
-                  basis and without warranties or representations of any kind
-                  either express or implied. WALLETHUB and its third-party
-                  suppliers, licensors, and partners do not warrant or make any
-                  representations regarding the use or the results of the use of
-                  WALLETHUB ’s services, the Site or any Reference Sites in
-                  terms of correctness, accuracy, reliability, or otherwise.
+                  WALLETHUB and its officers, directors, employees, and agents
+                  disclaim all warranties, express or implied, including, but
+                  not limited to, implied warranties of merchantability, fitness
+                  for a particular purpose, and non-infringement of proprietary
+                  rights. No advice or information, whether oral or written,
+                  obtained by a User from WALLETHUB or through WALLETHUB ’s
+                  services or the Site will create any warranty not expressly
+                  stated herein. WALLETHUB does not authorize anyone to make any
+                  warranty on its behalf and Users should not rely on any such
+                  statement. Users acknowledge that WALLETHUB SERVICES is a
+                  reseller and is not liable for any third-party seller’s
+                  obligations. It is User’s responsibility to evaluate the
+                  accuracy, completeness and usefulness of all opinions, advice,
+                  merchandise and other information provided through the Site or
+                  on the internet generally. WALLETHUB does not warrant that its
+                  services will be uninterrupted, or free of errors, viruses or
+                  other harmful components, and that any of the foregoing
+                  defects will be corrected. WALLETHUB ’s services and the Site
+                  and any data, information, third party software, Reference
+                  Sites, or Software made available in conjunction with or
+                  through its services and the Site are provided on an “as is”
+                  and “as available”, “with all faults” basis and without
+                  warranties or representations of any kind either express or
+                  implied. WALLETHUB and its third-party suppliers, licensors,
+                  and partners do not warrant or make any representations
+                  regarding the use or the results of the use of WALLETHUB ’s
+                  services, the Site or any Reference Sites in terms of
+                  correctness, accuracy, reliability, or otherwise.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>INTELLECTUAL PROPERTY.</u>
                   <div className="custom-list points-alpha mt-3">
                     <div className="landing-bg_para">
-                      WALLETHUB ’s services and the Site are owned and
-                      operated by WALLETHUB and/or third-party licensors. The
-                      visual interfaces, graphics, design, compilation,
-                      information, computer code (including source code and
-                      object code), products, software, services, and all other
-                      elements of WALLETHUB ’s services and the Site provided
-                      by WALLETHUB (the <strong> “Materials”</strong>) are
-                      protected by Applicable Law. As between User and
-                      WALLETHUB , all Materials and WALLETHUB ’s
-                      Intellectual Property are the property of WALLETHUB
-                      and/or third-party licensors or suppliers. User agrees not
-                      to remove, obscure, or alter WALLETHUB or any third
-                      party's copyright, patent, trademark, or other proprietary
-                      rights notices affixed to or contained within or accessed
-                      in conjunction with or through WALLETHUB ’s services.
-                      Except as expressly authorized by WALLETHUB , the User
-                      agrees not to sell, license, distribute, copy, modify,
-                      publicly perform or display, transmit, publish, edit,
-                      adapt, create derivative works from, or otherwise make
-                      unauthorized use of the Materials or WALLETHUB ’s
-                      Intellectual Property.
+                      WALLETHUB ’s services and the Site are owned and operated
+                      by WALLETHUB and/or third-party licensors. The visual
+                      interfaces, graphics, design, compilation, information,
+                      computer code (including source code and object code),
+                      products, software, services, and all other elements of
+                      WALLETHUB ’s services and the Site provided by WALLETHUB
+                      (the <strong> “Materials”</strong>) are protected by
+                      Applicable Law. As between User and WALLETHUB , all
+                      Materials and WALLETHUB ’s Intellectual Property are the
+                      property of WALLETHUB and/or third-party licensors or
+                      suppliers. User agrees not to remove, obscure, or alter
+                      WALLETHUB or any third party's copyright, patent,
+                      trademark, or other proprietary rights notices affixed to
+                      or contained within or accessed in conjunction with or
+                      through WALLETHUB ’s services. Except as expressly
+                      authorized by WALLETHUB , the User agrees not to sell,
+                      license, distribute, copy, modify, publicly perform or
+                      display, transmit, publish, edit, adapt, create derivative
+                      works from, or otherwise make unauthorized use of the
+                      Materials or WALLETHUB ’s Intellectual Property.
                     </div>
                     <div className="landing-bg_para">
                       Parties do not accrue any rights or interest in the other
@@ -784,15 +782,14 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       If Users’ have comments regarding WALLETHUB 's services
                       and the Site or ideas on how to improve it, please write
-                      to our 24x7 Helpdesk at help@instantpay.in. Please note
+                      to our 24x7 Helpdesk at {getFirmEmail()}. Please note
                       that by doing so, concerned User hereby irrevocably assign
-                      to WALLETHUB , and shall assign to WALLETHUB , all
-                      right, title and interest in and to all ideas and
-                      suggestions and any and all worldwide intellectual
-                      property rights associated therewith. The concerned User
-                      agrees to perform such acts and execute such documents as
-                      may be reasonably necessary to perfect the foregoing
-                      rights.
+                      to WALLETHUB , and shall assign to WALLETHUB , all right,
+                      title and interest in and to all ideas and suggestions and
+                      any and all worldwide intellectual property rights
+                      associated therewith. The concerned User agrees to perform
+                      such acts and execute such documents as may be reasonably
+                      necessary to perfect the foregoing rights.
                     </div>
                     <div className="landing-bg_para">
                       The User undertakes that:
@@ -852,14 +849,14 @@ const Terms = () => {
 
                 <div className="landing-bg_para">
                   <u>MODIFICATION.</u>
-                  WALLETHUB reserves the right to change, modify, add, or
-                  remove these Terms of Use, either in its entirety or a part
-                  thereof (each, a<strong>“change”</strong>) at any time by
-                  posting a notification to the Site or otherwise communicating
-                  the notification to Users. The changes will become effective,
-                  and shall be deemed accepted by Users, 24 hours after the
-                  initial posting and shall apply immediately on a going-forward
-                  basis with respect to payment transactions initiated after the
+                  WALLETHUB reserves the right to change, modify, add, or remove
+                  these Terms of Use, either in its entirety or a part thereof
+                  (each, a<strong>“change”</strong>) at any time by posting a
+                  notification to the Site or otherwise communicating the
+                  notification to Users. The changes will become effective, and
+                  shall be deemed accepted by Users, 24 hours after the initial
+                  posting and shall apply immediately on a going-forward basis
+                  with respect to payment transactions initiated after the
                   posting date. If Users do not agree with any such
                   modification, Users sole and exclusive remedy is to terminate
                   their use of the Services.
@@ -934,7 +931,7 @@ const Terms = () => {
                   <u>TERMINATION</u>
                   <div className="landing-bg_para">
                     WALLETHUB reserves the right to suspend or terminate the
-                    User’s access to WALLETHUB PRIVATE LIMITED and Services
+                    User’s access to WALLETHUB INDIA PRIVATE LIMITED and Services
                     without prior notice and without any liability to the User
                     or any third party, in the event,
                     <div className="landing-bg_para">
@@ -948,8 +945,8 @@ const Terms = () => {
                       </p>
                       <p>
                         (b) the User provides any information which is
-                        incomplete, inaccurate or false or WALLETHUB
-                        TECHNOLOGIES has reason to believe that such information
+                        incomplete, inaccurate or false or WALLETHUB INDIA PRIVATE LIMITED
+                         has reason to believe that such information
                         is incomplete, inaccurate or false.
                       </p>
                     </div>
@@ -1008,8 +1005,8 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       <u>ASSIGNMENT</u>. These Terms of Use and any rights
                       granted hereunder, shall not be assignable by the User,
-                      but may be assigned by WALLETHUB without restriction.
-                      Any assignment attempted to be made in violation of this
+                      but may be assigned by WALLETHUB without restriction. Any
+                      assignment attempted to be made in violation of this
                       provision shall be void and of no effect.
                     </div>
 
@@ -1024,11 +1021,10 @@ const Terms = () => {
                       <u>NOTICE</u>. WALLETHUB may provide Users with notices
                       and communications by email, regular mail, or posts on the
                       WALLETHUB website(s) or by any other reasonable means.
-                      Except as otherwise set forth herein, notice to
-                      WALLETHUB must be sent by courier or registered post to
-                      the Legal Department, WALLETHUB TECHNOLOGIES PRIVATE
-                      LIMITED s Pvt. Ltd., 1st Floor, B1/A5, Mohan Cooperative
-                      Industrial Estate, New Delhi - 110044, India.
+                      Except as otherwise set forth herein, notice to WALLETHUB
+                      must be sent by courier or registered post to the Legal
+                      Department,  WALLETHUB INDIA PRIVATE LIMITED Pvt.
+                      Ltd., {getFirmAddress()}
                     </div>
 
                     <div className="landing-bg_para">
