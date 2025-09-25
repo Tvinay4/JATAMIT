@@ -31,7 +31,7 @@ const LandingPageIntro2 = () => {
         >
           <Grid
             item
-            md={env === "WALLETHUB" || env === "PaisaKart" ? 6 : 12}
+            md={env === "JATMIT" || env === "PaisaKart" ? 6 : 12}
             sm={12}
           >
             <Box
@@ -90,7 +90,7 @@ const LandingPageIntro2 = () => {
                       color: "#000",
                     }}
                   >
-                    {/* <b>{env === "WALLETHUB" ? "WALLETHUB" : "PaisaKart"}</b>  */}
+                    {/* <b>{env === "JATMIT" ? "JATMIT" : "PaisaKart"}</b>  */}
                     With UPI and QR Code payments, sending and receiving money
                     is just a scan away — fast, secure, and hassle-free!
                   </p>

@@ -1,44 +1,44 @@
 export const primaryColor = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#ff6f91";
   }
 };
 export const primaryLight = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#6a5acd";
   }
 };
 export const primaryLightest = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#c8f2ff";
   }
 };
 export const secondaryColor = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#00bfa6";
   }
 };
 
 export const getHoverActive = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#ff9a8b";
   }
 };
 export const getHoverInActive = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#ffe3f4";
   }
 };
 
 export const getTableHeadRowColor = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     return "#ff6f91";
   }
 };
 
 export const getEnv = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return "WALLETHUB";
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
+    return "JATMIT";
   }
 };
 
@@ -51,7 +51,7 @@ export const whiteColor = () => {
 
 // user icon bg color change functions . . . .
 export const getUserColor = (role) => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
     if (role === "Asm") {
       return "#1C2E46";
     } else if (role === "ZSM") {
@@ -136,20 +136,19 @@ export const getStatusColor = (status) => {
 };
 
 export const getFirmAddress = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `810 C, MONA AERO VIEW, SWASTIK VIHAR,PATIALA
-ROAD, ZIRAKPUR, SAS Nagar, Punjab, 140603
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
+    return `House no.120, pocket no.26, Rohini Sec-24, New Delhi-110085
 `;
   }
 };
 export const getFirmContact = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `8427738499`;
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
+    return `9896146958`;
   }
 };
 export const getFirmEmail = () => {
-  if (process.env.REACT_APP_TITLE === "WALLETHUB") {
-    return `admin@wallethub.co.in`;
+  if (process.env.REACT_APP_TITLE === "JATMIT") {
+    return `Jatmitinnovations@gmail.com`;
   }
 };
 

@@ -236,7 +236,7 @@ const NepalAddCustomer = ({
           <Loader loading={request} />
           <ModalHeader
             title="Add Customer"
-            subtitle="Join the Network: Register Your Nepal Account with WALLETHUB!"
+            subtitle="Join the Network: Register Your Nepal Account with JATMIT!"
             handleClose={handleClose}
           />
           <Box

@@ -356,26 +356,31 @@ const LoginPage = () => {
       >
         {/* Left Column - Hidden on medium and smaller screens */}
         <Hidden mdDown>
-          <Grid
-            item
-            md={6}
-            lg={6}
-            sx={{ position: "relative", height: "100vh" }}
-          >
-            <Box
-              sx={{
-                backgroundImage: `url(${LoginPageIllustratorImg2})`,
-                backgroundSize: "cover", // Ensures the full SVG is visible
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                height: "100%", // Ensures full height
-                width: "100%", // Ensures full width
-                position: "absolute", // Ensures no gaps
-                top: 0,
-                left: 0,
-              }}
-            />
-          </Grid>
+  <Grid
+  item
+  md={6}
+  lg={6}
+  sx={{ position: "relative", height: "100vh" }}
+>
+  <Box
+    sx={{
+      backgroundImage: `url(${LoginPageIllustratorImg2})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      bgcolor: "#f5f8fa", // light background
+      border: "1px solid #e0e0e0", // optional subtle border
+      height: "100%",
+      width: "100%",
+      position: "absolute",
+      top: 0,
+      left: 0,
+    }}
+  />
+</Grid>
+
+
+
         </Hidden>
 
         {/* Right Column - Always visible */}
@@ -388,7 +393,7 @@ const LoginPage = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-
+ bgcolor: "#f5f8fa", 
             padding: 11,
             overflowY: "scroll",
             maxHeight: "100vh",
@@ -661,13 +666,13 @@ const LoginPage = () => {
                         // mt: 2,
                         // marginLeft:3,
                         // borderRadius: 6,
-                        color: "#fff",
-                        backgroundColor: " #ff6f91",
-                        fontWeight: "bold",
-                        "&:hover": {
-                          backgroundColor: "#ff9a8b",
-                          fontWeight: "bold",
-                          color: "#FFF",
+                          color: "#fff",
+  backgroundColor: "#094576",
+  fontWeight: "bold",
+  "&:hover": {
+    backgroundColor: "#F9A31C",
+    color: "#fff",
+    fontWeight: "bold",
                         },
                       }}
                       // disabled={!(captchaChecked && agreedToTerms) && (isMobv && username !== "")}
@@ -731,9 +736,9 @@ const LoginPage = () => {
                         // borderRadius: 6,
                         color: " #fff",
                         fontWeight: "bold",
-                        backgroundColor: "#6a5acd",
+                        backgroundColor: "#F9A31C",
                         "&:hover": {
-                          backgroundColor: "#c8f2ff",
+                          backgroundColor: "#094576",
                           color: "#fff",
                         },
                       }}

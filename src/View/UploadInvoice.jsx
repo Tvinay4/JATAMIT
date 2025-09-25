@@ -88,10 +88,10 @@ const UploadInvoice = () => {
             }}
           >
             I confirm that the invoice being uploaded is based upon the
-            commission summary provided by WALLETHUB. Upon verification of
-            the invoice by WALLETHUB, GST credit of{" "}
+            commission summary provided by JATMIT. Upon verification of the
+            invoice by JATMIT, GST credit of{" "}
             <span style={{ color: "red" }}>₹000000</span> will be credited to
-            your WALLETHUB account.
+            your JATMIT account.
           </Typography>
 
           {/* Native DatePicker */}

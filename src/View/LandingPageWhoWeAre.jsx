@@ -7,137 +7,102 @@ const LandingPageWhoWeAre = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const handleScroll = useCallback(() => {
-    setScrollY(window.scrollY);
-  }, []);
+  const handleScroll = useCallback(() => setScrollY(window.scrollY), []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
+  // Features with colorful icons and light pastel backgrounds
   const features = [
     {
       title: "Smart Money Tools",
-      description: "Budget, track & invest with a joyful all-in-one dashboard.",
-      icon: <MonetizationOn sx={{ fontSize: 36, color: "#fff" }} />,
-      bg: "linear-gradient(135deg, #a8edea, #fed6e3)",
+      description: "Budget, save & invest effortlessly.",
+      icon: <MonetizationOn sx={{ fontSize: 36, color: "#ff6b6b" }} />,
+      bg: "#fff0f0",
       threshold: 100,
     },
     {
-      title: "Bank-Grade Security",
-      description: "Protected with AI fraud detection & top-tier encryption.",
-      icon: <Shield sx={{ fontSize: 36, color: "#fff" }} />,
-      bg: "linear-gradient(135deg, #ffecd2, #fcb69f)",
+      title: "Bank-Level Security",
+      description: "Your money is safe with AI fraud detection.",
+      icon: <Shield sx={{ fontSize: 36, color: "#1e90ff" }} />,
+      bg: "#e5f0ff",
       threshold: 250,
     },
     {
-      title: "User Happiness",
-      description: "Every tap is designed to be delightful & empowering.",
-      icon: <ThumbUp sx={{ fontSize: 36, color: "#fff" }} />,
-      bg: "linear-gradient(135deg, #d4fc79, #96e6a1)",
+      title: "Happy Users",
+      description: "Easy, delightful, and rewarding management.",
+      icon: <ThumbUp sx={{ fontSize: 36, color: "#ff9f1a" }} />,
+      bg: "#fff8e5",
       threshold: 400,
     },
     {
-      title: "Lightning Speed",
-      description: "Instant transfers & real-time balance updates.",
-      icon: <Speed sx={{ fontSize: 36, color: "#fff" }} />,
-      bg: "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+      title: "Lightning Fast",
+      description: "Instant transfers & real-time updates.",
+      icon: <Speed sx={{ fontSize: 36, color: "#4caf50" }} />,
+      bg: "#e5fff0",
       threshold: 550,
     },
   ];
 
+  const services = [
+    { title: "Instant Transfers", desc: "Send money anywhere instantly.", icon: "⚡", color: "#ff6b6b" },
+    { title: "Mobile & DTH Recharge", desc: "Top-up phones & TV quickly.", icon: "📱", color: "#1e90ff" },
+    { title: "Bill Payments", desc: "Pay all utility bills easily.", icon: "🧾", color: "#ff9f1a" },
+    { title: "Wallet Rewards", desc: "Earn cashback & rewards.", icon: "🎁", color: "#4caf50" },
+  ];
+
   return (
-    <Box
-      sx={{
-        backgroundColor: "#fefefe",
-        py: { xs: 8, md: 12 },
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      <Box
-        sx={{
-          position: "absolute",
-          top: "-100px",
-          left: "-100px",
-          width: 300,
-          height: 300,
-
-          borderRadius: "50%",
-          filter: "blur(100px)",
-          opacity: 0.5,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "-120px",
-          right: "-100px",
-          width: 300,
-          height: 300,
-          background: "linear-gradient(135deg, #a1c4fd, #c2e9fb)",
-          borderRadius: "50%",
-          filter: "blur(100px)",
-          opacity: 0.5,
-        }}
-      />
-
+    <Box sx={{ backgroundColor: "#fcfcfc", py: { xs: 8, md: 12 }, position: "relative" }}>
       {/* Header */}
-      <Box sx={{ textAlign: "center", mb: 10, px: 2 }}>
+      <Box sx={{ textAlign: "center", mb: 12, px: 3 }}>
         <Typography
           variant="h3"
           sx={{
             fontWeight: 900,
-            background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontSize: { xs: "2.2rem", md: "3rem" },
+            color: "#094576",
+            fontSize: { xs: "2.4rem", md: "2.5rem" },
             lineHeight: 1.2,
           }}
         >
-          Meet WalletHub
+          “Welcome to JATMIT Wallet” – Simple, Smart & Secure
         </Typography>
         <Typography
           sx={{
-            color: "#777",
+            color: "#555",
             mt: 2,
             maxWidth: 700,
             mx: "auto",
             fontSize: { xs: "1rem", md: "1.2rem" },
           }}
         >
-          The cutest way to manage money — style, safety, and smiles all in one
-          magical wallet.
+          Manage your finances effortlessly with a secure, fast, and joyful digital wallet.
         </Typography>
       </Box>
 
-      {/* Features */}
-      <Grid
-        container
-        spacing={isMobile ? 4 : 6}
-        justifyContent="center"
-        sx={{ px: { xs: 3, md: 8 } }}
-      >
+      {/* Feature Cards */}
+      <Grid container spacing={isMobile ? 4 : 6} justifyContent="center" sx={{ px: { xs: 3, md: 10 } }}>
         {features.map((feature, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
+          <Grid item xs={12} sm={6} md={3} key={index} sx={{ display: "flex" }}>
             <Box
               sx={{
                 background: feature.bg,
-                p: { xs: 3, md: 4 },
-                borderRadius: "10px",
-                color: "#fff",
+                p: { xs: 3, md: 5 },
+                borderRadius: "20px",
+                color: "#333",
                 textAlign: "center",
-                transform:
-                  scrollY > feature.threshold
-                    ? "translateY(0)"
-                    : "translateY(40px)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                flex: 1,
+                transform: scrollY > feature.threshold ? "translateY(0)" : "translateY(40px)",
                 opacity: scrollY > feature.threshold ? 1 : 0,
-                transition: "all 0.8s cubic-bezier(.25,.8,.25,1)",
-                boxShadow: "0 15px 30px rgba(0,0,0,0.1)",
+                transition: "all 0.7s ease-out",
+                boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
                 "&:hover": {
-                  transform: "translateY(-8px) scale(1.05)",
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+                  transform: "translateY(-6px) scale(1.03)",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
                 },
               }}
             >
@@ -146,114 +111,78 @@ const LandingPageWhoWeAre = () => {
                   width: 70,
                   height: 70,
                   borderRadius: "50%",
-                  background: "rgba(255,255,255,0.25)",
+                  background: "rgba(255,255,255,0.5)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   mx: "auto",
-                  mb: 2,
+                  mb: 3,
                 }}
               >
                 {feature.icon}
               </Box>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                  mb: 1,
-                  fontSize: { xs: "1.1rem", md: "1.3rem" },
-                }}
-              >
-                {feature.title}
-              </Typography>
-              <Typography
-                sx={{
-                  opacity: 0.95,
-                  fontSize: { xs: "0.9rem", md: "1rem" },
-                }}
-              >
-                {feature.description}
-              </Typography>
+              <Box>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: 700, mb: 1.2, fontSize: { xs: "1.1rem", md: "1.25rem" } }}
+                >
+                  {feature.title}
+                </Typography>
+                <Typography sx={{ opacity: 0.9, fontSize: { xs: "0.9rem", md: "1rem" } }}>
+                  {feature.description}
+                </Typography>
+              </Box>
             </Box>
           </Grid>
         ))}
       </Grid>
 
-      <Box
-        sx={{
-          py: { xs: 8, md: 12 },
-          px: 3,
-          background: "linear-gradient(135deg, #fef9f9, #f7faff)",
-          textAlign: "center",
-        }}
-      >
+      {/* Services Section */}
+      <Box sx={{ py: { xs: 10, md: 14 }, px: 4, textAlign: "center" }}>
         <Typography
           variant="h4"
           sx={{
             fontWeight: 800,
-            mb: 6,
-            fontSize: { xs: "1.8rem", md: "2.4rem" },
-            color: "#222",
+            mb: 8,
+            fontSize: { xs: "1.9rem", md: "2.4rem" },
+            color: "#094576",
           }}
         >
-          Everything You Need in One Wallet 💳
+          All-in-One Wallet Services
         </Typography>
 
-        <Grid container spacing={4} justifyContent="center">
-          {[
-            {
-              title: "Instant Money Transfer",
-              desc: "Send money to friends, family, or businesses in seconds — anytime, anywhere.",
-              icon: "⚡",
-              color: "#ff6f91",
-            },
-            {
-              title: "Mobile & DTH Recharge",
-              desc: "Top up your phone or TV in just 2 taps with secure payment options.",
-              icon: "📱",
-              color: "#6a5acd",
-            },
-            {
-              title: "Bill Payments",
-              desc: "Pay electricity, water, gas, and internet bills without standing in line.",
-              icon: "🧾",
-              color: "#00bfa6",
-            },
-            {
-              title: "Wallet Rewards",
-              desc: "Earn cashback, discounts, and loyalty points on every transaction.",
-              icon: "🎁",
-              color: "#ff9671",
-            },
-          ].map((item, i) => (
-            <Grid item xs={12} sm={6} md={3} key={i}>
+        <Grid container spacing={5} justifyContent="center">
+          {services.map((item, i) => (
+            <Grid item xs={12} sm={6} md={3} key={i} sx={{ display: "flex" }}>
               <Box
                 sx={{
                   background: "#fff",
                   borderRadius: "20px",
-                  p: 3,
-                  height: "100%",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.05)",
-                  transition: "transform 0.3s ease",
-                  "&:hover": { transform: "translateY(-6px)" },
+                  p: 4,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  flex: 1,
+                  boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  "&:hover": { transform: "translateY(-6px)", boxShadow: "0 12px 24px rgba(0,0,0,0.1)" },
                 }}
               >
-                <Typography sx={{ fontSize: "2rem" }}>{item.icon}</Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: "bold",
-                    mt: 2,
-                    mb: 1,
-                    fontSize: { xs: "1rem", md: "1.1rem" },
-                    color: item.color,
-                  }}
-                >
-                  {item.title}
-                </Typography>
-                <Typography sx={{ color: "#666", fontSize: "0.9rem" }}>
-                  {item.desc}
-                </Typography>
+                <Typography sx={{ fontSize: "2rem", mb: 2, color: item.color }}>{item.icon}</Typography>
+                <Box>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 700,
+                      fontSize: { xs: "1rem", md: "1.1rem" },
+                      color: "#333",
+                      mb: 1,
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography sx={{ color: "#555", fontSize: "0.9rem" }}>{item.desc}</Typography>
+                </Box>
               </Box>
             </Grid>
           ))}

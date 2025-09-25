@@ -75,9 +75,9 @@ const RefundPolicy = () => {
           >
             <RefundIcon sx={{ verticalAlign: "middle", mr: 1 }} />
             Once a User chooses to avail any service plan/offer announced by{" "}
-            <strong>WALLETHUB PRIVATE LIMITED </strong> and agrees to buy that
+            <strong>JATMIT PRIVATE LIMITED </strong> and agrees to buy that
             plan, such payment shall not be refunded by{" "}
-            <strong>WALLETHUB PRIVATE LIMITED </strong> under any circumstances.
+            <strong>JATMIT PRIVATE LIMITED </strong> under any circumstances.
           </Typography>
         </Paper>
 
@@ -118,7 +118,7 @@ const RefundPolicy = () => {
           >
             <VerifiedUserIcon sx={{ verticalAlign: "middle", mr: 1 }} />
             Post receipt of payment, <strong>
-              WALLETHUB PRIVATE LIMITED{" "}
+              JATMIT PRIVATE LIMITED{" "}
             </strong>{" "}
             will create a User ID only after successful KYC verification. If the
             KYC is unsuccessful, a User ID cannot be created.
@@ -162,9 +162,9 @@ const RefundPolicy = () => {
           >
             <ScheduleIcon sx={{ verticalAlign: "middle", mr: 1 }} />
             Transactions that fail due to issues directly attributable to{" "}
-            <strong>WALLETHUB PRIVATE LIMITED</strong> will be refunded within
-            3-21 working days. Only the actual transaction amount will be
-            refunded, excluding fees.
+            <strong>JATMIT PRIVATE LIMITED</strong> will be refunded within 3-21
+            working days. Only the actual transaction amount will be refunded,
+            excluding fees.
           </Typography>
         </Paper>
       </Box>

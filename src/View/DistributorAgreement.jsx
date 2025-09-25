@@ -419,7 +419,7 @@ const DistributorAgreement = () => {
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            <strong>WALLETHUB INDIA PRIVATE LIMITED</strong>, a company
+            <strong>JATMIT INDIA PRIVATE LIMITED</strong>, a company
             incorporated under The Companies Act, 2013, having its registered
             office at 907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
             Town,Ambala,Haryana,134003 .
@@ -435,8 +435,8 @@ const DistributorAgreement = () => {
           </p>
 
           <p>
-            The WALLETHUB and the Distributor are herein collectively
-            referred to as the “Parties” and individually as a “Party.”
+            The JATMIT and the Distributor are herein collectively referred to
+            as the “Parties” and individually as a “Party.”
           </p>
 
           <h2
@@ -452,23 +452,22 @@ const DistributorAgreement = () => {
 
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
-              <strong>A.</strong> WALLETHUB is a technology-based company
-              engaged, inter alia, provides the software/platform services in
-              the business of the Fintech industry and caters to a number of
+              <strong>A.</strong> JATMIT is a technology-based company engaged,
+              inter alia, provides the software/platform services in the
+              business of the Fintech industry and caters to a number of
               services like Domestic Money Transfer, Aadhaar Enabled Payment
               System, Utility Bill payments, Recharge, Travel, and many more.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              <strong>B.</strong> WALLETHUB proposes to appoint
-              Distributor(s) in various cities and regions of India for the
-              purpose of managing retailers to be appointed by WALLETHUB in
-              such cities and regions and to perform various services offered by
-              WALLETHUB. Such Distributor may be referred to as Master
-              Distributor (MD) or Distributor (DI).
+              <strong>B.</strong> JATMIT proposes to appoint Distributor(s) in
+              various cities and regions of India for the purpose of managing
+              retailers to be appointed by JATMIT in such cities and regions and
+              to perform various services offered by JATMIT. Such Distributor
+              may be referred to as Master Distributor (MD) or Distributor (DI).
             </li>
             <li style={{ marginBottom: "15px" }}>
               <strong>C.</strong> The Distributor wishes to be appointed as the
-              Distributor in the WALLETHUB-designated regional territory
+              Distributor in the JATMIT-designated regional territory
               (hereinafter referred to as "Territory") on the terms & conditions
               contained in this Distributor Agreement. The Parties agree and
               undertake to abide by the terms and conditions of this Agreement.
@@ -487,17 +486,17 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Subject to the terms and conditions contained in this Distributor
-            Agreement, WALLETHUB hereby appoints the Distributor as the
-            Distributor of WALLETHUB on a non-exclusive basis for the
-            Territory to provide the services mentioned in Annexure-I
-            (hereinafter referred to as "Services"), and the Distributor hereby
-            agrees to provide the Services.
+            Agreement, JATMIT hereby appoints the Distributor as the Distributor
+            of JATMIT on a non-exclusive basis for the Territory to provide the
+            services mentioned in Annexure-I (hereinafter referred to as
+            "Services"), and the Distributor hereby agrees to provide the
+            Services.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor may describe themselves as WALLETHUB’s authorized
+            The Distributor may describe themselves as JATMIT’s authorized
             distributor, but must not hold themselves out as being entitled to
-            bind WALLETHUB in any way.
+            bind JATMIT in any way.
           </p>
 
           <h2
@@ -515,7 +514,7 @@ const DistributorAgreement = () => {
             Agreement within 15 days from the signing date. The Agreement is
             valid for 9 years unless terminated in accordance with clause 13.
             Upon expiry and subject to satisfactory performance, the Agreement
-            may be renewed at WALLETHUB’s discretion.
+            may be renewed at JATMIT’s discretion.
           </p>
 
           <h2
@@ -529,11 +528,10 @@ const DistributorAgreement = () => {
             3. PROVISION OF SERVICES
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            During the Term, the Distributor shall render to WALLETHUB
-            services as defined in Annexure-I. WALLETHUB reserves the right
-            to modify, alter, and amend the list of Services at any time, and
-            the Distributor shall be bound by all such modifications and
-            amendments.
+            During the Term, the Distributor shall render to JATMIT services as
+            defined in Annexure-I. JATMIT reserves the right to modify, alter,
+            and amend the list of Services at any time, and the Distributor
+            shall be bound by all such modifications and amendments.
           </p>
 
           <h2
@@ -550,14 +548,14 @@ const DistributorAgreement = () => {
             The Parties shall mutually agree upon a Business Plan in relation to
             sourcing retailers. The Distributor agrees to introduce retailers
             per the agreed Business Plan. If unable to meet these numbers,
-            WALLETHUB may appoint additional Distributors or terminate this
+            JATMIT may appoint additional Distributors or terminate this
             Agreement.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor acknowledges responsibility for credit transactions
-            with retailers within the Territory, and WALLETHUB shall not be
-            liable for any disputes arising from these transactions.
+            with retailers within the Territory, and JATMIT shall not be liable
+            for any disputes arising from these transactions.
           </p>
 
           <h2
@@ -572,64 +570,64 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall deposit a sum of INR [……….../=] [……..in
-            words……...] with the WALLETHUB on or before the effective date.
-            The deposit shall be non-interest bearing and shall be refunded at
-            the time of termination of the Distributor Agreement in accordance
-            with the provision defined in clause 14 (Consequences of
-            Termination) of this Distributor Agreement.
+            words……...] with the JATMIT on or before the effective date. The
+            deposit shall be non-interest bearing and shall be refunded at the
+            time of termination of the Distributor Agreement in accordance with
+            the provision defined in clause 14 (Consequences of Termination) of
+            this Distributor Agreement.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor acknowledges that the WALLETHUB may reject the
-            deposit at its sole discretion on or before the effective date.
+            The Distributor acknowledges that the JATMIT may reject the deposit
+            at its sole discretion on or before the effective date.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             In addition to the deposit, the Distributor shall maintain and
-            deposit with the WALLETHUB, working capital to the extent of INR
+            deposit with the JATMIT, working capital to the extent of INR
             [……….../=] [……..in words……...], which shall also be
             non-interest-bearing. The working capital shall be utilized to
-            provide credit to the retailers appointed by the WALLETHUB in the
+            provide credit to the retailers appointed by the JATMIT in the
             Territory, and who (retailers) are managed by the Distributor.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor agrees and acknowledges that the WALLETHUB shall not
-            be responsible or liable in any manner whatsoever for the sources of
+            Distributor agrees and acknowledges that the JATMIT shall not be
+            responsible or liable in any manner whatsoever for the sources of
             such deposits and/or working capital, and it is the sole
             responsibility of the Distributor to ensure that the sources of such
             deposits and/or working capital are legitimate and are in accordance
             with the law of India.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            All the amount due to WALLETHUB under this Distributor Agreement,
+            All the amount due to JATMIT under this Distributor Agreement,
             including the deposit and working capital and/or platform fee, shall
             be deposited in accordance with the instructions provided in
-            Annexure-II. Distributor agrees and acknowledges that the
-            WALLETHUB may, by prior written notice of two business days,
-            modify any of the details mentioned in Annexure-II and the
-            Distributor shall be bound by all such modifications.
+            Annexure-II. Distributor agrees and acknowledges that the JATMIT
+            may, by prior written notice of two business days, modify any of the
+            details mentioned in Annexure-II and the Distributor shall be bound
+            by all such modifications.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor acknowledges and agrees that WALLETHUB strictly
-            prohibits any third-party deposits in any bank accounts via any mode
+            Distributor acknowledges and agrees that JATMIT strictly prohibits
+            any third-party deposits in any bank accounts via any mode
             whatsoever. In the event that Distributor or its Retailer indulges
             in any such transaction(s) knowingly or unknowingly, the Distributor
-            authorizes WALLETHUB to freeze its account immediately.
+            authorizes JATMIT to freeze its account immediately.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor shall be entitled to the commission, discount or service
             fee, or such other remuneration referred in the Services, as may be
-            specified by the WALLETHUB, from time to time and published on
-            WALLETHUB’s portal. All the amounts paid by way of the commission
-            shall be exclusive to all applicable taxes, including goods and
-            service tax, surcharge, cess etc., by whatsoever name called, and
-            such taxes will be subject to the deduction of tax at source, if
-            applicable; WALLETHUB shall debit the account of the Distributor
-            to the extent of such taxes.
+            specified by the JATMIT, from time to time and published on JATMIT’s
+            portal. All the amounts paid by way of the commission shall be
+            exclusive to all applicable taxes, including goods and service tax,
+            surcharge, cess etc., by whatsoever name called, and such taxes will
+            be subject to the deduction of tax at source, if applicable; JATMIT
+            shall debit the account of the Distributor to the extent of such
+            taxes.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The commission shall accrue to the Distributor only on receipt and
-            realization of full payment by the WALLETHUB of all dues from the
+            realization of full payment by the JATMIT of all dues from the
             retailers who are managed by the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -640,8 +638,8 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Payments made to the Distributor shall be subject to such
             withholding as prescribed under the applicable law, subject to the
-            aforesaid, WALLETHUB assumes no responsibility for the tax
-            compliance of the Distributor.
+            aforesaid, JATMIT assumes no responsibility for the tax compliance
+            of the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor agrees that payments made to the Distributor shall
@@ -651,9 +649,9 @@ const DistributorAgreement = () => {
             transactions whatsoever.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and authorizes WALLETHUB to impose cash
-            deposit bank charges which shall be subject to deduction from the
-            payments made to the Distributor.
+            The Distributor agrees and authorizes JATMIT to impose cash deposit
+            bank charges which shall be subject to deduction from the payments
+            made to the Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             All costs and expenses for travelling, promotional activities and
@@ -663,35 +661,32 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor agrees and acknowledges that in case of any deviation
             with respect to the use of key salt, it shall be solely liable and
-            responsible; and in such event, WALLETHUB is authorized to
-            immediately deactivate the account of Distributor without any prior
-            notice. WALLETHUB shall not be held responsible for any
-            consequences that arise out of any unauthorized use of its platform
-            in any manner.
+            responsible; and in such event, JATMIT is authorized to immediately
+            deactivate the account of Distributor without any prior notice.
+            JATMIT shall not be held responsible for any consequences that arise
+            out of any unauthorized use of its platform in any manner.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and authorizes WALLETHUB to freeze its
-            account or account of its Retailer in the event WALLETHUB
-            receives any complaint from any relevant statutory or non-statutory
-            authority or any government department or agency. The Distributor
-            further agrees and authorizes WALLETHUB to withdraw the disputed
-            amount along with the anticipated penalty from the such frozen
-            account.
+            The Distributor agrees and authorizes JATMIT to freeze its account
+            or account of its Retailer in the event JATMIT receives any
+            complaint from any relevant statutory or non-statutory authority or
+            any government department or agency. The Distributor further agrees
+            and authorizes JATMIT to withdraw the disputed amount along with the
+            anticipated penalty from the such frozen account.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor agrees and acknowledges that all the sales/ receipts of
-            the distributor regarding the WALLETHUB shall be immediately
-            Deposit or transfer of the funds into the designated Bank Accounts
-            of the WALLETHUB and shall get limit from the Company/
-            WALLETHUB thereafter. The Distributor shall ensure that the
-            working limit in the portal by WALLETHUB against the cash deposit
-            or funds transfer is made available to the distributor immediately.
-            The Distributor shall inform to the Company/ WALLETHUB in
-            predefined format, if the distributor fails to inform the same
-            within seven calendar days the amount will be forfeit by the
-            Company/ WALLETHUB. Distributor may deposit such cash self or via
-            its employee or agent or any authorized person into the designated
-            Bank Accounts of the WALLETHUB.
+            the distributor regarding the JATMIT shall be immediately Deposit or
+            transfer of the funds into the designated Bank Accounts of the
+            JATMIT and shall get limit from the Company/ JATMIT thereafter. The
+            Distributor shall ensure that the working limit in the portal by
+            JATMIT against the cash deposit or funds transfer is made available
+            to the distributor immediately. The Distributor shall inform to the
+            Company/ JATMIT in predefined format, if the distributor fails to
+            inform the same within seven calendar days the amount will be
+            forfeit by the Company/ JATMIT. Distributor may deposit such cash
+            self or via its employee or agent or any authorized person into the
+            designated Bank Accounts of the JATMIT.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -710,14 +705,14 @@ const DistributorAgreement = () => {
             independent offices equipped with the necessary infrastructure and
             workforce required to provide the Services. The Distributor shall
             provide a prior written intimation of any changes in the location of
-            such office to WALLETHUB.
+            such office to JATMIT.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            WALLETHUB may, at its discretion, provide advice to the
-            Distributor in relation to exteriors and interiors of the
-            Distributor’s office, investment information technology systems,
-            basic accounting and business procedure etc. The Distributor shall
-            be bound by such advice of WALLETHUB.
+            JATMIT may, at its discretion, provide advice to the Distributor in
+            relation to exteriors and interiors of the Distributor’s office,
+            investment information technology systems, basic accounting and
+            business procedure etc. The Distributor shall be bound by such
+            advice of JATMIT.
           </p>
 
           <h2
@@ -732,9 +727,9 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall develop adequate and relevant market
-            intelligence in relation to the Territory and shall inform
-            WALLETHUB from time to time about the activities of other
-            persons/companies engaged in a similar business.
+            intelligence in relation to the Territory and shall inform JATMIT
+            from time to time about the activities of other persons/companies
+            engaged in a similar business.
           </p>
 
           <h2
@@ -749,8 +744,8 @@ const DistributorAgreement = () => {
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall engage the minimum number of personnel as
-            specified by the WALLETHUB and such other additional personnel as
-            may be required to effectively provide the Services. The Distributor
+            specified by the JATMIT and such other additional personnel as may
+            be required to effectively provide the Services. The Distributor
             shall ensure that all personnel employed in the provision of the
             Services shall be adequately trained and shall comply with the Term
             of this Distributor Agreement. The Distributor agrees and
@@ -759,14 +754,13 @@ const DistributorAgreement = () => {
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall be liable and responsible for any data theft
-            or misuse of any data related to clients of WALLETHUB from its
-            office.
+            or misuse of any data related to clients of JATMIT from its office.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor agrees and acknowledges that WALLETHUB will not
-            have any obligations, liability or responsibility whatsoever to
-            supervise or manage the Distributor's employees, agents or
-            independent contractors.
+            The Distributor agrees and acknowledges that JATMIT will not have
+            any obligations, liability or responsibility whatsoever to supervise
+            or manage the Distributor's employees, agents or independent
+            contractors.
           </p>
 
           <h2
@@ -780,11 +774,11 @@ const DistributorAgreement = () => {
             9. INTELLECTUAL PROPERTY
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            WALLETHUB hereby grants the Distributor a limited, non-exclusive,
+            JATMIT hereby grants the Distributor a limited, non-exclusive,
             non-transferable, non-assignable and royalty- free license to use
             the Software for the purpose of providing the Services as
             contemplated under this Distributor Agreement, which may be revoked
-            by WALLETHUB at its sole discretion.
+            by JATMIT at its sole discretion.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor is expressly prohibited from distributing,
@@ -794,29 +788,28 @@ const DistributorAgreement = () => {
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor may utilize any third-party software other than the
-            Software provided by WALLETHUB,only with prior permission from
-            WALLETHUB.Further,the Distributor shall ensure that the
-            third-party software is validly licenced and installed.
+            Software provided by JATMIT,only with prior permission from
+            JATMIT.Further,the Distributor shall ensure that the third-party
+            software is validly licenced and installed.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The WALLETHUB shall retain all the rights over all the
-            intellectual property, including the Software, its name and logo and
-            all the rights in relation to the promotion and marketing materials.
-            The Distributor hereby acknowledges that (a) the execution of this
+            The JATMIT shall retain all the rights over all the intellectual
+            property, including the Software, its name and logo and all the
+            rights in relation to the promotion and marketing materials. The
+            Distributor hereby acknowledges that (a) the execution of this
             Distributor Agreement does not amount to any transfer to it of any
-            intellectual property rights held by the WALLETHUB prior to the
+            intellectual property rights held by the JATMIT prior to the
             execution of this Distributor Agreement, nor does this Distributor
-            Agreement in any way limit the WALLETHUB’s rights over its
-            intellectual property, including the right to licence to others and,
-            (b) any and all goodwill arising from the Distributor’s use of the
-            intellectual property shall be exclusive of DIGIVOUCHER without any
-            compensation to anyone.
+            Agreement in any way limit the JATMIT’s rights over its intellectual
+            property, including the right to licence to others and, (b) any and
+            all goodwill arising from the Distributor’s use of the intellectual
+            property shall be exclusive of DIGIVOUCHER without any compensation
+            to anyone.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall not use the Software of the WALLETHUB in
-            any manner whatsoever without the written permission of the
-            WALLETHUB.
+            The Distributor shall not use the Software of the JATMIT in any
+            manner whatsoever without the written permission of the JATMIT.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -844,7 +837,7 @@ const DistributorAgreement = () => {
             business.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            That Distributor agrees and acknowledges that the WALLETHUB has a
+            That Distributor agrees and acknowledges that the JATMIT has a
             responsibility to its customers to keep customer information
             strictly confidential. The Distributor agrees and acknowledges to
             keep all information related to customers strictly confidential that
@@ -876,10 +869,10 @@ const DistributorAgreement = () => {
             any relative or nominee of the Distributor is a director or
             shareholder, 1.) be appointed as a Distributor for any other person
             or legal entity which is carrying on a business similar or in
-            competition with any business carried by WALLETHUB at the
-            relevant time, whether in India or abroad, or 2.) engage in any
-            business that is similar to or in competition with any business
-            carried on by the WALLETHUB at the relevant time.
+            competition with any business carried by JATMIT at the relevant
+            time, whether in India or abroad, or 2.) engage in any business that
+            is similar to or in competition with any business carried on by the
+            JATMIT at the relevant time.
           </p>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -891,21 +884,21 @@ const DistributorAgreement = () => {
             any relative or nominee of the Distributor is a director or
             shareholder, 1.) be appointed as a Distributor for any other person
             or legal entity which is carrying on a business similar or in
-            competition with any business carried by WALLETHUB at the
-            relevant time, whether in India or abroad, or 2.) engage in any
-            business that is similar to or in competition with any business
-            carried on by the WALLETHUB at the relevant time.
+            competition with any business carried by JATMIT at the relevant
+            time, whether in India or abroad, or 2.) engage in any business that
+            is similar to or in competition with any business carried on by the
+            JATMIT at the relevant time.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             During the Term of this Distributor Agreement, the Distributor shall
             not either directly or indirectly, solicit, cause in any part or
             knowingly encourage any existing or potential clients or customers
-            of WALLETHUB to cease doing business or not to do business, in
-            whole or in part of with WALLETHUB, or solicit, cause in any part
-            or knowingly encourage any existing or potential clients or
-            customers of WALLETHUB to do business with any person other then
-            WALLETHUB, or associate with any prospective clients or customers
-            while they continue to be clients or customers of WALLETHUB.
+            of JATMIT to cease doing business or not to do business, in whole or
+            in part of with JATMIT, or solicit, cause in any part or knowingly
+            encourage any existing or potential clients or customers of JATMIT
+            to do business with any person other then JATMIT, or associate with
+            any prospective clients or customers while they continue to be
+            clients or customers of JATMIT.
           </p>
 
           <h2
@@ -919,8 +912,8 @@ const DistributorAgreement = () => {
             12. EXCLUSIVITY
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall only market and promote Services of
-            WALLETHUB, as authorized by the WALLETHUB.
+            The Distributor shall only market and promote Services of JATMIT, as
+            authorized by the JATMIT.
           </p>
 
           <h2
@@ -935,19 +928,19 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            WALLETHUB may terminate this Distributor Agreement of the
-            Distributor with immediate effect, if
+            JATMIT may terminate this Distributor Agreement of the Distributor
+            with immediate effect, if
           </p>
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
-              a. In the opinion of WALLETHUB, the Distributor is not a fit
-              person to perform Services under the provision of this Distributor
+              a. In the opinion of JATMIT, the Distributor is not a fit person
+              to perform Services under the provision of this Distributor
               Agreement.
             </li>
             <li style={{ marginBottom: "15px" }}>
               b. The Distributor fails to deposit the proceeds of sales/receipts
-              made by the Distributor or its retailers to WALLETHUB on a
-              daily and perpetual basis.
+              made by the Distributor or its retailers to JATMIT on a daily and
+              perpetual basis.
             </li>
             <li style={{ marginBottom: "15px" }}>
               c. The Distributor becomes the subject of a voluntary petition in
@@ -956,17 +949,17 @@ const DistributorAgreement = () => {
             </li>
             <li style={{ marginBottom: "15px" }}>
               d. The Distributor fails to comply with directions issued by
-              WALLETHUB under the provision of this Distributor Agreement.
+              JATMIT under the provision of this Distributor Agreement.
             </li>
           </ul>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Notwithstanding anything to the contrary herein, WALLETHUB may
+            Notwithstanding anything to the contrary herein, JATMIT may
             terminate this Distributor Agreement without notice.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor may terminate this Distributor Agreement with written
-            notice of 60 (sixty) days to WALLETHUB.
+            notice of 60 (sixty) days to JATMIT.
           </p>
 
           <h2
@@ -987,28 +980,28 @@ const DistributorAgreement = () => {
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
               a. Immediately discontinue and cease to use the trademark, logo,
-              other intellectual property, and Software provided by
-              WALLETHUB, and shall immediately hand over all copies or
-              documents of such intellectual property to WALLETHUB.
+              other intellectual property, and Software provided by JATMIT, and
+              shall immediately hand over all copies or documents of such
+              intellectual property to JATMIT.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              b. Immediately return to WALLETHUB all confidential
-              information, originals, and copies of any and all materials
-              provided to the Distributor under this Distributor Agreement or in
-              the course of provision of the services.
+              b. Immediately return to JATMIT all confidential information,
+              originals, and copies of any and all materials provided to the
+              Distributor under this Distributor Agreement or in the course of
+              provision of the services.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              c. Immediately provide remote access to WALLETHUB to disable
-              any Software that WALLETHUB has installed with the Distributor.
+              c. Immediately provide remote access to JATMIT to disable any
+              Software that JATMIT has installed with the Distributor.
             </li>
             <li style={{ marginBottom: "15px" }}>
               d. Immediately remove all signboards, banners, and glowboards of
-              WALLETHUB from its offices, along with any materials indicating
-              an association with WALLETHUB.
+              JATMIT from its offices, along with any materials indicating an
+              association with JATMIT.
             </li>
             <li style={{ marginBottom: "15px" }}>
-              e. Immediately cease to promote, market, or advertise WALLETHUB
-              or its products/services.
+              e. Immediately cease to promote, market, or advertise JATMIT or
+              its products/services.
             </li>
             <li style={{ marginBottom: "15px" }}>
               f. Immediately clear all dues within a period of 7 days from the
@@ -1028,24 +1021,24 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall indemnify itself and hold the WALLETHUB and
-            all its financial partner, affiliates, officers, directors,
-            employees, successors and assignees harmless against all customer
-            claims, actions, demands, litigations, suits, proceedings and
-            against all losses,expenses, costs, damages,charges, penalties etc.,
-            due to any wilful negligence, fraud, breach of applicable laws or
-            breach of any terms of this Distributor Agreement directly,
-            attributable to the Distributor.
+            The Distributor shall indemnify itself and hold the JATMIT and all
+            its financial partner, affiliates, officers, directors, employees,
+            successors and assignees harmless against all customer claims,
+            actions, demands, litigations, suits, proceedings and against all
+            losses,expenses, costs, damages,charges, penalties etc., due to any
+            wilful negligence, fraud, breach of applicable laws or breach of any
+            terms of this Distributor Agreement directly, attributable to the
+            Distributor.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Notwithstanding anything contained in this Distributor Agreement,
-            WALLETHUB shall not be liable to the Distributor for any
-            incidental, indirect, consequential or damages of any kind or of
-            loss of revenue or business opportunities.
+            JATMIT shall not be liable to the Distributor for any incidental,
+            indirect, consequential or damages of any kind or of loss of revenue
+            or business opportunities.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            Distributor shall ensure that the WALLETHUB platform or services
-            are not used for money laun-dering and it is in compliance with
+            Distributor shall ensure that the JATMIT platform or services are
+            not used for money laun-dering and it is in compliance with
             Anti-Money Laundering laws, including but not to Prevention of Money
             Laundering Act, 2002 and the rules and regulations made under it.{" "}
           </p>
@@ -1053,8 +1046,8 @@ const DistributorAgreement = () => {
             <li style={{ marginBottom: "15px" }}>
               Distributor undertakes that the Distributor will neither allow nor
               entertain requests for the transfer of money and/or any
-              transaction through the use of the WALLETHUB Platform or
-              services for the following:
+              transaction through the use of the JATMIT Platform or services for
+              the following:
             </li>
             <li style={{ marginBottom: "15px" }}>
               (a) Any form of drugs; and/or
@@ -1081,7 +1074,7 @@ const DistributorAgreement = () => {
           </ul>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             Distributor undertakes that Distributor shall not indulge /use the
-            technology platform of WALLETHUB for the following:{" "}
+            technology platform of JATMIT for the following:{" "}
           </p>
           <ul style={{ paddingLeft: "40px", marginBottom: "30px" }}>
             <li style={{ marginBottom: "15px" }}>
@@ -1128,10 +1121,10 @@ const DistributorAgreement = () => {
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Services rendered by the Distributor under this Distributor
-            Agreement shall be provided as an independent contractor to
-            WALLETHUB, and nothing in this Distributor Agreement creates or
-            shall be deemed to create the relationship of partners, joint
-            venture, employees or principle-agent between the Parties.
+            Agreement shall be provided as an independent contractor to JATMIT,
+            and nothing in this Distributor Agreement creates or shall be deemed
+            to create the relationship of partners, joint venture, employees or
+            principle-agent between the Parties.
           </p>
         </Page>
         <Page size="A4" style={styles.page}>
@@ -1152,9 +1145,9 @@ const DistributorAgreement = () => {
             laws.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor shall permit the WALLETHUB, to enter into and
-            inspect all books of accounts, record and materials in relation to
-            the business operations related to this Distributor Agreement during
+            The Distributor shall permit the JATMIT, to enter into and inspect
+            all books of accounts, record and materials in relation to the
+            business operations related to this Distributor Agreement during
             normal business hours.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
@@ -1167,11 +1160,11 @@ const DistributorAgreement = () => {
             to indemnify the company in case of any losses or claims or
             penalties arising out of defective KYC verification process of the
             Customers for any transaction or any process regarding the platform
-            or services of the company/ WALLETHUB.{" "}
+            or services of the company/ JATMIT.{" "}
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             During the Term and at any time within sixty days after the
-            termination of this Distributor Agreement, WALLETHUB, through its
+            termination of this Distributor Agreement, JATMIT, through its
             employees, representatives or agents, may, at its expense, carry out
             an audit to determine whether the audit has properly completed its
             obligations under this Distributor Agreement.
@@ -1193,7 +1186,7 @@ const DistributorAgreement = () => {
             properly executed by Parties hereto, however the changes,
             alterations, modifications or additions in agreement is binding to
             both parties if such changes etc shall be available on the platform
-            of the company/ WALLETHUB.
+            of the company/ JATMIT.
           </p>
 
           <h2
@@ -1209,12 +1202,11 @@ const DistributorAgreement = () => {
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             The Distributor shall not assign, sub-let, or subcontract any of its
             obligations under this Distributor Agreement to any third party
-            unless it obtains prior written permission/consent from the
-            WALLETHUB. In any event, any assignment or transfer shall not
-            operate to relieve the assigning party of any of its obligations
-            hereunder, nor will any such assignment impose any obligation on the
-            assignee except in the case of express written assumption by the
-            assignee.
+            unless it obtains prior written permission/consent from the JATMIT.
+            In any event, any assignment or transfer shall not operate to
+            relieve the assigning party of any of its obligations hereunder, nor
+            will any such assignment impose any obligation on the assignee
+            except in the case of express written assumption by the assignee.
           </p>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
             No such assignment under this clause shall relieve the Distributor
@@ -1237,11 +1229,11 @@ const DistributorAgreement = () => {
             20. COMMUNICATION
           </h2>
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor hereby agrees that being a WALLETHUB Distributor,
-            WALLETHUB may communicate include communications including but
-            not limited to voice, email, SMS, digital video, and / or any mode
-            of innovative communication method, as deemed fit and proper by the
-            company/ WALLETHUB.
+            The Distributor hereby agrees that being a JATMIT Distributor,
+            JATMIT may communicate include communications including but not
+            limited to voice, email, SMS, digital video, and / or any mode of
+            innovative communication method, as deemed fit and proper by the
+            company/ JATMIT.
           </p>
 
           <h2
@@ -1256,11 +1248,11 @@ const DistributorAgreement = () => {
           </h2>
 
           <p style={{ marginBottom: "20px", marginLeft: "20px" }}>
-            The Distributor hereby agrees that being a WALLETHUB Distributor,
-            WALLETHUB may communicate include communications including but
-            not limited to voice, email, SMS, digital video, and / or any mode
-            of innovative communication method, as deemed fit and proper by the
-            company/ WALLETHUB.{" "}
+            The Distributor hereby agrees that being a JATMIT Distributor,
+            JATMIT may communicate include communications including but not
+            limited to voice, email, SMS, digital video, and / or any mode of
+            innovative communication method, as deemed fit and proper by the
+            company/ JATMIT.{" "}
           </p>
 
           <table
@@ -1305,7 +1297,7 @@ const DistributorAgreement = () => {
                     verticalAlign: "top",
                   }}
                 >
-                  WALLETHUB INDIA PRIVATE LIMITED
+                  JATMIT INDIA PRIVATE LIMITED
                 </td>
 
                 <td

@@ -385,7 +385,7 @@ const AEPS2FAModal = ({
                 ? "Select AePS Type"
                 : "2 Factor Authentication"
             }
-            subtitle="Enjoy seamless aadhaar services with WALLETHUB"
+            subtitle="Enjoy seamless aadhaar services with JATMIT"
             handleClose={handleClose}
           />
           <Box

@@ -36,8 +36,7 @@ const RetProductionSaleComponent = ({ role, USER_ROLES }) => {
   const [query, setQuery] = useState();
   const [commonSearchTime, setCommonSearchTime] = useState("today");
   const handleChange = (event, newValue) => {
-    if (process.env.REACT_APP_TITLE === "WALLETHUB")
-      setTxnDataDuration(newValue);
+    if (process.env.REACT_APP_TITLE === "JATMIT") setTxnDataDuration(newValue);
     else setTxnDataDuration(event);
   };
 

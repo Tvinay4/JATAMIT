@@ -13,7 +13,7 @@ const RetQrModal = () => {
 
   const selfqrValue =
     vqr && vqr
-      ? `VPA=` + vqr + `&pn=WALLETHUB Technologies Limited`
+      ? `VPA=` + vqr + `&pn=JATMIT Technologies Limited`
       : "if you want to use our qr ";
 
   const downloadAsPDF = () => {

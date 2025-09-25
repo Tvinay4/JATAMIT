@@ -420,7 +420,7 @@ const IndemnityLetter = () => {
             <br />
             The Board of Directors,
             <br />
-            WALLETHUB India Private Limited,
+            JATMIT India Private Limited,
             <br />
             907A BLOCK NO 6,Circular Road,
             <br />
@@ -432,7 +432,7 @@ const IndemnityLetter = () => {
             <br />
             I, {user?.establishment}, as a Merchant/Agent/Distributor/Super
             Distributor hereby undertake and explicitly agree to indemnify
-            WALLETHUB India Private Limited towards the following points:
+            JATMIT India Private Limited towards the following points:
           </Typography>
 
           <TableContainer>
@@ -447,11 +447,11 @@ const IndemnityLetter = () => {
               <TableBody>
                 <TableRow>
                   <TableCell>
-                    WALLETHUB India Private Limited is providing us with a
-                    platform as an enabler through which we can
-                    transfer/receive/top up the money through various methods
-                    like UPI/IMPS/RTGS/Cash/Payment Gateway etc from one person
-                    to another(P2P and P2M) against a separate consideration.
+                    JATMIT India Private Limited is providing us with a platform
+                    as an enabler through which we can transfer/receive/top up
+                    the money through various methods like
+                    UPI/IMPS/RTGS/Cash/Payment Gateway etc from one person to
+                    another(P2P and P2M) against a separate consideration.
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -466,9 +466,8 @@ const IndemnityLetter = () => {
                   <TableCell>
                     I am responsible and abide to provide the KYC and other
                     mandatory documents and reasons of each and every
-                    transaction with end customers to the WALLETHUB
-                    India Private Limited at WALLETHUB India Private Limited
-                    discretion.
+                    transaction with end customers to the JATMIT India Private
+                    Limited at JATMIT India Private Limited discretion.
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -484,9 +483,9 @@ const IndemnityLetter = () => {
                     After obtaining a proper understanding of the transaction
                     patterns of this Company, I am giving my consent to use this
                     platform with all the terms and conditions as provided by
-                    WALLETHUB, assuring that every sender or receiver or both
-                    only after giving their full consent will use this platform
-                    for transfer/receive/topup the money through various methods
+                    JATMIT, assuring that every sender or receiver or both only
+                    after giving their full consent will use this platform for
+                    transfer/receive/topup the money through various methods
                     like CASH/UPI/IMPS/NEFT/RTGS/Payment Gateway etc.
                   </TableCell>
                 </TableRow>

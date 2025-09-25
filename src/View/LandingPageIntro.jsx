@@ -6,15 +6,16 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AndroidIcon from "@mui/icons-material/Android";
 
 import { getEnv } from "../theme/setThemeColor";
+
 const LandingPageIntro = () => {
   const navigate = useNavigate();
-  const [env] = useState("WALLETHUB");
+  const [env] = useState("JATMIT");
 
   return (
     <Box
       id="landing-intro"
       sx={{
-        background: "linear-gradient(135deg, #c8f2ff 0%, #ffe3f4 100%)",
+        background: "linear-gradient(135deg, #fff5eb 0%, #fef7f3 100%)",
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
@@ -33,31 +34,31 @@ const LandingPageIntro = () => {
                   fontFamily: "Poppins, sans-serif",
                   fontSize: { xs: "2.2rem", sm: "2.8rem", md: "3.4rem" },
                   lineHeight: 1.3,
-                  background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+                  background: "linear-gradient(90deg, #e86602, #094576)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                WalletHub — Your Money,
-                <span style={{ color: "#00bfa6" }}> Your Way</span>
+                JATMIT Innovations —
+                <span style={{ color: "#e86602" }}> Simplifying Growth</span>
               </Typography>
 
               <Typography
                 variant="h6"
                 sx={{
                   mt: 2,
-                  color: "#555",
+                  color: "#444",
                   fontWeight: 400,
                   fontFamily: "Roboto, sans-serif",
                   lineHeight: 1.7,
-                  maxWidth: "500px",
+                  maxWidth: "520px",
                   mx: { xs: "auto", md: "0" },
                 }}
               >
-                WalletHub is your friendly finance companion — send, receive,
-                and manage your money with ease. Enjoy instant transfers, smart
-                budgeting, and a playful yet secure experience that makes money
-                feel a little more fun.
+                At JATMIT Innovations, we empower individuals and businesses with
+                seamless digital solutions. From secure transactions to smarter
+                management tools, we bring innovation and trust together — so you
+                can focus on what truly matters: growth and success.
               </Typography>
 
               {/* Buttons */}
@@ -78,9 +79,9 @@ const LandingPageIntro = () => {
                     fontWeight: "bold",
                     px: 4,
                     py: 1.5,
-                    background: "linear-gradient(90deg, #ff9a8b, #ff6f91)",
+                    background: "#e86602",
                     "&:hover": {
-                      background: "linear-gradient(90deg, #ff6f91, #ff9a8b)",
+                      background: "#cc5600",
                     },
                   }}
                   onClick={() => navigate("/login")}
@@ -96,12 +97,12 @@ const LandingPageIntro = () => {
                     fontWeight: "bold",
                     px: 4,
                     py: 1.5,
-                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    background: "#094576",
                     "&:hover": {
-                      background: "linear-gradient(90deg, #00bfa6, #6a5acd)",
+                      background: "#07375c",
                     },
                   }}
-                  href="https://play.google.com/store/apps/details?id=wallethub"
+                  href="https://play.google.com/store/apps/details?id=jatmit"
                   target="_blank"
                   startIcon={<AndroidIcon />}
                 >
@@ -116,7 +117,7 @@ const LandingPageIntro = () => {
             <Box
               component="img"
               src={lp_illustration}
-              alt="WalletHub illustration"
+              alt="JATMIT illustration"
               sx={{
                 width: "100%",
                 maxWidth: "500px",

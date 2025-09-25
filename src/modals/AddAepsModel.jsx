@@ -87,7 +87,7 @@ const AddAepsModel = ({ refresh }) => {
             <ModalHeader
               title="Add Scheme"
               handleClose={handleClose}
-              subtitle="Easily Add New scheme with WALLETHUB"
+              subtitle="Easily Add New scheme with JATMIT"
             />
             <Box
               component="form"

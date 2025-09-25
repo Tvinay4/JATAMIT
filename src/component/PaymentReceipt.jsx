@@ -679,7 +679,7 @@ const PaymentReceipt = () => {
                             fontFamily: "'Roboto', sans-serif",
                           }}
                         >
-                          Email: support@WALLETHUB.com
+                          Email: support@JATMIT.com
                         </Typography>
                       </Box>
 

@@ -112,7 +112,7 @@ const AddBlockedAccount = ({ refresh }) => {
             <ModalHeader
               title="Add Account"
               handleClose={handleClose}
-              subtitle="Easily Add New Accounts with WALLETHUB"
+              subtitle="Easily Add New Accounts with JATMIT"
             />
             <Box
               component="form"

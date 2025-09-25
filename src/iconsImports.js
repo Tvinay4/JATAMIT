@@ -8,7 +8,7 @@ import smallLogo from "./assets/small_logo.jpeg";
 import outlet_reg_img from "./assets/outletreg.png";
 import LoginPageIllustrator from "./assets/LoginPageSideIllustration.svg";
 import LoginPageIllustrator1 from "./assets/LoginPageIllustrator1.svg";
-import LoginPageIllustrator2 from "./assets/fintech-left-illustration.svg";
+import LoginPageIllustrator2 from "./assets/LoginPageIllustratorImg2.jpg";
 
 //
 import bbps from "./assets/bbps.png";

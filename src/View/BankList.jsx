@@ -44,11 +44,9 @@ const BankList = () => {
           banks
             .filter(
               (bank) =>
-                ![
-                  "WALLETHUB  RBI",
-                  "CASH AT OFFICE",
-                  "OTHER WALLET 1",
-                ].includes(bank.name)
+                !["JATMIT  RBI", "CASH AT OFFICE", "OTHER WALLET 1"].includes(
+                  bank.name
+                )
             )
             .map((bank, index) => {
               const bankName = bank.name;

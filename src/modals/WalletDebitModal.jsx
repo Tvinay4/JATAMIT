@@ -43,7 +43,7 @@ const WalletDebitModal = ({ row }) => {
   const [type, setType] = useState("DR");
 
   const context = useContext(AuthContext);
-  const user=context.user;
+  const user = context.user;
   const userLat = context.location.lat && context.location.lat;
   const userLong = context.location.long && context.location.long;
 
@@ -110,7 +110,7 @@ const WalletDebitModal = ({ row }) => {
           <Loader loading={request} />
           <ModalHeader
             title="Wallet Debit"
-            subtitle="Spend Smart: Effortless Wallet Debit with WALLETHUB!"
+            subtitle="Spend Smart: Effortless Wallet Debit with JATMIT!"
             handleClose={handleClose}
           />
 
@@ -188,34 +188,35 @@ const WalletDebitModal = ({ row }) => {
                     fieldState: { error },
                   }) => (
                     <FormControl sx={{ width: "100%" }}>
-                      {user && user.id === 1?(  <TextField
-                        autoComplete="off"
-                        label="Type"
-                        name="type"
-                        id="type"
-                        size="small"
-                        select
-                        value={type}
-                        onChange={(e) => setType(e.target.value)}
-                      >
-                        <MenuItem value="CR">Credit</MenuItem>
-                        <MenuItem value="DR">Debit</MenuItem>
-                      </TextField>):(
-                         <TextField
-                         autoComplete="off"
-                         label="Type"
-                         name="type"
-                         id="type"
-                         size="small"
-                         select
-                         value={type}
-                         onChange={(e) => setType(e.target.value)}
-                       >
-                         {/* <MenuItem value="CR">Credit</MenuItem> */}
-                         <MenuItem value="DR">Debit</MenuItem>
-                       </TextField>
+                      {user && user.id === 1 ? (
+                        <TextField
+                          autoComplete="off"
+                          label="Type"
+                          name="type"
+                          id="type"
+                          size="small"
+                          select
+                          value={type}
+                          onChange={(e) => setType(e.target.value)}
+                        >
+                          <MenuItem value="CR">Credit</MenuItem>
+                          <MenuItem value="DR">Debit</MenuItem>
+                        </TextField>
+                      ) : (
+                        <TextField
+                          autoComplete="off"
+                          label="Type"
+                          name="type"
+                          id="type"
+                          size="small"
+                          select
+                          value={type}
+                          onChange={(e) => setType(e.target.value)}
+                        >
+                          {/* <MenuItem value="CR">Credit</MenuItem> */}
+                          <MenuItem value="DR">Debit</MenuItem>
+                        </TextField>
                       )}
-                     
                     </FormControl>
                   )}
                 />

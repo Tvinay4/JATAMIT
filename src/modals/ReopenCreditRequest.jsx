@@ -254,8 +254,8 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           <Typography variant="body2" sx={{ mb: 4 }}>
             2. The proper records of Fund Request(s), slips, Ref no etc shall
             keep handy by the user of portal/ platform for the purpose of
-            Reconciliation purpose of the company (WALLETHUB Technologies
-            Ltd) for 12 months from the date of Deposit.
+            Reconciliation purpose of the company (JATMIT Technologies Ltd) for
+            12 months from the date of Deposit.
           </Typography>
           <Typography variant="body2" sx={{ mb: 4 }}>
             3. The user of portal/ platform shall agree all the terms,
@@ -309,7 +309,7 @@ const ReopenCreditRequest = ({ refresh, row }) => {
           <ModalHeader
             title="Reopen Credit Request"
             handleClose={handleClose}
-            subtitle="Quickly Request Credit with WALLETHUB Now!"
+            subtitle="Quickly Request Credit with JATMIT Now!"
           />
           <Box
             component="form"

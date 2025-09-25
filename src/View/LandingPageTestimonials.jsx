@@ -67,7 +67,7 @@ const LandingPageTestimonials = () => {
           }}
         >
           See how our customers have transformed their payment experiences with
-          WALLETHUB.
+          JATMIT.
         </Typography>
 
         <Box sx={{ mt: 3 }}>

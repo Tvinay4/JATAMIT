@@ -25,24 +25,24 @@ const Terms = () => {
                 <strong>(“Services”)</strong>. These Terms are legally binding
                 and govern the use of our website, our mobile application, our
                 API and other properties collectively called as the
-                <strong>“WALLETHUB INDIA PRIVATE LIMITED”</strong> or
+                <strong>“JATMIT INDIA PRIVATE LIMITED”</strong> or
                 <strong> “Platform”</strong>
-                created by WALLETHUB INDIA PRIVATE LIMITED, a company
-                incorporated under the laws of India, with its registered office
-                at {getFirmAddress()}
-                <strong>(“WALLETHUB” or “Company”)</strong>.
+                created by JATMIT INDIA PRIVATE LIMITED, a company incorporated
+                under the laws of India, with its registered office at{" "}
+                {getFirmAddress()}
+                <strong>(“JATMIT” or “Company”)</strong>.
               </p>
 
               <p className="landing-bg_para">
-                These Terms are a binding agreement between you and WALLETHUB .
+                These Terms are a binding agreement between you and JATMIT .
                 These Terms are in addition to and not in derogation of any
-                other terms stipulated by WALLETHUB from time to time. In case
-                of any conflict between these Terms and such other terms, these
+                other terms stipulated by JATMIT from time to time. In case of
+                any conflict between these Terms and such other terms, these
                 Terms will prevail. Throughout this document, we use the terms{" "}
                 <strong>“we”</strong> and
-                <strong>“our”</strong> to refer to WALLETHUB and the terms
+                <strong>“our”</strong> to refer to JATMIT and the terms
                 <strong>“you”</strong> and <strong>“your”</strong> to refer to
-                you, the User of the Platform. Both WALLETHUB and the User are
+                you, the User of the Platform. Both JATMIT and the User are
                 collectively referred to as <strong>“Parties”</strong> and
                 singularly referred to as
                 <strong>“Party”</strong>.
@@ -82,17 +82,17 @@ const Terms = () => {
                   <abbr>ELIGIBILITY</abbr>
                 </h3>
                 <p className="landing-bg_para">
-                  WALLETHUB ’s services are available to anyone having a valid
+                  JATMIT ’s services are available to anyone having a valid
                   email address and an Indian mobile phone number.
                   The&nbsp;Platform must be accessed/used only by the persons
                   who are eligible to enter into legally binding contracts under
                   the Indian Contract Act and are ‘competent to contract’
                   according to Section 11 of the Indian Contract Act. Users who
                   have been previously suspended or removed from availing any
-                  service by WALLETHUB shall not be eligible to avail services
-                  from WALLETHUB . Users shall not impersonate any person or
-                  entity, or falsely state or otherwise misrepresent identity,
-                  age or affiliation with any person or entity.
+                  service by JATMIT shall not be eligible to avail services from
+                  JATMIT . Users shall not impersonate any person or entity, or
+                  falsely state or otherwise misrepresent identity, age or
+                  affiliation with any person or entity.
                 </p>
               </div>
 
@@ -151,11 +151,11 @@ const Terms = () => {
                 <p className="landing-bg_para">
                   <strong>“Confidential Information”</strong> means and includes
                   the Intellectual Property and any and all business, technical
-                  and financial information of WALLETHUB or of any of its
+                  and financial information of JATMIT or of any of its
                   affiliates that is related to any of the arrangements
                   contemplated in these Terms of Use or any other document in
                   which these Terms of Use are incorporated by reference or
-                  otherwise disclosed by WALLETHUB to the User any information
+                  otherwise disclosed by JATMIT to the User any information
                   which relates to its financial and/or business operations,
                   including but not limited to, specifications, models, merchant
                   lists/information samples, reports, forecasts, current or
@@ -177,15 +177,15 @@ const Terms = () => {
                   <strong>“Effective Date”</strong> or
                   <strong>“Registration Date”</strong>
                   shall mean the date of registration of account of the User on
-                  WALLETHUB ’s platform.
+                  JATMIT ’s platform.
                 </p>
 
                 <p className="landing-bg_para">
-                  <strong>“WALLETHUB INDIA PRIVATE LIMITED Policies”</strong>{" "}
-                  shall mean and include the Terms of Use, Privacy Policy,
-                  Grievance Policy and any other such terms and
-                  conditions/policies available and updated from time to time on
-                  the WALLETHUB INDIA PRIVATE LIMITED.
+                  <strong>“JATMIT INDIA PRIVATE LIMITED Policies”</strong> shall
+                  mean and include the Terms of Use, Privacy Policy, Grievance
+                  Policy and any other such terms and conditions/policies
+                  available and updated from time to time on the JATMIT INDIA
+                  PRIVATE LIMITED.
                 </p>
 
                 <p className="landing-bg_para">
@@ -224,15 +224,15 @@ const Terms = () => {
 
                 <p className="landing-bg_para">
                   <strong>“Services”</strong> shall mean the services provided
-                  by WALLETHUB and various Service Providers to the Users
-                  utilizing the WALLETHUB INDIA PRIVATE LIMITED including but
-                  not limited to banking services, non-banking services and
-                  other such services either by itself or through a Merchant.
+                  by JATMIT and various Service Providers to the Users utilizing
+                  the JATMIT INDIA PRIVATE LIMITED including but not limited to
+                  banking services, non-banking services and other such services
+                  either by itself or through a Merchant.
                 </p>
 
                 <p className="landing-bg_para">
                   <strong>“Service Provider”</strong> shall mean any banking
-                  and/or non-banking entity with which WALLETHUB INDIA PRIVATE
+                  and/or non-banking entity with which JATMIT INDIA PRIVATE
                   LIMITED has, directly or indirectly, executed an agreement for
                   facilitating Transactions between such entity and its
                   customers.
@@ -241,8 +241,8 @@ const Terms = () => {
                 <p className="landing-bg_para">
                   <strong>“Users”</strong> shall mean individuals&nbsp;including
                   all body&nbsp;corporates, partnerships, limited liability
-                  partnerships, etc., who are availing  WALLETHUB INDIA PRIVATE LIMITED 
-                  services through the WALLETHUB INDIA PRIVATE LIMITED.
+                  partnerships, etc., who are availing JATMIT INDIA PRIVATE
+                  LIMITED services through the JATMIT INDIA PRIVATE LIMITED.
                 </p>
               </div>
 
@@ -250,89 +250,89 @@ const Terms = () => {
                 <h3 className="h5">1. GENERAL TERMS AND CONDITIONS</h3>
                 <p>
                   These General Terms and Conditions govern the User’s access to
-                  the Services provided by WALLETHUB :
+                  the Services provided by JATMIT :
                 </p>
               </div>
 
               <div className="landing-bg_para">
                 <div>
-                  <u>INFORMATION SUPPLIED TO DILLIPAY.</u> Users agree that
-                  the information provided by the Users to WALLETHUB INDIA PRIVATE LIMITED
-                   on registration and at all other times, including
+                  <u>INFORMATION SUPPLIED TO DILLIPAY.</u> Users agree that the
+                  information provided by the Users to JATMIT INDIA PRIVATE
+                  LIMITED on registration and at all other times, including
                   payment, is true, accurate, current, and complete.
                 </div>
                 <div className="landing-bg_para">
                   <u>SECURITY OF ACCOUNT.</u> Users’ mobile number and email
-                  identifies a Users’ account with WALLETHUB through which
-                  WALLETHUB services are dispensed (“
+                  identifies a Users’ account with JATMIT through which JATMIT
+                  services are dispensed (“
                   <strong>Account</strong>
-                  ”). WALLETHUB encourages Users to choose a strong password to
+                  ”). JATMIT encourages Users to choose a strong password to
                   protect their Account. It is advised that Users do not share
-                  their password with anyone or write it down. Neither WALLETHUB
+                  their password with anyone or write it down. Neither JATMIT
                   nor its Service Providers, under any circumstances, will ever
                   ask for a User's Account password or any other confidential
                   information. If a User has any reason to believe that his
                   Account is no longer secure, then the User shall immediately
-                  change the Account password and indemnify WALLETHUB INDIA PRIVATE LIMITED
-                   from any liabilities that may arise from the
-                  misuse of such User’s Account.
+                  change the Account password and indemnify JATMIT INDIA PRIVATE
+                  LIMITED from any liabilities that may arise from the misuse of
+                  such User’s Account.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>PRIVACY POLICY.</u> All information collected from a User
-                  pursuant to provision of WALLETHUB ’s services, and
-                  information collected by Merchants or Digi Kendras during the
-                  performance of these Terms of Use or Applicable Agreement, is
-                  subject to WALLETHUB ’s
+                  pursuant to provision of JATMIT ’s services, and information
+                  collected by Merchants or Digi Kendras during the performance
+                  of these Terms of Use or Applicable Agreement, is subject to
+                  JATMIT ’s
                   <a href="/privacy-policy">Privacy Policy</a>.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>RECLAIMING INACTIVE ACCOUNTS.</u>. If an Account is found
-                  to be overly inactive, the Account may be reclaimed by
-                  WALLETHUB without providing notice to the concerned User. An
-                  Account is considered as inactive if the concerned User is not
-                  signing in and/or has not done any transactions for more than
-                  6 consecutive months.
+                  to be overly inactive, the Account may be reclaimed by JATMIT
+                  without providing notice to the concerned User. An Account is
+                  considered as inactive if the concerned User is not signing in
+                  and/or has not done any transactions for more than 6
+                  consecutive months.
                 </div>
 
                 <div className="landing-bg_para">
-                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> WALLETHUB ’s
+                  <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> JATMIT ’s
                   services and/or the Site may include links or references to
                   other web sites or services solely for the Users’ convenience
-                  (“<strong>Reference Sites</strong>”).  WALLETHUB INDIA PRIVATE LIMITED 
-                  does not endorse any such Reference Sites or the information,
-                  materials, products, or services contained on or accessible
-                  through Reference Sites. Correspondence or business dealings
-                  between Users and concerned Reference Sites are solely between
-                  such User and the concerned Reference Site. Access and use of
-                  Reference Sites, including the information, materials,
-                  products, and services on or available through Reference Sites
-                  is solely at the concerned User’s own risk.
+                  (“<strong>Reference Sites</strong>”). JATMIT INDIA PRIVATE
+                  LIMITED does not endorse any such Reference Sites or the
+                  information, materials, products, or services contained on or
+                  accessible through Reference Sites. Correspondence or business
+                  dealings between Users and concerned Reference Sites are
+                  solely between such User and the concerned Reference Site.
+                  Access and use of Reference Sites, including the information,
+                  materials, products, and services on or available through
+                  Reference Sites is solely at the concerned User’s own risk.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>COMMUNICATION POLICY.</u> The User hereby accepts that:
                   <div className="landing-bg_para">
                     <div className="landing-bg_para">
-                      WALLETHUB may send transactional or non-transactional
+                      JATMIT may send transactional or non-transactional
                       business communication in the form of SMS or Email or Push
                       notifications as part of its efforts to fulfil the User’s
                       request or service your account. A User may continue to
                       receive transactional and critical&nbsp;communication from
-                       WALLETHUB INDIA PRIVATE LIMITED  even after opting out of marketing
-                      communications.
+                      JATMIT INDIA PRIVATE LIMITED even after opting out of
+                      marketing communications.
                     </div>
                     <div className="landing-bg_para">
-                      WALLETHUB will make the best efforts to provide
-                      notifications and it shall be deemed that the User shall
-                      have received the information sent from the Company during
-                      the course of, or in relation to, using the WALLETHUB
-                      Platform or availing any Services.  WALLETHUB INDIA PRIVATE LIMITED 
-                      shall not be under any obligation to confirm the
-                      authenticity of the person(s) receiving the alert. The
-                      User cannot hold the Company liable for non-availability
-                      of any notification service in any manner whatsoever.
+                      JATMIT will make the best efforts to provide notifications
+                      and it shall be deemed that the User shall have received
+                      the information sent from the Company during the course
+                      of, or in relation to, using the JATMIT Platform or
+                      availing any Services. JATMIT INDIA PRIVATE LIMITED shall
+                      not be under any obligation to confirm the authenticity of
+                      the person(s) receiving the alert. The User cannot hold
+                      the Company liable for non-availability of any
+                      notification service in any manner whatsoever.
                     </div>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ const Terms = () => {
                   <u>LIMITATION OF LIABILITY.</u>
                   <div className="landing-bg_para">
                     <div className="landing-bg_para">
-                      In no event will WALLETHUB or its directors, agents,
+                      In no event will JATMIT or its directors, agents,
                       officers, or employees be liable to a User for any
                       special, indirect, incidental, consequential, punitive, or
                       exemplary damages (including without limitation lost
@@ -351,16 +351,16 @@ const Terms = () => {
                       any kind arising out of or relating to.
                       <p className="mt-2">
                         a) &nbsp; this Terms of Use or any other agreement
-                        entered by a User with WALLETHUB ,
+                        entered by a User with JATMIT ,
                       </p>
                       <p>
-                        b) &nbsp; WALLETHUB ’s services, the Site or any
-                        Reference site, or
+                        b) &nbsp; JATMIT ’s services, the Site or any Reference
+                        site, or
                       </p>
                       <p>
-                        c)&nbsp; User’s use or inability to use WALLETHUB ’s
+                        c)&nbsp; User’s use or inability to use JATMIT ’s
                         services, the Site or any Reference Sites, even if
-                        WALLETHUB or a  WALLETHUB INDIA PRIVATE LIMITED  authorized
+                        JATMIT or a JATMIT INDIA PRIVATE LIMITED authorized
                         representative has advised of the possibility of such
                         damages,
                       </p>
@@ -382,20 +382,20 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      It shall be at the sole discretion of WALLETHUB INDIA PRIVATE LIMITED
-                       to reverse any transaction subject to
-                      approval of the concerned Service Provider.
-                      Notwithstanding the above, if any court of law finds that
-                      WALLETHUB or its directors, officers, or employees, are
-                      liable to indemnify a concerned User despite the existence
-                      of this Clause 1.7, such liability shall not exceed the
-                      amount paid by the concerned User, if any, for using the
-                      portion of the WALLETHUB ’s services or the Site giving
-                      rise to the cause of action.
+                      It shall be at the sole discretion of JATMIT INDIA PRIVATE
+                      LIMITED to reverse any transaction subject to approval of
+                      the concerned Service Provider. Notwithstanding the above,
+                      if any court of law finds that JATMIT or its directors,
+                      officers, or employees, are liable to indemnify a
+                      concerned User despite the existence of this Clause 1.7,
+                      such liability shall not exceed the amount paid by the
+                      concerned User, if any, for using the portion of the
+                      JATMIT ’s services or the Site giving rise to the cause of
+                      action.
                     </div>
 
                     <div className="landing-bg_para">
-                      Users acknowledge and agree that WALLETHUB has offered its
+                      Users acknowledge and agree that JATMIT has offered its
                       products and services, set its prices, and entered into
                       these Terms of Use and Applicable Agreement in reliance
                       upon the warranty, disclaimers, and the limitations of
@@ -406,46 +406,44 @@ const Terms = () => {
                       Users acknowledge that the warranty, disclaimers, and the
                       limitations of liability set forth herein reflect a
                       reasonable and fair allocation of risk between Users and
-                      WALLETHUB , and that the warranty, disclaimers, and the
+                      JATMIT , and that the warranty, disclaimers, and the
                       limitations of liability set forth herein form an
-                      essential basis of the bargain between Users and WALLETHUB
-                      . WALLETHUB would not be able to provide the services to
-                      Users on an economically reasonable basis without these
+                      essential basis of the bargain between Users and JATMIT .
+                      JATMIT would not be able to provide the services to Users
+                      on an economically reasonable basis without these
                       limitations.
                     </div>
                     <div className="landing-bg_para">
-                      Users understand that WALLETHUB or the Service Providers
-                      may reject authentication and/or authorization of
-                      transaction placed by Users for any reason including but
-                      not limited to insufficient funds, incorrect
-                      authentication details provided, expired card/bank
-                      account, risk management, suspicion of fraudulent
-                      transactions, selling of restricted or banned items, use
-                      of compromised cards or bank account numbers, use of
-                      banned/blacklisted cards or bank account numbers, use of
-                      suspicious API or in accordance with the regulator,
-                      Issuing, Acquiring Institution and/or Card
-                      Network&nbsp;rules, guidelines, regulations, etc. and any
-                      other laws, rules, regulations, guidelines in force in
-                      India.
+                      Users understand that JATMIT or the Service Providers may
+                      reject authentication and/or authorization of transaction
+                      placed by Users for any reason including but not limited
+                      to insufficient funds, incorrect authentication details
+                      provided, expired card/bank account, risk management,
+                      suspicion of fraudulent transactions, selling of
+                      restricted or banned items, use of compromised cards or
+                      bank account numbers, use of banned/blacklisted cards or
+                      bank account numbers, use of suspicious API or in
+                      accordance with the regulator, Issuing, Acquiring
+                      Institution and/or Card Network&nbsp;rules, guidelines,
+                      regulations, etc. and any other laws, rules, regulations,
+                      guidelines in force in India.
                     </div>
                     <div className="landing-bg_para">
-                      User further acknowledge that as a security measure
-                      WALLETHUB and/or the Service Providers may at our sole
-                      discretion, permanently or temporarily, block any card
-                      number, account numbers, group of cards or transactions
-                      from any specific blocked or blacklisted cards / accounts,
-                      specific, group of IP addresses, devices, geographic
-                      locations and / or any such risk mitigation measures it
-                      wishes to undertake.
+                      User further acknowledge that as a security measure JATMIT
+                      and/or the Service Providers may at our sole discretion,
+                      permanently or temporarily, block any card number, account
+                      numbers, group of cards or transactions from any specific
+                      blocked or blacklisted cards / accounts, specific, group
+                      of IP addresses, devices, geographic locations and / or
+                      any such risk mitigation measures it wishes to undertake.
                     </div>
                     <div className="landing-bg_para">
-                      As a risk management tool, WALLETHUB and/or the Service
+                      As a risk management tool, JATMIT and/or the Service
                       Providers reserve the right to limit or restrict
                       transaction size, amount and/or monthly volume at any
-                      time. WALLETHUB will consider a variety of factors in
-                      making a decision and such determination will be at our
-                      sole discretion.
+                      time. JATMIT will consider a variety of factors in making
+                      a decision and such determination will be at our sole
+                      discretion.
                     </div>
                   </div>
                 </div>
@@ -454,14 +452,14 @@ const Terms = () => {
                   <u>FRAUDULENT TRANSACTIONS</u>
                   <div className="landing-bg_para">
                     <div className="landing-bg_para">
-                      If WALLETHUB is intimated, by the bank, that a customer
-                      has reported an unauthorized debit/chargeback of the
+                      If JATMIT is intimated, by the bank, that a customer has
+                      reported an unauthorized debit/chargeback of the
                       customer’s Payment Instrument (“Fraudulent Transaction”),
-                      the User shall be notified by WALLETHUB . The User shall
-                      be entitled to furnish documents and information
-                      pertaining to the Transaction associated with the
-                      Chargeback within one&nbsp;(1) day&nbsp;(or such other
-                      period specified by the bank).
+                      the User shall be notified by JATMIT . The User shall be
+                      entitled to furnish documents and information pertaining
+                      to the Transaction associated with the Chargeback within
+                      one&nbsp;(1) day&nbsp;(or such other period specified by
+                      the bank).
                     </div>
                     <div className="landing-bg_para">
                       The User agrees and acknowledges that
@@ -472,17 +470,17 @@ const Terms = () => {
                       <p>
                         b)&nbsp; the bank is not satisfied with the Chargeback
                         documents furnished by the User, then the bank shall be
-                        entitled to order the WALLETHUB to affect a reversal of
-                        the debit of the Chargeback Amount associated with the
+                        entitled to order the JATMIT to affect a reversal of the
+                        debit of the Chargeback Amount associated with the
                         Chargeback such that the said chargeback amount is
                         credited to the customer’s Payment Instrument.
                       </p>
                     </div>
                     <div className="landing-bg_para">
-                      WALLETHUB shall also be entitled to suspend the settlement
-                      of the amount under dispute or hold the value of
-                      transaction under dispute from following the settlement of
-                      the transaction during the pendency of inquiries,
+                      JATMIT shall also be entitled to suspend the settlement of
+                      the amount under dispute or hold the value of transaction
+                      under dispute from following the settlement of the
+                      transaction during the pendency of inquiries,
                       investigations and resolution thereof by the Service
                       Providers to the User.
                     </div>
@@ -506,13 +504,13 @@ const Terms = () => {
                     </div>
                     <div className="landing-bg_para">
                       The User further agrees and acknowledges that following
-                      WALLETHUB incurring the charge stipulated in clause
-                      1.8(iii), if the available Transaction Amounts are
-                      insufficient for deduction of the Chargeback Amount, then
-                      WALLETHUB is entitled to issue a debit note seeking
-                      reimbursement of the Chargeback Amount from the User. The
-                      User shall reimburse the Chargeback Amount within three
-                      (3) working days of receipt of the debit note.
+                      JATMIT incurring the charge stipulated in clause 1.8(iii),
+                      if the available Transaction Amounts are insufficient for
+                      deduction of the Chargeback Amount, then JATMIT is
+                      entitled to issue a debit note seeking reimbursement of
+                      the Chargeback Amount from the User. The User shall
+                      reimburse the Chargeback Amount within three (3) working
+                      days of receipt of the debit note.
                     </div>
                     <div className="landing-bg_para">
                       The Parties hereto agree that any payment instructions for
@@ -525,20 +523,20 @@ const Terms = () => {
                       responsibility of User.
                     </div>
                     <div className="landing-bg_para">
-                      The User hereby acknowledges and agrees that WALLETHUB
+                      The User hereby acknowledges and agrees that JATMIT
                       SERVICES is a facilitator for payment processing services
-                      which are requested by Users and WALLETHUB INDIA PRIVATE
+                      which are requested by Users and JATMIT INDIA PRIVATE
                       LIMITED shall not be responsible for any unauthorized
                       transaction done by any person including third party and
                       amounting to infringement of another’s rights or any
                       chargebacks claimed by the customers. It will be the
                       responsibility of Users to ensure due protection while
-                      transacting online or otherwise. WALLETHUB will assist the
+                      transacting online or otherwise. JATMIT will assist the
                       Users in settling any queries related to the Services that
                       arise between the Users, and its customers. However,
-                      WALLETHUB SERVICES shall bear no responsibility with
-                      respect to the dispute or query related to payment made by
-                      the customers to the Users.
+                      JATMIT SERVICES shall bear no responsibility with respect
+                      to the dispute or query related to payment made by the
+                      customers to the Users.
                     </div>
                   </div>
                 </div>
@@ -569,9 +567,9 @@ const Terms = () => {
                       full end to end transaction details/information
                       collected/carried/processed as part of the message/payment
                       instructions. The User also acknowledges and agrees that
-                      the account balance maintained by the Users on WALLETHUB
+                      the account balance maintained by the Users on JATMIT
                       Platform shall be non-interest bearing and shall be
-                      forfeited by WALLETHUB if found lying unused for more than
+                      forfeited by JATMIT if found lying unused for more than
                       365 days.
                     </div>
                   </div>
@@ -589,17 +587,17 @@ const Terms = () => {
                       and risks associated with the same.
                     </div>
                     <div className="landing-bg_para">
-                      it shall immediately intimate WALLETHUB of any violation
-                      or potential violation of these Terms of Use or of other
+                      it shall immediately intimate JATMIT of any violation or
+                      potential violation of these Terms of Use or of other
                       circumstances that may cause damage to the goodwill and
-                      reputation of WALLETHUB ,
+                      reputation of JATMIT ,
                     </div>
                     <div className="landing-bg_para">
                       it shall be responsible to obtain any and all consents and
                       approvals that are required from regulatory or
                       governmental authorities, including any consent from
                       customers required to transfer data to the User and/or the
-                      WALLETHUB INDIA PRIVATE LIMITED, as the case may be, in
+                      JATMIT INDIA PRIVATE LIMITED, as the case may be, in
                       accordance with Applicable Law,
                     </div>
 
@@ -618,14 +616,14 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       it shall not access (or attempt to access) the website and
                       the Products by any means other than through the interface
-                      that is provided by WALLETHUB . It shall not use any
+                      that is provided by JATMIT . It shall not use any
                       deep-link, page scrape, robot, spider or other automatic
                       device, program, algorithm or methodology, or any similar
                       or equivalent manual process, to access, acquire, copy or
-                      monitor any portion of the WALLETHUB INDIA PRIVATE LIMITED, or
-                      in any way reproduce or circumvent the navigational
-                      structure or presentation of the platform, without
-                      WALLETHUB ’s express prior written consent.
+                      monitor any portion of the JATMIT INDIA PRIVATE LIMITED,
+                      or in any way reproduce or circumvent the navigational
+                      structure or presentation of the platform, without JATMIT
+                      ’s express prior written consent.
                     </div>
                     <div className="landing-bg_para">
                       it shall not attempt to gain unauthorized access to any
@@ -640,7 +638,7 @@ const Terms = () => {
                       not filed by the User as per sec 139(1) of Income Tax Act,
                       1961 for the previous financial years starting from FY
                       2018-19 and undertake to indemnify and keep indemnified
-                      WALLETHUB against any and all losses, claims, liabilities,
+                      JATMIT against any and all losses, claims, liabilities,
                       costs, taxes, interest, penalties imposed by any
                       government and regulatory authority for non-complying with
                       Section 206AB or any other provisions of Income Tax Act,
@@ -654,17 +652,17 @@ const Terms = () => {
 
                 <div className="landing-bg_para">
                   <u>INDEMNIFICATION.</u>
-                  User agrees to indemnify, save, and hold WALLETHUB , its
+                  User agrees to indemnify, save, and hold JATMIT , its
                   affiliates, contractors, employees, officers, directors,
                   agents and its third-party suppliers, licensors, and partners
                   harmless from any and all claims, demands, actions, suits
-                  which may be threatened or brought against WALLETHUB , and
-                  also against all losses, damages, liabilities, costs, charges
-                  and expenses, including without limitation, legal fees and
+                  which may be threatened or brought against JATMIT , and also
+                  against all losses, damages, liabilities, costs, charges and
+                  expenses, including without limitation, legal fees and
                   expenses arising out of or related to:
                   <div className="landing-bg_para">
                     <div className="landing-bg_para">
-                      Users’ use or misuse of WALLETHUB ’s services or of the
+                      Users’ use or misuse of JATMIT ’s services or of the
                       Site/application
                     </div>
                     <div className="landing-bg_para">
@@ -678,33 +676,32 @@ const Terms = () => {
                     </div>
                     <div className="landing-bg_para">
                       any claim or legal notice or quasi-legal proceedings to
-                      which WALLETHUB may be required to become party or to
-                      which WALLETHUB may be subjected by any person including
-                      any governmental authority, by reason of breach of any
+                      which JATMIT may be required to become party or to which
+                      JATMIT may be subjected by any person including any
+                      governmental authority, by reason of breach of any
                       Applicable Law,
                     </div>
                     <div className="landing-bg_para">
                       due to failure of a User to obtain any required statutory
                       or regulatory approval necessary for the performance of
-                      its obligations in the Applicable Agreement with WALLETHUB
-                      ,
+                      its obligations in the Applicable Agreement with JATMIT ,
                     </div>
                     <div className="landing-bg_para">
                       all liability, claims, damages, costs, expenses suffered
-                      or incurred by WALLETHUB as a result of any act or
-                      violation by User under Section 269ST of the Income Tax
-                      Act, 1961 while acting as collection agent of the Company.
+                      or incurred by JATMIT as a result of any act or violation
+                      by User under Section 269ST of the Income Tax Act, 1961
+                      while acting as collection agent of the Company.
                     </div>
                     <div className="landing-bg_para">
-                      WALLETHUB reserves the right, at User’s expense, to assume
+                      JATMIT reserves the right, at User’s expense, to assume
                       the exclusive defense and control of any matter, including
                       rights to settle, for which concerned User is required to
-                      indemnify WALLETHUB . The User agrees to cooperate with
-                      WALLETHUB ’s defense and settlement of these claims.
-                      WALLETHUB will use reasonable efforts to notify the User
-                      of any claim, action, or proceeding brought by a third
-                      party that is subject to the foregoing indemnification
-                      upon becoming aware of it.
+                      indemnify JATMIT . The User agrees to cooperate with
+                      JATMIT ’s defense and settlement of these claims. JATMIT
+                      will use reasonable efforts to notify the User of any
+                      claim, action, or proceeding brought by a third party that
+                      is subject to the foregoing indemnification upon becoming
+                      aware of it.
                     </div>
                   </div>
                 </div>
@@ -712,60 +709,59 @@ const Terms = () => {
                 <div className="landing-bg_para">
                   <u>DISCLAIMER</u>
                   To the fullest extent permissible pursuant to Applicable Law,
-                  WALLETHUB and its officers, directors, employees, and agents
+                  JATMIT and its officers, directors, employees, and agents
                   disclaim all warranties, express or implied, including, but
                   not limited to, implied warranties of merchantability, fitness
                   for a particular purpose, and non-infringement of proprietary
                   rights. No advice or information, whether oral or written,
-                  obtained by a User from WALLETHUB or through WALLETHUB ’s
-                  services or the Site will create any warranty not expressly
-                  stated herein. WALLETHUB does not authorize anyone to make any
-                  warranty on its behalf and Users should not rely on any such
-                  statement. Users acknowledge that WALLETHUB SERVICES is a
-                  reseller and is not liable for any third-party seller’s
-                  obligations. It is User’s responsibility to evaluate the
-                  accuracy, completeness and usefulness of all opinions, advice,
-                  merchandise and other information provided through the Site or
-                  on the internet generally. WALLETHUB does not warrant that its
-                  services will be uninterrupted, or free of errors, viruses or
-                  other harmful components, and that any of the foregoing
-                  defects will be corrected. WALLETHUB ’s services and the Site
-                  and any data, information, third party software, Reference
-                  Sites, or Software made available in conjunction with or
-                  through its services and the Site are provided on an “as is”
-                  and “as available”, “with all faults” basis and without
-                  warranties or representations of any kind either express or
-                  implied. WALLETHUB and its third-party suppliers, licensors,
-                  and partners do not warrant or make any representations
-                  regarding the use or the results of the use of WALLETHUB ’s
-                  services, the Site or any Reference Sites in terms of
-                  correctness, accuracy, reliability, or otherwise.
+                  obtained by a User from JATMIT or through JATMIT ’s services
+                  or the Site will create any warranty not expressly stated
+                  herein. JATMIT does not authorize anyone to make any warranty
+                  on its behalf and Users should not rely on any such statement.
+                  Users acknowledge that JATMIT SERVICES is a reseller and is
+                  not liable for any third-party seller’s obligations. It is
+                  User’s responsibility to evaluate the accuracy, completeness
+                  and usefulness of all opinions, advice, merchandise and other
+                  information provided through the Site or on the internet
+                  generally. JATMIT does not warrant that its services will be
+                  uninterrupted, or free of errors, viruses or other harmful
+                  components, and that any of the foregoing defects will be
+                  corrected. JATMIT ’s services and the Site and any data,
+                  information, third party software, Reference Sites, or
+                  Software made available in conjunction with or through its
+                  services and the Site are provided on an “as is” and “as
+                  available”, “with all faults” basis and without warranties or
+                  representations of any kind either express or implied. JATMIT
+                  and its third-party suppliers, licensors, and partners do not
+                  warrant or make any representations regarding the use or the
+                  results of the use of JATMIT ’s services, the Site or any
+                  Reference Sites in terms of correctness, accuracy,
+                  reliability, or otherwise.
                 </div>
 
                 <div className="landing-bg_para">
                   <u>INTELLECTUAL PROPERTY.</u>
                   <div className="custom-list points-alpha mt-3">
                     <div className="landing-bg_para">
-                      WALLETHUB ’s services and the Site are owned and operated
-                      by WALLETHUB and/or third-party licensors. The visual
+                      JATMIT ’s services and the Site are owned and operated by
+                      JATMIT and/or third-party licensors. The visual
                       interfaces, graphics, design, compilation, information,
                       computer code (including source code and object code),
                       products, software, services, and all other elements of
-                      WALLETHUB ’s services and the Site provided by WALLETHUB
-                      (the <strong> “Materials”</strong>) are protected by
-                      Applicable Law. As between User and WALLETHUB , all
-                      Materials and WALLETHUB ’s Intellectual Property are the
-                      property of WALLETHUB and/or third-party licensors or
-                      suppliers. User agrees not to remove, obscure, or alter
-                      WALLETHUB or any third party's copyright, patent,
-                      trademark, or other proprietary rights notices affixed to
-                      or contained within or accessed in conjunction with or
-                      through WALLETHUB ’s services. Except as expressly
-                      authorized by WALLETHUB , the User agrees not to sell,
-                      license, distribute, copy, modify, publicly perform or
-                      display, transmit, publish, edit, adapt, create derivative
-                      works from, or otherwise make unauthorized use of the
-                      Materials or WALLETHUB ’s Intellectual Property.
+                      JATMIT ’s services and the Site provided by JATMIT (the{" "}
+                      <strong> “Materials”</strong>) are protected by Applicable
+                      Law. As between User and JATMIT , all Materials and JATMIT
+                      ’s Intellectual Property are the property of JATMIT and/or
+                      third-party licensors or suppliers. User agrees not to
+                      remove, obscure, or alter JATMIT or any third party's
+                      copyright, patent, trademark, or other proprietary rights
+                      notices affixed to or contained within or accessed in
+                      conjunction with or through JATMIT ’s services. Except as
+                      expressly authorized by JATMIT , the User agrees not to
+                      sell, license, distribute, copy, modify, publicly perform
+                      or display, transmit, publish, edit, adapt, create
+                      derivative works from, or otherwise make unauthorized use
+                      of the Materials or JATMIT ’s Intellectual Property.
                     </div>
                     <div className="landing-bg_para">
                       Parties do not accrue any rights or interest in the other
@@ -780,16 +776,16 @@ const Terms = () => {
                       of the other’s Intellectual Property.
                     </div>
                     <div className="landing-bg_para">
-                      If Users’ have comments regarding WALLETHUB 's services
-                      and the Site or ideas on how to improve it, please write
-                      to our 24x7 Helpdesk at {getFirmEmail()}. Please note
-                      that by doing so, concerned User hereby irrevocably assign
-                      to WALLETHUB , and shall assign to WALLETHUB , all right,
-                      title and interest in and to all ideas and suggestions and
-                      any and all worldwide intellectual property rights
-                      associated therewith. The concerned User agrees to perform
-                      such acts and execute such documents as may be reasonably
-                      necessary to perfect the foregoing rights.
+                      If Users’ have comments regarding JATMIT 's services and
+                      the Site or ideas on how to improve it, please write to
+                      our 24x7 Helpdesk at {getFirmEmail()}. Please note that by
+                      doing so, concerned User hereby irrevocably assign to
+                      JATMIT , and shall assign to JATMIT , all right, title and
+                      interest in and to all ideas and suggestions and any and
+                      all worldwide intellectual property rights associated
+                      therewith. The concerned User agrees to perform such acts
+                      and execute such documents as may be reasonably necessary
+                      to perfect the foregoing rights.
                     </div>
                     <div className="landing-bg_para">
                       The User undertakes that:
@@ -849,7 +845,7 @@ const Terms = () => {
 
                 <div className="landing-bg_para">
                   <u>MODIFICATION.</u>
-                  WALLETHUB reserves the right to change, modify, add, or remove
+                  JATMIT reserves the right to change, modify, add, or remove
                   these Terms of Use, either in its entirety or a part thereof
                   (each, a<strong>“change”</strong>) at any time by posting a
                   notification to the Site or otherwise communicating the
@@ -930,14 +926,14 @@ const Terms = () => {
                 <div className="landing-bg_para">
                   <u>TERMINATION</u>
                   <div className="landing-bg_para">
-                    WALLETHUB reserves the right to suspend or terminate the
-                    User’s access to WALLETHUB INDIA PRIVATE LIMITED and Services
-                    without prior notice and without any liability to the User
-                    or any third party, in the event,
+                    JATMIT reserves the right to suspend or terminate the User’s
+                    access to JATMIT INDIA PRIVATE LIMITED and Services without
+                    prior notice and without any liability to the User or any
+                    third party, in the event,
                     <div className="landing-bg_para">
                       <p>
                         (a) the User is in a breach of these Terms of Use or any
-                        WALLETHUB INDIA PRIVATE LIMITED Policies;
+                        JATMIT INDIA PRIVATE LIMITED Policies;
                       </p>
                       <p>
                         (b) the User is engaged or is suspected to engage in any
@@ -945,16 +941,16 @@ const Terms = () => {
                       </p>
                       <p>
                         (b) the User provides any information which is
-                        incomplete, inaccurate or false or WALLETHUB INDIA PRIVATE LIMITED
-                         has reason to believe that such information
-                        is incomplete, inaccurate or false.
+                        incomplete, inaccurate or false or JATMIT INDIA PRIVATE
+                        LIMITED has reason to believe that such information is
+                        incomplete, inaccurate or false.
                       </p>
                     </div>
                     <div className="landing-bg_para">
-                      Any suspension/termination of the User’s access to
-                      WALLETHUB INDIA PRIVATE LIMITED and Services shall be
-                      without prejudice to WALLETHUB ’s right to exercise any
-                      other remedy available to it under the applicable law.
+                      Any suspension/termination of the User’s access to JATMIT
+                      INDIA PRIVATE LIMITED and Services shall be without
+                      prejudice to JATMIT ’s right to exercise any other remedy
+                      available to it under the applicable law.
                     </div>
                   </div>
                 </div>
@@ -969,7 +965,7 @@ const Terms = () => {
 
                 <div className="landing-bg_para">
                   <u>FORCE MAJEURE .</u>
-                  WALLETHUB shall not be liable for failure to perform its
+                  JATMIT shall not be liable for failure to perform its
                   obligations under these Terms of Use to the extent such
                   failure is due to causes beyond its reasonable control. In the
                   event of a force majeure, the Company if unable to perform
@@ -1005,7 +1001,7 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       <u>ASSIGNMENT</u>. These Terms of Use and any rights
                       granted hereunder, shall not be assignable by the User,
-                      but may be assigned by WALLETHUB without restriction. Any
+                      but may be assigned by JATMIT without restriction. Any
                       assignment attempted to be made in violation of this
                       provision shall be void and of no effect.
                     </div>
@@ -1018,31 +1014,31 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      <u>NOTICE</u>. WALLETHUB may provide Users with notices
-                      and communications by email, regular mail, or posts on the
-                      WALLETHUB website(s) or by any other reasonable means.
-                      Except as otherwise set forth herein, notice to WALLETHUB
-                      must be sent by courier or registered post to the Legal
-                      Department,  WALLETHUB INDIA PRIVATE LIMITED Pvt.
-                      Ltd., {getFirmAddress()}
+                      <u>NOTICE</u>. JATMIT may provide Users with notices and
+                      communications by email, regular mail, or posts on the
+                      JATMIT website(s) or by any other reasonable means. Except
+                      as otherwise set forth herein, notice to JATMIT must be
+                      sent by courier or registered post to the Legal
+                      Department, JATMIT INDIA PRIVATE LIMITED Pvt. Ltd.,{" "}
+                      {getFirmAddress()}
                     </div>
 
                     <div className="landing-bg_para">
-                      <u>WAIVER</u>. The failure of WALLETHUB to exercise or
+                      <u>WAIVER</u>. The failure of JATMIT to exercise or
                       enforce any right or provision of these Terms of Use will
                       not constitute a waiver of such right or provision. Any
                       waiver of any provision of these Terms of Use will be
-                      effective only if in writing and signed by WALLETHUB .
+                      effective only if in writing and signed by JATMIT .
                     </div>
 
                     <div className="landing-bg_para">
                       <u>RELATIONSHIP BETWEEN THE PARTIES</u>. The Terms of Use
                       are not intended by the Parties to constitute or create a
                       joint venture, pooling arrangement, partnership, agency or
-                      formal business organization of any kind. WALLETHUB
-                      SERVICES and the User shall be independent contractors
-                      with each other for all purposes at all times and neither
-                      Party shall act as or hold itself out as an agent or
+                      formal business organization of any kind. JATMIT SERVICES
+                      and the User shall be independent contractors with each
+                      other for all purposes at all times and neither Party
+                      shall act as or hold itself out as an agent or
                       representative of the other Party nor shall create or
                       attempt to create liabilities for the other Party by
                       acting or holding itself out as such.

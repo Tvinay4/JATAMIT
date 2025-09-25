@@ -1,4 +1,3 @@
-
 import {
   Box,
   Container,
@@ -26,7 +25,7 @@ import {
   mt,
   qrCode_img,
 } from "../iconsImports";
-const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
+const LandingServicesPage = ({ envName = "JATMIT" }) => {
   const navigate = useNavigate();
 
   const services = [
@@ -40,7 +39,7 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
       icon: <DthIcon sx={{ fontSize: "2.5rem" }} />,
       title: "DTH Recharge",
       description: `Choose from a variety of operators like Airtel DTH, Dish TV, Videocon D2h with ${
-        envName === "WALLETHUB" ? "WALLETHUB" : "WALLETHUB"
+        envName === "JATMIT" ? "JATMIT" : "JATMIT"
       } merchant app.`,
     },
     {
@@ -53,30 +52,29 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
 
   const featuredServices = [
     {
-      title:
-        envName === "WALLETHUB" ? "Travel Services" : "IRCTC Ticket Booking",
+      title: envName === "JATMIT" ? "Travel Services" : "IRCTC Ticket Booking",
       description:
-        envName === "WALLETHUB"
-          ? "WALLETHUB offers comprehensive travel options including flights, hotels, trains, buses and vacation packages in one convenient platform."
+        envName === "JATMIT"
+          ? "JATMIT offers comprehensive travel options including flights, hotels, trains, buses and vacation packages in one convenient platform."
           : `${envName} is authorized by IRCTC to book train tickets. Book tickets for any train, class, or destination quickly and reliably.`,
-      image: { src:irctc_img, alt: "IRCTC Ticket Booking" },
+      image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
       icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
     },
     {
       title: "My QR/UPI",
       description: `${
-        envName === "WALLETHUB" ? "WALLETHUB" : "WALLETHUB"
+        envName === "JATMIT" ? "JATMIT" : "JATMIT"
       } offers contactless payment services through QR codes or UPI, enabling instant, secure transactions for your customers.`,
       image: { src: qrCode_img, alt: "My QR/UPI" },
       icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
     },
     {
       title:
-        envName === "WALLETHUB"
+        envName === "JATMIT"
           ? "Prepaid Mobile & DTH Recharges"
           : "Mobile Recharge",
       description:
-        envName === "WALLETHUB"
+        envName === "JATMIT"
           ? "Find multiple operators and suitable plans for your customers and earn commission on each recharge."
           : `Earn by doing mobile/DTH recharges and utility bill payments for 150+ companies. ${envName} converts any shop into a one-stop solution.`,
       image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
@@ -145,7 +143,7 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
             Our Services
           </Typography>
 
-          {envName === "WALLETHUB" ? (
+          {envName === "JATMIT" ? (
             <Typography
               variant="h6"
               sx={{
@@ -158,10 +156,8 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
             >
               Unlock new possibilities for your business and boost your earnings
               with{" "}
-              <span style={{ fontWeight: 900, color: "#01A0E2" }}>
-                WALLETHUB
-              </span>
-              . A single platform offering multiple services you can provide to
+              <span style={{ fontWeight: 900, color: "#01A0E2" }}>JATMIT</span>.
+              A single platform offering multiple services you can provide to
               your customers.
             </Typography>
           ) : (
@@ -317,7 +313,7 @@ const LandingServicesPage = ({ envName = "WALLETHUB" }) => {
                   },
                 }}
               >
-                  <img src={service.image.src} alt={service.image.alt} />
+                <img src={service.image.src} alt={service.image.alt} />
               </Box>
             </Grid>
           </Grid>

@@ -1,9 +1,9 @@
-import { Box, Typography, IconButton } from '@mui/material';
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { Box, Typography, IconButton } from "@mui/material";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 const ModalHeader = ({
   title = "Modal heading",
-  subtitle = "Start your journey with WALLETHUB.",
+  subtitle = "Start your journey with JATMIT.",
   handleClose,
   hideCloseBtn,
 }) => {

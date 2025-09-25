@@ -88,7 +88,7 @@ const BlockUnBlockModal = ({ row, refresh }) => {
         <Box sx={style} className="sm_modal">
           <ModalHeader
             title="Block Unblock User"
-            subtitle="Take Charge of Your Connections: Block or Unblock with WALLETHUB!"
+            subtitle="Take Charge of Your Connections: Block or Unblock with JATMIT!"
             handleClose={handleClose}
           />
           <Box

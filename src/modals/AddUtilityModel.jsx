@@ -60,7 +60,7 @@ const AddUtilityModel = ({ refresh }) => {
       slab7: form.elements["slab7"]?.value || "",
       status: status === "Active" ? 1 : 0, // Map status to 1 for Active and 0 for Inactive
     };
-  
+
     setRequest(true);
     postJsonData(
       ApiEndpoints.CREATE_UTILITY_SCHEME,
@@ -76,7 +76,6 @@ const AddUtilityModel = ({ refresh }) => {
       }
     );
   };
-  
 
   const getAsmList = () => {
     get(
@@ -114,14 +113,18 @@ const AddUtilityModel = ({ refresh }) => {
           }
           sx={{ py: 0.3 }}
         >
-       Scheme
+          Scheme
         </Button>
       </Tooltip>
 
       <Box>
         <Drawer open={open} anchor="right" onClose={handleClose}>
           <Box sx={{ width: 400 }}>
-            <ModalHeader title="Add Scheme" handleClose={handleClose} subtitle="Easily Add New scheme with WALLETHUB" />
+            <ModalHeader
+              title="Add Scheme"
+              handleClose={handleClose}
+              subtitle="Easily Add New scheme with JATMIT"
+            />
             <Box
               component="form"
               id="update-Scheme"
@@ -133,53 +136,113 @@ const AddUtilityModel = ({ refresh }) => {
               <Grid container sx={{ pt: 1 }}>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="Name" id="name" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="Name"
+                      id="name"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
-            
+
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab1" id="slab1" size="small" required />
-                  </FormControl>
-                </Grid>
-                <Grid item md={12} xs={12}>
-                  <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab2" id="slab2" size="small" required />
-                  </FormControl>
-                </Grid>
-                <Grid item md={12} xs={12}>
-                  <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab3" id="slab3" size="small" required />
-                  </FormControl>
-                </Grid>
-                <Grid item md={12} xs={12}>
-                  <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab4" id="slab4" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab1"
+                      id="slab1"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab5" id="slab5" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab2"
+                      id="slab2"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab6" id="slab6" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab3"
+                      id="slab3"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="slab7" id="slab7" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab4"
+                      id="slab4"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="Ad" id="ad" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab5"
+                      id="slab5"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <FormControl sx={{ width: "100%" }}>
-                    <TextField autoComplete="off" label="Md" id="md" size="small" required />
+                    <TextField
+                      autoComplete="off"
+                      label="slab6"
+                      id="slab6"
+                      size="small"
+                      required
+                    />
+                  </FormControl>
+                </Grid>
+                <Grid item md={12} xs={12}>
+                  <FormControl sx={{ width: "100%" }}>
+                    <TextField
+                      autoComplete="off"
+                      label="slab7"
+                      id="slab7"
+                      size="small"
+                      required
+                    />
+                  </FormControl>
+                </Grid>
+                <Grid item md={12} xs={12}>
+                  <FormControl sx={{ width: "100%" }}>
+                    <TextField
+                      autoComplete="off"
+                      label="Ad"
+                      id="ad"
+                      size="small"
+                      required
+                    />
+                  </FormControl>
+                </Grid>
+                <Grid item md={12} xs={12}>
+                  <FormControl sx={{ width: "100%" }}>
+                    <TextField
+                      autoComplete="off"
+                      label="Md"
+                      id="md"
+                      size="small"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item md={12} xs={12}>
@@ -199,7 +262,11 @@ const AddUtilityModel = ({ refresh }) => {
                 </Grid>
               </Grid>
               <Box sx={{ mr: "5px" }}>
-                <ModalFooter form="update-Scheme" request={request} btn="Save Scheme" />
+                <ModalFooter
+                  form="update-Scheme"
+                  request={request}
+                  btn="Save Scheme"
+                />
               </Box>
             </Box>
           </Box>

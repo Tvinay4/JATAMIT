@@ -9,80 +9,78 @@ import {
   twitter,
 } from "../iconsImports";
 import { useNavigate } from "react-router-dom";
+import { getFirmAddress, getFirmContact, getFirmEmail } from "../theme/setThemeColor";
 
-import {
-  getFirmAddress,
-  getFirmContact,
-  getFirmEmail,
-} from "../theme/setThemeColor";
-
-const handleClickScroll = (id) => {
-  if (id === "landing-intro") {
-    document
-      .getElementById("landing-intro")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-  if (id === "about-us") {
-    let ele = document.getElementById("about-us");
-    window.scrollTo(0, ele.offsetTop, { behavior: "smooth" });
-  }
-  if (id === "contact-us") {
-    document
-      .getElementById("contact-us")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-  if (id === "our-services") {
-    document
-      .getElementById("our-services")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-  if (id === "our-partners") {
-    document
-      .getElementById("our-partners")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-  if (id === "landing-intro") {
-    document
-      .getElementById("landing-intro")
-      .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-  }
-};
 const Footer = () => {
   const navigate = useNavigate();
+
+  const contact = getFirmContact() || "9896146958";
+  const email = getFirmEmail() || "Jatmitinnovations@gmail.com";
+  const address =
+    getFirmAddress() ||
+    "House no.120, pocket no.26, Rohini Sec-24, New Delhi-110085";
 
   return (
     <Box
       component="footer"
       sx={{
-        background: "linear-gradient(135deg, #c8f2ff 0%, #ffe3f4 100%)",
+        position: "relative",
+        background: "#fff4eb",
         color: "#000",
-        pt: 6,
+        pt: 5,
         pb: 3,
-        mt: 6,
+        mt: 3,
+        overflow: "hidden",
       }}
     >
-      <Container maxWidth="lg">
-        <Grid container spacing={5}>
+      {/* Background Logo Watermark */}
+      <Box
+        component="img"
+        src={Logo}
+        alt="logo-watermark"
+        sx={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "500px",
+          height: "400px",
+          opacity: 0.05,
+          pointerEvents: "none",
+        }}
+      />
+
+      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
+        <Grid container spacing={3}>
           {/* Logo & Address */}
-          <Grid item lg={5} md={5} sm={12} xs={12}>
+          <Grid item lg={5} md={4} sm={12} xs={12}>
             <Box>
               <img
                 src={loginPage1}
                 alt="logo"
-                width="200"
+                width="180"
                 style={{
                   borderRadius: "6px",
                   padding: "6px",
-                  background: "#ffffff22",
-                  backdropFilter: "blur(10px)",
+                  background: "#ffffff33",
+                  backdropFilter: "blur(6px)",
                 }}
               />
-              <Typography sx={{ mt: 2, fontSize: "14px" }}>
-                {getFirmAddress()}
-              </Typography>
+             <Typography
+  sx={{
+    mt: 2,
+    fontSize: "14px",
+    color: "#e86602",
+    wordBreak: "break-word", // breaks long words if necessary
+    whiteSpace: "normal",    // ensures wrapping
+  }}
+>
+  {address}
+</Typography>
+
 
               {/* Social Icons */}
-              <Box sx={{ display: "flex", gap: 2, mt: 3 }}>
+              <Box sx={{ display: "flex",justifyContent:"center",alignItems:"center", gap: 2, mt: 3 }}>
                 {[facebook, linkdin, twitter, insta].map((icon, i) => (
                   <img
                     key={i}
@@ -110,9 +108,13 @@ const Footer = () => {
           </Grid>
 
           {/* Navigation Links */}
-          <Grid item lg={7} md={7} sm={12} xs={12} container spacing={3}>
-            <Grid item xs={12} sm={4}>
-              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+          <Grid item lg={7} md={8} sm={12} xs={12} container spacing={3}>
+            {/* Company Links */}
+            <Grid item xs={12} sm={4} sx={{ textAlign:"left"}}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: "bold", mb: 2, color: "#e86602" }}
+              >
                 Company
               </Typography>
               {[
@@ -125,7 +127,7 @@ const Footer = () => {
                   sx={{
                     cursor: "pointer",
                     mb: 1,
-                    "&:hover": { color: "#ff6f91" },
+                    "&:hover": { color: "#ffb266" },
                   }}
                   onClick={() => navigate(link.path)}
                 >
@@ -134,8 +136,12 @@ const Footer = () => {
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={4}>
-              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+            {/* Policies Links */}
+            <Grid item xs={12} sm={4} sx={{textAlign:"left"}}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: "bold", mb: 2, color: "#e86602" }}
+              >
                 Policies
               </Typography>
               {[
@@ -148,7 +154,7 @@ const Footer = () => {
                   sx={{
                     cursor: "pointer",
                     mb: 1,
-                    "&:hover": { color: "#ff6f91" },
+                    "&:hover": { color: "#ffb266" },
                   }}
                   onClick={() => window.open(link.url, "_blank")}
                 >
@@ -157,14 +163,24 @@ const Footer = () => {
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={4}>
-              <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+            {/* Contact Info */}
+            <Grid item xs={12} sm={4} sx={{textAlign:"left"}}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: "bold",
+                  mb: 2,
+                  color: "#e86602",
+                  textAlign: "left",
+                }}
+              >
                 Contact Us
               </Typography>
-              <Typography sx={{ mb: 1 }}>{getFirmContact()}</Typography>
-              <Typography sx={{ textTransform: "lowercase" }}>
-                {getFirmEmail()}
+              <Typography sx={{ mb: 1 }}>📞 {contact}</Typography>
+              <Typography sx={{ mb: 1, textTransform: "lowercase" }}>
+              {email}
               </Typography>
+              <Typography sx={{ textTransform: "lowercase" }}>🏠 {address}</Typography>
             </Grid>
           </Grid>
         </Grid>
@@ -179,16 +195,16 @@ const Footer = () => {
           }}
         >
           <Typography sx={{ fontSize: "14px", opacity: 0.8 }}>
-            © Copyright 2025 {process.env.REACT_APP_TITLE} INDIA PRIVATE
-            LIMITED. All Rights Reserved.
+            © Copyright 2025 JATMIT INNOVATIONS PVT LTD. All Rights Reserved.
           </Typography>
           <Typography sx={{ fontSize: "13px", opacity: 0.6, mt: 0.5 }}>
-            Disclaimer: Any dispute arising under these terms and conditions
-            shall be subject to the jurisdiction of the courts of Delhi.
+            Disclaimer: Any dispute arising under these terms and conditions shall
+            be subject to the jurisdiction of the courts of Delhi.
           </Typography>
         </Box>
       </Container>
     </Box>
   );
 };
+
 export default Footer;

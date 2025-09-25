@@ -55,8 +55,7 @@ const TransactionsData = () => {
     },
   ]);
   const handleChange = (event, newValue) => {
-    if (process.env.REACT_APP_TITLE === "WALLETHUB")
-      setTxnDataDuration(newValue);
+    if (process.env.REACT_APP_TITLE === "JATMIT") setTxnDataDuration(newValue);
     else setTxnDataDuration(event);
   };
 

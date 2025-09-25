@@ -62,10 +62,7 @@ const RightNavbar = () => {
   const location = useLocation();
   const selfqrValue =
     vqr && vqr
-      ? `upi://pay?pa=` +
-        vqr +
-        `&pn=WALLETHUB Technologies Limited` +
-        "&cu=INR"
+      ? `upi://pay?pa=` + vqr + `&pn=JATMIT Technologies Limited` + "&cu=INR"
       : "if you want to use our qr ";
 
   // ######################################

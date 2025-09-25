@@ -14,9 +14,9 @@ import useCommonContext from "../store/CommonContext";
 import { loginPage1 } from "../iconsImports";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const gradientBg = "linear-gradient(90deg, #c8f2ff 0%, #ffe3f4 100%)";
-const navTextColor = "#6a5acd";
-const buttonGradient = "linear-gradient(90deg, #ff6f91 0%, #ff9a8b 100%)";
+const gradientBg = "linear-gradient(90deg, #e86602 0%, #094576 100%)";
+const navTextColor = "#094576";
+const buttonGradient = "linear-gradient(90deg, #094576 0%, #e86602 100%)";
 
 const themeScrolled = {
   background: "#fff",
@@ -50,7 +50,6 @@ ElevationScroll.propTypes = {
   window: PropTypes.func,
 };
 
-// Menu items
 const pagesLg = [
   { navItems: "HOME", to: "/", sName: "homeSec" },
   { navItems: "ABOUT US", to: "/about-us", id: "about-us", sName: "aboutSec" },
@@ -120,7 +119,7 @@ export default function Navbar(props) {
                 "&:hover": { transform: "scale(1.1)" },
               }}
             >
-              <LogoComponent width="70px"/>
+              <LogoComponent width="120px"/>
             </Typography>
 
             {/* Mobile Logo */}
@@ -137,7 +136,7 @@ export default function Navbar(props) {
                 textDecoration: "none",
               }}
             >
-              <img src={loginPage1} width="70px" alt="logo" />
+              <img src={loginPage1} width="100px" alt="logo" />
             </Typography>
 
             {/* Menu Items */}
@@ -158,7 +157,7 @@ export default function Navbar(props) {
                     fontWeight: "500",
                     position: "relative",
                     "&:hover": {
-                      color: "#ff6f91",
+                      color: "#e86602",
                     },
                     "&::after": {
                       content: '""',
@@ -167,7 +166,7 @@ export default function Navbar(props) {
                       bottom: 0,
                       width: "0%",
                       height: "2px",
-                      backgroundColor: "#ff6f91",
+                      backgroundColor: "#e86602",
                       transition: "width 0.3s",
                     },
                     "&:hover::after": {
@@ -191,7 +190,7 @@ export default function Navbar(props) {
                   px: 3,
                   borderRadius: "25px",
                   "&:hover": {
-                    background: "linear-gradient(90deg, #ff9a8b, #ff6f91)",
+                    background: "linear-gradient(90deg, #e86602, #094576)",
                   },
                 }}
               >
