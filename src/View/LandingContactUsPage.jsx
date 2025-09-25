@@ -2,26 +2,14 @@ import {
   Button,
   Card,
   Container,
-  FormControl,
   Grid,
   InputAdornment,
   TextField,
   Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-
 import { Box } from "@mui/system";
 
-import { PATTERNS } from "../utils/ValidationUtil";
-
-import {
-  primaryColor,
-  getEnv,
-  getFirmAddress,
-  getFirmContact,
-  getFirmEmail,
-  primaryLight,
-} from "../theme/setThemeColor";
 import {
   Person as PersonIcon,
   Phone as PhoneIcon,
@@ -33,10 +21,18 @@ import {
   PhoneAndroid as PhoneAndroidIcon,
 } from "@mui/icons-material";
 
+// ----------------- Contact Info Functions -----------------
+export const getFirmAddress = () =>
+  `House no.120, pocket no.26, Rohini Sec-24, New Delhi-110085`;
+
+export const getFirmContact = () => `9896146958`;
+
+export const getFirmEmail = () => `Jatmitinnovations@gmail.com`;
+
+// ----------------- LandingContactUsPage Component -----------------
 const LandingContactUsPage = () => {
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [isMobileValid, setIsMobileValid] = useState(true);
-  const [name, setName] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     mobile: "",
@@ -59,7 +55,6 @@ const LandingContactUsPage = () => {
       [name]: value,
     }));
 
-    // Validation
     if (name === "email") {
       setIsEmailValid(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || value === "");
     }
@@ -98,53 +93,48 @@ const LandingContactUsPage = () => {
       color: "#FF1493",
     },
   ];
-  const envValue = getEnv();
+
   return (
     <Box
       id="contact-us"
       sx={{
-        // py: { xs: 4, md: 8 },
         background: "linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)",
         minHeight: "100vh",
+        py: { xs: 4,sm:0  },
+        mb:3
       }}
     >
-      {envValue !== "MoneyOddr" && (
-        <Grid className="servicePageBg">
-          {/* <Box component="div" className="pageHead" sx={{ textAlign: "center", mt: 7 }}>
-            Contact Us!
-          </Box> */}
-        </Grid>
-      )}
-      <Container maxWidth="lg">
-        {/* <Typography
-          variant="h3"
-          sx={{
-            fontWeight: 700,
-            mb: 4,
-            textAlign: "center",
-            background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          Contact Us
-        </Typography> */}
+  <Grid className="servicePageBg">
+    <Box
+      
+     
+      sx={{
+        textAlign: "center",
+        mt: 5,
+        fontSize: { xs: "1.8rem", md: "2.5rem" },
+        fontWeight: 700,
+        color: "#094576", // or any color you prefer
+      }}
+    >
+     
+    </Box>
+  </Grid>
 
+      <Container maxWidth="lg">
         <Typography
           variant="h6"
           sx={{
             mb: 6,
             textAlign: "center",
-            color: "#555",
+            color: "#333",
             maxWidth: "700px",
             mx: "auto",
           }}
         >
-          Have questions or need assistance? Reach out to our team and we'll get
-          back to you promptly.
+       "Have any questions or need support? Contact our team, and we’ll respond promptly."
         </Typography>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={3}>
           {/* Contact Form */}
           <Grid item xs={12} md={7}>
             <Box
@@ -174,7 +164,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <TextField
                 fullWidth
                 name="mobile"
@@ -196,7 +185,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <TextField
                 fullWidth
                 name="email"
@@ -215,7 +203,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <TextField
                 fullWidth
                 name="city"
@@ -232,7 +219,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <TextField
                 fullWidth
                 name="company"
@@ -249,7 +235,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <TextField
                 fullWidth
                 name="message"
@@ -259,7 +244,7 @@ const LandingContactUsPage = () => {
                 onChange={handleInputChange}
                 required
                 multiline
-                rows={4}
+                rows={2}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
@@ -268,7 +253,6 @@ const LandingContactUsPage = () => {
                   ),
                 }}
               />
-
               <Button
                 type="submit"
                 fullWidth
@@ -278,10 +262,12 @@ const LandingContactUsPage = () => {
                   mt: 2,
                   py: 1.5,
                   borderRadius: "50px",
-                  background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
-                  "&:hover": {
-                    background: "linear-gradient(90deg, #6a5acd, #ff6f91)",
-                  },
+                    background: "linear-gradient(90deg, #094576, #e86602)",
+    "&:hover": {
+      background: "linear-gradient(90deg, #e86602, #094576)",
+    },
+
+              
                 }}
               >
                 Submit
@@ -296,7 +282,7 @@ const LandingContactUsPage = () => {
                 <Grid item xs={12} key={index}>
                   <Card
                     sx={{
-                      p: 3,
+                      p: 2,
                       height: "100%",
                       borderRadius: 3,
                       boxShadow: 3,

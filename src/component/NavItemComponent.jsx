@@ -113,12 +113,12 @@ const NavItemComponent = ({
           className="icon-hover"
           sx={{
             justifyContent: open ? "initial" : "center",
-            backgroundColor: isCurrentActive ? "#F56C63" : "",
+            backgroundColor: isCurrentActive ? "#E86602" : "",
             backdropFilter: isCurrentActive ? "blur(5px)" : "",
 
             border: isCurrentActive ? "1px solid #fff" : "",
             "&:hover": {
-              backgroundColor: isCurrentActive ? "#00bfa6" : "#ff9a8b",
+                backgroundColor: isCurrentActive ? "#E86602" : "#F9A31C", 
               color: "white",
             },
             "& img": {

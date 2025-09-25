@@ -579,10 +579,10 @@ const VerifyMpinLogin = ({
                   borderRadius: 6,
                   color: "#000",
                   fontWeight: "bold",
-                  backgroundColor: " #ff6f91",
+                  backgroundColor: " #F9A31C",
                   fontWeight: "bold",
                   "&:hover": {
-                    backgroundColor: "#ff9a8b",
+                    backgroundColor: "#E86602",
                     fontWeight: "bold",
                     color: "#FFF",
                   },

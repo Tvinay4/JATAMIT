@@ -366,7 +366,7 @@ export default function SideNav(props, { data }) {
               display: "block",
               margin: "0 auto",
             }}
-            width="90px"
+            width="200px"
           />
         )}
         {!open && !mobileOpen && (
@@ -387,7 +387,7 @@ export default function SideNav(props, { data }) {
         sx={{
           height: { xs: "80vh", sm: "100vh" },
           overflowY: "scroll",
-          background: "#5239AB",
+          background: "#094576",
           // background: "#DF400C",
           borderRadius: "0px 10px",
         }}

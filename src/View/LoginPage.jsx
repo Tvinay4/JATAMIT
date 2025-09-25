@@ -422,7 +422,7 @@ const LoginPage = () => {
               sx={{
                 maxWidth: "50%",
                 // maxHeight: "46%",
-                maxHeight: "80vh",
+                maxHeight: "90vh",
                 objectFit: "cover",
                 mb: 3.3,
               }}

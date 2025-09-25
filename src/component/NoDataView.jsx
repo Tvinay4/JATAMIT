@@ -18,7 +18,7 @@ const NoDataView = ({ msg }) => {
           <img
             src={noDataIllustrator}
             alt="no_data"
-            width="36%"
+            width="40%"
             // style={{ marginTop: "24px" }}
           />
         </Grid>

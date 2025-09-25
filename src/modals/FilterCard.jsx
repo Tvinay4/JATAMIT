@@ -1758,7 +1758,7 @@ const FilterCard = ({
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#5239AB",
+                backgroundColor: "#094576",
                 color: "white",
                 padding: "4px ",
                 fontSize: "13px",

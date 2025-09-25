@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { loginPage1, Logo } from "../iconsImports";
 import AuthContext from "../store/AuthContext";
 
-const LogoComponent = ({ width = "170px", pl = "", style }) => {
+const LogoComponent = ({ width = "180px", pl = "", style }) => {
   const navigate = useNavigate();
   const authCtx = useContext(AuthContext);
   const [user, setUser] = useState(authCtx?.user);

@@ -118,7 +118,7 @@ export const massegetable = {
   },
   rows: {
     highlightOnHoverStyle: {
-      backgroundColor: "#415d4339",
+        backgroundColor: "#E8660233",
       borderBottomColor: "#FFFFFF",
       outline: "1px solid #ffffff",
     },
