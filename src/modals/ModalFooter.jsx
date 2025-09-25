@@ -28,7 +28,7 @@ const ModalFooter = ({
     <Box sx={{ mt: 3 }}>
       <Divider
         sx={{
-          borderColor: "rgba(138, 64, 165, 0.2)",
+          borderColor: "rgba(232, 102, 2, 0.3)",
           mb: 2,
           borderWidth: "1px",
         }}
@@ -104,11 +104,12 @@ const ModalFooter = ({
                 onClick={handleClose}
                 variant="outlined"
                 sx={{
-                  color: "#8A40A5",
-                  borderColor: "#8A40A5",
+                  color: "#094576",
+                  borderColor: "#094576",
                   "&:hover": {
-                    backgroundColor: "rgba(138, 64, 165, 0.08)",
-                    borderColor: "#8A40A5",
+                   backgroundColor: "rgba(232, 102, 2, 0.08)",
+
+                    borderColor: "#094576",
                   },
                 }}
               />

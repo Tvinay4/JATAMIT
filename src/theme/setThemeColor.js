@@ -1,11 +1,11 @@
 export const primaryColor = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return "#ff6f91";
+    return " #E86602";
   }
 };
 export const primaryLight = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return "#6a5acd";
+    return "#094576";
   }
 };
 export const primaryLightest = () => {
@@ -32,7 +32,7 @@ export const getHoverInActive = () => {
 
 export const getTableHeadRowColor = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return "#ff6f91";
+    return " #ff8023";
   }
 };
 

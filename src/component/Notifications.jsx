@@ -359,7 +359,7 @@ const Notifications = () => {
           }}
         >
           <Button
-            sx={{ color: "#0077b6" }}
+            sx={{ color: "#094576" }}
             className="otp-hover-purple"
             onClick={() => {
               handleClose();
@@ -368,7 +368,7 @@ const Notifications = () => {
             Close
           </Button>
           <Button
-            sx={{ color: "#0077b6" }}
+            sx={{ color: "#094576" }}
             className="otp-hover-purple"
             onClick={() => {
               setOpenModal(true);

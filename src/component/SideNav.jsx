@@ -366,7 +366,7 @@ export default function SideNav(props, { data }) {
               display: "block",
               margin: "0 auto",
             }}
-            width="200px"
+            width="190px"
           />
         )}
         {!open && !mobileOpen && (

@@ -12,14 +12,15 @@ const ModalHeader = ({
       sx={{
         width: "100%",
         padding: { xs: "16px", md: "20px" },
-        background: "linear-gradient(135deg, #8A40A5 0%, #F56C63 100%)",
+        background: "#E86602",
         borderRadius: "12px 12px 0 0",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
         mb: 2,
-        boxShadow: "0 4px 12px rgba(138, 64, 165, 0.3)",
+      boxShadow: "0 4px 12px rgba(232, 102, 2, 0.3)",
+
       }}
     >
       {/* Title */}
