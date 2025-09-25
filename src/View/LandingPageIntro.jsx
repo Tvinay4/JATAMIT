@@ -19,14 +19,14 @@ const LandingPageIntro = () => {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        py: { xs: 5, md: 8 },
+        py: { xs: 5, md: 7 },
       }}
     >
       <Container maxWidth="xl">
         <Grid container spacing={5} alignItems="center">
           {/* Text Section */}
           <Grid item xs={12} md={6}>
-            <Box textAlign={{ xs: "center", md: "left" }} px={{ xs: 1, md: 3 }}>
+            <Box textAlign={{ xs: "center", md: "left" }} px={{ xs: 1, md: 5 }}>
               <Typography
                 variant="h2"
                 sx={{

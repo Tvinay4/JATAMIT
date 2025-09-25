@@ -25,6 +25,7 @@ import {
   mt,
   qrCode_img,
 } from "../iconsImports";
+
 const LandingServicesPage = ({ envName = "JATMIT" }) => {
   const navigate = useNavigate();
 
@@ -287,9 +288,9 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                     fontWeight: "bold",
                     px: 4,
                     py: 1.5,
-                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    background: "linear-gradient(90deg, #094576, #e86602)",
                     "&:hover": {
-                      background: "linear-gradient(90deg, #00bfa6, #6a5acd)",
+                      background: "linear-gradient(90deg, #e86602, #094576)",
                     },
                   }}
                   onClick={() => navigate("/sign-up")}
@@ -304,7 +305,6 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                 sx={{
                   borderRadius: "16px",
                   overflow: "hidden",
-                  // boxShadow: "0 15px 30px rgba(0,0,0,0.1)",
                   lineHeight: 0,
                   "& img": {
                     width: "50%",
