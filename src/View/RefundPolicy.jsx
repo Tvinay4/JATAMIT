@@ -75,9 +75,10 @@ const RefundPolicy = () => {
           >
             <RefundIcon sx={{ verticalAlign: "middle", mr: 1 }} />
             Once a User chooses to avail any service plan/offer announced by{" "}
-            <strong>JATMIT PRIVATE LIMITED </strong> and agrees to buy that
-            plan, such payment shall not be refunded by{" "}
-            <strong>JATMIT PRIVATE LIMITED </strong> under any circumstances.
+            <strong>JATMIT INNOVATIONS PRIVATE LIMITED </strong> and agrees to
+            buy that plan, such payment shall not be refunded by{" "}
+            <strong>JATMIT INNOVATIONS PRIVATE LIMITED </strong> under any
+            circumstances.
           </Typography>
         </Paper>
 
@@ -117,11 +118,10 @@ const RefundPolicy = () => {
             sx={{ lineHeight: 1.6, zIndex: 1 }}
           >
             <VerifiedUserIcon sx={{ verticalAlign: "middle", mr: 1 }} />
-            Post receipt of payment, <strong>
-              JATMIT PRIVATE LIMITED{" "}
-            </strong>{" "}
-            will create a User ID only after successful KYC verification. If the
-            KYC is unsuccessful, a User ID cannot be created.
+            Post receipt of payment,{" "}
+            <strong>JATMIT INNOVATIONS PRIVATE LIMITED </strong> will create a
+            User ID only after successful KYC verification. If the KYC is
+            unsuccessful, a User ID cannot be created.
           </Typography>
         </Paper>
 
@@ -162,9 +162,9 @@ const RefundPolicy = () => {
           >
             <ScheduleIcon sx={{ verticalAlign: "middle", mr: 1 }} />
             Transactions that fail due to issues directly attributable to{" "}
-            <strong>JATMIT PRIVATE LIMITED</strong> will be refunded within 3-21
-            working days. Only the actual transaction amount will be refunded,
-            excluding fees.
+            <strong>JATMIT INNOVATIONS PRIVATE LIMITED</strong> will be refunded
+            within 3-21 working days. Only the actual transaction amount will be
+            refunded, excluding fees.
           </Typography>
         </Paper>
       </Box>

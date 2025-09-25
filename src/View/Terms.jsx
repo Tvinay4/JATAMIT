@@ -25,11 +25,11 @@ const Terms = () => {
                 <strong>(“Services”)</strong>. These Terms are legally binding
                 and govern the use of our website, our mobile application, our
                 API and other properties collectively called as the
-                <strong>“JATMIT INDIA PRIVATE LIMITED”</strong> or
+                <strong>“JATMIT INNOVATIONS PRIVATE LIMITED”</strong> or
                 <strong> “Platform”</strong>
-                created by JATMIT INDIA PRIVATE LIMITED, a company incorporated
-                under the laws of India, with its registered office at{" "}
-                {getFirmAddress()}
+                created by JATMIT INNOVATIONS PRIVATE LIMITED, a company
+                incorporated under the laws of India, with its registered office
+                at {getFirmAddress()}
                 <strong>(“JATMIT” or “Company”)</strong>.
               </p>
 
@@ -181,11 +181,11 @@ const Terms = () => {
                 </p>
 
                 <p className="landing-bg_para">
-                  <strong>“JATMIT INDIA PRIVATE LIMITED Policies”</strong> shall
-                  mean and include the Terms of Use, Privacy Policy, Grievance
-                  Policy and any other such terms and conditions/policies
-                  available and updated from time to time on the JATMIT INDIA
-                  PRIVATE LIMITED.
+                  <strong>“JATMIT INNOVATIONS PRIVATE LIMITED Policies”</strong>{" "}
+                  shall mean and include the Terms of Use, Privacy Policy,
+                  Grievance Policy and any other such terms and
+                  conditions/policies available and updated from time to time on
+                  the JATMIT INNOVATIONS PRIVATE LIMITED.
                 </p>
 
                 <p className="landing-bg_para">
@@ -225,24 +225,25 @@ const Terms = () => {
                 <p className="landing-bg_para">
                   <strong>“Services”</strong> shall mean the services provided
                   by JATMIT and various Service Providers to the Users utilizing
-                  the JATMIT INDIA PRIVATE LIMITED including but not limited to
-                  banking services, non-banking services and other such services
-                  either by itself or through a Merchant.
+                  the JATMIT INNOVATIONS PRIVATE LIMITED including but not
+                  limited to banking services, non-banking services and other
+                  such services either by itself or through a Merchant.
                 </p>
 
                 <p className="landing-bg_para">
                   <strong>“Service Provider”</strong> shall mean any banking
-                  and/or non-banking entity with which JATMIT INDIA PRIVATE
-                  LIMITED has, directly or indirectly, executed an agreement for
-                  facilitating Transactions between such entity and its
-                  customers.
+                  and/or non-banking entity with which JATMIT INNOVATIONS
+                  PRIVATE LIMITED has, directly or indirectly, executed an
+                  agreement for facilitating Transactions between such entity
+                  and its customers.
                 </p>
 
                 <p className="landing-bg_para">
                   <strong>“Users”</strong> shall mean individuals&nbsp;including
                   all body&nbsp;corporates, partnerships, limited liability
-                  partnerships, etc., who are availing JATMIT INDIA PRIVATE
-                  LIMITED services through the JATMIT INDIA PRIVATE LIMITED.
+                  partnerships, etc., who are availing JATMIT INNOVATIONS
+                  PRIVATE LIMITED services through the JATMIT INNOVATIONS
+                  PRIVATE LIMITED.
                 </p>
               </div>
 
@@ -256,10 +257,10 @@ const Terms = () => {
 
               <div className="landing-bg_para">
                 <div>
-                  <u>INFORMATION SUPPLIED TO DILLIPAY.</u> Users agree that the
-                  information provided by the Users to JATMIT INDIA PRIVATE
-                  LIMITED on registration and at all other times, including
-                  payment, is true, accurate, current, and complete.
+                  <u>INFORMATION SUPPLIED TO JATMIT.</u> Users agree that the
+                  information provided by the Users to JATMIT INNOVATIONS
+                  PRIVATE LIMITED on registration and at all other times,
+                  including payment, is true, accurate, current, and complete.
                 </div>
                 <div className="landing-bg_para">
                   <u>SECURITY OF ACCOUNT.</u> Users’ mobile number and email
@@ -273,9 +274,9 @@ const Terms = () => {
                   ask for a User's Account password or any other confidential
                   information. If a User has any reason to believe that his
                   Account is no longer secure, then the User shall immediately
-                  change the Account password and indemnify JATMIT INDIA PRIVATE
-                  LIMITED from any liabilities that may arise from the misuse of
-                  such User’s Account.
+                  change the Account password and indemnify JATMIT INNOVATIONS
+                  PRIVATE LIMITED from any liabilities that may arise from the
+                  misuse of such User’s Account.
                 </div>
 
                 <div className="landing-bg_para">
@@ -300,12 +301,12 @@ const Terms = () => {
                   <u>THIRD PARTY SITES, PRODUCTS AND SERVICES.</u> JATMIT ’s
                   services and/or the Site may include links or references to
                   other web sites or services solely for the Users’ convenience
-                  (“<strong>Reference Sites</strong>”). JATMIT INDIA PRIVATE
-                  LIMITED does not endorse any such Reference Sites or the
-                  information, materials, products, or services contained on or
-                  accessible through Reference Sites. Correspondence or business
-                  dealings between Users and concerned Reference Sites are
-                  solely between such User and the concerned Reference Site.
+                  (“<strong>Reference Sites</strong>”). JATMIT INNOVATIONS
+                  PRIVATE LIMITED does not endorse any such Reference Sites or
+                  the information, materials, products, or services contained on
+                  or accessible through Reference Sites. Correspondence or
+                  business dealings between Users and concerned Reference Sites
+                  are solely between such User and the concerned Reference Site.
                   Access and use of Reference Sites, including the information,
                   materials, products, and services on or available through
                   Reference Sites is solely at the concerned User’s own risk.
@@ -320,19 +321,19 @@ const Terms = () => {
                       notifications as part of its efforts to fulfil the User’s
                       request or service your account. A User may continue to
                       receive transactional and critical&nbsp;communication from
-                      JATMIT INDIA PRIVATE LIMITED even after opting out of
-                      marketing communications.
+                      JATMIT INNOVATIONS PRIVATE LIMITED even after opting out
+                      of marketing communications.
                     </div>
                     <div className="landing-bg_para">
                       JATMIT will make the best efforts to provide notifications
                       and it shall be deemed that the User shall have received
                       the information sent from the Company during the course
                       of, or in relation to, using the JATMIT Platform or
-                      availing any Services. JATMIT INDIA PRIVATE LIMITED shall
-                      not be under any obligation to confirm the authenticity of
-                      the person(s) receiving the alert. The User cannot hold
-                      the Company liable for non-availability of any
-                      notification service in any manner whatsoever.
+                      availing any Services. JATMIT INNOVATIONS PRIVATE LIMITED
+                      shall not be under any obligation to confirm the
+                      authenticity of the person(s) receiving the alert. The
+                      User cannot hold the Company liable for non-availability
+                      of any notification service in any manner whatsoever.
                     </div>
                   </div>
                 </div>
@@ -360,9 +361,9 @@ const Terms = () => {
                       <p>
                         c)&nbsp; User’s use or inability to use JATMIT ’s
                         services, the Site or any Reference Sites, even if
-                        JATMIT or a JATMIT INDIA PRIVATE LIMITED authorized
-                        representative has advised of the possibility of such
-                        damages,
+                        JATMIT or a JATMIT INNOVATIONS PRIVATE LIMITED
+                        authorized representative has advised of the possibility
+                        of such damages,
                       </p>
                       <p>
                         d)&nbsp; unauthorized access to or alterations of
@@ -382,16 +383,16 @@ const Terms = () => {
                     </div>
 
                     <div className="landing-bg_para">
-                      It shall be at the sole discretion of JATMIT INDIA PRIVATE
-                      LIMITED to reverse any transaction subject to approval of
-                      the concerned Service Provider. Notwithstanding the above,
-                      if any court of law finds that JATMIT or its directors,
-                      officers, or employees, are liable to indemnify a
-                      concerned User despite the existence of this Clause 1.7,
-                      such liability shall not exceed the amount paid by the
-                      concerned User, if any, for using the portion of the
-                      JATMIT ’s services or the Site giving rise to the cause of
-                      action.
+                      It shall be at the sole discretion of JATMIT INNOVATIONS
+                      PRIVATE LIMITED to reverse any transaction subject to
+                      approval of the concerned Service Provider.
+                      Notwithstanding the above, if any court of law finds that
+                      JATMIT or its directors, officers, or employees, are
+                      liable to indemnify a concerned User despite the existence
+                      of this Clause 1.7, such liability shall not exceed the
+                      amount paid by the concerned User, if any, for using the
+                      portion of the JATMIT ’s services or the Site giving rise
+                      to the cause of action.
                     </div>
 
                     <div className="landing-bg_para">
@@ -525,18 +526,18 @@ const Terms = () => {
                     <div className="landing-bg_para">
                       The User hereby acknowledges and agrees that JATMIT
                       SERVICES is a facilitator for payment processing services
-                      which are requested by Users and JATMIT INDIA PRIVATE
-                      LIMITED shall not be responsible for any unauthorized
-                      transaction done by any person including third party and
-                      amounting to infringement of another’s rights or any
-                      chargebacks claimed by the customers. It will be the
-                      responsibility of Users to ensure due protection while
-                      transacting online or otherwise. JATMIT will assist the
-                      Users in settling any queries related to the Services that
-                      arise between the Users, and its customers. However,
-                      JATMIT SERVICES shall bear no responsibility with respect
-                      to the dispute or query related to payment made by the
-                      customers to the Users.
+                      which are requested by Users and JATMIT INNOVATIONS
+                      PRIVATE LIMITED shall not be responsible for any
+                      unauthorized transaction done by any person including
+                      third party and amounting to infringement of another’s
+                      rights or any chargebacks claimed by the customers. It
+                      will be the responsibility of Users to ensure due
+                      protection while transacting online or otherwise. JATMIT
+                      will assist the Users in settling any queries related to
+                      the Services that arise between the Users, and its
+                      customers. However, JATMIT SERVICES shall bear no
+                      responsibility with respect to the dispute or query
+                      related to payment made by the customers to the Users.
                     </div>
                   </div>
                 </div>
@@ -597,8 +598,8 @@ const Terms = () => {
                       approvals that are required from regulatory or
                       governmental authorities, including any consent from
                       customers required to transfer data to the User and/or the
-                      JATMIT INDIA PRIVATE LIMITED, as the case may be, in
-                      accordance with Applicable Law,
+                      JATMIT INNOVATIONS PRIVATE LIMITED , as the case may be,
+                      in accordance with Applicable Law,
                     </div>
 
                     <div className="landing-bg_para">
@@ -620,10 +621,10 @@ const Terms = () => {
                       deep-link, page scrape, robot, spider or other automatic
                       device, program, algorithm or methodology, or any similar
                       or equivalent manual process, to access, acquire, copy or
-                      monitor any portion of the JATMIT INDIA PRIVATE LIMITED,
-                      or in any way reproduce or circumvent the navigational
-                      structure or presentation of the platform, without JATMIT
-                      ’s express prior written consent.
+                      monitor any portion of the JATMIT INNOVATIONS PRIVATE
+                      LIMITED, or in any way reproduce or circumvent the
+                      navigational structure or presentation of the platform,
+                      without JATMIT ’s express prior written consent.
                     </div>
                     <div className="landing-bg_para">
                       it shall not attempt to gain unauthorized access to any
@@ -927,13 +928,13 @@ const Terms = () => {
                   <u>TERMINATION</u>
                   <div className="landing-bg_para">
                     JATMIT reserves the right to suspend or terminate the User’s
-                    access to JATMIT INDIA PRIVATE LIMITED and Services without
-                    prior notice and without any liability to the User or any
-                    third party, in the event,
+                    access to JATMIT INNOVATIONS PRIVATE LIMITED and Services
+                    without prior notice and without any liability to the User
+                    or any third party, in the event,
                     <div className="landing-bg_para">
                       <p>
                         (a) the User is in a breach of these Terms of Use or any
-                        JATMIT INDIA PRIVATE LIMITED Policies;
+                        JATMIT INNOVATIONS PRIVATE LIMITED Policies;
                       </p>
                       <p>
                         (b) the User is engaged or is suspected to engage in any
@@ -941,14 +942,14 @@ const Terms = () => {
                       </p>
                       <p>
                         (b) the User provides any information which is
-                        incomplete, inaccurate or false or JATMIT INDIA PRIVATE
-                        LIMITED has reason to believe that such information is
-                        incomplete, inaccurate or false.
+                        incomplete, inaccurate or false or JATMIT INNOVATIONS
+                        PRIVATE LIMITED has reason to believe that such
+                        information is incomplete, inaccurate or false.
                       </p>
                     </div>
                     <div className="landing-bg_para">
                       Any suspension/termination of the User’s access to JATMIT
-                      INDIA PRIVATE LIMITED and Services shall be without
+                      INNOVATIONS PRIVATE LIMITED and Services shall be without
                       prejudice to JATMIT ’s right to exercise any other remedy
                       available to it under the applicable law.
                     </div>
@@ -1019,7 +1020,7 @@ const Terms = () => {
                       JATMIT website(s) or by any other reasonable means. Except
                       as otherwise set forth herein, notice to JATMIT must be
                       sent by courier or registered post to the Legal
-                      Department, JATMIT INDIA PRIVATE LIMITED Pvt. Ltd.,{" "}
+                      Department, JATMIT INNOVATIONS PRIVATE LIMITED ,{" "}
                       {getFirmAddress()}
                     </div>
 

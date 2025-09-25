@@ -17,7 +17,7 @@ const PrivacyPolicyView = () => {
           <Box sx={{ mt: 3 }}>
             <div>
               <p className="landing-bg_para">
-                JATMIT INDIA PRIVATE LIMITED (
+                JATMIT INNOVATIONS PRIVATE LIMITED (
                 <strong>“JATMIT ”, “we”, “us”, “our”</strong>), respects every
                 individual’s right to privacy and it is our endeavour to protect
                 their personal and Sensitive personal data or information
@@ -399,13 +399,13 @@ const PrivacyPolicyView = () => {
                 JATMIT may send direct mailers to the User at the email address
                 given by the User. The User has the option to opt-out of this
                 direct mailer by way of links provided at the bottom of each
-                mailer or any other means as JATMIT INDIA PRIVATE LIMITED deems
-                appropriate. JATMIT respects every User’s privacy and in the
-                event that User chooses to not receive such mailers, JATMIT will
-                take all steps to remove the User from the list. If a User wants
-                to remove his/her/it’s contact information from all mailing
-                lists and newsletters, the same can be done through “Profile”
-                page of his/her/it’s account with JATMIT .
+                mailer or any other means as JATMIT INNOVATIONS PRIVATE LIMITED
+                deems appropriate. JATMIT respects every User’s privacy and in
+                the event that User chooses to not receive such mailers, JATMIT
+                will take all steps to remove the User from the list. If a User
+                wants to remove his/her/it’s contact information from all
+                mailing lists and newsletters, the same can be done through
+                “Profile” page of his/her/it’s account with JATMIT .
               </p>
 
               <div className="landing-bg_para">
