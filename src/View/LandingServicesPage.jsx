@@ -51,63 +51,63 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
     },
   ];
 
-  const featuredServices = [
-    {
-      title: envName === "JATMIT" ? "Travel Services" : "IRCTC Ticket Booking",
-      description:
-        envName === "JATMIT"
-          ? "JATMIT offers comprehensive travel options including flights, hotels, trains, buses and vacation packages in one convenient platform."
-          : `${envName} is authorized by IRCTC to book train tickets. Book tickets for any train, class, or destination quickly and reliably.`,
-      image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
-      icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
-    },
-    {
-      title: "My QR/UPI",
-      description: `${
-        envName === "JATMIT" ? "JATMIT" : "JATMIT"
-      } offers contactless payment services through QR codes or UPI, enabling instant, secure transactions for your customers.`,
-      image: { src: qrCode_img, alt: "My QR/UPI" },
-      icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
-    },
-    {
-      title:
-        envName === "JATMIT"
-          ? "Prepaid Mobile & DTH Recharges"
-          : "Mobile Recharge",
-      description:
-        envName === "JATMIT"
-          ? "Find multiple operators and suitable plans for your customers and earn commission on each recharge."
-          : `Earn by doing mobile/DTH recharges and utility bill payments for 150+ companies. ${envName} converts any shop into a one-stop solution.`,
-      image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
-      icon: <MobileIcon sx={{ fontSize: "2.5rem" }} />,
-    },
-    {
-      title: "API Banking",
-      description:
-        "An intuitive, simple-to-implement API banking stack built for scalability. Integrate with your backend ERP for balance inquiries and financial operations.",
-      image: { src: api, alt: "API Banking" },
-      icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
-    },
-  ];
+ const featuredServices = [
+  {
+    title: envName === "JATMIT" ? "Travel Services" : "IRCTC Ticket Booking",
+    description:
+      envName === "JATMIT"
+        ? "JATMIT offers comprehensive travel solutions with a wide range of options including flight tickets, hotel bookings, train reservations, bus services, and vacation packages. Merchants can provide these services directly to customers, making it a one-stop travel solution while also earning attractive commissions. With easy access, transparent pricing, and reliable support, our platform ensures convenience, customer satisfaction, and increased business opportunities for every merchant."
+        : `${envName} is authorized by IRCTC to book train tickets seamlessly. Agents and merchants can provide their customers with access to train reservations across any class, route, or destination in India, ensuring a quick, reliable, and profitable service experience. With real-time booking, instant confirmations, and minimal downtime, merchants gain customer trust while expanding their digital service portfolio effectively and profitably.`,
+    image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
+    icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
+  },
+  {
+    title: "My QR/UPI",
+    description: `${
+      envName === "JATMIT" ? "JATMIT" : "JATMIT"
+    } provides modern, contactless payment services through QR codes and UPI integration. Merchants can accept instant and secure digital payments directly from customers without the need for expensive infrastructure. It helps boost cashless transactions, improves customer convenience, and increases trust in your business. With seamless integration, zero hidden charges, and 24/7 availability, merchants can offer a smooth payment experience while strengthening their brand reputation.`,
+    image: { src: qrCode_img, alt: "My QR/UPI" },
+    icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
+  },
+  {
+    title:
+      envName === "JATMIT"
+        ? "Prepaid Mobile & DTH Recharges"
+        : "Mobile Recharge",
+    description:
+      envName === "JATMIT"
+        ? "Merchants can easily provide mobile and DTH recharge services for all leading operators in India. With multiple plans and instant processing, you can serve customers quickly, keep them happy, and earn commission on every transaction — turning your shop into a trusted digital recharge hub. The process is simple, secure, and ensures that merchants maintain strong customer relationships, increase foot traffic, and generate recurring daily income effortlessly."
+        : `With ${envName}, merchants can handle mobile and DTH recharges along with utility bill payments for over 150+ service providers. This transforms any retail store into a complete digital service point, driving more footfall, customer satisfaction, and recurring income opportunities. By offering instant processing, error-free transactions, and wide coverage, merchants expand their service offerings and stay ahead in today’s fast-paced, digitally connected marketplace.`,
+    image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
+    icon: <MobileIcon sx={{ fontSize: "2.5rem" }} />,
+  },
+  {
+    title: "API Banking",
+    description:
+      "Our API Banking stack provides a robust, developer-friendly solution designed for businesses of all sizes. It allows secure integration with your ERP or backend systems to perform financial operations such as balance checks, money transfers, utility payments, and more. With high scalability and strong compliance, businesses can automate and accelerate financial workflows while maintaining complete reliability. This creates an ecosystem where enterprises grow faster, improve efficiency, reduce costs, and deliver seamless financial services to their customers.",
+    image: { src: api, alt: "API Banking" },
+    icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
+  },
+];
 
   return (
     <Box
       sx={{
         background: "linear-gradient(135deg, #f5f7fa 0%, #f8f9fb 100%)",
-        py: { xs: 4, md: 8 },
+        py: { xs: 6, md: 8 },
         position: "relative",
         overflow: "hidden",
       }}
       id="our-services"
     >
-      {/* Decorative elements */}
+      {/* Decorative Background Elements */}
       <Box
         sx={{
           position: "absolute",
           top: 0,
           right: 0,
-          width: "300px",
-          height: "300px",
+          width: { xs: "200px", md: "300px" },
+          height: { xs: "200px", md: "300px" },
           background:
             "radial-gradient(circle, rgba(255,111,145,0.1) 0%, rgba(255,255,255,0) 70%)",
           zIndex: 0,
@@ -118,8 +118,8 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
           position: "absolute",
           bottom: 0,
           left: 0,
-          width: "400px",
-          height: "400px",
+          width: { xs: "250px", md: "400px" },
+          height: { xs: "250px", md: "400px" },
           background:
             "radial-gradient(circle, rgba(106,90,205,0.1) 0%, rgba(255,255,255,0) 70%)",
           zIndex: 0,
@@ -128,7 +128,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
 
       <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
         {/* Header Section */}
-        <Box textAlign="center" mb={6}>
+        <Box textAlign="center" mb={{ xs: 6, md: 10 }} px={{ xs: 2, md: 6 }}>
           <Typography
             variant="h3"
             sx={{
@@ -137,69 +137,64 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
               background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              mb: 2,
-              fontSize: { xs: "2rem", md: "2.5rem" },
+              mb: 3,
+              fontSize: { xs: "2rem", md: "2.75rem" },
             }}
           >
             Our Services
           </Typography>
 
-          {envName === "JATMIT" ? (
-            <Typography
-              variant="h6"
-              sx={{
-                maxWidth: "800px",
-                mx: "auto",
-                color: "#555",
-                lineHeight: 1.7,
-                fontSize: { xs: "1rem", md: "1.1rem" },
-              }}
-            >
-              Unlock new possibilities for your business and boost your earnings
-              with{" "}
-              <span style={{ fontWeight: 900, color: "#01A0E2" }}>JATMIT</span>.
-              A single platform offering multiple services you can provide to
-              your customers.
-            </Typography>
-          ) : (
-            <Typography
-              variant="h6"
-              sx={{
-                maxWidth: "800px",
-                mx: "auto",
-                color: "#555",
-                lineHeight: 1.7,
-                fontSize: { xs: "1rem", md: "1.1rem" },
-              }}
-            >
-              We have exciting services for you on our application
-            </Typography>
-          )}
+          <Typography
+            variant="h6"
+            sx={{
+              maxWidth: "850px",
+              mx: "auto",
+              color: "#555",
+              lineHeight: 1.8,
+              fontSize: { xs: "1rem", md: "1.15rem" },
+            }}
+          >
+            {envName === "JATMIT" ? (
+              <>
+                Unlock new possibilities for your business and boost your
+                earnings with{" "}
+                <span style={{ fontWeight: 900, color: "#01A0E2" }}>
+                  JATMIT
+                </span>
+                . A single platform offering multiple services you can provide
+                to your customers.
+              </>
+            ) : (
+              "We have exciting services for you on our application."
+            )}
+          </Typography>
         </Box>
 
         {/* Core Services Grid */}
-        <Grid container spacing={4} sx={{ mb: 8 }}>
+        <Grid container spacing={5} sx={{ mb: { xs: 6, md: 10 } }}>
           {services.map((service, index) => (
             <Grid item xs={12} md={4} key={index}>
               <Card
                 sx={{
                   height: "100%",
-                  borderRadius: "16px",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
-                  transition: "transform 0.3s, box-shadow 0.3s",
+                  borderRadius: "20px",
+                  p: 1,
+                  boxShadow: "0 8px 28px rgba(0,0,0,0.08)",
+                  transition: "all 0.3s ease",
                   "&:hover": {
-                    transform: "translateY(-5px)",
-                    boxShadow: "0 12px 28px rgba(0,0,0,0.12)",
+                    transform: "translateY(-8px)",
+                    boxShadow: "0 14px 26px rgba(0,0,0,0.15)",
                   },
                 }}
               >
-                <CardContent sx={{ p: 4, height: "100%" }}>
+                <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                   <Box
                     sx={{
-                      width: "80px",
-                      height: "80px",
+                      width: 70,
+                      height: 70,
                       borderRadius: "50%",
-                      background: "linear-gradient(135deg, #ff9a8b, #ff6f91)",
+                      background:
+                        "linear-gradient(135deg, #ff9a8b, #ff6f91, #ff6f91)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -215,7 +210,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                       fontWeight: 600,
                       mb: 2,
                       fontFamily: "Poppins, sans-serif",
-                      color: "#333",
+                      color: "#222",
                     }}
                   >
                     {service.title}
@@ -239,7 +234,9 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
             spacing={6}
             alignItems="center"
             sx={{
-              mb: 10,
+              mb: { xs: 8, md: 12 },
+              px: { xs: 2, md: 4 },
+             
               flexDirection: {
                 xs: "column-reverse",
                 md: index % 2 === 0 ? "row" : "row-reverse",
@@ -248,11 +245,11 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
             key={index}
           >
             <Grid item xs={12} md={6}>
-              <Box sx={{ position: "relative" }}>
+              <Box sx={{ pr: { md: 4 } }}>
                 <Box
                   sx={{
-                    width: "60px",
-                    height: "6px",
+                    width: 60,
+                    height: 6,
                     background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
                     mb: 3,
                     borderRadius: "3px",
@@ -272,10 +269,11 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                 <Typography
                   variant="body1"
                   sx={{
-                    color: "#666",
-                    lineHeight: 1.8,
+                    color: "#555",
+                    lineHeight: 1.9,
+                     textAlign:"justify",
                     mb: 4,
-                    fontSize: "1.1rem",
+                    fontSize: { xs: "1rem", md: "1.15rem" },
                   }}
                 >
                   {service.description}
@@ -303,11 +301,13 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
             <Grid item xs={12} md={6}>
               <Box
                 sx={{
-                  borderRadius: "16px",
+                  borderRadius: "20px",
                   overflow: "hidden",
                   lineHeight: 0,
+                  display: "flex",
+                  justifyContent: "center",
                   "& img": {
-                    width: "50%",
+                    width: { xs: "70%", md: "65%" },
                     height: "auto",
                     objectFit: "cover",
                   },

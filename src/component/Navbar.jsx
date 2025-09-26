@@ -165,13 +165,11 @@ export default function Navbar(props) {
                       left: 0,
                       bottom: 0,
                       width: "0%",
-                      height: "2px",
+                      height: "4px",
                       backgroundColor: "#e86602",
                       transition: "width 0.3s",
                     },
-                    "&:hover::after": {
-                      width: "100%",
-                    },
+                   
                   }}
                 >
                   <Link className="navLinks">{item.navItems}</Link>

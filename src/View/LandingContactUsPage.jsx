@@ -125,11 +125,12 @@ const LandingContactUsPage = () => {
   <Typography
     variant="h6"
     sx={{
-      mb: 8, // more space below heading
+      mb: 6, // more space below heading
       textAlign: "center",
       color: "#333",
       maxWidth: "700px",
       mx: "auto",
+      mt:2,
     }}
   >
     Have any questions or need support? Contact our team, and we’ll respond promptly.
@@ -146,7 +147,7 @@ const LandingContactUsPage = () => {
           borderRadius: 3,
           boxShadow: 3,
           backgroundColor: "white",
-          "& .MuiTextField-root": { mb: 4 }, // more space between fields
+          "& .MuiTextField-root": { mb: 3 }, // more space between fields
         }}
       >
         <TextField
@@ -243,7 +244,7 @@ const LandingContactUsPage = () => {
           onChange={handleInputChange}
           required
           multiline
-          rows={3} // slightly taller message box
+          rows={2} // slightly taller message box
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -279,7 +280,7 @@ const LandingContactUsPage = () => {
           <Grid item xs={12} key={index}>
             <Card
               sx={{
-                p: 3,
+                p: 2,
                 height: "100%",
                 borderRadius: 3,
                 boxShadow: 3,
