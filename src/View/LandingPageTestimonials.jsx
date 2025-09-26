@@ -22,7 +22,7 @@ const testimonials = [
 
 const LandingPageTestimonials = () => {
   return (
-    <Grid container sx={{ backgroundColor: "#fff8e1", py: 6 }}>
+    <Grid container sx={{  background: "linear-gradient(135deg, #fff5eb 0%, #fef7f3 100%)", py: 6 }}>
       <Container maxWidth="lg">
         <Typography
           variant="h4"
