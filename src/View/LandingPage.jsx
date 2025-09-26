@@ -44,7 +44,7 @@ const LandingPage = () => {
         <LandingPageWhoWeAre />
         <LandingPageWeOffer />
 
-        {/* <LandingPageTestimonials /> */}
+        <LandingPageTestimonials />
       </div>
     </div>
   );

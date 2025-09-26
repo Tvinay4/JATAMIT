@@ -2,85 +2,75 @@ import { Grid, Box, Typography, Avatar, Rating } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
+import { Autoplay } from "swiper"; // <-- import module
+import "swiper/css";
+import "swiper/css/autoplay";
 import { avatar1, avatar2, avatar3, avatar4 } from "../iconsImports";
 
 const testimonials = [
-  {
-    text: "Quick and easy payments! Absolutely love the seamless experience.",
-    name: "Rohan Mehta",
-    location: "Pune, India",
-    image: avatar2,
-    rating: 5,
-  },
-  {
-    text: "Great support and smooth transactions. Highly recommended!",
-    name: "Simran Kaur",
-    location: "Delhi, India",
-    image: avatar3,
-    rating: 4.5,
-  },
-  {
-    text: "Reliable and efficient! Never had an issue with transactions.",
-    name: "Amit Sharma",
-    location: "Hyderabad, India",
-    image: avatar1,
-    rating: 5,
-  },
-  {
-    text: "Perfect for entrepreneurs! Easy payments, no hassles.",
-    name: "Kavita Nair",
-    location: "Bangalore, India",
-    image: avatar4,
-    rating: 4.5,
-  },
+  { text: "Quick and easy payments! Absolutely love the seamless experience.", name: "Rohan Mehta", location: "Pune, India", image: avatar2, rating: 5 },
+  { text: "Great support and smooth transactions. Highly recommended!", name: "Simran Kaur", location: "Delhi, India", image: avatar3, rating: 4.5 },
+  { text: "Reliable and efficient! Never had an issue with transactions.", name: "Amit Sharma", location: "Hyderabad, India", image: avatar1, rating: 5 },
+  { text: "Perfect for entrepreneurs! Easy payments, no hassles.", name: "Kavita Nair", location: "Bangalore, India", image: avatar4, rating: 4.5 },
+  { text: "The JATMIT platform has completely simplified our payment workflow.", name: "Nikhil Verma", location: "Chennai, India", image: avatar2, rating: 5 },
+  { text: "Efficient, fast, and very user-friendly. Loved it!", name: "Ananya Singh", location: "Mumbai, India", image: avatar3, rating: 4.5 },
+  { text: "Transactions made easy and safe. Excellent service!", name: "Rahul Kapoor", location: "Kolkata, India", image: avatar1, rating: 5 },
+  { text: "Very professional and reliable platform for all payments.", name: "Priya Desai", location: "Jaipur, India", image: avatar4, rating: 4.5 },
+  { text: "The best payment solution I have ever used. Highly recommend.", name: "Sanjay Reddy", location: "Chennai, India", image: avatar2, rating: 5 },
+  { text: "Simple, fast, and secure. Exactly what every business needs.", name: "Meera Iyer", location: "Bangalore, India", image: avatar3, rating: 4.5 },
 ];
 
 const LandingPageTestimonials = () => {
   return (
-    <Grid xs={12} sx={{ backgroundColor: "#fff8e1", py: 6 }}>
+    <Grid container sx={{ backgroundColor: "#fff8e1", py: 6 }}>
       <Container maxWidth="lg">
         <Typography
-          variant="h5"
+          variant="h4"
           align="center"
           sx={{
             fontFamily: "'Poppins', sans-serif",
-            fontWeight: 600,
+            fontWeight: 700,
             textTransform: "uppercase",
-            color: "#333",
+            color: "#d2691e",
             letterSpacing: "1px",
-            mb: 3,
+            mb: 2,
           }}
         >
           What Our Clients Say
         </Typography>
 
         <Typography
-          variant="body2"
+          variant="body1"
           align="center"
           sx={{
-            mb: 4,
-            color: "#666",
-            maxWidth: "650px",
+            mb: 5,
+            color: "#555",
+            maxWidth: "700px",
             margin: "auto",
             fontFamily: "'Poppins', sans-serif",
+            fontSize: "1rem",
           }}
         >
-          See how our customers have transformed their payment experiences with
-          JATMIT.
+          See how our customers have transformed their payment experiences with JATMIT. Trusted by entrepreneurs, professionals, and businesses across India.
         </Typography>
 
         <Box sx={{ mt: 3 }}>
           <Swiper
-            spaceBetween={30}
+            modules={[Autoplay]}
+            spaceBetween={25}
             slidesPerView={1}
             loop={true}
-            autoplay={{ delay: 3000 }}
-            speed={600}
+            autoplay={{
+              delay: 3000,
+              reverseDirection: true, // this will reverse autoplay
+              disableOnInteraction: false,
+            }}
+            speed={1000} // smooth animation
             breakpoints={{
               600: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
+            dir="rtl" // <-- ensures right-to-left sliding
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
@@ -91,11 +81,14 @@ const LandingPageTestimonials = () => {
                     alignItems: "center",
                     textAlign: "center",
                     padding: 2,
-                    backgroundColor: "#fff8e1",
-                    borderRadius: "8px",
-                    transition: "transform 0.3s ease-in-out",
+                    minHeight: 230,
+                    backgroundColor: "#fff3cd",
+                    borderRadius: "12px",
+                    transition: "transform 0.3s ease-in-out, box-shadow 0.3s",
+                    boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
                     "&:hover": {
                       transform: "scale(1.05)",
+                      boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
                     },
                   }}
                 >
@@ -111,17 +104,18 @@ const LandingPageTestimonials = () => {
                       mb: 1,
                       fontSize: "0.9rem",
                       fontFamily: "'Poppins', sans-serif",
-                      color: "#444",
+                      color: "#333",
                     }}
                   >
                     "{testimonial.text}"
                   </Typography>
                   <Typography
-                    variant="subtitle2"
+                    variant="subtitle1"
                     sx={{
-                      fontWeight: "bold",
+                      fontWeight: 700,
                       fontSize: "0.95rem",
-                      color: "#222",
+                      color: "#b85c00",
+                      mb: 0.5,
                     }}
                   >
                     {testimonial.name}
@@ -136,7 +130,7 @@ const LandingPageTestimonials = () => {
                     name="testimonial-rating"
                     value={testimonial.rating}
                     readOnly
-                    sx={{ mt: 1 }}
+                    sx={{ mt: 0.5 }}
                   />
                 </Box>
               </SwiperSlide>
