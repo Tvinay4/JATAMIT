@@ -150,7 +150,7 @@ const RetailerPdf = ({ user }) => {
               opacity: "0.7",
             }}
           >
-            JATMIT INDIA PRIVATE LIMITED
+            JATMIT INNOVATIONS PRIVATE LIMITED
           </Text>
           <Text
             style={{
@@ -185,7 +185,7 @@ const RetailerPdf = ({ user }) => {
         </View>
         <View style={{ postion: "relative" }}>
           <Image
-            src={signAvatars}
+            // src={signAvatars}
             style={{
               position: "absolute",
               bottom: "-250px",

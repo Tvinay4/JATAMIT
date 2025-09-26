@@ -31,6 +31,7 @@ import { LocationOn, Email, Phone } from "@mui/icons-material";
 import { breakAmt } from "../utils/MTBreakAmtUtil";
 import { numberToWord } from "../utils/FormattingUtils";
 import { useLocation } from "react-router-dom";
+import { getFirmAddress, getFirmContact, getFirmEmail } from "../theme/setThemeColor";
 
 let row_data = [];
 // let rowMapping = [];
@@ -656,8 +657,8 @@ const PaymentReceipt = () => {
                             fontSize: "14px",
                           }}
                         >
-                          907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE
-                          ROAD,Old Town,Ambala,Haryana,134003
+                          {getFirmAddress()},
+                
                         </Typography>
                       </Box>
 
@@ -679,7 +680,7 @@ const PaymentReceipt = () => {
                             fontFamily: "'Roboto', sans-serif",
                           }}
                         >
-                          Email: support@JATMIT.com
+                          {getFirmEmail()},
                         </Typography>
                       </Box>
 
@@ -701,7 +702,7 @@ const PaymentReceipt = () => {
                             fontFamily: "'Roboto', sans-serif",
                           }}
                         >
-                          Phone:
+                         {getFirmContact()},
                         </Typography>
                       </Box>
                     </>

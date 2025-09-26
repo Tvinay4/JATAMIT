@@ -489,7 +489,7 @@ const DmtContainer = ({
                             letterSpacing: "0.05rem",
                             textAlign: "left",
                             mt: 1,
-                            color: "#ff9a8b",
+                            color: "#e86602",
                           }}
                         >
                           {type === "dmt1"

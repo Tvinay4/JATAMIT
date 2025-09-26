@@ -94,7 +94,7 @@ const SendMoneyModal = ({ refresh }) => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-   
+
     const data = {
       to_id: getUser?.id, // Safely access user ID
       pf: "WEB",
@@ -103,7 +103,7 @@ const SendMoneyModal = ({ refresh }) => {
       mpin: mpin,
       latitude: userLat,
       longitude: userLong,
-      type:"CREDIT",
+      type: "CREDIT",
     };
 
     if (mpin !== "" && validateApiCall()) {
@@ -118,7 +118,7 @@ const SendMoneyModal = ({ refresh }) => {
           setMpin("");
           setErr("");
           if (refresh) refresh();
-          refreshUser()
+          refreshUser();
         },
         (error) => {
           // setMpin("");
@@ -168,7 +168,7 @@ const SendMoneyModal = ({ refresh }) => {
           <CallMadeIcon
             className="hover-white hover-zoom"
             size="1.3rem"
-            sx={{ color: "#da473d", fontWeight: "bold" }}
+            sx={{ color: "#e86602", fontWeight: "bold" }}
           />
         </Tooltip>
       </IconButton>

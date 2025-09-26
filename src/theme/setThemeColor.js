@@ -21,7 +21,7 @@ export const secondaryColor = () => {
 
 export const getHoverActive = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return "#ff9a8b";
+    return "#e86602";
   }
 };
 export const getHoverInActive = () => {

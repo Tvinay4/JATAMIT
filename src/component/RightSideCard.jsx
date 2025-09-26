@@ -154,7 +154,7 @@ const RightNavbar = () => {
         py: 0.7,
         mt: 1.5,
         borderRadius: "10px",
-        border: "1px solid #da473d",
+        border: "1px solid #e86602",
         boxShadow: "0 0 8px rgba(218, 71, 61, 0.6)",
         backgroundColor: "#fff",
       }}
@@ -168,7 +168,7 @@ const RightNavbar = () => {
           fontSize: "19px",
           fontWeight: "bold",
           position: "relative",
-          color: "#da473d",
+          color: "#e86602",
         }}
       >
         Wallet Widgets
@@ -202,7 +202,7 @@ const RightNavbar = () => {
           <Box className="hover-zoom">
             <IconButton
               className="hover-zoom"
-              sx={{ color: "#da473d" }}
+              sx={{ color: "#e86602" }}
               size="1.3rem"
               onClick={() => {
                 setShowBankTransfer(!showBankTransfer);
@@ -219,7 +219,7 @@ const RightNavbar = () => {
           {user?.wallet_transfer !== 0 && (
             <Box className="hover-zoom">
               <IconButton
-                sx={{ color: "#da473d" }}
+                sx={{ color: "#e86602" }}
                 size="1.3rem"
                 onClick={() => {
                   setShowWalletTransfer(!showWalletTransfer);
@@ -243,7 +243,7 @@ const RightNavbar = () => {
             marginTop: "12px",
             px: 2,
             pt: 2,
-            border: "1px solid #da473d",
+            border: "1px solid #e86602",
             borderRadius: "8px",
             boxShadow: "0 0 5px rgba(82, 57, 171, 0.5)",
             backgroundColor: "#faf8ff",
@@ -252,7 +252,7 @@ const RightNavbar = () => {
         >
           <IconButton className="top-right-position">
             <HighlightOffRoundedIcon
-              sx={{ color: "#da473d" }}
+              sx={{ color: "#e86602" }}
               className="hover-red"
               onClick={() => {
                 setShowWalletTransfer(false);
@@ -269,7 +269,7 @@ const RightNavbar = () => {
               fontWeight: "bold",
               width: "100%",
               textAlign: "left",
-              color: "#da473d",
+              color: "#e86602",
             }}
           >
             W2 to W1 Transfer
@@ -304,12 +304,12 @@ const RightNavbar = () => {
 
           <Box sx={{ width: "100%", textAlign: "right" }}>
             {err && (
-              <Typography sx={{ fontSize: "12px", color: "#da473d" }}>
+              <Typography sx={{ fontSize: "12px", color: "#e86602" }}>
                 {err?.message}
               </Typography>
             )}
             {walletTransferErrMsg && (
-              <Typography sx={{ fontSize: "12px", color: "#da473d" }}>
+              <Typography sx={{ fontSize: "12px", color: "#e86602" }}>
                 {walletTransferErrMsg}
               </Typography>
             )}
@@ -321,7 +321,7 @@ const RightNavbar = () => {
                 my: 1,
                 textTransform: "capitalize",
                 mt: 1,
-                backgroundColor: "#da473d",
+                backgroundColor: "#e86602",
                 "&:hover": { backgroundColor: "#432B8B" },
               }}
               form="walletTransfer"

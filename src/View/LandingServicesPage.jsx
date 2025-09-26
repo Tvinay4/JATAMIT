@@ -51,44 +51,44 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
     },
   ];
 
- const featuredServices = [
-  {
-    title: envName === "JATMIT" ? "Travel Services" : "IRCTC Ticket Booking",
-    description:
-      envName === "JATMIT"
-        ? "JATMIT offers comprehensive travel solutions with a wide range of options including flight tickets, hotel bookings, train reservations, bus services, and vacation packages. Merchants can provide these services directly to customers, making it a one-stop travel solution while also earning attractive commissions. With easy access, transparent pricing, and reliable support, our platform ensures convenience, customer satisfaction, and increased business opportunities for every merchant."
-        : `${envName} is authorized by IRCTC to book train tickets seamlessly. Agents and merchants can provide their customers with access to train reservations across any class, route, or destination in India, ensuring a quick, reliable, and profitable service experience. With real-time booking, instant confirmations, and minimal downtime, merchants gain customer trust while expanding their digital service portfolio effectively and profitably.`,
-    image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
-    icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
-  },
-  {
-    title: "My QR/UPI",
-    description: `${
-      envName === "JATMIT" ? "JATMIT" : "JATMIT"
-    } provides modern, contactless payment services through QR codes and UPI integration. Merchants can accept instant and secure digital payments directly from customers without the need for expensive infrastructure. It helps boost cashless transactions, improves customer convenience, and increases trust in your business. With seamless integration, zero hidden charges, and 24/7 availability, merchants can offer a smooth payment experience while strengthening their brand reputation.`,
-    image: { src: qrCode_img, alt: "My QR/UPI" },
-    icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
-  },
-  {
-    title:
-      envName === "JATMIT"
-        ? "Prepaid Mobile & DTH Recharges"
-        : "Mobile Recharge",
-    description:
-      envName === "JATMIT"
-        ? "Merchants can easily provide mobile and DTH recharge services for all leading operators in India. With multiple plans and instant processing, you can serve customers quickly, keep them happy, and earn commission on every transaction — turning your shop into a trusted digital recharge hub. The process is simple, secure, and ensures that merchants maintain strong customer relationships, increase foot traffic, and generate recurring daily income effortlessly."
-        : `With ${envName}, merchants can handle mobile and DTH recharges along with utility bill payments for over 150+ service providers. This transforms any retail store into a complete digital service point, driving more footfall, customer satisfaction, and recurring income opportunities. By offering instant processing, error-free transactions, and wide coverage, merchants expand their service offerings and stay ahead in today’s fast-paced, digitally connected marketplace.`,
-    image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
-    icon: <MobileIcon sx={{ fontSize: "2.5rem" }} />,
-  },
-  {
-    title: "API Banking",
-    description:
-      "Our API Banking stack provides a robust, developer-friendly solution designed for businesses of all sizes. It allows secure integration with your ERP or backend systems to perform financial operations such as balance checks, money transfers, utility payments, and more. With high scalability and strong compliance, businesses can automate and accelerate financial workflows while maintaining complete reliability. This creates an ecosystem where enterprises grow faster, improve efficiency, reduce costs, and deliver seamless financial services to their customers.",
-    image: { src: api, alt: "API Banking" },
-    icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
-  },
-];
+  const featuredServices = [
+    {
+      title: envName === "JATMIT" ? "Travel Services" : "IRCTC Ticket Booking",
+      description:
+        envName === "JATMIT"
+          ? "JATMIT offers comprehensive travel solutions with a wide range of options including flight tickets, hotel bookings, train reservations, bus services, and vacation packages. Merchants can provide these services directly to customers, making it a one-stop travel solution while also earning attractive commissions. With easy access, transparent pricing, and reliable support, our platform ensures convenience, customer satisfaction, and increased business opportunities for every merchant."
+          : `${envName} is authorized by IRCTC to book train tickets seamlessly. Agents and merchants can provide their customers with access to train reservations across any class, route, or destination in India, ensuring a quick, reliable, and profitable service experience. With real-time booking, instant confirmations, and minimal downtime, merchants gain customer trust while expanding their digital service portfolio effectively and profitably.`,
+      image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
+      icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title: "My QR/UPI",
+      description: `${
+        envName === "JATMIT" ? "JATMIT" : "JATMIT"
+      } provides modern, contactless payment services through QR codes and UPI integration. Merchants can accept instant and secure digital payments directly from customers without the need for expensive infrastructure. It helps boost cashless transactions, improves customer convenience, and increases trust in your business. With seamless integration, zero hidden charges, and 24/7 availability, merchants can offer a smooth payment experience while strengthening their brand reputation.`,
+      image: { src: qrCode_img, alt: "My QR/UPI" },
+      icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title:
+        envName === "JATMIT"
+          ? "Prepaid Mobile & DTH Recharges"
+          : "Mobile Recharge",
+      description:
+        envName === "JATMIT"
+          ? "Merchants can easily provide mobile and DTH recharge services for all leading operators in India. With multiple plans and instant processing, you can serve customers quickly, keep them happy, and earn commission on every transaction — turning your shop into a trusted digital recharge hub. The process is simple, secure, and ensures that merchants maintain strong customer relationships, increase foot traffic, and generate recurring daily income effortlessly."
+          : `With ${envName}, merchants can handle mobile and DTH recharges along with utility bill payments for over 150+ service providers. This transforms any retail store into a complete digital service point, driving more footfall, customer satisfaction, and recurring income opportunities. By offering instant processing, error-free transactions, and wide coverage, merchants expand their service offerings and stay ahead in today’s fast-paced, digitally connected marketplace.`,
+      image: { src: mobileR_img, alt: "Prepaid Mobile & DTH Recharges" },
+      icon: <MobileIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+    {
+      title: "API Banking",
+      description:
+        "Our API Banking stack provides a robust, developer-friendly solution designed for businesses of all sizes. It allows secure integration with your ERP or backend systems to perform financial operations such as balance checks, money transfers, utility payments, and more. With high scalability and strong compliance, businesses can automate and accelerate financial workflows while maintaining complete reliability. This creates an ecosystem where enterprises grow faster, improve efficiency, reduce costs, and deliver seamless financial services to their customers.",
+      image: { src: api, alt: "API Banking" },
+      icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
+    },
+  ];
 
   return (
     <Box
@@ -194,7 +194,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                       height: 70,
                       borderRadius: "50%",
                       background:
-                        "linear-gradient(135deg, #ff9a8b, #ff6f91, #ff6f91)",
+                        "linear-gradient(135deg, #e86602, #ff6f91, #ff6f91)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -236,7 +236,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
             sx={{
               mb: { xs: 8, md: 12 },
               px: { xs: 2, md: 4 },
-             
+
               flexDirection: {
                 xs: "column-reverse",
                 md: index % 2 === 0 ? "row" : "row-reverse",
@@ -271,7 +271,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                   sx={{
                     color: "#555",
                     lineHeight: 1.9,
-                     textAlign:"justify",
+                    textAlign: "justify",
                     mb: 4,
                     fontSize: { xs: "1rem", md: "1.15rem" },
                   }}

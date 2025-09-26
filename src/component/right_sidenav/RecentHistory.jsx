@@ -24,7 +24,7 @@ const RecentHistory = () => {
         px: 1,
         py: 1.5,
         borderRadius: "10px",
-        border: "1px solid #da473d",
+        border: "1px solid #e86602",
         boxShadow: "0 0 8px rgba(218, 71, 61, 0.6)",
       }}
     >
@@ -36,7 +36,7 @@ const RecentHistory = () => {
           fontWeight: "500",
           fontSize: "20px",
           position: "relative",
-          color: "#da473d",
+          color: "#e86602",
         }}
       >
         Recent Transactions

@@ -49,15 +49,16 @@ const NewsSection = () => {
         display: "flex",
      
         borderRadius: "8px",
-        backgroundColor: "#f8e4bf",
+       
         color: "#004080",
         fontSize: "16px",
         alignItems: "center",
         justifyContent: "right",
         marginBottom: "0.6rem",
         padding: "8px 6px",
-        border: "1px solid rgba(166, 126, 66, 0.85)",
-        boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)",
+         border: "1px solid rgba(166, 126, 66, 0.85)", // warm brown border
+    boxShadow: "0 0 5px rgba(166, 126, 66, 0.85)", // subtle glow
+    backgroundColor: "#FFD9B3", // light orange background
       }}
     >
       {data.length > 0 ? (
