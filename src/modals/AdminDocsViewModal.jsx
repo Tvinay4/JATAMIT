@@ -268,7 +268,7 @@ const AdminDocsViewModal = ({ row, refresh }) => {
             sx={{
               color:
                 aadhaar_image === null && pan_image === null
-                  ? "#6A5ACD"
+                  ? "#094676"
                   : (aadhaar_image || pan_image) &&
                     (is_aadhaar_verified === 0 ||
                       is_pan_verified === 0 ||

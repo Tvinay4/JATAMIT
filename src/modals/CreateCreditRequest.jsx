@@ -256,7 +256,7 @@ const CreateCreditRequest = ({ refresh, row }) => {
                 </Button>
                 <Button
                   sx={{
-                    backgroundColor: "#6a5acd",
+                    backgroundColor: "#094676",
                   }}
                   variant="contained"
                   onClick={handleOpen}

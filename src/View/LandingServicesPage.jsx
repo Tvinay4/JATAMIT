@@ -134,7 +134,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
             sx={{
               fontWeight: 700,
               fontFamily: "Poppins, sans-serif",
-              background: "linear-gradient(90deg, #ff6f91, #6a5acd)",
+              background: "linear-gradient(90deg, #ff6f91, #094676)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               mb: 3,
@@ -250,7 +250,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
                   sx={{
                     width: 60,
                     height: 6,
-                    background: "linear-gradient(90deg, #6a5acd, #00bfa6)",
+                    background: "linear-gradient(90deg, #094676, #00bfa6)",
                     mb: 3,
                     borderRadius: "3px",
                   }}

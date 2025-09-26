@@ -3,7 +3,7 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ff6f91"/>
-      <stop offset="55%" stop-color="#6a5acd"/>
+      <stop offset="55%" stop-color="#094676"/>
       <stop offset="100%" stop-color="#e86602"/>
     </linearGradient>
     <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
@@ -17,12 +17,12 @@
       </feMerge>
     </filter>
     <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6a5acd"/>
+      <stop offset="0%" stop-color="#094676"/>
       <stop offset="100%" stop-color="#4f3fb7"/>
     </linearGradient>
     <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#7b68ee"/>
-      <stop offset="100%" stop-color="#6a5acd"/>
+      <stop offset="100%" stop-color="#094676"/>
     </linearGradient>
     <linearGradient id="coinGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#e86602"/>
@@ -41,7 +41,7 @@
 
   <g opacity="0.2">
     <circle cx="180" cy="140" r="110" fill="#e86602"/>
-    <circle cx="1000" cy="740" r="160" fill="#6a5acd"/>
+    <circle cx="1000" cy="740" r="160" fill="#094676"/>
   </g>
 
   <g transform="translate(600,120)">
@@ -83,7 +83,7 @@
 
       <g transform="translate(66,340)" filter="url(#softShadow)">
         <rect x="0" y="36" width="180" height="140" rx="24" fill="#5a49c7"/>
-        <path d="M40,36 a50,50 0 0 1 100,0 v36 h-20 v-36 a30,30 0 0 0 -60,0 v36 h-20 z" fill="#6a5acd"/>
+        <path d="M40,36 a50,50 0 0 1 100,0 v36 h-20 v-36 a30,30 0 0 0 -60,0 v36 h-20 z" fill="#094676"/>
         <circle cx="90" cy="120" r="18" fill="#3a2e84"/>
       </g>
     </g>
