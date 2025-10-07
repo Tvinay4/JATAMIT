@@ -6,7 +6,7 @@ import { Email, LegendToggleRounded, Phone } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 import { datemonthYear } from "../utils/DateUtils";
 import PrintIcon from "@mui/icons-material/Print";
-import { getFirmEmail, getFirmContact } from "../theme/setThemeColor";
+import { getFirmEmail, getFirmContact, getFirmAddress } from "../theme/setThemeColor";
 
 export const UtilityReceipt = () => {
   const [isLarge, setIsLarge] = useState(true);
@@ -91,8 +91,7 @@ export const UtilityReceipt = () => {
                         fontSize: "inherit",
                       }}
                     >
-                      907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE ROAD,Old
-                      Town,Ambala,Haryana,134003
+                     {getFirmAddress()},
                     </p>
                   </Typography>
 
@@ -413,8 +412,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        907A BLOCK NO 6,Circular Road,MDSD GIRLS COLLEGE
-                        ROAD,Old Town,Ambala,Haryana,134003
+                       {getFirmAddress()},
                       </p>
                     </Typography>
 
@@ -453,7 +451,7 @@ export const UtilityReceipt = () => {
                           margin: 0,
                         }}
                       >
-                        Email: support@JATMIT.com
+                        Email: {getFirmEmail()}
                       </p>
                     </Typography>
 
