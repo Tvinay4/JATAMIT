@@ -10,7 +10,7 @@ const PageNotFound = () => {
     <>
       <Container maxWidth="lg">
         <Box component="div">
-          <img alt="404 Not Found" src={notFound404} width="600px" />
+          <img alt="404 Not Found" src={notFound404} width="650px" />
         </Box>
         Error page Not Found
         <Button
