@@ -1,7 +1,7 @@
 // export const BASE_URL = "https://api.impsguru.com/";
 // export const BASE_URL = "https://uat.impsguru.com/";
 // export const BASE_URL = "https://api.vdeepay.com";
-export const BASE_URL = "https://api.dillipay.com";
+export const BASE_URL = "https://api.jatmit.com";
 // export const BASE_URL = "https://api.wallethub.co.in";
 // export const BASE_URL = "https://api.JATMIT.com";
 // export const BASE_URL = "http://192.168.1.14/impsguru-php/";
