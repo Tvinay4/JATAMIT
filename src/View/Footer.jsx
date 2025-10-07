@@ -176,11 +176,11 @@ const Footer = () => {
               >
                 Contact Us
               </Typography>
-              <Typography sx={{ mb: 1 }}>📞 {contact}</Typography>
+              <Typography sx={{ mb: 1 }}> {contact}</Typography>
               <Typography sx={{ mb: 1, textTransform: "lowercase" }}>
               {email}
               </Typography>
-              <Typography sx={{ textTransform: "lowercase" }}>🏠 {address}</Typography>
+              <Typography sx={{ textTransform: "Capitalize" }}> {address}</Typography>
             </Grid>
           </Grid>
         </Grid>

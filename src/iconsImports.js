@@ -57,6 +57,9 @@ import avatar01 from "./assets/avatar01.jpg";
 import avatar02 from "./assets/avatar02.jpg";
 import avatar03 from "./assets/avatar03.jpg";
 import avatar04 from "./assets/avatar04.jpg";
+import avatar05 from "./assets/avatar5.jpg";
+import avatar06 from "./assets/avatar6.jpg";
+import avatar07 from "./assets/avatar7.jpg";
 //bbps icons import
 import broadband_svg from "./assets/svg/broadband.svg";
 import broadband_invert_svg from "./assets/svg-invert/broadband.svg";
@@ -333,6 +336,9 @@ export const avatar1 = avatar01;
 export const avatar2 = avatar02;
 export const avatar3 = avatar03;
 export const avatar4 = avatar04;
+export const avatar5 = avatar05;
+export const avatar6 = avatar06;
+export const avatar7 = avatar07;
 
 //my imports
 export const irctcAuthImg = irctcAuth;

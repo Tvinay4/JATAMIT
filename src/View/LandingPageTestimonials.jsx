@@ -5,24 +5,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper"; // <-- import module
 import "swiper/css";
 import "swiper/css/autoplay";
-import { avatar1, avatar2, avatar3, avatar4 } from "../iconsImports";
+import { avatar1, avatar2, avatar3, avatar4,avatar5,avatar6,avatar7 } from "../iconsImports";
 
 const testimonials = [
+    { text: "Efficient, fast, and very user-friendly. Loved it!", name: "Ananya Singh", location: "Mumbai, India", image: avatar3, rating: 4.5 },
+  { text: "Transactions made easy and safe. Excellent service!", name: "Rahul Kapoor", location: "Kolkata, India", image: avatar5, rating: 5 },
+  { text: "Very professional and reliable platform for all payments.", name: "Priya Desai", location: "Jaipur, India", image: avatar7, rating: 4.5 },
+  { text: "The best payment solution I have ever used. Highly recommend.", name: "Sanjay Reddy", location: "Chennai, India", image: avatar6, rating: 5 },
+  { text: "Simple, fast, and secure. Exactly what every business needs.", name: "Meera Iyer", location: "Bangalore, India", image: avatar4, rating: 4.5 },
   { text: "Quick and easy payments! Absolutely love the seamless experience.", name: "Rohan Mehta", location: "Pune, India", image: avatar2, rating: 5 },
   { text: "Great support and smooth transactions. Highly recommended!", name: "Simran Kaur", location: "Delhi, India", image: avatar3, rating: 4.5 },
   { text: "Reliable and efficient! Never had an issue with transactions.", name: "Amit Sharma", location: "Hyderabad, India", image: avatar1, rating: 5 },
   { text: "Perfect for entrepreneurs! Easy payments, no hassles.", name: "Kavita Nair", location: "Bangalore, India", image: avatar4, rating: 4.5 },
   { text: "The JATMIT platform has completely simplified our payment workflow.", name: "Nikhil Verma", location: "Chennai, India", image: avatar2, rating: 5 },
-  { text: "Efficient, fast, and very user-friendly. Loved it!", name: "Ananya Singh", location: "Mumbai, India", image: avatar3, rating: 4.5 },
-  { text: "Transactions made easy and safe. Excellent service!", name: "Rahul Kapoor", location: "Kolkata, India", image: avatar1, rating: 5 },
-  { text: "Very professional and reliable platform for all payments.", name: "Priya Desai", location: "Jaipur, India", image: avatar4, rating: 4.5 },
-  { text: "The best payment solution I have ever used. Highly recommend.", name: "Sanjay Reddy", location: "Chennai, India", image: avatar2, rating: 5 },
-  { text: "Simple, fast, and secure. Exactly what every business needs.", name: "Meera Iyer", location: "Bangalore, India", image: avatar3, rating: 4.5 },
+
 ];
 
 const LandingPageTestimonials = () => {
   return (
-    <Grid container sx={{  background: "linear-gradient(135deg, #fff5eb 0%, #fef7f3 100%)", py: 6 }}>
+    <Grid container sx={{  background: "linear-gradient(135deg, #fff5eb 0%, #fef7f3 100%)", py: 5 }}>
       <Container maxWidth="lg">
         <Typography
           variant="h4"
@@ -82,7 +83,7 @@ const LandingPageTestimonials = () => {
                     textAlign: "center",
                     padding: 2,
                     minHeight: 230,
-                    backgroundColor: "#fff3cd",
+                    backgroundColor: "#fef7f3",
                     borderRadius: "12px",
                     transition: "transform 0.3s ease-in-out, box-shadow 0.3s",
                     boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
