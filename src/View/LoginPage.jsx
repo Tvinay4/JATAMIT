@@ -358,6 +358,7 @@ const LoginPage = () => {
         <Hidden mdDown>
   <Grid
   item
+   xs={false}
   md={6}
   lg={6}
   sx={{ position: "relative", height: "100vh" }}
