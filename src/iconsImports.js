@@ -217,7 +217,7 @@ import creditReqGuidelines from "./assets/credit-request-disclaimer.png";
 import irctcAuth from "./assets/irctc-auth.png";
 import irctcTravel from "./assets_travel/images/irctc.jpg";
 //dashboard
-import money_l from "./assets/dashboard_icons/money.png";
+import money_l from "./assets/money.png";
 import cms_1 from "./assets/dashboard_icons/cms.png";
 import nepal_1 from "./assets/dashboard_icons/nepal.png";
 import vpay_1 from "./assets/dashboard_icons/vpay.png";
