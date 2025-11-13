@@ -9,16 +9,26 @@ import {
   twitter,
 } from "../iconsImports";
 import { useNavigate } from "react-router-dom";
-import { getFirmAddress, getFirmContact, getFirmEmail } from "../theme/setThemeColor";
+import {
+  getFirmAddress,
+  getFirmContact,
+  getFirmEmail,
+} from "../theme/setThemeColor";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   const contact = getFirmContact() || "9896146958";
-  const email = getFirmEmail() || "Jatmitinnovations@gmail.com";
+  const email = getFirmEmail() || "info@jatmit.com";
   const address =
     getFirmAddress() ||
-    "House no.120, pocket no.26, Rohini Sec-24, New Delhi-110085";
+  `HOUSE No-C-68 (OLD No-201)
+KHASRA No - 31/2,
+3RD FLOOR, VILLAGE PANSALI,
+BLOCK-C, DEEP VIHAR, PANSALI,
+DELHI-110042`;
+
+    
 
   return (
     <Box
@@ -66,21 +76,28 @@ const Footer = () => {
                   backdropFilter: "blur(6px)",
                 }}
               />
-             <Typography
-  sx={{
-    mt: 2,
-    fontSize: "14px",
-    color: "#e86602",
-    wordBreak: "break-word", // breaks long words if necessary
-    whiteSpace: "normal",    // ensures wrapping
-  }}
->
-  {address}
-</Typography>
-
+              <Typography
+                sx={{
+                  mt: 2,
+                  fontSize: "14px",
+                  color: "#e86602",
+                  wordBreak: "break-word", // breaks long words if necessary
+                  whiteSpace: "normal", // ensures wrapping
+                }}
+              >
+                {address}
+              </Typography>
 
               {/* Social Icons */}
-              <Box sx={{ display: "flex",justifyContent:"center",alignItems:"center", gap: 2, mt: 3 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: 2,
+                  mt: 3,
+                }}
+              >
                 {[facebook, linkdin, twitter, insta].map((icon, i) => (
                   <img
                     key={i}
@@ -110,7 +127,7 @@ const Footer = () => {
           {/* Navigation Links */}
           <Grid item lg={7} md={8} sm={12} xs={12} container spacing={3}>
             {/* Company Links */}
-            <Grid item xs={12} sm={4} sx={{ textAlign:"left"}}>
+            <Grid item xs={12} sm={4} sx={{ textAlign: "left" }}>
               <Typography
                 variant="h6"
                 sx={{ fontWeight: "bold", mb: 2, color: "#e86602" }}
@@ -137,7 +154,7 @@ const Footer = () => {
             </Grid>
 
             {/* Policies Links */}
-            <Grid item xs={12} sm={4} sx={{textAlign:"left"}}>
+            <Grid item xs={12} sm={4} sx={{ textAlign: "left" }}>
               <Typography
                 variant="h6"
                 sx={{ fontWeight: "bold", mb: 2, color: "#e86602" }}
@@ -164,7 +181,7 @@ const Footer = () => {
             </Grid>
 
             {/* Contact Info */}
-            <Grid item xs={12} sm={4} sx={{textAlign:"left"}}>
+            <Grid item xs={12} sm={4} sx={{ textAlign: "left" }}>
               <Typography
                 variant="h6"
                 sx={{
@@ -172,15 +189,19 @@ const Footer = () => {
                   mb: 2,
                   color: "#e86602",
                   textAlign: "left",
+                  width:"400px"
                 }}
               >
                 Contact Us
               </Typography>
               <Typography sx={{ mb: 1 }}> {contact}</Typography>
               <Typography sx={{ mb: 1, textTransform: "lowercase" }}>
-              {email}
+                {email}
               </Typography>
-              <Typography sx={{ textTransform: "Capitalize" }}> {address}</Typography>
+              <Typography sx={{  fontSize:"15px" ,textTransform: "Capitalize" }}>
+                {" "}
+                {address}
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
@@ -198,8 +219,8 @@ const Footer = () => {
             © Copyright 2025 JATMIT INNOVATIONS PVT LTD. All Rights Reserved.
           </Typography>
           <Typography sx={{ fontSize: "13px", opacity: 0.6, mt: 0.5 }}>
-            Disclaimer: Any dispute arising under these terms and conditions shall
-            be subject to the jurisdiction of the courts of Delhi.
+            Disclaimer: Any dispute arising under these terms and conditions
+            shall be subject to the jurisdiction of the courts of Delhi.
           </Typography>
         </Box>
       </Container>

@@ -137,7 +137,10 @@ export const getStatusColor = (status) => {
 
 export const getFirmAddress = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return `House no.120, pocket no.26, Rohini Sec-24, New Delhi-110085
+    return `HOUSE No-C-68 (OLD No-201)
+KHASRA No - 31/2,
+3RD FLOOR, VILLAGE PANSALI
+BLOCK-C, DEEP VIHAR, PANSALI, DELHI-110042
 `;
   }
 };
@@ -148,7 +151,7 @@ export const getFirmContact = () => {
 };
 export const getFirmEmail = () => {
   if (process.env.REACT_APP_TITLE === "JATMIT") {
-    return `Jatmitinnovations@gmail.com`;
+    return `info@jatmit.com`;
   }
 };
 

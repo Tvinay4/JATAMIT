@@ -41,7 +41,7 @@ const PrivacyPolicyView = () => {
               <p className="landing-bg_para">
                 The User acknowledges that this Policy is a part of JATMIT ’s
                 <strong>Terms &amp; Conditions available at</strong>
-                <a href="/terms&condition">Terms &amp; Conditions</a> and all
+                <a href="/terms-conditions">Terms &amp; Conditions</a> and all
                 terms defined in the Terms of Use have the same meaning here in
                 this Policy. Access, browsing and continuous use of the Website
                 constitutes the User’s unconditional consent to this Policy read
@@ -464,7 +464,7 @@ const PrivacyPolicyView = () => {
                 If you seek any clarifications regarding this Policy or wish to
                 raise any issue or grievance with respect to illegal access, use
                 or disclosure of Personal Information, please e-mail at
-                help@instantpay.in
+                info@jatmit.com
               </p>
               <p className="landing-bg_para">
                 We shall attempt to resolve any issues within a period of thirty
