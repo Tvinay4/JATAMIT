@@ -47,14 +47,35 @@ const LandingPageWhoWeAre = () => {
   ];
 
   const services = [
-    { title: "Instant Transfers", desc: "Send money anywhere instantly.", icon: "⚡", color: "#ff6b6b" },
-    { title: "Mobile & DTH Recharge", desc: "Top-up phones & TV quickly.", icon: "📱", color: "#1e90ff" },
-    { title: "Bill Payments", desc: "Pay all utility bills easily.", icon: "🧾", color: "#ff9f1a" },
-    { title: "Wallet Rewards", desc: "Earn cashback & rewards.", icon: "🎁", color: "#4caf50" },
+    // { title: "Instant Transfers", desc: "Send money anywhere instantly.", icon: "⚡", color: "#ff6b6b" },
+    {
+      title: "Mobile & DTH Recharge",
+      desc: "Top-up phones & TV quickly.",
+      icon: "📱",
+      color: "#1e90ff",
+    },
+    {
+      title: "Bill Payments",
+      desc: "Pay all utility bills easily.",
+      icon: "🧾",
+      color: "#ff9f1a",
+    },
+    {
+      title: "Wallet Rewards",
+      desc: "Earn cashback & rewards.",
+      icon: "🎁",
+      color: "#4caf50",
+    },
   ];
 
   return (
-    <Box sx={{ backgroundColor: "#fcfcfc", py: { xs: 8, md: 12 }, position: "relative" }}>
+    <Box
+      sx={{
+        backgroundColor: "#fcfcfc",
+        py: { xs: 8, md: 12 },
+        position: "relative",
+      }}
+    >
       {/* Header */}
       <Box sx={{ textAlign: "center", mb: 12, px: 3 }}>
         <Typography
@@ -77,12 +98,18 @@ const LandingPageWhoWeAre = () => {
             fontSize: { xs: "1rem", md: "1.2rem" },
           }}
         >
-          Manage your finances effortlessly with a secure, fast, and joyful digital wallet.
+          Manage your finances effortlessly with a secure, fast, and joyful
+          digital wallet.
         </Typography>
       </Box>
 
       {/* Feature Cards */}
-      <Grid container spacing={isMobile ? 4 : 6} justifyContent="center" sx={{ px: { xs: 3, md: 10 } }}>
+      <Grid
+        container
+        spacing={isMobile ? 4 : 6}
+        justifyContent="center"
+        sx={{ px: { xs: 3, md: 10 } }}
+      >
         {features.map((feature, index) => (
           <Grid item xs={12} sm={6} md={3} key={index} sx={{ display: "flex" }}>
             <Box
@@ -96,7 +123,10 @@ const LandingPageWhoWeAre = () => {
                 flexDirection: "column",
                 justifyContent: "space-between",
                 flex: 1,
-                transform: scrollY > feature.threshold ? "translateY(0)" : "translateY(40px)",
+                transform:
+                  scrollY > feature.threshold
+                    ? "translateY(0)"
+                    : "translateY(40px)",
                 opacity: scrollY > feature.threshold ? 1 : 0,
                 transition: "all 0.7s ease-out",
                 boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
@@ -124,11 +154,17 @@ const LandingPageWhoWeAre = () => {
               <Box>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: 700, mb: 1.2, fontSize: { xs: "1.1rem", md: "1.25rem" } }}
+                  sx={{
+                    fontWeight: 700,
+                    mb: 1.2,
+                    fontSize: { xs: "1.1rem", md: "1.25rem" },
+                  }}
                 >
                   {feature.title}
                 </Typography>
-                <Typography sx={{ opacity: 0.9, fontSize: { xs: "0.9rem", md: "1rem" } }}>
+                <Typography
+                  sx={{ opacity: 0.9, fontSize: { xs: "0.9rem", md: "1rem" } }}
+                >
                   {feature.description}
                 </Typography>
               </Box>
@@ -165,10 +201,15 @@ const LandingPageWhoWeAre = () => {
                   flex: 1,
                   boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  "&:hover": { transform: "translateY(-6px)", boxShadow: "0 12px 24px rgba(0,0,0,0.1)" },
+                  "&:hover": {
+                    transform: "translateY(-6px)",
+                    boxShadow: "0 12px 24px rgba(0,0,0,0.1)",
+                  },
                 }}
               >
-                <Typography sx={{ fontSize: "2rem", mb: 2, color: item.color }}>{item.icon}</Typography>
+                <Typography sx={{ fontSize: "2rem", mb: 2, color: item.color }}>
+                  {item.icon}
+                </Typography>
                 <Box>
                   <Typography
                     variant="h6"
@@ -181,7 +222,9 @@ const LandingPageWhoWeAre = () => {
                   >
                     {item.title}
                   </Typography>
-                  <Typography sx={{ color: "#555", fontSize: "0.9rem" }}>{item.desc}</Typography>
+                  <Typography sx={{ color: "#555", fontSize: "0.9rem" }}>
+                    {item.desc}
+                  </Typography>
                 </Box>
               </Box>
             </Grid>

@@ -20,30 +20,30 @@ const colors = {
 };
 
 const services = [
-  {
-    icon: <MonetizationOnIcon sx={{ color: colors.orange }} />,
-    head: "Instant Transfers",
-    desc: "Send money to anyone, anywhere instantly and securely.",
-    iconBg: "#ffe5d6",
-  },
+  // {
+  //   icon: <MonetizationOnIcon sx={{ color: colors.orange }} />,
+  //   head: "Instant Transfers",
+  //   desc: "Send money to anyone, anywhere instantly and securely.",
+  //   iconBg: "#ffe5d6",
+  // },
   {
     icon: <PaymentIcon sx={{ color: colors.orange }} />,
     head: "Bill Payments",
     desc: "Pay electricity, water, gas, and internet bills in one place.",
     iconBg: "#fff2e5",
   },
-  {
-    icon: <FingerprintIcon sx={{ color: colors.orange }} />,
-    head: "AEPS Banking",
-    desc: "Withdraw, deposit & check balance with Aadhaar authentication.",
-    iconBg: "#fff0e5",
-  },
-  {
-    icon: <QrCodeScannerIcon sx={{ color: colors.orange }} />,
-    head: "QR Payments",
-    desc: "Pay instantly at shops, cafes, and markets via QR scan.",
-    iconBg: "#fff3e5",
-  },
+  // {
+  //   icon: <FingerprintIcon sx={{ color: colors.orange }} />,
+  //   head: "AEPS Banking",
+  //   desc: "Withdraw, deposit & check balance with Aadhaar authentication.",
+  //   iconBg: "#fff0e5",
+  // },
+  // {
+  //   icon: <QrCodeScannerIcon sx={{ color: colors.orange }} />,
+  //   head: "QR Payments",
+  //   desc: "Pay instantly at shops, cafes, and markets via QR scan.",
+  //   iconBg: "#fff3e5",
+  // },
   {
     icon: <CreditCardIcon sx={{ color: colors.orange }} />,
     head: "Card Management",
@@ -63,18 +63,18 @@ const services = [
     iconBg: "#fff2e5",
   },
   // New services
-  {
-    icon: <AttachMoneyIcon sx={{ color: colors.orange }} />,
-    head: "UPI Payments",
-    desc: "Seamless payments using UPI with instant settlement.",
-    iconBg: "#fff0d6",
-  },
-  {
-    icon: <AccountBalanceIcon sx={{ color: colors.orange }} />,
-    head: "DMT (Money Transfer)",
-    desc: "Transfer money domestically securely and instantly.",
-    iconBg: "#ffe8d6",
-  },
+  // {
+  //   icon: <AttachMoneyIcon sx={{ color: colors.orange }} />,
+  //   head: "UPI Payments",
+  //   desc: "Seamless payments using UPI with instant settlement.",
+  //   iconBg: "#fff0d6",
+  // },
+  // {
+  //   icon: <AccountBalanceIcon sx={{ color: colors.orange }} />,
+  //   head: "DMT (Money Transfer)",
+  //   desc: "Transfer money domestically securely and instantly.",
+  //   iconBg: "#ffe8d6",
+  // },
 ];
 
 const LandingPageWeOffer = () => {
@@ -83,7 +83,12 @@ const LandingPageWeOffer = () => {
       <Container maxWidth="lg">
         <Typography
           variant="h3"
-          sx={{ fontWeight: "bold", textAlign: "center", mb: 2, color: colors.primary }}
+          sx={{
+            fontWeight: "bold",
+            textAlign: "center",
+            mb: 2,
+            color: colors.primary,
+          }}
         >
           Explore Our Services
         </Typography>
@@ -98,7 +103,8 @@ const LandingPageWeOffer = () => {
             fontSize: "1.1rem",
           }}
         >
-          Manage all your financial needs in one place — secure, fast, and effortless.
+          Manage all your financial needs in one place — secure, fast, and
+          effortless.
         </Typography>
 
         <Grid container spacing={6}>
@@ -145,7 +151,9 @@ const LandingPageWeOffer = () => {
                   >
                     {service.head}
                   </Typography>
-                  <Typography sx={{ fontSize: "0.95rem", color: colors.textDark }}>
+                  <Typography
+                    sx={{ fontSize: "0.95rem", color: colors.textDark }}
+                  >
                     {service.desc}
                   </Typography>
                 </Box>

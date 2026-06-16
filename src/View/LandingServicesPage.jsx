@@ -61,14 +61,14 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
       image: { src: irctc_img, alt: "IRCTC Ticket Booking" },
       icon: <TravelIcon sx={{ fontSize: "2.5rem" }} />,
     },
-    {
-      title: "My QR/UPI",
-      description: `${
-        envName === "JATMIT" ? "JATMIT" : "JATMIT"
-      } provides modern, contactless payment services through QR codes and UPI integration. Merchants can accept instant and secure digital payments directly from customers without the need for expensive infrastructure. It helps boost cashless transactions, improves customer convenience, and increases trust in your business. With seamless integration, zero hidden charges, and 24/7 availability, merchants can offer a smooth payment experience while strengthening their brand reputation.`,
-      image: { src: qrCode_img, alt: "My QR/UPI" },
-      icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
-    },
+    // {
+    //   title: "My QR/UPI",
+    //   description: `${
+    //     envName === "JATMIT" ? "JATMIT" : "JATMIT"
+    //   } provides modern, contactless payment services through QR codes and UPI integration. Merchants can accept instant and secure digital payments directly from customers without the need for expensive infrastructure. It helps boost cashless transactions, improves customer convenience, and increases trust in your business. With seamless integration, zero hidden charges, and 24/7 availability, merchants can offer a smooth payment experience while strengthening their brand reputation.`,
+    //   image: { src: qrCode_img, alt: "My QR/UPI" },
+    //   icon: <QrIcon sx={{ fontSize: "2.5rem" }} />,
+    // },
     {
       title:
         envName === "JATMIT"
