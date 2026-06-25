@@ -84,7 +84,7 @@ const LandingServicesPage = ({ envName = "JATMIT" }) => {
     {
       title: "API Banking",
       description:
-        "Our API Banking stack provides a robust, developer-friendly solution designed for businesses of all sizes. It allows secure integration with your ERP or backend systems to perform financial operations such as balance checks, money transfers, utility payments, and more. With high scalability and strong compliance, businesses can automate and accelerate financial workflows while maintaining complete reliability. This creates an ecosystem where enterprises grow faster, improve efficiency, reduce costs, and deliver seamless financial services to their customers.",
+        "Our API Banking stack provides a robust, developer-friendly solution designed for businesses of all sizes. It allows secure integration with your ERP or backend systems to perform financial operations such as balance checks, utility payments, and more. With high scalability and strong compliance, businesses can automate and accelerate financial workflows while maintaining complete reliability. This creates an ecosystem where enterprises grow faster, improve efficiency, reduce costs, and deliver seamless financial services to their customers.",
       image: { src: api, alt: "API Banking" },
       icon: <ApiIcon sx={{ fontSize: "2.5rem" }} />,
     },

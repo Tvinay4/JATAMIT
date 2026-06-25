@@ -56,12 +56,12 @@ const services = [
     desc: "Instant prepaid mobile & DTH recharges with secure payments.",
     iconBg: "#ffe5e5",
   },
-  {
-    icon: <LanguageIcon sx={{ color: colors.orange }} />,
-    head: "Global Payments",
-    desc: "Send and receive money internationally at low cost.",
-    iconBg: "#fff2e5",
-  },
+  // {
+  //   icon: <LanguageIcon sx={{ color: colors.orange }} />,
+  //   head: "Global Payments",
+  //   desc: "Send and receive money internationally at low cost.",
+  //   iconBg: "#fff2e5",
+  // },
   // New services
   // {
   //   icon: <AttachMoneyIcon sx={{ color: colors.orange }} />,
